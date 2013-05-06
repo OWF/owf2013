@@ -11,7 +11,7 @@ from PIL import Image
 from abilian.core.extensions import Babel
 
 from flask import Flask, render_template, redirect, url_for, make_response, \
-    abort, request, Blueprint, g
+    abort, request, g
 from flask.ext.frozen import Freezer
 from flask.ext.flatpages import FlatPages, Page
 from flask.ext.markdown import Markdown
@@ -19,13 +19,14 @@ from flask.ext.assets import Environment as AssetManager
 from flask.ext.babel import gettext as _
 
 from .config import *
-from .content import get_news, get_pages, get_page_or_404
+from .content import get_pages
+from .views import setup as views_setup
 
 
 app = Flask(__name__)
 app.config.from_object(__name__)
 
-mod = Blueprint('mod', __name__, url_prefix='/<lang>')
+views_setup(app)
 
 pages = FlatPages(app)
 app.extensions['pages'] = pages
@@ -43,42 +44,6 @@ babel = Babel(app)
 babel.add_translations('website')
 babel.localeselector(get_locale)
 #babel.timezoneselector(get_timezone)
-
-
-#
-# Menu management
-#
-class MenuEntry(object):
-  def __init__(self, path, label):
-    self.path = path
-    self.label = label
-    self.active = False
-    self.css_classes = []
-
-  def __getitem__(self, key):
-    if key == 'class':
-      return " ".join(self.css_classes)
-    raise IndexError
-
-
-def get_menu():
-  menu = []
-  print request.path
-  for t in MAIN_MENU[g.lang]:
-    entry = MenuEntry(t[0], t[1])
-
-    if entry.path == '':
-      if re.match("^/../$", request.path):
-        entry.active = True
-    else:
-      if request.path[len("/../"):].startswith(entry.path):
-        entry.active = True
-    if entry.active:
-      entry.css_classes.append("active")
-    if len(t) > 2:
-      entry.css_classes.append(t[2])
-    menu.append(entry)
-  return menu
 
 
 #
@@ -111,8 +76,7 @@ def alt_url_for(*args, **kw):
 
 @app.context_processor
 def inject_context_variables():
-  return dict(menu=get_menu(),
-              lang=g.lang,
+  return dict(lang=g.lang,
               url_for=alt_url_for)
 
 
@@ -130,16 +94,6 @@ def pull_lang(endpoint, values):
     g.lang = 'fr'
   if not g.lang in ALLOWED_LANGS:
     abort(404)
-
-
-@mod.url_defaults
-def add_language_code(endpoint, values):
-  values.setdefault('lang', g.lang)
-
-
-@mod.url_value_preprocessor
-def pull_lang(endpoint, values):
-  g.lang = values.pop('lang')
 
 
 #
@@ -235,58 +189,3 @@ def page_not_found(error):
   return render_template('404.html', page=page), 404
 
 
-#
-# Localized (mod-level) routes
-#
-@mod.route('/')
-def home():
-  template = "index.html"
-  page = {'title': 'Open World Forum 2013'}
-  news = get_news(limit=6)
-  return render_template(template, page=page, news=news)
-
-
-@mod.route('/<path:path>/')
-def page(path=""):
-  page = get_page_or_404(g.lang + "/" + path + "/index")
-  template = page.meta.get('template', '_page.html')
-  return render_template(template, page=page)
-
-
-@mod.route('/news/')
-def news():
-  all_news = get_news()
-  recent_news = get_news(limit=5)
-  page = {'title': _("News") }
-  return render_template('news.html', page=page, news=all_news,
-                         recent_news=recent_news)
-
-
-@mod.route('/news/<slug>/')
-def news_item(slug):
-  page = get_page_or_404(g.lang + "/news/" + slug)
-  recent_news = get_news(limit=5)
-  return render_template('news_item.html', page=page,
-                         recent_news=recent_news)
-
-
-@mod.route('/feed/')
-def feed():
-  news_items = get_news(limit=FEED_MAX_LINKS)
-  now = datetime.datetime.now()
-
-  response = make_response(render_template('base.rss',
-                                           news_items=news_items, build_date=now))
-  response.headers['Content-Type'] = 'text/xml'
-  return response
-
-
-@mod.route('/sitemap/')
-def sitemap():
-  page = {'title': u"Plan du site"}
-  pages = get_pages()
-
-  return render_template('sitemap.html', page=page, pages=pages)
-
-
-app.register_blueprint(mod)
