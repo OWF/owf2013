@@ -23,7 +23,7 @@ def build():
   print("Done.")
 
 
-def serve(server='127.0.0.1', port=5001, debug=DEBUG):
+def serve(server='127.0.0.1', port=5002, debug=DEBUG):
   """ Serves this site.
   """
   if not debug:

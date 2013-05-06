@@ -191,15 +191,21 @@ body {
   margin-bottom: 60px;
 }
 
-.domain {
-  text-align: center;
+.domain a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.domain p {
+  /* text-align: center; */
   padding-left: 10px;
   padding-right: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.4em;
+  line-height: 1.2em;
 }
 
-.domain-title {
+.domain h3 {
   color: #4F5961;
   text-align: center;
   margin-bottom: 0;

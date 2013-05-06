@@ -16,7 +16,7 @@ clean:
 	find . -name packed.css | xargs rm -f
 
 push:
-	rsync -e ssh -avz ./ dedi:abilian.com/
+	rsync -e ssh -avz ./ dedi:owf2013/
 
 update-pot:
 	# _n => ngettext, _l => lazy_gettext

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-05-06 17:58+0200\n"
+"POT-Creation-Date: 2013-05-06 19:06+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -64,4 +64,12 @@ msgstr "Sponsors Gold"
 #: website/templates/_base.html:161
 msgid "Bronze sponsors"
 msgstr "Sponsors Bronze"
+
+#: website/templates/index.html:79
+msgid "The speakers"
+msgstr "Les intervenants"
+
+#: website/templates/index.html:82
+msgid "All the speakers"
+msgstr "Tous les intervenants"
 

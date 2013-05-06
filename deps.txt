@@ -1,3 +1,5 @@
+-e git+https://github.com/abilian/abilian-core.git#egg=Abilian-Core
+
 Babel==0.9.6
 Fabric==1.6.0
 Flask==0.9
@@ -8,7 +10,6 @@ Flask-Markdown==0.3
 Frozen-Flask==0.10
 Jinja2==2.6
 Markdown==2.3.1
-PIL==1.1.7
 Pillow==1.7.8
 PyYAML==3.10
 Werkzeug==0.8.3
@@ -28,5 +29,9 @@ speaklater==1.3
 ssh==1.8.0
 webassets==0.8
 wsgiref==0.1.2
+
 bleach
 closure
+argh
+fabric
+
