@@ -1,0 +1,67 @@
+# Translations template for PROJECT.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-05-06 17:58+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: website/application.py:234
+msgid "Page not found"
+msgstr ""
+
+#: website/application.py:260 website/views.py:23
+msgid "News"
+msgstr ""
+
+#: website/templates/_base.html:74
+msgid "Search"
+msgstr ""
+
+#: website/templates/_base.html:94
+msgid "Our partners"
+msgstr ""
+
+#: website/templates/_base.html:100
+msgid "Under the patronage of"
+msgstr ""
+
+#: website/templates/_base.html:105
+msgid "Institution partners"
+msgstr ""
+
+#: website/templates/_base.html:123
+msgid "Organizers"
+msgstr ""
+
+#: website/templates/_base.html:140
+msgid "Diamond sponsor"
+msgstr ""
+
+#: website/templates/_base.html:144
+msgid "Platinum sponsors"
+msgstr ""
+
+#: website/templates/_base.html:150
+msgid "Gold sponsors"
+msgstr ""
+
+#: website/templates/_base.html:156
+msgid "Silver sponsors"
+msgstr ""
+
+#: website/templates/_base.html:161
+msgid "Bronze sponsors"
+msgstr ""
+

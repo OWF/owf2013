@@ -1,0 +1,13 @@
+*.pyc
+
+/build
+/env
+/tmp
+
+.webassets-cache
+.idea
+.DS_Store
+
+error.log
+packed.css
+packed.js

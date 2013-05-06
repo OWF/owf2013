@@ -1,0 +1,234 @@
+{% extends "_base.html" %}
+
+{% block main %}
+  <div class="clear"></div>
+
+  <div class="container">
+    <div id="middle-img">
+      <h1>
+        The world open source forum<br/>
+        <span>to shape the digital <br/> future</span>
+      </h1>
+    </div>
+  </div>
+
+  <div class="container" style="width: 940px;">
+    <div id="domains" class="row">
+      <div class="span4">
+        <img src="/static/pictures/idea-img.png"/>
+
+        <h3 class="domain-title">THINK</h3>
+
+        <p class="domain">"THINK" se concentrera sur des sujets au coeur de ces
+          questions, tels que l'Open
+          Data,
+          la neutralité du Net,
+          le
+          Cloud Computing, les biens communs, les Smart Nodes et l'internet des
+          objets. Des acteurs de ces domains
+          partegeront leurs visions avezc les participants afin de faire évoluer
+          notre société de la
+          connaissance.</p>
+      </div>
+      <div class="span4">
+        <img src="/static/pictures/keyboard-img.png"/>
+
+        <h3 class="domain-title">CODE</h3>
+
+        <p class="domain">"CODE" réunira les meilleurs développeurs des
+          plateformes logicielles Open Source
+          les
+          plus dynamiques (Java,
+          Javascript, Perl, PHP, Pythin, Ruby...) pour diffuser les dernières
+          avancées techniques et continuer à
+          innover
+          de manière collaborative.</p>
+      </div>
+      <div class="span4">
+        <img src="/static/pictures/experience-img.png"/>
+
+        <h3 class="domain-title">EXPERIMENT</h3>
+
+        <p class="domain">"EXPERIMENT" permettra au grand public de tester et
+          d'évaluer l'Open Source, à la
+          fois
+          logiciel et matériel,
+          pour découvrir l'Internet des objets, pour "réapprendre"" à créer
+          ensemble, rencontrer les "makers" et
+          le "Do
+          It Yourself" (DIY), mieux comprendre les interfaces naturelles et
+          mieux vivre l'Internet et l'Open
+          Source.</p>
+      </div>
+    </div>
+  </div>
+  <div id="speaker">
+    <div class="container">
+      <div class="container">
+        <h1 class="section-title speaker-title">The speakers</h1>
+
+        <h3 class="section-button"><a class="section-button-a" href="#speakers">All
+          the speakers</a></h3>
+      </div>
+      <div class="row">
+        <div class="span2">
+          <img class="speaker-img" src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+        <div class="span2">
+          <img src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+        <div class="span2">
+          <img src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+        <div class="span2">
+          <img src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+        <div class="span2">
+          <img src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+        <div class="span2">
+          <img src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 30px">
+        <div class="span2">
+          <img src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+        <div class="span2">
+          <img src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+        <div class="span2">
+          <img src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+        <div class="span2">
+          <img src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+        <div class="span2">
+          <img src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+        <div class="span2">
+          <img src="/static/pictures/speaker.jpg">
+          <h5 class="speaker-name">Romain <br/> Chaumais</h5>
+
+          <h6 class="speaker-job">Ingénieur ENSEM</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="latest-news-div">
+    <div class="container">
+      <div class="container">
+        <h1 class="section-title latest-news-title">Latest news</h1>
+
+        <h3 id="all-latest-news" class="section-button"><a
+            class="section-button-a">All the latest news</a></h3>
+      </div>
+      <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row">
+              {% for item in news[0:3] %}
+              <div class="span4 latest-news-card">
+                <img src="/static/pictures/actu.jpg" width="300" height="180"/>
+
+                <div class="latest-news-content">
+                  <h4><a href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a></h4>
+                  <span class="latest-news-date">11 octobre, 2012</span>
+
+                  <p>{{ item.abstract }}</p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="span4 latest-news-card">
+                <img src="/static/pictures/actu.jpg" width="300" height="180"/>
+
+                <div class="latest-news-content">
+                  <h4>Coup de projecteur sur: Harald Welte</h4>
+                  <span class="latest-news-date">11 octobre, 2012</span>
+
+                  <p>Harald Welte est célèbre pour ces contributions à de
+                    nombreux projets libres, dont le
+                    noyau Linus,
+                    NetFilter, Openmoko, Osmocom, ainsi que GPL Violations.</p>
+                </div>
+              </div>
+              <div class="span4 latest-news-card">
+                <img src="/static/pictures/actu.jpg" width="300" height="180"/>
+
+                <div class="latest-news-content">
+                  <h4>Coup de projecteur sur: Harald Welte</h4>
+                  <span class="latest-news-date">11 octobre, 2012</span>
+
+                  <p>Harald Welte est célèbre pour ces contributions à de
+                    nombreux projets libres, dont le
+                    noyau Linus,
+                    NetFilter, Openmoko, Osmocom, ainsi que GPL Violations.</p>
+                </div>
+              </div>
+              <div class="span4 latest-news-card">
+                <img src="/static/pictures/actu.jpg" width="300" height="180"/>
+
+                <div class="latest-news-content">
+                  <h4>Coup de projecteur sur: Harald Welte</h4>
+                  <span class="latest-news-date">11 octobre, 2012</span>
+
+                  <p>Harald Welte est célèbre pour ces contributions à de
+                    nombreux projets libres, dont le
+                    noyau Linus,
+                    NetFilter, Openmoko, Osmocom, ainsi que GPL Violations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="carousel-control" class="latest-news-slide-control">
+          <a id="carousel-button1" href="#myCarousel" data-slide-to="0"><img
+              id="carousel-button-img1" src="/static/pictures/ellipse-red.png"/></a>
+          <a id="carousel-button2" href="#myCarousel" data-slide-to="1"><img
+              id="carousel-button-img2"
+              src="/static/pictures/ellipse-grey.png"/></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

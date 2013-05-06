@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title or page.title }}</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="/static/pictures/favicon.ico" />
+
+  <script src="/static/js/jquery.js"></script>
+  <script src="/static/js/bootstrap.js"></script>
+  <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet'
+        type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <link href="/static/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="fast-acces-div">
+  <ul id="fast-acces-menu" class="container">
+    {#
+    <li><a href="#aller-au-contenu">Aller au contenu</a></li>
+    <li><b>|</b></li>
+    <li><a href="#aller-a-la-navigation">Aller à la navigation</a></li>
+    <li><b>|</b></li>
+    <li><a href="#aller-a-la-recherche">Aller à la recherche</a></li>
+    <li><b>|</b></li>
+    <li><a href="#plan-du-site">Plan du site</a></li>
+    <li><b>|</b></li>
+    <li><a href="#aide">Aide</a></li>
+    #}
+    <li class="fast-acces-right"><a class="fast-acces-a" href="/en/">English</a></li>
+    <li class="fast-acces-right"><b>|</b></li>
+    <li class="fast-acces-right"><a class="fast-acces-a" href="/fr/">Français</a></li>
+  </ul>
+</div>
+
+<header class="container">
+  <a href="{{ url_for(".home") }}"><img id="logo" src="/static/pictures/Calque1.png"/></a>
+
+  <ul id="navbar-ul">
+    <li class="navbar-newsletter">
+      <a href="http://eepurl.com/dACrj"><img width="25px" height="19px" src="/static/pictures/1366984852_White_Email.png"> Newsletter</a>
+    </li>
+    <li class="share-a">
+      <a href="https://www.facebook.com/OpenWorldForum">
+        <img src="/static/pictures/1366984111_picons06.png" width="18px" height="18px" title="Facebook"/>
+      </a>
+    </li>
+    <li class="share-a">
+      <a href="https://twitter.com/openworldforum">
+        <img src="/static/pictures/1366984104_picons03.png" width="23px" height="23px" title="Twitter"/>
+      </a>
+    </li>
+    <li class="share-a">
+      <a href="http://www.linkedin.com/groups?gid=1561767&trk=group-name">
+        <img src="/static/pictures/1366984119_picons11.png" width="18px" height="18px" title="Linkedin"/>
+      </a>
+    </li>
+    <li class="share-a">
+      <a href="http://lanyrd.com/2013/owf2013/">
+        <img src="/static/pictures/Calque2.png" width="15px" height="17px" title="Lanyrd"/>
+      </a>
+    </li>
+    <li class="share-a">
+      <a href="{{ url_for(".feed") }}">
+        <img src="/static/pictures/1366984127_picons20.png" width="18px" height="18px" title="Feed"/>
+      </a>
+    </li>
+    <li class="search-form">
+      <!--<img src="/static/pictures/MagnifyingGlass.png" width="16px" height="16px"/>-->
+      <input name="search-input" type="text"/>
+      <a href="#">{{ _("Search") }}</a>
+    </li>
+  </ul>
+
+
+  <div id="menu-nav-div" class="navbar">
+    <ul id="menu-nav" class="nav">
+      {% for entry in menu %}
+      <li><a href="{{ url_for(".home") }}{{ entry.path }}" class="{{ entry.class }}">{{ entry.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</header>
+
+{% block main %}
+{% endblock %}
+
+<div>
+  <div id="partners" class="container">
+    <div class="container">
+      <h1 class="section-title partners-title">{{ _("Our partners") }}</h1>
+    </div>
+    <div class="container">
+
+      <div class="row">
+        <div class="span2 partners-span">
+          <p class="partners-sub-title">{{ _("Under the patronage of") }}</p>
+          <img id="rd-productif" src="/static/pictures/ministere-du-redressement-productif_logoSponsor.jpg"/>
+        </div>
+        <div class="span5 partners-span">
+
+          <p class="partners-sub-title">{{ _("Institution partners") }}</p>
+
+          <div>
+            <img id="iledefrance" src="/static/pictures/Direccte-Ile-de-France_logoSponsor.jpg"/>
+
+            <div id="institutionnels">
+              <div>
+                <img src="/static/pictures/Region-Ile-de-France_logoSponsor.png"/>
+                <img src="/static/pictures/Agence-regionale-de-developpement-Paris-Ile-de-France_logoSponsor.jpg"/>
+              </div>
+              <div>
+                <img src="/static/pictures/La-Fonderie_logoSponsor.png"/>
+                <img src="/static/pictures/Ville-de-Paris_logoSponsor.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span4 partners-span">
+          <p class="partners-sub-title">{{ _("Organizers") }}</p>
+
+          <div id="organisateur">
+            <div>
+              <img class="organisateur-img" src="/static/pictures/Systematic_large.png"/>
+              <img src="/static/pictures/Smile_logoSponsor.png"/>
+            </div>
+            <div>
+              <img id="alterway" class="organisateur-img" src="/static/pictures/logo_aw_rvb_copie.png"/>
+              <img class="organisateur-img" src="/static/pictures/af83_logoSponsor.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div id="sponsor" class="row">
+        <div class="span2">
+          <p class="partners-sub-title">{{ _("Diamond sponsor") }}</p>
+          <img id="suse" class="sponsor-img" src="/static/pictures/Suse_logoSponsor.jpg"/>
+        </div>
+        <div id="platinium" class="span2">
+          <p class="partners-sub-title">{{ _("Platinum sponsors") }}</p>
+          <img class="sponsor-img" src="/static/pictures/logo_aw_rvb_copie.png"/>
+          <img class="sponsor-img" src="/static/pictures/Smile_logoSponsor2.png"/>
+          <img class="sponsor-img" src="/static/pictures/Microsoft_logoSponsor.png"/>
+        </div>
+        <div class="span2">
+          <p class="partners-sub-title">{{ _("Gold sponsors") }}</p>
+          <img class="sponsor-img" src="/static/pictures/INRIA_logoSponsor.jpg"/>
+          <img class="sponsor-img" src="/static/pictures/Google_logoSponsor.png"/>
+          <img class="sponsor-img" src="/static/pictures/Groupe-Laposte_logoSponsor.png"/>
+        </div>
+        <div class="span2">
+          <p class="partners-sub-title">{{ _("Silver sponsors") }}</p>
+          <img class="sponsor-img" src="/static/pictures/af83_logoSponsor2.png"/>
+          <img class="sponsor-img" src="/static/pictures/Ysance_logoSponsor.png"/>
+        </div>
+        <div class="span4">
+          <p class="partners-sub-title">{{ _("Bronze sponsors") }}</p>
+          <img id="blackduck" class="sponsor-img" src="/static/pictures/Black-Duck_logoSponsor.png"/>
+          <img class="sponsor-img" src="/static/pictures/Hewlett-Packard_logoSponsor.png"/>
+          <img class="sponsor-img" src="/static/pictures/Accenture_logoSponsor.png"/>
+          <img id="xwiki" class="sponsor-img" src="/static/pictures/Xwiki_logoSponsor.png"/>
+          <img id="jamento" src="/static/pictures/Jamendo_logoSponsor.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer style="background-color: #4f5962">
+  <div style="padding-top: 30px; padding-bottom: 30px" class="container row">
+    <div id="footer-links" class="span3">
+      <a href="/{{ lang }}/a-propos/">A propos de l'Open World Forum</a><br/>
+      <a href="/{{ lang }}/infos-pratiques/">Informations pratiques</a><br/>
+      <a href="/{{ lang }}/presse/">Presse</a><br/>
+      <a href="/{{ lang }}/mentions-legales">Mention Légales</a><br/>
+      <a href="/{{ lang }}/politique-confidentialite/">Politique de confidentialité</a><br/>
+      <a href="/{{ lang }}/sitemap/">Plan du site</a><br/>
+    </div>
+    <div id="footer-button" class="span3">
+      <div id="edition-pre">
+        <a href="#edition-pre">Édition précédente</a>
+      </div>
+      <div id="contact" style="">
+        <a href="/{{ lang }}/contact/">Nous contacter</a>
+      </div>
+    </div>
+    <div id="application" class="span3">
+      <h1 id="application-title">Télécharger</h1>
+
+      <h2 id="application-sub-title">L'application Mobile</h2>
+
+      <p id="application-content">Lorem ipsum dolor sit amet, consecteur adipiscing elit. Nullam et dolor nunc.</p>
+      <img id="apple" src="/static/pictures/1309170333_apple.png"/>
+      <img id="android" src="/static/pictures/android_logo.png"/>
+    </div>
+  </div>
+</footer>
+</body>
+
+<script>
+  $('#myCarousel').bind("slide", function() {
+    var img1 = $('#carousel-button-img1');
+    var img2 = $('#carousel-button-img2');
+    if (img1.attr('src') == 'pictures/ellipse-red.png') {
+      img1.attr('src', 'pictures/ellipse-grey.png');
+      img2.attr('src', 'pictures/ellipse-red.png');
+    } else {
+      img1.attr('src', 'pictures/ellipse-red.png');
+      img2.attr('src', 'pictures/ellipse-grey.png');
+    }
+  })
+</script>
+</html>

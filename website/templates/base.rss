@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ config.SITE_TITLE }}</title>
+    <link>{{ config.SITE_URL }}</link>
+    <description>{{ config.SITE_DESCRIPTION }}</description>
+    <language>{{ lang }}</language>
+    <pubDate>{{ build_date|to_rfc2822 }}</pubDate>
+    <lastBuildDate>{{ build_date|to_rfc2822 }}</lastBuildDate>
+
+    {% block content %}
+      {%- for item in news_items %}
+        <item>
+          <title>{{ item.title|escape }}</title>
+          <link>{{ url_for(".news_item", slug=item.slug) }}</link>
+          <description>
+            {{- item.html|escape -}}
+          </description>
+          <pubDate>{{ item.date|to_rfc2822 }}</pubDate>
+          <guid>{{ url_for(".news_item", slug=item.slug) }}</guid>
+        </item>
+      {%- endfor %}
+    {% endblock %}
+  </channel>
+</rss>
