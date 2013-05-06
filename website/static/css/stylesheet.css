@@ -192,12 +192,12 @@ body {
   margin-bottom: 60px;
 }
 
-.domain a {
+#domains a {
   text-decoration: none;
   color: #333333;
 }
 
-.domain p {
+#domains .domain p {
   /* text-align: center; */
   padding-left: 10px;
   padding-right: 10px;
@@ -206,7 +206,7 @@ body {
   line-height: 1.2em;
 }
 
-.domain h3 {
+#domains h3 {
   color: #4F5961;
   text-align: center;
   margin-bottom: 0;
@@ -476,4 +476,29 @@ body {
   line-height: 1em;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+#main h2 {
+  color: #4F5962;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#main h3 {
+  color: #4F5962;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 2.3em;
+  line-height: 1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#main p, #main li {
+  font-size: 16px;
+  line-height: 1.45em;
 }
