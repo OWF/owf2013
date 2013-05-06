@@ -1,5 +1,6 @@
 body {
   background: #FFFFFF url("../pictures/background-green.png") no-repeat center 33px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
