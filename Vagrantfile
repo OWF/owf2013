@@ -15,7 +15,7 @@ Vagrant::Config.run do |config|
     config.vm.provision :shell, :inline => "sudo apt-get update"
     config.vm.provision :shell, :inline => "sudo apt-get install -y " + python_version + " " + python_version + "-dev"
     config.vm.provision :shell, :inline => "sudo apt-get install -y python-pip"
-    config.vm.provision :shell, :inline => "sudo apt-get install -y make git libpq-dev pandoc libjpeg-dev"
+    config.vm.provision :shell, :inline => "sudo apt-get install -y make git libpq-dev pandoc libjpeg-dev libzip-dev"
 
     config.vm.provision :shell, :inline => "pip install -r /vagrant/deps.txt"
   end

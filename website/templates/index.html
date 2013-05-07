@@ -196,7 +196,7 @@
 
                 <div class="latest-news-content">
                   <h4><a href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a></h4>
-                  <span class="latest-news-date">11 octobre, 2012</span>
+                  <span class="latest-news-date">{{ item.date | dateformat }}</span>
 
                   <p>{{ item.abstract }}</p>
                 </div>
