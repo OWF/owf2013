@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-05-06 19:06+0200\n"
+"POT-Creation-Date: 2013-05-07 09:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: website/application.py:234
+#: website/application.py:188
 msgid "Page not found"
 msgstr ""
 
-#: website/application.py:260 website/views.py:23
+#: website/views.py:93
 msgid "News"
 msgstr ""
 
@@ -29,47 +29,55 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: website/templates/_base.html:94
+#: website/templates/_base.html:96
 msgid "Our partners"
 msgstr ""
 
-#: website/templates/_base.html:100
+#: website/templates/_base.html:102
 msgid "Under the patronage of"
 msgstr ""
 
-#: website/templates/_base.html:105
+#: website/templates/_base.html:107
 msgid "Institution partners"
 msgstr ""
 
-#: website/templates/_base.html:123
+#: website/templates/_base.html:125
 msgid "Organizers"
 msgstr ""
 
-#: website/templates/_base.html:140
+#: website/templates/_base.html:142
 msgid "Diamond sponsor"
 msgstr ""
 
-#: website/templates/_base.html:144
+#: website/templates/_base.html:146
 msgid "Platinum sponsors"
 msgstr ""
 
-#: website/templates/_base.html:150
+#: website/templates/_base.html:152
 msgid "Gold sponsors"
 msgstr ""
 
-#: website/templates/_base.html:156
+#: website/templates/_base.html:158
 msgid "Silver sponsors"
 msgstr ""
 
-#: website/templates/_base.html:161
+#: website/templates/_base.html:163
 msgid "Bronze sponsors"
 msgstr ""
 
-#: website/templates/index.html:79
+#: website/templates/index.html:95
 msgid "The speakers"
 msgstr ""
 
-#: website/templates/index.html:82
+#: website/templates/index.html:98
 msgid "All the speakers"
+msgstr ""
+
+#: website/templates/index.html:184
+msgid "Latest news"
+msgstr ""
+
+#: website/templates/index.html:187
+msgid "All the latest news"
 msgstr ""
 
