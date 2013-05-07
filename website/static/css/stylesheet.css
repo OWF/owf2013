@@ -502,3 +502,8 @@ body {
   font-size: 16px;
   line-height: 1.45em;
 }
+
+/* buttons */
+.domain .btn {
+  font-size: 16px;
+}
