@@ -14,15 +14,12 @@
                     src="{{ url_for("image", path=item.image, h=200) }}"/>
               </a>
             {% endif %}
-
-            <p>
-              <a href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
-            </p>
-
-            <p class="date"><i
-                class="icon-calendar"></i>{{ item.date.strftime("%d/%m/%Y") }}
-            </p>
+            <span class="latest-news-menu-date">{{ item.date.strftime("%d %B %Y") }}</span>
+            <span class="latest-news-menu-content"><a href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a></span>
           </li>
+          {% if not loop.last %}
+            <div class="hr"></div>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>

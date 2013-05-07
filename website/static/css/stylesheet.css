@@ -320,6 +320,10 @@ body {
   font-size: 1.3em;
 }
 
+#hr-partner {
+  margin: 18px 0;
+}
+
 #rd-productif {
   display: block;
   margin: 23px auto 0 auto;
@@ -463,7 +467,6 @@ body {
   border-color: #EBEBEB;
   border-style: solid none;
   border-width: 1px 0;
-  margin: 18px 0;
 }
 
 /* added / overridden by SF */
@@ -506,4 +509,49 @@ body {
 /* buttons */
 .domain .btn {
   font-size: 16px;
+}
+
+/*   _macros.html   */
+#main .sidebar {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#main .sidebar h2 {
+  color: #F4F4F4;
+  background-color: #B40001;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1.8em;
+  padding-left: 10px;
+  margin: 0;
+}
+
+#main .sidebar ul {
+  background-color: #F4F4F4;
+  margin: 0;
+}
+
+#main .sidebar li {
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+}
+
+#main .sidebar span {
+  display: block;
+}
+
+#main .sidebar a {
+  color: #4F5962;
+  font-size: 1.3em;
+}
+
+#main .sidebar .hr {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#main .latest-news-menu-date {
+  color: #B40001;
+  font-size: 1em;
 }
