@@ -1,10 +1,15 @@
+from cStringIO import StringIO
+import mimetypes
+from os.path import join, exists
 import re
 import datetime
+from PIL import Image
 
 from flask import Blueprint, request, render_template, make_response, g
+from flask import current_app as app
 from flask.ext.babel import gettext as _
 
-from website.config import MAIN_MENU, FEED_MAX_LINKS
+from website.config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
 from website.content import get_news, get_page_or_404, get_pages
 
 
@@ -101,6 +106,52 @@ def news_item(slug):
   recent_news = get_news(limit=5)
   return render_template('news_item.html', page=page,
                          recent_news=recent_news)
+
+
+@mod.route('/news/<slug>/image')
+def image_for_news(slug):
+  assert not '/' in slug
+  size = request.args.get('size', 'large')
+
+  file_path = join(app.root_path, "..", "pages", g.lang, "news", slug, "image.png")
+  if not exists(file_path):
+    file_path = join(app.root_path, "..", "pages", g.lang, "news", slug, "image.jpg")
+
+  if not exists(file_path):
+    file_path = join(app.root_path, "static", "pictures", "actu.png")
+
+  img = Image.open(file_path)
+  x, y = img.size
+  x1, y1 = IMAGE_SIZES[size]
+  r = float(x) / y
+  r1 = float(x1) / y1
+  if r > r1:
+    y2 = y1
+    x2 = int(float(x) * y1 / y)
+    assert x2 >= x1
+    img1 = img.resize((x2, y2), Image.ANTIALIAS)
+    x3 = (x2-x1)/2
+    img2 = img1.crop((x3, 0, x1+x3, y1))
+  else:
+    x2 = x1
+    y2 = int(float(y) * x1 / x)
+    assert y2 >= y1
+    img1 = img.resize((x2, y2), Image.ANTIALIAS)
+    y3 = (y2-y1)/2
+    img2 = img1.crop((0, y3, x1, y1+y3))
+
+  assert img2.size == (x1, y1)
+
+  output = StringIO()
+  if file_path.endswith(".jpg"):
+    img2.save(output, "JPEG")
+  else:
+    img2.save(output, "PNG")
+  data = output.getvalue()
+
+  response = make_response(data)
+  response.headers['content-type'] = mimetypes.guess_type(file_path)
+  return response
 
 
 @mod.route('/feed/')

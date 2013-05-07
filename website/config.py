@@ -36,3 +36,7 @@ MAIN_MENU = {'fr': [('', u'Accueil'),
                     ('news/', u'News'),
                     ('registration/', u'Registration', 'menu-registration')]}
 
+IMAGE_SIZES = {
+    'small': (300, 225),
+    'large': (600, 450),
+}

@@ -192,7 +192,7 @@
             <div class="row">
               {% for item in news[0:3] %}
               <div class="span4 latest-news-card">
-                <img src="/static/pictures/actu.jpg" width="300" height="180"/>
+                <img src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}" width="300" height="225"/>
 
                 <div class="latest-news-content">
                   <h4><a href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a></h4>
