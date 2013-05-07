@@ -4,18 +4,17 @@
 
 {% block main %}
   <div class="container" style="width: 940px;">
-    <div class="row show-grid">
+    <div class="row show-grid news">
       <h1 class="page-title">{{ page.title }}</h1>
 
       <div class="span12">
         <div class="row show-grid clear-both">
-          <div class="span9 main-column two-columns-right blog-posts">
+          <div class="span8 main-column two-columns-right blog-posts">
             {% for entry in news %}
               <article>
-                <h2><a
-                    href="{{ url_for(".news_item", slug=entry.slug) }}">{{ entry.title }}</a>
-                </h2>
-                {# <img alt="" src="img/blog04.jpg"/> #}
+                <a href="{{ url_for(".news_item", slug=page.slug) }}"><h2>{{ page.title }}</h2></a>
+                <span class="news-date">{{ page.date.strftime("%d %B %Y") }}</span>
+                <img alt="" src="/static/pictures/img-tmp.png"/>
 
                 {{ entry.html|safe }}
 

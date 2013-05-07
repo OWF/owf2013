@@ -5,15 +5,14 @@
 {% block main %}
 <div class="container" style="width: 940px;">
 
-  <div class="row show-grid">
+  <div class="row show-grid news">
     <div class="span12">
       <div class="row show-grid clear-both">
-        <div class="span9 main-column two-columns-right">
+        <div class="span8 main-column two-columns-right">
           <article>
-            <h1 class="page-title"><a
-                href="{{ url_for(".news_item", slug=page.slug) }}">{{ page.title }}</a>
-            </h1>
-            {# <img alt="" src="img/blog04.jpg"/> #}
+            <a href="{{ url_for(".news_item", slug=page.slug) }}"><h1 class="page-title">{{ page.title }}</h1></a>
+            <span class="news-date">{{ page.date.strftime("%d %B %Y") }}</span>
+            <img alt="" src="/static/pictures/img-tmp.png"/>
 
             {{ page.html|safe }}
 

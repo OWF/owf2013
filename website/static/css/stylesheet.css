@@ -472,13 +472,12 @@ body {
 /* added / overridden by SF */
 .page-title {
   color: #4F5962;
-  padding-left: 7px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
-  font-size: 5em;
-  line-height: 1em;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  font-size: 2.7em;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0;
 }
 
 #main h2 {
@@ -492,23 +491,43 @@ body {
 }
 
 #main h3 {
-  color: #4F5962;
-  font-family: 'Open Sans Condensed', sans-serif;
+  color: #B30000;
+  /*font-family: 'Open Sans Condensed', sans-serif;*/
   font-weight: normal;
-  font-size: 2.3em;
+  font-size: 1.3em;
   line-height: 1em;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
+#main h4 {
+  font-size: 1.3em;
+  font-weight: normal;
+  line-height: 1.3em;
+}
+
 #main p, #main li {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.45em;
 }
 
 /* buttons */
 .domain .btn {
   font-size: 16px;
+}
+/*   news.html | news-items.html   */
+.news {
+  margin-top: 40px;
+}
+
+.news-date {
+  color: #B40001;
+  font-size: 1em;
+}
+
+article img {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*   _macros.html   */
@@ -519,7 +538,7 @@ body {
 #main .sidebar h2 {
   color: #F4F4F4;
   background-color: #B40001;
-  font-size: 2em;
+  font-size: 2.6em;
   font-weight: normal;
   line-height: 1.8em;
   padding-left: 10px;
@@ -551,7 +570,3 @@ body {
   margin-right: 15px;
 }
 
-#main .latest-news-menu-date {
-  color: #B40001;
-  font-size: 1em;
-}

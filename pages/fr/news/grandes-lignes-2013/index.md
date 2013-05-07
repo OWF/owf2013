@@ -1,15 +1,17 @@
-title: Les grandes lignes de l’Edition 2013 d’OWF dévoilées
+title: Les grandes lignes de l’Edition 2013 de l'Open World Forum dévoilées
 date: 2013/04/25
 
-L’Open World Forum récidive en 2013 et présente sa nouvelle édition avec pour leitmotiv “Make It Happen!”
 
-Découvrez l’intégralité des nouveautés du programme et du format.
+
+####L’Open World Forum récidive en 2013 et présente sa nouvelle édition avec pour leitmotiv “Make It Happen!”
+
+####Découvrez l’intégralité des nouveautés du programme et du format.
 
 L'**Open World Forum** est le **premier sommet européen** rassemblant politiques, décideurs et experts pour débattre de l'impact technologique, économique et social des technologies libres et ouvertes. L'évènement a été** fondé en 2008** et se tient désormais **annuellement à Paris**, France, avec plus de **200 orateurs **venus de 24 pays et une **audience internationale de 2100 personnes** en 2012. L'Open World Forum est organisé en partenariat avec toutes les grandes communautés internationales du Logiciel Libre et les grands acteurs du numérique.
 
 L'Open World Forum revient pour sa sixième édition les **3, 4 et 5 octobre 2013** et change de lieu pour s'agrandir et accompagner son ambition de s'imposer comme le plus grand évènement mondial au confluent du politique, du sociétal, de la technologie et de l'économie. L'Open World Forum 2013 se tiendra donc au **Beffroi** (métro Mairie de Montrouge) et sera à nouveau organisé par le pôle Systematic. **Plus de 3000 personnes sont attendues** pour cette nouvelle édition, une forte croissance qui reflète un programme rénové et un souffle qui va porter l'évènement aux toutes premières positions mondiales.
 
-### Grandes lignes du Programme 2013
+### GRANDES LIGNES DU PROGRAMME 2013
 
 L'édition 2013 se tient dans un contexte mondial où le poids de l'industrie du Logiciel Libre et de l'Open Source est toujours **en augmentation très forte**, inaffecté par la crise. Pour la première fois, un éditeur Open Source a passé **le milliard de dollars** de revenus. **Les politiques publiques** ont consacré une place de choix pour le Logiciel Libre, comme en **Angleterre**, au **Québec** avec les avancées actuelles sur le plan Bédard, ou en **France** avec la Circulaire Ayrault, pour n'en citer que quelques-uns. De plus, les** secteurs émergents** comme le mobile sont **dominés par le Libre**, avec les systèmes d'exploitation Android et l'annonce de FirefoxOS de Mozilla.
 
