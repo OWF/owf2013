@@ -1,0 +1,61 @@
+{%- macro _field(field, attr_args={}) %}
+{%- set attrs={'data-short-name': field.short_name, 'class': 'span1'} %}
+{%- set null=attrs.update(attr_tags) %}
+{{ field(**attrs) }}
+{%- endmacro %}
+
+<button type="button" data-toggle="modal" data-target="#modal-{{ field.id }}">&hellip;</button>
+
+<div id="modal-{{ field.id }}" class="modal hide">
+
+<div class="modal-body">
+<table class="dynamic-row-widget" data-prefix="{{ field.name }}">
+  <thead><td></td></thead>
+  <tbody>
+    {%- for fieldform in field %}
+    <tr>
+      <td>
+        {%- for subfield in fieldform if subfield.flags.hidden %}
+          {%- set attrs={'data-short-name': subfield.short_name} %}
+          {{ subfield(id=subfield.name, **attrs) }}
+        {%- endfor %}        
+        <div>{{ fieldform['partenaire'].label }} {{ _field(fieldform['partenaire']) }}</div>
+        <div>{{ fieldform['contact'].label }} {{ _field(fieldform['contact']) }}</div>
+
+        <table>
+          <thead>
+          <th>{{ labels.depenses }}</th>                
+          <th>{{ labels.effort }}</th>
+          <th>{{ labels.projection }}</th>
+          <th>{{ labels.assiette }}</th>
+          <th>{{ labels.taux_aide }}</th>
+          <th>{{ labels.aide }}</th>
+          <th>{{ labels.financeur }}</th>                      
+          </thead>
+          <tbody>
+          <td>{{ _field(fieldform['depenses']) }}</td>
+          <td>{{ _field(fieldform['effort']) }}</td>
+          <td>{{ _field(fieldform['projection']) }}</td>
+          <td>{{ _field(fieldform['assiette']) }}</td>
+          <td>{{ _field(fieldform['taux_aide']) }}</td>
+          <td>{{ _field(fieldform['aide']) }}</td>
+          <td>{{ _field(fieldform['financeur']) }}</td>
+          </tbody>
+        </table>
+
+        <span>
+        {{ labels.description }}
+        {{ _field(fieldform['description']) }}
+        </span>
+
+        <span>
+        {{ labels.role }}
+        {{ _field(fieldform['role']) }}
+        </span>
+        
+      </td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>

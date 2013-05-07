@@ -5,15 +5,16 @@ import re
 import datetime
 from PIL import Image
 
-from flask import Blueprint, request, render_template, make_response, g
+from flask import Blueprint, request, render_template, make_response, g, url_for
 from flask import current_app as app
 from flask.ext.babel import gettext as _
 
-from website.config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
-from website.content import get_news, get_page_or_404, get_pages
+
+from .config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
+from .content import Page, get_news, get_page_or_404, get_pages
 
 
-mod = Blueprint('mod', __name__, url_prefix='/<lang>')
+mod = Blueprint('mod', __name__, url_prefix='/<string(length=2):lang>')
 
 
 #
@@ -34,7 +35,7 @@ class MenuEntry(object):
 
 def get_menu():
   menu = []
-  for t in MAIN_MENU[g.lang]:
+  for t in MAIN_MENU.get(g.lang, ()):
     entry = MenuEntry(t[0], t[1])
 
     if entry.path == '':
@@ -59,6 +60,23 @@ def inject_menu():
 #
 # Deal with language
 #
+def alt_url_for(*args, **kw):
+  if isinstance(args[0], Page):
+    page = args[0]
+    if re.match("../news/", page.path):
+      return url_for(".news_item", slug=page.meta['slug'])
+    else:
+      return url_for(".page", path=page.meta['path'][3:])
+  else:
+    return url_for(*args, lang=g.lang, **kw)
+
+
+@mod.context_processor
+def inject_context_variables():
+  return dict(lang=g.lang,
+              url_for=alt_url_for)
+
+
 @mod.url_defaults
 def add_language_code(endpoint, values):
   values.setdefault('lang', g.lang)
@@ -171,6 +189,13 @@ def sitemap():
   pages = get_pages()
 
   return render_template('sitemap.html', page=page, pages=pages)
+
+
+@mod.errorhandler(404)
+def page_not_found(error):
+  page = {'title': _("Page not found")}
+  return render_template('404.html', page=page), 404
+
 
 
 #

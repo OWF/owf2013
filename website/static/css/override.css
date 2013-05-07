@@ -1,0 +1,903 @@
+/*
+TODO: better document what's overridden (ex: Bootstrap, whatever-jquery-plugin, etc.)
+*/
+
+/* Basic typography */
+
+/* TODO
+body {
+    font-size: 13px;
+}
+
+label, input, button, select, textarea {
+    font-size: 13px;
+    line-height: 18px;
+}
+*/
+
+/* Select2: simply rewrite image url to more clever path, so that css
+minification still load images */
+.select2-container .select2-choice abbr,
+.select2-container .select2-choice div b,
+.select2-search input,
+.select2-search-choice-close {
+  background-image: url('../select2/select2.png');
+}
+
+.select2-search input.select2-active,
+.select2-more-results.select2-active,
+.select2-container-multi .select2-choices .select2-search-field input.select2-active {
+  background-image: url('../select2/spinner.gif');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  .select2-search input,
+  .select2-search-choice-close,
+  .select2-container .select2-choice abbr,
+  .select2-container .select2-choice div b {
+    background-image: url(../select2/select2x2.png) !important;
+  }
+}
+
+/* Bootstrap titles are too big. */
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 18px 0 6px 0;
+}
+
+h3 {
+    font-size: 15px;
+    margin: 15px 0 5px 0;
+}
+
+h1, h2, h3 {
+    line-height: 20px;
+}
+
+/* Override horizontal forms */
+.form-horizontal .control-label {
+    width: 260px; /* instead of 160px */
+}
+
+.form-horizontal .controls {
+    margin-left: 280px; /* as above + 20px */
+}
+
+/* but not in modals */
+.modal .form-horizontal .control-label {
+    width: 160px;
+}
+
+.modal .form-horizontal .controls {
+    margin-left: 180px; /* as above + 20px */
+}
+
+/* make forms slightly denser */
+label {
+  margin-bottom: 0;
+}
+
+/* Make buttons just slightly smaller, without using btn-small */
+.btn {
+    padding: 3px 10px;
+}
+
+.form-horizontal textarea {
+    width: 300px;
+    height: 80px;
+}
+
+/* override bogus values in datepicker.css */
+.datepicker {
+    margin-top: 0 !important;
+    padding: 0 !important;
+}
+
+/* Override strange defaults, broken when moveing from 2.04 to 2.2.1 */
+/* Custom Color for Systematic */
+/*
+.navbar-inner {
+    background: #024d7d none;
+}
+.navbar .nav > li > a, .navbar .brand {
+    color: #ddd;
+}
+*/
+
+.navbar .brand {
+    padding: 5px 5px 5px;
+}
+
+.navbar .nav > li > a {
+    padding: 10px 8px 10px;
+    text-shadow: none;
+}
+
+.navbar .nav > li > a:hover {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar .brand {
+    text-shadow: none;
+}
+
+.navbar-search .search-query {
+    border-radius: 3px;
+}
+
+/* typeahead hint is input box set behind seach input to show completion for 1st
+   element */
+.navbar-search .tt-hint {
+  font-size: 13px;
+  padding: 4px 14px;
+}
+
+/* Personal typographic taste. Uses non free fonts. */
+/* TODO: use http://www.exljbris.com/museosans.html */
+/* body, input, textarea, a, span {
+    font-family: "MuseoSans-300", arial, sans-serif;
+}
+*/
+
+/* Wells, action boxes, etc. */
+.nav-header {
+    padding: 2px 15px;
+    font-size: 13px;
+}
+
+/* TODO: document this ! */
+.header .navigation {
+    margin-bottom: 8px;
+}
+
+.header .navigation,
+.header .pagination,
+.header .pagination form {
+    display: inline;
+}
+
+.header .navigation {
+    float: left;
+}
+
+.header .menu-right {
+    float: right;
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left: solid 2px #ddd;
+}
+
+.header .recline-results-info {
+    line-height: 28px;
+    margin-left: 20px;
+    float: left;
+}
+
+.header .input-prepend {
+    vertical-align: top;
+}
+
+.header .input-prepend {
+    margin-bottom: auto;
+}
+
+/* *********************************************************************** */
+
+/* TODO: doesn't work */
+.recent-item > a {
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* For Required fields - puts a yellow background color on inputs */
+input.highlight, select.highlight, textarea.highlight {
+    background-color: #FFC;
+}
+
+/* overriding Bootstrap w/ personal tastes */
+.nav-pills > li > a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.nav-tabs > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.form-horizontal .control-group {
+    margin-bottom: 5px;
+}
+
+/* help / tips */
+div.tip {
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.tip h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Stream */
+.stream-body {
+    font-size: 90%;
+}
+
+.stream-body h3 {
+    margin: 0;
+}
+
+.stream-subtext {
+    color: #666;
+    font-style: italic;
+}
+
+.stream-body .stream-subtext {
+    margin-bottom: 5px;
+}
+
+.stream .stream-content {
+    margin: 10px 5px;
+}
+
+.stream-avatar {
+    position: relative;
+    display: inline-block;
+}
+
+.stream-avatar > a > img {
+    display: block;
+    width: 45px;
+    height: 45px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-background-clip: border;
+    background-clip: border;
+}
+
+.stream-image-block {
+    padding: 3px 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+/* faceted search */
+li.facet-item {
+    cursor: pointer;
+}
+
+li.facet-item img {
+    vertical-align: -1px;
+}
+
+/* mugshot on top */
+.navbar .nav > li > a {
+    padding-bottom: 6px;
+}
+
+/* My own (ugly) boxes */
+.property-box .nav > li > a {
+    display: inline;
+    background-color: white;
+}
+
+.property-list {
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-left: 0;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.property-list li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* image-gallery in user.html */
+ul.image-gallery {
+    list-style: none;
+}
+
+ul.image-gallery li {
+    float: left;
+    position: relative;
+    margin: 10px;
+}
+
+/* jQuery-collapse */
+h3.main {
+    padding: 5px 0 5px 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 10px 0 10px 0;
+    line-height: 1;
+    background: #eee;
+}
+
+h3.main a {
+    color: #333;
+    text-decoration: none;
+}
+
+div.collapsable h3 {
+    padding: 5px 0 5px 25px;
+    text-decoration: none;
+    margin: 10px 0 10px 0;
+    line-height: 1;
+
+    cursor: pointer;
+    background: #eee url("/static/icons/round-plus-16.png") no-repeat 4px center;
+}
+
+div.collapsable div {
+    margin-bottom: 1em;
+}
+
+div.collapsable h3.active {
+    background: #eee url("/static/icons/round-minus-16.png") no-repeat 4px center;
+}
+
+/*
+h3 {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 2px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    background: url("/static/img/arrows.png") no-repeat 0 -33px;
+}
+h3 .active {
+    background-position: 0 5px;
+}
+*/
+
+/* Document preview */
+
+img.preview {
+    border: 1px black;
+}
+
+.preview-nav {
+    display: none;
+    background: #0c3b3d;
+    width: 64px;
+    height: 32px;
+    padding: 5px;
+    position: absolute;
+    top: 215px;
+    left: 720px;
+    border-radius: 5px 5px;
+    -moz-border-radius: 5px 5px;
+    -webkit-border-radius: 5px 5px;
+}
+
+.preview-nav a {
+    display: block;
+    overflow: hidden;
+    text-indent: -900em;
+    height: 22px;
+    float: left;
+    padding: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.preview-nav a:hover {
+    background-color: #a1c436;
+    cursor: pointer;
+}
+
+.preview-prev {
+    width: 22px;
+    background: url(/static/images/prev.png) no-repeat center;
+}
+
+.preview-next {
+    width: 22px;
+    background: url(/static/images/next.png) no-repeat center;
+}
+
+/* forms and jquery.validate */
+
+label.required {
+    font-weight: bold;
+}
+
+label.valid {
+    width: 24px;
+    height: 24px;
+    background: url(/static/images/valid.png) center center no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+label.error {
+    font-weight: bold;
+    color: red;
+    padding: 2px 8px;
+    margin-top: 2px;
+}
+
+/* Grid table (TODO: replace with Bootstrap tables) */
+table.grid, table.grid tbody {
+    width: 100%;
+    margin-bottom: 1.5em;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.grid th.first {
+    padding-left: 6px;
+}
+
+.grid td, .grid th {
+    border-bottom: 1px solid #EBEBEB;
+    text-align: left;
+    vertical-align: top;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 6px 10px 6px 0;
+}
+
+/* fix for datatables + bootstrap, cf. http://datatables.net/blog/Twitter_Bootstrap and
+http://datatables.net/blog/Twitter_Bootstrap_2 */
+
+table.table thead .sorting,
+table.table thead .sorting_asc,
+table.table thead .sorting_desc,
+table.table thead .sorting_asc_disabled,
+table.table thead .sorting_desc_disabled {
+    cursor: pointer;
+    *cursor: hand;
+}
+
+table.table thead .sorting {
+    background: url('/static/images/sort_both.png') no-repeat center right;
+}
+
+table.table thead .sorting_asc {
+    background: url('/static/images/sort_asc.png') no-repeat center right;
+}
+
+table.table thead .sorting_desc {
+    background: url('/static/images/sort_desc.png') no-repeat center right;
+}
+
+table.table thead .sorting_asc_disabled {
+    background: url('/static/images/sort_asc_disabled.png') no-repeat center right;
+}
+
+table.table thead .sorting_desc_disabled {
+    background: url('/static/images/sort_desc_disabled.png') no-repeat center right;
+}
+
+div.dataTables_length label {
+    float: left;
+    text-align: left;
+}
+
+div.dataTables_length select {
+    width: 75px;
+}
+
+div.dataTables_filter label {
+    float: right;
+}
+
+div.dataTables_info {
+    padding-top: 8px;
+}
+
+div.dataTables_paginate {
+    float: right;
+    margin: 0;
+}
+
+table.table {
+    clear: both;
+    margin-bottom: 6px !important;
+}
+
+/* user single view */
+.avatar-large {
+    position: relative;
+    z-index: 1;
+    margin-right: 30px;
+    margin: 0 18px 9px 0;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.avatar-medium {
+    width: 45px;
+    height: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.avatar-small {
+    width: 25px;
+    height: 25px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.avatar, .avatar a {
+    display: inline;
+    float: left;
+}
+
+.community-list tr td .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info {
+    display: block;
+}
+
+.profile-nav {
+    clear: both;
+    border-width: 2px 0;
+    border-color: #E5E5E5;
+    border-style: solid;
+}
+
+/* ------------------------------------------------------------------------- */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background: url("/static/images/noise_bg.png") repeat !important;
+    /* background: url("/static/img/backgrd.png") repeat !important; TODO LATER */
+}
+
+#wrapper {
+    padding: 15px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.avatar a {
+    position: relative;
+    float: left;
+    height: 45px;
+    width: 45px;
+}
+
+ul.stream {
+    clear: both;
+    margin: 0;
+    list-style: none;
+}
+
+li.hentry {
+    border: 1px solid white;
+    border-bottom: 1px solid #E5E5E5;
+    display: block;
+    padding: 8px 0 0;
+    position: relative;
+    width: 100%;
+}
+
+li.hentry .entry_wrapper .entry_details span.action {
+    padding: 0 5px;
+}
+
+li.hentry .entry_wrapper {
+    font-size: 13px;
+    padding: 0 20px 0 10px;
+    overflow: hidden;
+}
+
+li.hentry .entry_wrapper .entry-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 50px;
+    display: block;
+}
+
+.meta_actions {
+    float: left;
+    margin: 6px 0 9px;
+    width: 100%;
+    font-size: 11px;
+}
+
+.side_actions {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    z-index: 500;
+    zoom: 1;
+}
+
+.interactions {
+    clear: both;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0 0 9px;
+    border-radius: 4px;
+    text-shadow: none;
+    width: 85%;
+}
+
+.side_actions a.flagged, .side_actions a.unflagged, .side_actions a.more_side_actions {
+    border: 1px solid white;
+    border-radius: 2px;
+    height: 16px;
+    width: 16px;
+    opacity: 0.5;
+    text-indent: -9999em;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+ul.drop_down {
+    background-color: white;
+    border: 1px solid #AAA;
+    right: 0;
+    padding: 5px;
+    position: absolute;
+    width: 175px;
+    z-index: 9999;
+    zoom: 1;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+ul.drop_down li {
+    margin: 0 0 6px;
+}
+
+/* old, to review */
+/* ---------------------------------------------------------------- */
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+/* Override some defaults */
+html, body {
+    /* background-color: #2F7069; */
+}
+
+.container > footer p {
+    text-align: center; /* center align it with the container */
+}
+
+.container {
+    width: 960px;
+    /* downsize our container to make the content feel a bit tighter and more cohesive.
+NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+}
+
+/* The white background content wrapper */
+.container > .content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+
+/* Page header tweaks */
+.page-header {
+    background-color: #f5f5f5;
+    padding: 20px 20px 10px;
+    margin: -20px -20px 20px;
+}
+
+/* Give a quick and non-cross-browser friendly divider */
+/*
+    .content .span4 {
+      margin-left: 0;
+      padding-left: 19px;
+      border-left: 1px solid #eee;
+    }
+*/
+.topbar .btn {
+    border: 0;
+}
+
+/* ********************************************************************************************** */
+/* CUSTOM */
+
+#session img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    margin-right: 6px;
+    border: none;
+    cursor: pointer;
+    border-image: initial;
+}
+
+.menu-left {
+    width: 170px;
+    border-right: 1px solid #eee;
+    margin-right: 0;
+    padding-right: 10px;
+}
+
+.advanced-search-filters .criterion {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    clear: both;
+    padding: 0.2em 0;
+}
+
+.advanced-search-filters .close {
+    float: none;
+    position: relative;
+    top: 8px;
+    margin-right: 8px;
+}
+
+/* Visite attachments */
+#attachments {
+    padding: 0.5em;
+}
+
+#attachments ul {
+    margin: 0;
+}
+
+#attachments li {
+    display: block;
+}
+
+#attachments button {
+    border: none;
+}
+
+/* File Uploads */
+.btn.btn-file {
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+}
+
+.btn.btn-file > input[type="file"] {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fileupload {
+    margin-bottom: 9px;
+}
+
+.fileupload .uneditable-input {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.fileupload .thumbnail {
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.fileupload .thumbnail > img {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 100%;
+}
+
+.fileupload .btn {
+    vertical-align: middle;
+}
+
+.fileupload-exists .fileupload-new,
+.fileupload-new .fileupload-exists {
+    display: none;
+}
+
+.fileupload-inline .fileupload-controls {
+    display: inline;
+}
+
+.fileupload-new .input-append .btn-file {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* folder / documents objects table */
+table#objects-table tbody td > img + i,
+.folder-items li > img + i {
+    position: relative;
+    left: -14px;
+    font-size: 9px;
+}
+
+/* ************************************************************************** */
+/* Admin */
+/* ************************************************************************** */
+
+#dashboard .stats {
+  text-align: center;
+  padding: 25px 0 10px 0;
+}
+
+#dashboard .stats li strong {
+  display: block;
+  font-size: 26pt;
+  margin-bottom: 7px;
+  color: #555;
+  font-weight: bold;
+}
+
+#dashboard .stats li span {
+  display: block;
+  font-size: 11pt;
+  color: #888;
+  line-height: 2em;
+}
+
+#dashboard .stats li {
+  display: inline-block;
+  text-align: center;
+  width: 22%;
+}
+
+#dashboard #logins {
+  color: #2185C5;
+}
+
+#dashboard #new_members {
+  color: #FF7F66;
+}
+
+#dashboard #new_documents {
+  color: #2EFD58;
+}
+
+#dashboard #new_messages {
+  color: #FFE054;
+}
+
+/* another color just in case: FF7F66 */

@@ -1,0 +1,5 @@
+<div class="controls">
+  <a class="btn" href="{{ url_for('.contact_new', partenaire_id=related_to.id) }}" role="button"><i class="icon-plus"></i>{{ _('Add a contact') }}</a>
+</div>
+
+{% include "widgets/render_table.html" %}

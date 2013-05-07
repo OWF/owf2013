@@ -1,21 +1,29 @@
 # coding=utf-8
 
-# Configuration
+#
+# Technical configuration
+#
+DEBUG = True
+ASSETS_DEBUG = DEBUG
+SECRET_KEY = "joouqxounbuttuyctuyctuvycrwvtyuew"
+# FIXME later
+#ASSETS_DEBUG = True
+FLATPAGES_AUTO_RELOAD = True
+FLATPAGES_EXTENSION = '.md'
+FLATPAGES_ROOT = '../pages'
+SQLALCHEMY_DATABASE_URI = "sqlite:///../data/abilian.db"
+SQLALCHEMY_ECHO = "True"
+
+
+#
+# Application configuration
+#
 SITE_URL = 'http://www.openworldforum.org/'
 SITE_TITLE = 'Open World Forum 2013'
 SITE_DESCRIPTION = "TODO"
 
 ABSTRACT_LENGTH = 350
 
-DEBUG = True
-ASSETS_DEBUG = DEBUG
-# FIXME later
-#ASSETS_DEBUG = True
-FLATPAGES_AUTO_RELOAD = True
-FLATPAGES_EXTENSION = '.md'
-FLATPAGES_ROOT = '../pages'
-
-# App configuration
 FEED_MAX_LINKS = 25
 SECTION_MAX_LINKS = 12
 

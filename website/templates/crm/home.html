@@ -1,0 +1,35 @@
+{% extends "crm/base.html" %}
+
+{% block main %}
+
+  <div id="dashboard">
+
+    {% from "admin/_macros.html" import m_stats %}
+
+    <h2>{{ _("Dashboard") }}</h2>
+
+    <h3>{{ _("Today (last 24h)") }}</h3>
+
+    {{ m_stats(stats.today) }}
+
+    <h3>{{ _("This week") }}</h3>
+
+    {{ m_stats(stats.this_week) }}
+
+    <h3>{{ _("This month") }}</h3>
+
+    {{ m_stats(stats.this_month) }}
+
+  </div>
+
+  <h2>{{ _("Recent activities in the CRM application") }}</h2>
+
+  {%- for day, entries in entries %}
+    <ul class="unstyled"><h3>{{ day.strftime('%d-%m-%Y') }}</h3>
+      {%- for e in entries %}
+        <li>{{ e.msg }}</li>
+      {%- endfor %}
+    </ul>
+  {%- endfor %}
+
+{% endblock %}

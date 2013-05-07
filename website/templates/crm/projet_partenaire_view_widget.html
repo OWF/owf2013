@@ -1,0 +1,105 @@
+<h2 id="#partenaires">
+  {{ field.label.text }}
+  {%- if projet %}
+  <a href="{{ url_for('.partenaire_edit', projet_id=projet.id) }}" class="btn"><i class="icon-plus"></i>{{ _('Add') }}</a>
+  {%- endif %}
+</h2>
+
+<div>
+<table class="table" style="table-layout: fixed">
+  <thead>
+    <th>{{ labels.partenaire}}</th>
+    <th>{{ labels.contact }}</th>
+    <th style="width: 6em; text-align:right; margin-right: 0.5em;">{{ labels.depenses }}</th>
+    <th style="width: 116px;"></th>    
+  </thead>
+  
+  <tbody>
+    {%- for row in rows %}
+    <tr>
+      {%- set modal_id = 'projet-partenaire-info-{}'.format(loop.index) %}
+      {%- set row_data = field.entries[loop.index0] %}
+      {%- set projet_id = row_data['projet_id'].data %}
+      {%- set partenaire_id = row_data['partenaire'].data.id %}     
+      <td>{{ row.partenaire }}</td>
+      <td>{{ row.contact }}</td>
+      <td style="text-align: right">{{ row.depenses }}</td>
+      <td>
+        <a href="#{{ modal_id }}" role="button" class="btn" data-toggle="modal"><i class="icon-info-sign"></i></a>
+        <a href="{{ url_for('.partenaire_edit', projet_id=projet_id, partenaire_id=partenaire_id) }}" role="button" class="btn" alt="{{ _('Edit') }}"><i class="icon-edit"></i></a>
+        <form action="{{ url_for('.partenaire_delete', projet_id=projet_id, partenaire_id=partenaire_id) }}" method="POST" style="display: inline;">
+        {{ csrf }}
+        <button type="submit" disabled="disabled" name="action" value="delete" class="btn btn-danger"><i class="icon-remove"></i></button>
+        </form>
+        <div id="{{ modal_id }}" class="modal hide">
+          <div class="modal-header">
+            <h2>{{ labels.partenaire }}: {{ row.partenaire }}</h2>
+          </div>
+          <div class="modal-body">
+            <table>
+              <thead>
+              <th>{{ labels.depenses }}</th>                
+              <th>{{ labels.effort }}</th>
+              <th>{{ labels.projection }}</th>
+              <th>{{ labels.assiette }}</th>
+              <th>{{ labels.taux_aide }}</th>
+              <th>{{ labels.aide }}</th>
+              <th>{{ labels.financeur }}</th>          
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>{{ row.depenses }}</td>
+                  <td>{{ row.effort }}</td>
+                  <td>{{ row.projection }}</td>
+                  <td>{{ row.assiette }}</td>
+                  <td>{{ row.taux_aide }}</td>
+                  <td>{{ row.aide }}</td>
+                  <td>{{ row.financeur }}</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <h2 style="text-transform: capitalize;">{{ labels.description }}</h2>
+            <p>{{ row.description }}</p>
+            <h2 style="text-transform: capitalize;">{{ labels.role }}</h2>
+            <p>{{ row.role }}</p>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">{{ _('Close') }}</button>
+        </div>
+        
+      </td>
+      
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+    $('button.btn-danger[value="delete"]')
+        .click(function(e) {
+            e.preventDefault();        
+            var $button = $(this);
+            var button_form = $(this.form);
+            var msg = "{{ _("Remove partner?") }}"
+            bootbox.confirm(msg,
+                            "{{ _("Cancel") }}", 
+                            function(confirm) {
+                                if (confirm) {
+                                  var action_val = $('<input />',
+                                              {'type': 'hidden',
+                                               'name': 'action',
+                                               'value': $button.attr('value')});
+                            button_form.append(action_val);
+                            button_form.submit();
+                                }
+                            });
+        })
+        .removeAttr('disabled');
+
+ });
+</script>
+</div>

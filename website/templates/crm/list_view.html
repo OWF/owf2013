@@ -1,0 +1,16 @@
+{% extends "crm/base.html" %}
+
+{% block main %}
+
+<a class="btn" href="{{ request.url }}new"><i class="icon-plus"></i>{{ _("Create New") }}</a>
+<a class="btn datatable-export" href="{{ request.url }}export_xls"><i class="icon-align-justify"></i>{{ _("Export to Excel") }}</a>
+
+{% if module.export_xml %}
+  <a class="btn" href="{{ url_for('.export_xml') }}"><i><small>&lt;/&gt;</small></i>&nbsp;{{ _("Export XML") }}</a>
+{% endif %}
+
+<hr />
+
+{{ rendered_table }}
+
+{%  endblock %}

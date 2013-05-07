@@ -1,0 +1,389 @@
+{% macro m_audit_log(entries) %}
+  <h3 class="main">{{ _("Audit Log") }}</h3>
+
+  <div style="margin-bottom: 25px;">
+    {%- for entry in entries %}
+      {%- if entry.type == 1 %}
+        <div>
+          <img src="{{ url_for("social.user_mugshot", user_id=entry.user.id, s=16) }}" alt="" />
+          <a href="{{ url_for("social.user", user_id=entry.user.id) }}">{{ entry.user.name }}</a>
+          made changes on {{ entry.happened_at.strftime('%Y-%m-%d %H:%M') }}
+          <ul>
+            {%- for key, (old_value, new_value) in entry.changes.items() %}
+              <li>
+                {%- if old_value %}
+                  Field <b>{{ key }}</b> changed from <em>{{ old_value }}</em>
+                  to <em>{{ new_value }}</em>
+                {%- else %}
+                  Field <b>{{ key }}</b> set to <em>{{ new_value }}</em>
+                {%- endif %}
+              </li>
+            {%- endfor %}
+          </ul>
+        </div>
+      {%- elif entry.type == 0 %}
+        <div>
+          <img src="{{ url_for("social.user_mugshot", user_id=entry.user.id, s=16) }}" alt="" />
+          <a href="{{ url_for("social.user", user_id=entry.user.id) }}">{{ entry.user.name }}</a>
+          created this record
+          on {{ entry.happened_at.strftime('%Y-%m-%d %H:%M') }}
+        </div>
+      {%- endif %}
+    {%- endfor %}
+  </div>
+{% endmacro %}
+
+{% macro m_breadcrumbs(breadcrumbs) %}
+  <ul class="breadcrumb">
+    {%- for obj in breadcrumbs[0:-1] %}
+      <li><a href="{{ obj.path }}">{{ obj.label }}</a><span class="divider">/</span></li>
+    {%- endfor %}
+    <li class="active"><strong>{{ breadcrumbs[-1].label }}</strong></li>
+  </ul>
+{% endmacro %}
+
+{% macro m_flashed_messages() %}
+  {%- with messages = get_flashed_messages(with_categories=true) %}
+    {%- if messages %}
+      {%- for category, message in messages %}
+        <div class="alert alert-block alert-{{ category }}">
+          <a class="close" data-dismiss="alert">&times;</a>
+          {{ message }}
+        </div>
+      {%- endfor %}
+    {%- endif %}
+  {%- endwith %}
+{% endmacro %}
+
+
+{% macro m_recent_items(recent_items) %}
+  {%- if recent_items %}
+    <div class="well" style="padding: 8px 0;">
+      <ul class="nav nav-list">
+        <li class="nav-header">{{ _("Recent items") }}</li>
+        {%- for item in recent_items %}
+          <li class="recent-item">
+            <a href="{{ item.url }}">
+              <img alt="" src="/static/icons/{{ item.type }}-12.png" />&nbsp;{{ item.name }}
+            </a>
+          </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  {%- endif %}
+{% endmacro %}
+
+
+{% macro m_docs_table(objects, edit=True) %}
+  {%- if objects %}
+    <form name="folder-listing" style="margin-bottom: 0;" method="POST">
+      {{ csrf_token }}
+      {%- if edit %}
+        <div class="btn-toolbar" style="margin-bottom: 0;">
+          <div class="btn-group">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="icon-check"></i>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#select-all">{{ _("Select all") }}</a></li>
+              <li><a href="#unselect-all">{{ _("Unselect all") }}</a></li>
+            </ul>
+          </div>
+
+          <div class="btn-group" style="margin-left: 20px;">
+            <button class="btn" name="action" value="download" title="{{ _("Download") }}"><i
+                class="icon-download"></i></button>
+            {#
+            <button class="btn" name="action" value="send"><i
+                class="icon-envelope"></i></button>
+            #}
+            <!--
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i><span
+                    class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">More...</a></li>
+            </ul>
+            -->
+          </div>
+
+          <div class="btn-group">
+            <a class="btn" href="#modal-move-files" data-toggle="modal" role="button"
+               title="{{ _("Move to another folder") }}"><i
+                class="icon-move"></i></a>
+          </div>
+          
+          <div class="btn-group">          
+            <button class="btn btn-danger" name="action" value="delete" title="{{ _("Delete") }}"><i class="icon-trash"></i></button>
+          </div>
+
+          <!--
+          <div class="btn-group pull-right">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-filter"></i><span class="caret"></span></a>
+            <ul class="dropdown-menu" style="left: -300%;">
+              <li><a href="#">_("All objects types")</a></li>
+              <li><a href="#">_("Only folders")</a></li>
+              <li><a href="#">_("Only documents")</a></li>
+              <li><a href="#">_("Only images")</a></li>
+            </ul>
+          </div>
+          -->
+
+          <div class="btn-group pull-right" style="margin-right: 20px;">
+            <input id="filter" type="text" placeholder="Filter..."
+                style="margin-bottom: 0;">
+          </div>
+
+          <!-- TODO:
+          <div class="btn-group pull-right">
+            <button class="btn"><i class="icon-th-list"></i></button>
+            <button class="btn"><i class="icon-th-large"></i></button>
+          </div>
+          -->
+        </div>
+      {% endif %}
+
+      <hr style="margin: 10px 0 10px 0;"/>
+
+      <table class="table table-striped table-condensed" id="objects-table">
+        <thead>
+        <tr>
+          <th style="width: 1%;"></th>
+          <th style="visibility: hidden;">type</th>
+          <th style="visibility: hidden;">title for sorting</th>
+          <th style="width: 50%;">{{ _("Title") }}</th>
+          <th style="width: 10%;">{{ _("Size") }}</th>
+          <th style="width: 19%;">{{ _("Owner") }}</th>
+          <th style="visibility: hidden;">date</th>
+          <th style="width: 20%;">{{ _("Age") }}</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {%- for obj in objects %}
+          <tr>
+            <td><input type="checkbox" name="object-selected"
+                value="{{ obj.base_type_id }}:{{ obj.id }}"></td>
+            <td>{{ obj.object_type }}</td>
+            <td>{{ obj.name }}</td>
+            <td>
+              <img src="{{ obj.icon }}" style="vertical-align: middle;" alt="" />
+              {%- if obj.object_type == 'folder' %}<i>{{ obj.filtered_children|length }}</i>{%- endif %}
+              <a href="{{ obj._url }}">{{ obj.name }}</a>
+            </td>
+            <td>
+              {%- if obj.is_document %}
+                {{ obj.content_length|filesize }}
+              {%- endif %}
+            </td>
+            <td>
+              <a href="{{ url_for("social.user", user_id=obj.owner.id) }}"><img alt=""
+                  src="{{ url_for("social.user_mugshot", user_id=obj.owner.id, s=16) }}"
+                  style="vertical-align: middle;">
+                {{ obj.owner.name }}</a>
+            </td>
+            <td>{{ obj.created_at.isoformat() }} </td>
+            <td>{{ obj.created_at|age }}</td>
+          </tr>
+        {%- endfor %}
+        </tbody>
+        <tfoot>
+        <tr>
+          <th></th>
+          <th>{{ _("Title") }}</th>
+          <th style="visibility: hidden;">type</th>
+          <th>{{ _("Size") }}</th>
+          <th>{{ _("Owner") }}</th>
+          <th style="visibility: hidden;">date</th>
+          <th>{{ _("Age") }}</th>
+        </tr>
+        </tfoot>
+      </table>
+    </form>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.fn.dataTableExt.afnFiltering.push(
+            function(oSettings, aData, iDataIndex) {
+              var filter_value = $("#filter").val();
+              var row_text = aData[2].trim();
+              return row_text.match(new RegExp(filter_value, "i"));
+            }
+        );
+
+        var objects_table = $('#objects-table').dataTable({
+          aoColumns:      [
+            { asSorting:[] },
+            { bVisible: false, sType: "cmistype" },
+            { bVisible: false, sType: "string" },
+            { aDataSort: [1, 2], asSorting:[ "asc", "desc" ]},
+            { aDataSort: [1, 4], asSorting:[ "asc", "desc" ] },
+            { aDataSort: [1, 5], asSorting:[ "asc", "desc" ] },
+            { bVisible: false, sType: "date"},
+            { aDataSort: [1, 6], asSorting:[ "asc", "desc" ] }
+          ],
+          {# see http://datatables.net/ref #}
+
+          sPaginationType:"bootstrap",
+          bFilter:        true,
+          bLengthChange:  false,
+          bStateSave:     true,
+          iDisplayLength: 50,
+          sDom:           'lrtip'
+        });
+
+        /* on page reload datatable keep previously filtered rows. Force
+        refilter with current filter value */
+        objects_table.fnFilter($('#filter').val());
+    
+        $("a[href='#select-all']").click(function() {
+          $("input[name='object-selected']").attr('checked', true);
+        });
+        $("a[href='#unselect-all']").click(function() {
+          $("input[name='object-selected']").attr('checked', false);
+        });
+
+        $('#filter').bind('keypress', function(e) {
+          if (e.keyCode == 13) {
+            /* let return key for refilter */
+            objects_table.fnFilter( this.value );
+            e.preventDefault();
+          }
+        });
+    
+        $('#filter').bind('keyup', function(e) {
+          if (e.keyCode == 13) {
+            e.preventDefault();
+          }
+          objects_table.fnFilter( this.value );
+        });
+
+        $('button.btn-danger[value="delete"]').click(function(e) {
+            e.preventDefault();
+            var $button = $(this);
+            var button_form = $(this.form);
+            var msg = "{{ _("Delete selected elements?") }}"
+            var elements = $(document.forms["folder-listing"])
+                             .find("input[name='object-selected']")
+                             .filter(function() { return this.checked; })
+                             .closest('td')
+                             .next('td')
+            var el_list = $('<ul />').attr({'class': 'folder-items'});;
+            elements.each(function() {
+              var li = $('<li />').html($(this).html());
+              el_list.append(li);
+            });
+            msg += $('<div />').append(el_list).html();
+              
+            bootbox.confirm(msg,
+                            "{{ _("Cancel") }}", 
+                            function(confirm) {
+                        if (confirm) {
+                            var action_val = $('<input />',
+                                              {'type': 'hidden',
+                                               'name': 'action',
+                                               'value': $button.attr('value')});
+                            button_form.append(action_val);
+                            button_form.submit();
+                        }
+                    });
+        });
+
+
+        /* Move file functions */
+        var move_file_fill_listing = function(modal, folder_url) {
+          var tbody = modal.find('tbody');
+          var breadcrumbs = modal.find('ul.breadcrumb');
+
+          $.ajax({
+            type: 'GET',
+            dataType: "json",
+            url: folder_url,
+            cache: false,
+            success: function(data) {
+              var bc = $(data['breadcrumbs']);
+              breadcrumbs.empty();
+
+              bc.each(function(index) {
+                var li = $('<li />');
+                var link = $('<a>' + this.title + '</a>')
+                             .attr('href', this.url)
+                             .attr('data-id', this.id)
+                             .appendTo(li);
+                li.append($('<span>/</span>').attr('class', 'divider'))
+                  .appendTo(breadcrumbs);
+              });
+
+              var folders = $(data['folders']);
+              tbody.empty();
+
+              folders.each(function(index) {
+                var tr = $('<tr />');
+                var td = $('<td />');
+                var link = $('<a>' + this.title + '</a>').attr('href', this.url)
+                                                    .attr('data-id', this.id)
+                                                    .appendTo(td);
+                td.append($('<span>/</span>').attr('class', 'divider'));
+                tr.append(td).appendTo(tbody);
+              });
+                  
+              var folder_selectable = data['current_folder_selectable'];
+              var button = $('#modal-move-button-submit');
+              button.attr('disabled', !folder_selectable);
+              if (!folder_selectable ^ button.hasClass('disabled')) {
+                  button.toggleClass('disabled');
+              }
+            }
+          });
+        };
+
+        $(document).on('click', '#modal-move-files-directory-listing a', function(e) {
+          var self = $(this);
+          var folder_id = self.attr('data-id');
+          $('#modal-move-files').find('input[name="target-folder"]').attr('value', folder_id);
+          var url = self.attr('href');
+          move_file_fill_listing($('#modal-move-files'), url);
+          e.preventDefault();
+        });
+
+        $('#modal-move-files').on('show', function() {
+             var modal = $(this);
+             var listing_form = $(document.forms["folder-listing"]);
+             var elements = listing_form.find("input[name='object-selected']")
+                                        .filter(function() { return this.checked; });
+             var footer_inputs = $("#modal-move-files-inputs");                  
+             footer_inputs.empty();
+             elements.clone().attr('type', 'hidden').appendTo(footer_inputs);
+             var target = $('<input />').attr({type: 'hidden',
+                                               name: 'target-folder',
+                                               value: ''})
+                                        .appendTo(footer_inputs);
+             move_file_fill_listing(modal, document.location + '/json');
+            });
+
+      });
+    </script>      
+  {%- else %}
+    <p><em>{{ _("This folder is currently empty. Why don't you upload some content?") }}</em></p>
+  {%- endif %}
+
+  <div style="clear: both;"></div>
+{% endmacro %}
+
+<!-- table for file properties -->
+{% macro m_table(lines) %}
+  <table class="table table-striped table-condensed" style="margin: 10px 0 15px 0;">
+    <tbody>
+    {%- for line in lines %}
+      <tr class="row">
+        <td class="span3">{{ line[0] }}</td>
+        {%- if line[0] == 'Size' %} <!-- ugly hack -->
+          <td class="span9">{{ line[1]|filesize }}</td>
+        {%- else %}
+          <td class="span9">{{ line[1] }}</td>
+        {%- endif %}
+      </tr>
+    {%- endfor %}
+    </tbody>
+  </table>
+{%- endmacro %}

@@ -4,47 +4,31 @@ from StringIO import StringIO
 
 import locale
 import mimetypes
-from os.path import join
+from os import mkdir
+from os.path import join, dirname, exists
 import re
 import datetime
 from PIL import Image
-from abilian.core.extensions import Babel
+from abilian.web.filters import init_filters
 
 from flask import Flask, render_template, redirect, url_for, make_response, \
     abort, request, g
 from flask.ext.frozen import Freezer
-from flask.ext.flatpages import FlatPages, Page
+from flask.ext.flatpages import FlatPages
 from flask.ext.markdown import Markdown
 from flask.ext.assets import Environment as AssetManager
-from flask.ext.babel import gettext as _
 
-from .config import *
+import abilian
+from abilian.core.extensions import Babel, db
+
+from . import config
 from .content import get_pages
-from .views import setup as views_setup
+from .views import setup as setup_views
+from .crm import setup as setup_crm
 
+__all__ = ['app', 'setup']
 
 app = Flask(__name__)
-app.config.from_object(__name__)
-
-views_setup(app)
-
-pages = FlatPages(app)
-app.extensions['pages'] = pages
-freezer = Freezer(app)
-markdown_manager = Markdown(app)
-asset_manager = AssetManager(app)
-
-
-# Babel (for i18n)
-# Additional config for Babel
-def get_locale():
-  return getattr(g, 'lang', None)
-
-babel = Babel(app)
-babel.add_translations('website')
-babel.localeselector(get_locale)
-#babel.timezoneselector(get_timezone)
-
 
 #
 # Filters
@@ -63,23 +47,6 @@ def to_rfc2822(dt):
 #
 # Preprocessing
 #
-def alt_url_for(*args, **kw):
-  if isinstance(args[0], Page):
-    page = args[0]
-    if re.match("../news/", page.path):
-      return url_for(".news_item", slug=page.meta['slug'])
-    else:
-      return url_for(".page", path=page.meta['path'][3:])
-  else:
-    return url_for(*args, lang=g.lang, **kw)
-
-
-@app.context_processor
-def inject_context_variables():
-  return dict(lang=g.lang,
-              url_for=alt_url_for)
-
-
 @app.url_defaults
 def add_language_code(endpoint, values):
   values.setdefault('lang', g.lang)
@@ -92,14 +59,25 @@ def pull_lang(endpoint, values):
     g.lang = m.group(1)
   else:
     g.lang = 'fr'
-  if not g.lang in ALLOWED_LANGS:
+  if not g.lang in config.ALLOWED_LANGS:
     abort(404)
+
+
+@app.context_processor
+def inject_app():
+  return dict(app=app)
+
+
+@app.before_request
+def before_request():
+  # FIXME
+  g.user = None
+  g.recent_items = []
 
 
 #
 # Freezer helper
 #
-@freezer.register_generator
 def url_generator():
   # URLs as strings
   yield '/fr/'
@@ -155,7 +133,7 @@ def image(path):
 
 @app.route('/feed/')
 def global_feed():
-  return feed()
+  return redirect("/en/feed/", 301)
 
 
 @app.route('/sitemap.xml')
@@ -168,24 +146,85 @@ def sitemap_xml():
   return response
 
 
-@app.route('/403.html')
-def error403():
-  return render_template('403.html', page=dict(title="Fordidden"))
+#
+# Setup helpers
+#
+def setup(app):
+  app.config.from_object(config)
+
+  db.init_app(app)
+
+  # Register our own blueprints / apps
+  setup_views(app)
+  setup_crm(app)
+
+  # Add some extensions
+  pages = FlatPages(app)
+  app.extensions['pages'] = pages
+  freezer = Freezer(app)
+  app.extensions['freezer'] = freezer
+  freezer.register_generator(url_generator)
+  markdown_manager = Markdown(app)
+  asset_manager = AssetManager(app)
+  app.extensions['asset_manager'] = asset_manager
+
+  # Setup custome babel config (see below)
+  setup_babel(app)
+
+  # Setup hierarchical Jinja2 template loader
+  # TODO: should be generic
+  setup_template_loader(app)
+
+  # Add a few specific template filters
+  init_filters(app)
+
+  create_db(app)
 
 
-@app.route('/404.html')
-def error404():
-  return render_template('404.html', page=dict(title="Not found"))
+def setup_babel(app):
+  """
+  Setup custom Babel config.
+  """
+  babel = Babel(app)
+
+  def get_locale():
+    return getattr(g, 'lang', 'en')
+
+  babel.add_translations('website')
+  babel.localeselector(get_locale)
+  #babel.timezoneselector(get_timezone)
 
 
-@app.route('/500.html')
-def error500():
-  return render_template('500.html')
+def setup_template_loader(app):
+  """
+  Not really a hack. Makes possible to get templates from several different
+  directories, i.e. useful to override template from a library.
+  """
+  from jinja2 import ChoiceLoader, FileSystemLoader
+
+  abilian_template_dir = join(dirname(abilian.__file__), "templates")
+  my_loader = ChoiceLoader([app.jinja_loader,
+                            FileSystemLoader(abilian_template_dir)])
+  app.jinja_loader = my_loader
 
 
-@app.errorhandler(404)
-def page_not_found(error):
-  page = {'title': _("Page not found")}
-  return render_template('404.html', page=page), 404
+def create_db(app):
+  if not exists("data"):
+    mkdir("data")
 
+  with app.app_context():
+    db.create_all()
+    for k,v in db.get_binds().items():
+      print v, k
 
+    # alembic_ini = join(dirname(__file__), '..', 'alembic.ini')
+    # alembic_cfg = flask_alembic.FlaskAlembicConfig(alembic_ini)
+    # alembic_cfg.set_main_option('sqlalchemy.url',
+    #                             app.config.get('SQLALCHEMY_DATABASE_URI'))
+    # alembic.command.stamp(alembic_cfg, "head")
+
+    # if User.query.get(0) is None:
+    #   root = User(id=0, last_name=u'SYSTEM', email=u'system@example.com',
+    #               can_login=False)
+    #   db.session.add(root)
+    #   db.session.commit()

@@ -1,0 +1,60 @@
+{% include "widgets/select2ajax.html" %}
+<script type="text/javascript">
+(function($) {
+  $(document).on(
+    'widgets-initiliazed',
+    function () {
+      var $el = $('#{{ id }}');
+      var $button = $('<button />')
+                      .attr({'class': 'btn btn-info'})
+                      .css({'margin-left': '10px'})
+                      .append($('<i />').addClass('icon-briefcase'))
+                      .tooltip({
+                       'placement': 'right',
+                       'title': 'Utiliser l\'adresse du partenaire pour remplir l\'adresse du contact',
+                       'container': 'body'
+                      })
+                      .on('click',
+                          function(e) {
+                            e.preventDefault();
+                            var val = $el.select2('val');
+
+                            if (!val || val.length == 0) { return; }
+
+                            var url = '{{ app.blueprints['partenaires'].url_prefix }}/'
+                                      + val
+                                      + '/json/address'
+                            $.ajax({
+                                type: "GET",
+                                url: url,
+                                success: function(data) {
+                                    if (data.length == 0) { return; }
+
+                                    var addr = '';
+                                    if (data.adresse_postale_ligne_1
+                                        && data.adresse_postale_ligne_1.length) {
+                                      addr = data.adresse_postale_ligne_1;
+                                    }
+                                    if (data.adresse_postale_ligne_2
+                                        && data.adresse_postale_ligne_2.length) {
+                                      if (addr.length > 0) {
+                                        addr += ' - ';
+                                      }
+                                      addr += data.adresse_postale_ligne_2;
+                                    }
+
+                                    if (addr.length > 0) {
+                                      $('#adresse').val(addr);
+                                    }
+                                    $('#code_postal').val(data.code_postal);
+                                    $('#ville').val(data.ville);
+                                    $('#pays').val(data.pays);
+
+                                  }
+                              }                              
+                            );
+                          });
+      $el.select2('container').after($button);
+  });
+}(jQuery));
+</script>

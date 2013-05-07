@@ -1,7 +1,5 @@
-title: Les grandes lignes de l’Edition 2013 de l'Open World Forum dévoilées
+title: Les grandes lignes de l’Edition 2013 de l'OWF dévoilées
 date: 2013/04/25
-
-
 
 ####L’Open World Forum récidive en 2013 et présente sa nouvelle édition avec pour leitmotiv “Make It Happen!”
 

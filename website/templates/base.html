@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ config.site_name }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  {%- assets filters="cssmin", output="gen/packed.css",
+      "bootstrap/css/bootstrap.css",
+      "jquery/css/ui-lightness/jquery-ui-1.8.19.custom.css",
+      "jquery/plugins/jquery.tagbox.css",
+      "select2/select2.css",
+      "bootstrap/plugins/bootstrap-datepicker/css/datepicker.css",
+      "css/holmes.css",
+      "typeahead/typeahead-bootstrap.css",
+      "extranet/social.css",
+      "css/override.css" %}
+  <link href="{{ ASSET_URL }}" rel="stylesheet" />
+  {%- endassets %}
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Le fav and touch icons -->
+  <link rel="shortcut icon" href="/static/images/favicon.png">
+  {# TODO: Later
+  <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/images/apple-touch-icon-114x114.png">
+  #}
+
+  {%- if config.DEBUG %}
+  <script type="text/javascript" src="/static/jquery/js/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="/static/jquery/js/jquery-migrate-1.1.1.js"></script>
+  {%- else %}
+  <script type="text/javascript" src="/static/jquery/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="/static/jquery/js/jquery-migrate-1.1.1.min.js"></script>
+  {%- endif %}
+</head>
+
+<body>
+<div id="wrapper" class="container">
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+
+      <a class="brand" href="/"><img src="/static/images/logo-spr-32x32.png" alt="logo"/></a>
+
+      <ul class="nav">
+        {%- for url, label in main_menu %}
+        <li><a href="{{ url }}">{{ label }}</a></li>
+        {%- endfor %}
+      </ul>
+
+      {%- if g.user and g.user.id %} 
+        {# condition may not be met on some pages (like error500): would raise
+           error in url_for() statements #}
+        <ul class="nav pull-right">
+          <li id="fat-menu" class="dropdown">
+            <a href="#-" class="dropdown-toggle" data-toggle="dropdown">
+              <img class="avatar-small" style="margin-top: -3px;" alt=""
+                   src="{{ url_for("social.user_mugshot", user_id=g.user.id, s=25) }}" />
+                   {{ g.user.name }}<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ url_for("social.user", user_id=g.user.id) }}">{{ _("My profile") }}</a></li>
+              <li class="divider"></li>
+              <li><a id="logout">{{ _("Log out") }}</a></li>
+            </ul>
+          </li>
+        </ul>
+      {%- endif %}
+
+      <form class="navbar-search pull-right" action="/search/">
+        <input type="text" name="q" class="search-query" placeholder="{{ _('Search') }}" autocomplete="off" id="search-box" />
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  {% block container %}
+  {% endblock %}
+</div>
+<!--/.fluid-container-->
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <p>Powered by <a href="http://www.abilian.com/">Abilian</a></p>
+    </div>
+    </div>
+  </div>
+</footer>
+
+{%- assets filters="closure_js", output="gen/packed.js",
+    "bootstrap/js/bootstrap.js",
+    "bootstrap/plugins/bootbox.js",
+    "datatables/js/jquery.dataTables.js",
+    "select2/select2.js",
+    "jquery/plugins/jquery.autoGrowInput.js",
+    "jquery/plugins/jquery.tagBox.js",
+    "jquery/plugins/jquery.collapse.js",
+    "jquery/plugins/jquery.validate.min.js",
+    "bootstrap/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js",
+    "typeahead/typeahead.js",
+    "typeahead/hogan-2.0.0.js",
+    "extranet/abilian.js",
+    "extranet/datatable.js",
+    "extranet/widgets.js",
+    "extranet/app.js" %}
+  <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{%- endassets %}
+
+{% block js %}{% endblock %}
+  
+  <script type="text/javascript">
+    Abilian.DEBUG = {{ config.DEBUG|tojson }};
+
+    {#
+    Abilian.current_user.crm = {{ app.extensions['security'].has_role(current_user, 'crm:user')|tojson }};
+    #}
+
+    Abilian.init();
+    {%- if inline_js %}{{ inline_js }}{%- endif %}
+  </script>
+</body>
+</html>

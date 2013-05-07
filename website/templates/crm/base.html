@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% from "macros.html" import m_breadcrumbs, m_recent_items, m_flashed_messages with context %}
+
+{% block container %}
+
+<ul class="nav nav-tabs">
+  {%- for module in modules %}
+    <li {% if module.is_current() %}class="active"{% endif %}>
+      <a href="{{ module.url }}/"><img src="/static/icons/{{ module.id }}-12.png" alt="">
+        {{ module.label }}</a>
+    </li>
+  {%- endfor %}
+</ul>
+
+<div class="row">
+  <div class="span2">
+    <div class="btn-group">
+      <a class="btn dropdown-toggle" data-toggle="dropdown">
+        {{ _("Create new...") }}
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu"> <!-- TODO: un-hardcode this -->
+        <li><a href="/crm/partenaires/new">Partenaire</a></li>
+        <li><a href="/crm/contacts/new">Contact</a></li>
+        <li><a href="/crm/visites/new">Visite</a></li>
+        <li><a href="/crm/projets/new">Projet</a></li>
+        <li><a href="/crm/actions_filiere/new">Action fili&egrave;re</a></li>
+        <li><a href="/crm/programmes_filiere/new">Programme fili&egrave;re</a></li>
+        <!-- dropdown menu links -->
+      </ul>
+    </div>
+
+    <div>&nbsp;</div>
+
+    {{ m_recent_items(g.recent_items) }}
+  </div><!-- /span2 -->
+
+  <div class="span10">
+    {{ m_breadcrumbs(breadcrumbs) }}
+    {{ m_flashed_messages() }}
+
+    {% block main %}
+    {% endblock %}
+  </div>
+  <!--/span-->
+</div>
+<!--/row-->
+{% endblock %}
