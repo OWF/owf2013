@@ -32,6 +32,4 @@ wsgiref==0.1.2
 
 bleach
 closure
-argh
-fabric
 
