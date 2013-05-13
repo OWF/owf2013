@@ -1,18 +1,11 @@
 # coding=utf-8
 
-from StringIO import StringIO
-
 import locale
-import mimetypes
 from os import mkdir
 from os.path import join, dirname, exists
 import re
-import datetime
-from PIL import Image
-from abilian.web.filters import init_filters
 
-from flask import Flask, render_template, redirect, url_for, make_response, \
-    abort, request, g
+from flask import Flask, abort, request, g
 from flask.ext.frozen import Freezer
 from flask.ext.flatpages import FlatPages
 from flask.ext.markdown import Markdown
@@ -20,150 +13,42 @@ from flask.ext.assets import Environment as AssetManager
 
 import abilian
 from abilian.core.extensions import Babel, db
+from abilian.web.filters import init_filters
 
-from . import config
-from .content import get_pages
-from .views import setup as setup_views
+from .views.localized import setup as setup_localized
+from .views.main import setup as setup_main
 from .crm import setup as setup_crm
 
-__all__ = ['app', 'setup']
-
-app = Flask(__name__)
-
-#
-# Filters
-#
-@app.template_filter()
-def to_rfc2822(dt):
-  if not dt:
-    return
-  current_locale = locale.getlocale(locale.LC_TIME)
-  locale.setlocale(locale.LC_TIME, "en_US")
-  formatted = dt.strftime("%a, %d %b %Y %H:%M:%S +0000")
-  locale.setlocale(locale.LC_TIME, current_locale)
-  return formatted
+__all__ = ['create_app', 'create_db']
 
 
-#
-# Preprocessing
-#
-@app.url_defaults
-def add_language_code(endpoint, values):
-  values.setdefault('lang', g.lang)
-
-
-@app.url_value_preprocessor
-def pull_lang(endpoint, values):
-  m = re.match("/(..)/", request.path)
-  if m:
-    g.lang = m.group(1)
-  else:
-    g.lang = 'fr'
-  if not g.lang in config.ALLOWED_LANGS:
-    abort(404)
-
-
-@app.context_processor
-def inject_app():
-  return dict(app=app)
-
-
-@app.before_request
-def before_request():
-  # FIXME
-  g.user = None
-  g.recent_items = []
-
-
-#
-# Freezer helper
-#
-def url_generator():
-  # URLs as strings
-  yield '/fr/'
-
-
-#
-# Global (app-level) routes
-#
-@app.route('/')
-def index():
-  # TODO: redirecte depending on HTTP headers & cookie
-  return redirect(url_for("mod.home", lang='fr'))
-
-
-@app.route('/image/<path:path>')
-def image(path):
-  hsize = int(request.args.get("h", 0))
-  vsize = int(request.args.get("v", 0))
-
-  if hsize > 1000 or vsize > 1000:
-    abort(500)
-
-  if '..' in path:
-    abort(500)
-  fd = open(join(app.root_path, "images", path))
-  data = fd.read()
-
-  if hsize:
-    image = Image.open(StringIO(data))
-    x, y = image.size
-
-    x1 = hsize
-    y1 = int(1.0 * y * hsize / x)
-    image.thumbnail((x1, y1), Image.ANTIALIAS)
-    output = StringIO()
-    image.save(output, "PNG")
-    data = output.getvalue()
-  if vsize:
-    image = Image.open(StringIO(data))
-    x, y = image.size
-
-    x1 = int(1.0 * x * vsize / y)
-    y1 = vsize
-    image.thumbnail((x1, y1), Image.ANTIALIAS)
-    output = StringIO()
-    image.save(output, "PNG")
-    data = output.getvalue()
-
-  response = make_response(data)
-  response.headers['content-type'] = mimetypes.guess_type(path)
-  return response
-
-
-@app.route('/feed/')
-def global_feed():
-  return redirect("/en/feed/", 301)
-
-
-@app.route('/sitemap.xml')
-def sitemap_xml():
-  today = datetime.date.today()
-  recently = datetime.date(year=today.year, month=today.month, day=1)
-  response = make_response(render_template('sitemap.xml', pages=get_pages(),
-                                           today=today, recently=recently))
-  response.headers['Content-Type'] = 'text/xml'
-  return response
+def create_app(config=None):
+  app = Flask(__name__)
+  if not config:
+    from . import config
+  app.config.from_object(config)
+  setup(app)
+  return app
 
 
 #
 # Setup helpers
 #
 def setup(app):
-  app.config.from_object(config)
-
   db.init_app(app)
 
+  setup_filters_and_processors(app)
+
   # Register our own blueprints / apps
-  setup_views(app)
+  setup_main(app)
+  setup_localized(app)
   setup_crm(app)
 
   # Add some extensions
   pages = FlatPages(app)
   app.extensions['pages'] = pages
-  freezer = Freezer(app)
-  app.extensions['freezer'] = freezer
-  freezer.register_generator(url_generator)
+
+  setup_freezer(app)
   markdown_manager = Markdown(app)
   asset_manager = AssetManager(app)
   app.extensions['asset_manager'] = asset_manager
@@ -174,9 +59,6 @@ def setup(app):
   # Setup hierarchical Jinja2 template loader
   # TODO: should be generic
   setup_template_loader(app)
-
-  # Add a few specific template filters
-  init_filters(app)
 
   create_db(app)
 
@@ -228,3 +110,55 @@ def create_db(app):
     #               can_login=False)
     #   db.session.add(root)
     #   db.session.commit()
+
+
+def setup_filters_and_processors(app):
+
+  # Register generic filters from Abilian Core
+  init_filters(app)
+
+  @app.template_filter()
+  def to_rfc2822(dt):
+    if not dt:
+      return
+    current_locale = locale.getlocale(locale.LC_TIME)
+    locale.setlocale(locale.LC_TIME, "en_US")
+    formatted = dt.strftime("%a, %d %b %Y %H:%M:%S +0000")
+    locale.setlocale(locale.LC_TIME, current_locale)
+    return formatted
+
+  @app.url_defaults
+  def add_language_code(endpoint, values):
+    values.setdefault('lang', g.lang)
+
+  @app.url_value_preprocessor
+  def pull_lang(endpoint, values):
+    m = re.match("/(..)/", request.path)
+    if m:
+      g.lang = m.group(1)
+    else:
+      g.lang = 'fr'
+    if not g.lang in app.config['ALLOWED_LANGS']:
+      abort(404)
+
+  @app.context_processor
+  def inject_app():
+    return dict(app=app)
+
+  @app.before_request
+  def before_request():
+    # FIXME
+    g.user = None
+    g.recent_items = []
+
+
+def setup_freezer(app):
+  """FIXME: not used and currently broken."""
+
+  def url_generator():
+    # URLs as strings
+    yield '/fr/'
+
+  freezer = Freezer(app)
+  app.extensions['freezer'] = freezer
+  freezer.register_generator(url_generator)

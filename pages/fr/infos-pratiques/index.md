@@ -26,7 +26,7 @@ title: Informations pratiques
 <div class="content-view-embed">
 <div class="class-image">
 <div class="attribute-image">
-<a href="https://www.airbnb.fr/" target="_blank"><img src="/var/owf/storage/images/media/images/airbnb_logo_web_large/1418767-1-eng-US/Airbnb_Logo_Web_Large_medium.jpg" width="200" height="78" style="border: 0px solid ;" alt="Airbnb_Logo_Web_Large" title="Airbnb_Logo_Web_Large">
+<a href="https://www.airbnb.fr/" target="_blank"><img src="http://www.openworldforum.org/var/owf/storage/images/media/images/airbnb_logo_web_large/1418767-1-eng-US/Airbnb_Logo_Web_Large_medium.jpg" width="200" height="78" style="border: 0px solid ;" alt="Airbnb_Logo_Web_Large" title="Airbnb_Logo_Web_Large">
 </a>
 </div>
 </div>

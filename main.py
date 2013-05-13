@@ -6,11 +6,11 @@ from logging import FileHandler
 from argh import ArghParser
 from fabric.operations import local
 
-from website.application import app, setup
+from website.application import create_app
 from website.config import DEBUG
 
 
-setup(app)
+app = create_app()
 
 
 def build():

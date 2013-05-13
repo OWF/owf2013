@@ -46,5 +46,5 @@ MAIN_MENU = {'fr': [('', u'Accueil'),
 
 IMAGE_SIZES = {
     'small': (300, 225),
-    'large': (600, 450),
+    'large': (620, 465),
 }

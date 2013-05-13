@@ -15,7 +15,7 @@ from sqlalchemy.schema import Column
 from sqlalchemy.types import UnicodeText
 
 from savalidation import ValidationMixin
-from flaskext.babel import gettext as _
+from flask.ext.babel import gettext as _
 
 from abilian.core.entities import Entity
 
