@@ -280,7 +280,6 @@ body {
   font-size: 2em;
   line-height: 1.3em;
   color: #525252;
-
 }
 
 #main .latest-news-content p {
@@ -290,6 +289,11 @@ body {
   line-height: 1.3em;
   color: #525252;
   margin-top: 10px;
+}
+
+#main .latest-news-content a {
+  text-decoration: none;
+  color: #525252;
 }
 
 #main .latest-news-date {
@@ -498,10 +502,11 @@ body {
   color: #B30000;
   /*font-family: 'Open Sans Condensed', sans-serif;*/
   font-weight: normal;
-  font-size: 1.3em;
+  font-size: 1.7em;
   line-height: 1em;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-transform:uppercase;
 }
 
 #main h4 {

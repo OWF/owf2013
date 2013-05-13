@@ -11,32 +11,11 @@
         <div class="span8 main-column two-columns-right">
           <article>
             <a href="{{ url_for(".news_item", slug=page.slug) }}"><h1 class="page-title">{{ page.title }}</h1></a>
-            <span class="news-date">{{ page.date.strftime("%d %B %Y") }}</span>
-            <img alt="" src="/static/pictures/img-tmp.png"/>
+            <span class="news-date">{{ page.date | dateformat }}</span>
+            <img alt="" src="{{ url_for(".image_for_news", slug=page.slug, size="large") }}"/>
 
             {{ page.html|safe }}
 
-            <div class="post-item-panel">
-              <ul>
-                <li class="date">
-                  <p><i
-                      class="icon-calendar"></i>{{ page.date.strftime("%d/%m/%Y") }}
-                  </p>
-                </li>
-                <li>
-                  <p><i class="icon-user"></i>par Admin</p>
-                </li>
-                {#
-                  <li>
-                    <p><i class="icon-tags"></i><a href="">marketing</a>, <a
-                      href="">SEO</a></p>
-                  </li>
-                  <li class="comments"><p><i
-                      class="icon-comments-alt"></i><span>2 comments</span>
-                  </p></li>
-                  #}
-              </ul>
-            </div>
           </article>
         </div>
 

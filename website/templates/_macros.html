@@ -7,14 +7,7 @@
       <ul>
         {% for item in recent_news %}
           <li>
-            {% if with_images %}
-              <a class="photo"
-                  href="{{ url_for(".news_item", slug=item.slug) }}">
-                <img alt=""
-                    src="{{ url_for("image", path=item.image, h=200) }}"/>
-              </a>
-            {% endif %}
-            <span class="news-date">{{ item.date.strftime("%d %B %Y") }}</span>
+            <span class="news-date">{{ item.date|dateformat }}</span>
             <span class="latest-news-menu-content"><a href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a></span>
           </li>
           {% if not loop.last %}

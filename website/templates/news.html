@@ -12,9 +12,9 @@
           <div class="span8 main-column two-columns-right blog-posts">
             {% for entry in news %}
               <article>
-                <a href="{{ url_for(".news_item", slug=page.slug) }}"><h2>{{ page.title }}</h2></a>
-                <span class="news-date">{{ page.date.strftime("%d %B %Y") }}</span>
-                <img alt="" src="/static/pictures/img-tmp.png"/>
+                <a href="{{ url_for(".news_item", slug=entry.slug) }}"><h2>{{ entry.title }}</h2></a>
+                <span class="news-date">{{ entry.date | dateformat }}</span>
+                <img alt="" src="{{ url_for(".image_for_news", slug=entry.slug, size="large") }}"/>
 
                 {{ entry.html|safe }}
 
