@@ -14,7 +14,7 @@ setuptools.setup(
   license='LGPL',
   author='Stefane Fermigier',
   author_email='sf@fermigier.com',
-  description='We site for the Open World Forum 2013',
+  description='The site for the Open World Forum 2013',
   long_description=__doc__,
   packages=['website'],
   zip_safe=False,

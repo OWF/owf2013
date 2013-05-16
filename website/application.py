@@ -15,8 +15,7 @@ import abilian
 from abilian.core.extensions import Babel, db
 from abilian.web.filters import init_filters
 
-from .views.localized import setup as setup_localized
-from .views.main import setup as setup_main
+from .views import setup as setup_views
 from .crm import setup as setup_crm
 
 __all__ = ['create_app', 'create_db']
@@ -40,8 +39,7 @@ def setup(app):
   setup_filters_and_processors(app)
 
   # Register our own blueprints / apps
-  setup_main(app)
-  setup_localized(app)
+  setup_views(app)
   setup_crm(app)
 
   # Add some extensions

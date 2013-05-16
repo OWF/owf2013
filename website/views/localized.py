@@ -205,5 +205,5 @@ def page_not_found(error):
 #
 # Register blueprint on app
 #
-def setup(app):
+def register_plugin(app):
   app.register_blueprint(blueprint)
