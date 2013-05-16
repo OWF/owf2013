@@ -4,7 +4,7 @@ title: Contact
 
 <p><b>Become a Sponsor</b></p>
 
-<p>If you are interested in becoming sponsor of the Open World Forum and get high visibility in the event, please contact &nbsp;<a href="mailto:sponsoring@openworldforum.org" target="_self">sponsoring@openworldforum.org</a></p>
+<p>If you are interested in becoming sponsor of the Open World Forum and get high visibility in the event, please contact&nbsp;<a href="mailto:sponsoring@openworldforum.org" target="_self">sponsoring@openworldforum.org</a></p>
 
 <a name="eztoc1082290_0_1" id="eztoc1082290_0_1"></a>
 <h3><b>Become a Speaker, submit program ideas or consult our partnership opportunities</b></h3>
