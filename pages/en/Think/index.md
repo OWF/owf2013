@@ -1,6 +1,6 @@
 title:  Think - Make It Happen!
 
-Think will be held over the course of the two first days, and will outline the major role of FLOSS in the digital economy. The “**Make it Happen!**” baseline **very concretely** sums up the focus on building a successful free and open-source strategy, from a technological and commercial standpoint. 
+Think will be held over the course of the two first days, and will outline the major role of FLOSS in the digital economy. The “<b>Make it Happen!</b>” baseline **very concretely** sums up the focus on building a successful free and open-source strategy, from a technological and commercial standpoint. 
 
 The **opening day** format will differ from the previous editions as talks will happen in a **single-track schedule** in the largest auditorium. This enables us to concentrate on having the best schedule in a unique plenary session, dedicated to decision-makers in the private and public sectors. Talks will be more concise and will introduce the **think tanks and workshops** that will be held on the **second day**.
 
