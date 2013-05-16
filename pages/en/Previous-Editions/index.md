@@ -15,28 +15,29 @@ The photos: TODO
 
 ## 4th edition (2011)
 
-[The Site] (http://2011.openworldforum.org/)
+[The Site](http://2011.openworldforum.org/)
 
 The presentations: TODO
 
 The videos: TODO
 
 The photos: TODO
+
 
 ## 3rd edition (2010)
 
-[The Site] (http://2010.openworldforum.org/)
+[The Site](http://2010.openworldforum.org/)
 
 The presentations: TODO
 
 The videos: TODO
 
 The photos: TODO
+
 
 ## Previous Editions
 
 The web sites for the previous editions have not been conserved, however you can still find some information on archive.org:
-
 
 - [Archive for the 2009 site](http://web.archive.org/web/20091212025904/http://openworldforum.org/?)
 
