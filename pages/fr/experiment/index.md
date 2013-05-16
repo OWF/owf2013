@@ -1,6 +1,6 @@
 title: Experiment - Un Monde Ouvert
 
-Experiment 2013 présentera les** innovations sociétales** apportées par le Logiciel Libre et l'Open Source ; innovations logicielles bien entendu mais aussi matérielles, artistiques, et organisationnelles. Appréhendé comme philosophie du partage, le Logiciel Libre est un formidable vecteur de** diffusion des connaissances** (Wikipédia, Creative Commons) et permet de nouvelles formes d’apprentissage et d’**expérimentation** du monde informatique qui ont un impact **très concret dans notre quotidien**.
+Experiment 2013 présentera les <b>innovations sociétales</b> apportées par le Logiciel Libre et l'Open Source ; innovations logicielles bien entendu mais aussi matérielles, artistiques, et organisationnelles. Appréhendé comme philosophie du partage, le Logiciel Libre est un formidable vecteur de <b>diffusion des connaissances</b> (Wikipédia, Creative Commons) et permet de nouvelles formes d’apprentissage et d’<b>expérimentation</b> du monde informatique qui ont un impact **très concret dans notre quotidien**.
 
 La journée sera animée par des **conférences, ateliers** à destination d’un **public de néophytes** mais aussi de professionnels concernés par des enjeux sociétaux : de la **création artistique à la démocratie** en passant par les objets connectés, les sujets abordés au travers du prisme du libre et de l’open source permetront d’approfondir nos connaissances dans ces sujets mais aussi de les mettre en pratique concrètement.
 
