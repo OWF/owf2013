@@ -8,7 +8,7 @@ Ce format permet aussi de porter le focus 2013 de l'événement: la **concrétis
 
 Ceci afin de prouver que **l'innovation**, en grande majorité actuellement portée par l'Open-Source et le Logiciel Libre, **est accessible à toutes les entreprises**. Et qu'il est possible de réaliser l'innovation dans son domaine d'activité de façon plus simple qu'auparavant, en s'appuyant sur des technologies novatrices et libres. Cette **démystification de l'innovation** et sa concrétisation sera le thème majeur de cette sixième édition de l'Open World Forum.
 
-Ces thèmes seront portés par des intervenants **qui ont réussi à innover** et partagent leur expérience autour de l'impact de leur utilisation, et contributions éventuelles à l'Open- Source. L'<b>innovation partagée</b> et les plateformes d'**innovation collaborative** seront notamment représentées. Plus concrètement, les intervenants témoigneront de leurs succès dans les domaines suivants:
+Ces thèmes seront portés par des intervenants **qui ont réussi à innover** et partagent leur expérience autour de l'impact de leur utilisation, et contributions éventuelles à l'Open- Source. L'<b>innovation partagée</b> et les plateformes d'<b>innovation collaborative</b> seront notamment représentées. Plus concrètement, les intervenants témoigneront de leurs succès dans les domaines suivants:
 
 - Grands acteurs industriels de l'économie numérique
 - Médias
