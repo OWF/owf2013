@@ -8,7 +8,7 @@ The Open World Forum is the first European summit to gather political representa
 
 The Open World Forum is held in partnership with all the major international communities ([Linux Foundation](http://www.linuxfoundation.org/), [Open Source Initiative](http://www.opensource.org/), [OW2 Consortium](http://www.ow2.org/), [Qualipso Consortium](http://www.qualipso.org/)) and the main French Open Software agencies ([Adullact](http://www.adullact.org/), [AFUL](http://www.aful.org/), [CNLL](http://www.cnll.fr/), [PLOSS](http://www.ploss.fr/), [Silicon Sentier](http://siliconsentier.org/)), with the support of the European (European Commission) and French (Paris City Hall, Ile-de-France Region, Regional Developpement Agency) organisations. The Open World Forum is partnered with 70% of the major IT companies in the world.
 
-The Open World Forum will take place at the Beffroi, in Montrouge and will again be organized by Systematic Paris Region who will be assisted by a Forum Committee which groups the main partners and contributors to the Forum (Smile, AF83, Alter Way and the Free Software Group of Systematic).
+The Open World Forum will take place at the Beffroi, in Montrouge and will again be organized by Systematic Paris Region who will be assisted by a Forum Committee which groups the main partners and contributors to the Forum (Smile, AF83, Alter Way and the Free Software Working Group of Systematic).
 
 ## Summary for  2012
 
