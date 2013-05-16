@@ -10,7 +10,7 @@ The videos: TODO
 
 The photos: TODO
 
-[Bilan de l'édition 2012](http://fr.slideshare.net/OpenWorldForum/open-world-forum-2012-outcomes).
+[Summary of the 2012 edition](http://fr.slideshare.net/OpenWorldForum/open-world-forum-2012-outcomes).
 
 
 ## 4th edition (2011)
@@ -35,7 +35,7 @@ The photos: TODO
 
 ## Previous Editions
 
-The Sites for the previous editions have not been conserved, however you can still find some information on archive.org:
+The web sites for the previous editions have not been conserved, however you can still find some information on archive.org:
 
 
 - [Archive for the 2009 site](http://web.archive.org/web/20091212025904/http://openworldforum.org/?)
