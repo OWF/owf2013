@@ -13,7 +13,7 @@ title: Contact
 
 <ul>
 
-<li>Vous avez une suggestion de speaker ou de sujet pour l'Open World Forum 2012 . Vous voulez contribuer ?</li>
+<li>Vous avez une suggestion de speaker ou de sujet pour l'Open World Forum 2013 ? Vous voulez contribuer ?</li>
 
 <li>Pour des possibilités de partenariat</li>
 
