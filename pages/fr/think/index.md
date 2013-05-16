@@ -17,7 +17,7 @@ Ces thèmes seront portés par des intervenants **qui ont réussi à innover** e
 - Fondations et Communautés technologiques du Logiciel Libre et de l'Open-Source
 - Grandes organisations professionnelles du secteur
 
-La **première journée** sera consacrée à des keynotes, des conférences et des tables rondes, enchaînées à **rythme soutenu**. Elles aborderont les grandes thématiques retenues pour cette sixième édition. La matinée sera l'occasion d'aborder le **poids réel, actuel et à venir** de l'Open-Source dans l'économie numérique mondiale, ainsi que le** rôle des politiques publiques** en la matière, les problématiques de **gouvernance**, d'<b>éducation</b> et d'<b>achats</b>, pour finir enfin sur les **clefs d'un succès** industriel ou communautaire embarquant des composants Open-Source.
+La **première journée** sera consacrée à des keynotes, des conférences et des tables rondes, enchaînées à **rythme soutenu**. Elles aborderont les grandes thématiques retenues pour cette sixième édition. La matinée sera l'occasion d'aborder le **poids réel, actuel et à venir** de l'Open-Source dans l'économie numérique mondiale, ainsi que le **rôle des politiques publiques** en la matière, les problématiques de **gouvernance**, d'<b>éducation</b> et d'<b>achats</b>, pour finir enfin sur les **clefs d'un succès** industriel ou communautaire embarquant des composants Open-Source.
 
 L'<b>après-midi</b> sera plus particulièrement tourné vers le rôle de **catalyseur d'innovation** et les stratégies d'exécution jouées par l'Open-Source dans les grands chantiers technologiques, éducatifs et économiques, notamment dans l'<b>infrastructure</b> et le **Cloud**, le **Big Data** et les plateformes **Hadoop**, le **Web** de demain et la **Mobilité**.
 
