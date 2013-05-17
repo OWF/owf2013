@@ -1,16 +1,16 @@
-title:Save the date! Open World Forum - 6th edition 3rd, 4th and (th of October 2013
+title: Save the date! Open World Forum - 6th edition 3rd, 4th and (th of October 2013
 
 The Open World Forum is back for its **sixth edition**. It will be held on the **3rd, 4th and 5th of October 2013**, and will take place in a completely new seting in order to accommodate a larger audience. This edition will be a milestone on the way to become the premier **global event** mixing state policies, social concerns, technology and economy. OWF will take place at the **Beffroi** and will again be organized by Systematic Paris Region. More than **3,000 attendees** are expected for this next Edition, reflecting the **revised and expanded program**.
 
 The 2013 edition will be chaired by Pierre Queinnec, who has appointed Stefane Fermigier, Jean-Séverin Lair, Philippe Montargès and Elisabeth Racine as vice-presidents. The Open World Forum will keep the threefold structure that has made its success; Think, Code and Experiment. Each track will be led by a Vice-President; Philippe Montargès for Think, Stefane Fermigier for Code, and Elisabeth Racine for Experiment. This year a **VP Users**, Jean-Séverin Lair, brings in his **vision as a major Free Software user**, a dimension that is essential for the 2013 program.
 
-##The Place
+## Venue
 
 The Beffroi is a congress center of 10 000 sqaure meters, with a plenaty hall of 732 seats, a second, smaller amphitheater of 236 seats, a multi-use space of 1000 square meters which can be used for exhibitions and 9 other small rooms.
 
 A terrace of 700 sqaure meters on the roof of the building allows us to hold the netxorking cocktail in a unique setting.
 
-##Biographies of the 2013 Chair
+## Biographies of the 2013 Program Committee
 
 **Pierre Queinnec** is co-founder and CTO of Zenika, one of the leading providers of professional Java Open Source services in Europe, providing consulting, development, training and support for the world’s leading Open Source Java software products. Pierre has been involved in FOSS for more than a decade, and has contributed to very diverse Open Source projects. Most recently Pierre has been involved in the Eclipse DTP project. Prior to that, he used to be an OpenDarwin member, and still acts as maintainer on some ports in the now named MacPorts. Pierre has also been involved in open standards, such as AMQP (Advanced Message Queuing Protocol) hosted by OASIS, where he's a member of the Technical Commitee.
 
