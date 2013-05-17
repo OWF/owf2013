@@ -1,4 +1,4 @@
-title:Check out the 2012 Open World Forum summary
+title: Check out the 2012 Open World Forum summary
 
 We are proud of this edition: 2100 attendees, 200 speakers, an attendee satisfaction level of 90%.
 
