@@ -3,6 +3,10 @@
 /build
 /env
 /tmp
+/data
+/dist
+/whoosh_index
+/website/static2
 
 .webassets-cache
 .idea
@@ -14,3 +18,4 @@
 error.log
 packed.css
 packed.js
+
