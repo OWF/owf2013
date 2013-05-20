@@ -39,7 +39,7 @@ MAIN_MENU = {'fr': [('', u'Accueil'),
              'en': [('', u'Home'),
                     ('about/', u'About'),
                     ('speakers/', u"Speakers"),
-                    ('program/', u'Program'),
+                    ('schedule/', u'Schedule'),
                     ('venue/', u'Venue'),
                     ('news/', u'News'),
                     ('registration/', u'Registration', 'menu-registration')]}

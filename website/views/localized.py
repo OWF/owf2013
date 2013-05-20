@@ -14,7 +14,7 @@ from flask import current_app as app
 from flask.ext.babel import gettext as _
 
 from ..config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
-from ..content import Page, get_news, get_page_or_404, get_pages
+from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks
 
 
 __all__ = ['setup']
@@ -93,18 +93,15 @@ def pull_lang(endpoint, values):
 
 
 #
-# Localized (mod-level) routes
-#
-
-#
-# Localized (mod-level) routes
+# Localized routes
 #
 @blueprint.route('/')
 def home():
   template = "index.html"
   page = {'title': 'Open World Forum 2013'}
-  news = get_news(limit=6)
-  return render_template(template, page=page, news=news)
+  news = get_news(lang=g.lang, limit=6)
+  blocks = get_blocks(g.lang)
+  return render_template(template, page=page, news=news, blocks=blocks)
 
 
 @blueprint.route('/<path:path>/')
@@ -116,8 +113,8 @@ def page(path=""):
 
 @blueprint.route('/news/')
 def news():
-  all_news = get_news()
-  recent_news = get_news(limit=5)
+  all_news = get_news(lang=g.lang)
+  recent_news = get_news(lang=g.lang, limit=5)
   page = {'title': _("News") }
   return render_template('news.html', page=page, news=all_news,
                          recent_news=recent_news)
@@ -126,7 +123,7 @@ def news():
 @blueprint.route('/news/<slug>/')
 def news_item(slug):
   page = get_page_or_404(g.lang + "/news/" + slug)
-  recent_news = get_news(limit=5)
+  recent_news = get_news(lang=g.lang, limit=5)
   return render_template('news_item.html', page=page,
                          recent_news=recent_news)
 
@@ -179,7 +176,7 @@ def image_for_news(slug):
 
 @blueprint.route('/feed/')
 def feed():
-  news_items = get_news(limit=FEED_MAX_LINKS)
+  news_items = get_news(lang=g.lang, limit=FEED_MAX_LINKS)
   now = datetime.datetime.now()
 
   response = make_response(render_template('base.rss',
@@ -190,15 +187,25 @@ def feed():
 
 @blueprint.route('/sitemap/')
 def sitemap():
-  page = {'title': u"Plan du site"}
+  page = {'title': _(u"Site map")}
   pages = get_pages()
 
   return render_template('sitemap.html', page=page, pages=pages)
 
 
+@blueprint.route('/search')
+def search():
+  page = {'title': _(u"Search results")}
+  qs = request.args.get('qs', '')
+  whoosh = app.extensions['whoosh']
+  results = whoosh.search(qs)
+  results = [ r for r in results if r['path'].startswith(g.lang) ]
+  return render_template("search.html", page=page, results=results)
+
+
 @blueprint.errorhandler(404)
 def page_not_found(error):
-  page = {'title': _("Page not found")}
+  page = {'title': _(u"Page not found")}
   return render_template('404.html', page=page), 404
 
 

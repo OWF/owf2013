@@ -1,9 +1,9 @@
 title: Les grandes lignes de l’Edition 2013 de l'OWF dévoilées
 date: 2013/04/25
 
-####L’Open World Forum récidive en 2013 et présente sa nouvelle édition avec pour leitmotiv “Make It Happen!”
+#### L’Open World Forum récidive en 2013 et présente sa nouvelle édition avec pour leitmotiv “Make It Happen!”
 
-####Découvrez l’intégralité des nouveautés du programme et du format.
+#### Découvrez l’intégralité des nouveautés du programme et du format.
 
 L'**Open World Forum** est le **premier sommet européen** rassemblant politiques, décideurs et experts pour débattre de l'impact technologique, économique et social des technologies libres et ouvertes. L'évènement a été** fondé en 2008** et se tient désormais **annuellement à Paris**, France, avec plus de **200 orateurs **venus de 24 pays et une **audience internationale de 2100 personnes** en 2012. L'Open World Forum est organisé en partenariat avec toutes les grandes communautés internationales du Logiciel Libre et les grands acteurs du numérique.
 

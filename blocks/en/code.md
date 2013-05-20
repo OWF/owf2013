@@ -1,0 +1,1 @@
+"CODE" will help you better understand, and leverage in your own projects, the key subjects that are tranforming the open source ecosysteme: Web, mobility, Big Data, Cloud, DevOps, software quality, emerging languages and platforms... CODE will also represent the opportunity to meet the key specialists in these fields.

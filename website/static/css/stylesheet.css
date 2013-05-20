@@ -1,3 +1,5 @@
+/* Stylesheet for the front-end */
+
 body {
   background: #FFFFFF url("../pictures/background-green.png") no-repeat center 33px;
   font-family: "Open Sans", sans-serif;
@@ -275,10 +277,11 @@ body {
 }
 
 #main .latest-news-content h4 {
+  margin-top: 5px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
-  font-size: 2em;
-  line-height: 1.3em;
+  font-size: 1.9em;
+  line-height: 1.25em;
   color: #525252;
 }
 
@@ -298,8 +301,9 @@ body {
 
 #main .latest-news-date {
   color: #B40001;
-  font-size: 1em;
+  font-size: 1.1em;
   font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
 }
 
 #main .latest-news-slide-control {
@@ -482,10 +486,10 @@ body {
   color: #4F5962;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
-  font-size: 2.7em;
+  font-size: 4em;
   line-height: 1.1em;
-  margin: 0;
   padding: 0;
+  margin: 0 20px;
 }
 
 #main h2 {
@@ -494,8 +498,7 @@ body {
   font-weight: normal;
   font-size: 3em;
   line-height: 1em;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 
 #main h3 {

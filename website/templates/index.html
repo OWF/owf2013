@@ -7,11 +7,11 @@
     <div id="middle-img">
       <h1>
         {% if lang == 'fr' %}
-        Le forum open source mondial<br/>
-        <span>pour définir le futur<br/> du numérique</span>
+          Le forum open source mondial<br/>
+          <span>pour définir le futur<br/> du numérique</span>
         {% else %}
-        The world open source forum<br/>
-        <span>to shape the digital <br/> future</span>
+          The world open source forum<br/>
+          <span>to shape the digital <br/> future</span>
         {% endif %}
       </h1>
     </div>
@@ -21,67 +21,43 @@
     <div id="domains" class="row">
       <div class="span4 domain">
         <a href="/{{ lang }}/think/">
-        <img src="/static/pictures/idea-img.png"/>
+          <img src="/static/pictures/idea-img.png"/>
 
-        <h3>THINK</h3>
+          <h3>THINK</h3>
 
-        <p>"THINK" se concentrera sur des sujets au coeur de ces
-          questions, tels que l'Open
-          Data,
-          la neutralité du Net,
-          le
-          Cloud Computing, les biens communs, les Smart Nodes et l'internet des
-          objets. Des acteurs de ces domains
-          partegeront leurs visions avezc les participants afin de faire évoluer
-          notre société de la
-          connaissance.</p>
+          {{ blocks['think'] }}
 
-        <p>
-        <span class="btn">En savoir plus</span>
-        </p>
+          <p>
+            <span class="btn">En savoir plus</span>
+          </p>
         </a>
       </div>
 
       <div class="span4 domain">
         <a href="/{{ lang }}/code/">
-        <img src="/static/pictures/keyboard-img.png"/>
+          <img src="/static/pictures/keyboard-img.png"/>
 
-        <h3>CODE</h3>
+          <h3>CODE</h3>
 
-        <p>
-          "CODE" vous permettra de mieux appréhender, et de mettre à profit dans vos projets,
-          les sujets clefs qui transforment l'écosystème open source:
-          Web, mobiles, Big Data, cloud, DevOps,
-          qualité logicielle, langages et plateformes émergentes... CODE, c'est aussi pour
-          vous l'occasion de rencontrer les meilleurs spécialistes de ces domaines.
-        </p>
+          {{ blocks['code'] }}
 
-        <p>
-        <span class="btn">En savoir plus</span>
-        </p>
+          <p>
+            <span class="btn">En savoir plus</span>
+          </p>
         </a>
       </div>
 
       <div class="span4 domain">
         <a href="/{{ lang }}/experiment/">
-        <img src="/static/pictures/experience-img.png"/>
+          <img src="/static/pictures/experience-img.png"/>
 
-        <h3>EXPERIMENT</h3>
+          <h3>EXPERIMENT</h3>
 
-        <p>"EXPERIMENT" permettra au grand public de tester et
-          d'évaluer l'Open Source, à la
-          fois
-          logiciel et matériel,
-          pour découvrir l'Internet des objets, pour "réapprendre"" à créer
-          ensemble, rencontrer les "makers" et
-          le "Do
-          It Yourself" (DIY), mieux comprendre les interfaces naturelles et
-          mieux vivre l'Internet et l'Open
-          Source.</p>
+          {{ blocks['experiment'] }}
 
-        <p>
-        <span class="btn">En savoir plus</span>
-        </p>
+          <p>
+            <span class="btn">En savoir plus</span>
+          </p>
         </a>
       </div>
     </div>
@@ -89,6 +65,7 @@
 
   {# ######################################################################## #}
 
+  {#
   <div id="speaker">
     <div class="container">
       <div class="container">
@@ -175,7 +152,7 @@
       </div>
     </div>
   </div>
-
+  #}
   {# ############################# NEWS #################################### #}
 
   <div id="latest-news-div">
@@ -191,16 +168,23 @@
           <div class="item active">
             <div class="row">
               {% for item in news[0:3] %}
-              <div class="span4 latest-news-card">
-                <img src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}" width="300" height="225"/>
+                <div class="span4 latest-news-card">
+                  <img
+                      src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
+                      width="300" height="225"/>
 
-                <div class="latest-news-content">
-                  <h4><a href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a></h4>
-                  <span class="latest-news-date">{{ item.date | dateformat }}</span>
+                  <div class="latest-news-content">
+                    <h4><a
+                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+                    </h4>
+                    <span
+                        class="latest-news-date">{{ item.date | dateformat }}</span>
 
-                  <p><a href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a></p>
+                    <p><a
+                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
+                    </p>
+                  </div>
                 </div>
-              </div>
               {% endfor %}
             </div>
           </div>

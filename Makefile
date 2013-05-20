@@ -6,10 +6,14 @@ test:
 	nosetests tests
 
 run:
-	./main.py serve
+	./manage.py serve
+
+index:
+	rm -f whoosh_index/*
+	./manage.py index_content
 
 all:
-	./main.py build
+	./manage.py build
 
 clean:
 	rm -rf build 

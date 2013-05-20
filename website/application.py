@@ -17,6 +17,8 @@ from abilian.web.filters import init_filters
 
 from .views import setup as setup_views
 from .crm import setup as setup_crm
+from .whoosh import Whoosh
+
 
 __all__ = ['create_app', 'create_db']
 
@@ -43,6 +45,8 @@ def setup(app):
   setup_crm(app)
 
   # Add some extensions
+  whoosh = Whoosh(app)
+
   pages = FlatPages(app)
   app.extensions['pages'] = pages
 

@@ -1,14 +1,16 @@
 """Manages content objects (aka pages).
 
 """
-
+from os.path import join
 import re
 from unicodedata import normalize
 import bleach
 import datetime
-from flask import current_app, abort
 
+from flask import current_app as app, abort
 from flask.ext.flatpages import Page
+from markdown import markdown
+from markupsafe import Markup
 
 from .config import ABSTRACT_LENGTH
 
@@ -63,7 +65,6 @@ def get_pages(offset=None, limit=None):
   """
   Retrieves pages matching passed criterias.
   """
-  app = current_app
   pages = app.extensions['pages']
   articles = list(pages)
   # assign section value if none was provided in the metas
@@ -90,7 +91,6 @@ def get_pages(offset=None, limit=None):
 
 
 def get_page(path):
-  app = current_app
   pages = app.extensions['pages']
   return pages.get(path) or pages.get(path + '/index')
 
@@ -119,11 +119,32 @@ def slugify(text, delim=u'-'):
   return unicode(delim.join(result))
 
 
-def get_news(offset=None, limit=None):
+def get_news(lang=None, offset=None, limit=None):
   all_pages = get_pages()
   all_news = [page for page in all_pages if page.is_news]
+
+  if lang:
+    all_news = [page for page in all_news if page['path'].startswith(lang)]
+
   if offset and len(all_news) > offset:
     all_news = all_news[offset:]
   if limit and len(all_news) > limit:
     all_news = all_news[:limit]
   return all_news
+
+
+#
+# Blocks
+#
+class Blocks(object):
+  def __init__(self, lang):
+    self.lang = lang
+
+  def __getitem__(self, key):
+    fn = join(app.root_path, '..', 'blocks', self.lang, key + ".md")
+    src = open(fn).read()
+    return Markup(markdown(unicode(src, 'utf8')))
+
+
+def get_blocks(lang):
+  return Blocks(lang)

@@ -9,9 +9,18 @@
         <div class="row show-grid clear-both">
           <div class="span12 main-column two-columns-right">
             <article>
-              <h1 class="page-title">{{ page.title }}</h1>
+              <h1 class="page-title">{{ _("Search results") }}</h1>
 
-              {{ page.html|safe }}
+              {% for r in results %}
+                <h4><a href="/{{ r.path }}">{{ r.title }}</a></h4>
+
+                <p>{{ r.summary }}</p>
+              {% else %}
+              <p>
+                {{ _("Your request didn't produce any results.") }}
+              </p>
+              {% endfor %}
+
             </article>
           </div>
         </div>

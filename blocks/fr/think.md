@@ -1,0 +1,1 @@
+"THINK" se concentrera sur des sujets au coeur de ces questions, tels que l'Open Data, la neutralité du Net, le Cloud Computing, les biens communs, les Smart Nodes et l'internet des objets. Des acteurs de ces domaines partegeront leurs visions avezc les participants afin de faire évoluer notre société de la connaissance.

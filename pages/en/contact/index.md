@@ -1,30 +1,25 @@
-title: Contact
+title: Contact us
 
-<p><b><a href="http://openworldforum.org/eng/user/register" target="_blank">Want to participate ?</a></b></p>
+## Want to participate?
 
-<p><b>Become a Sponsor</b></p>
+[You can register for the event here](/en/registration/).
 
-<p>If you are interested in becoming sponsor of the Open World Forum and get high visibility in the event, please contact&nbsp;<a href="mailto:sponsoring@openworldforum.org" target="_self">sponsoring@openworldforum.org</a></p>
+## Sponsorhip Opportunities
 
-<a name="eztoc1082290_0_1" id="eztoc1082290_0_1"></a>
-<h3><b>Become a Speaker, submit program ideas or consult our partnership opportunities</b></h3>
+If you are interested in becoming sponsor of the Open World Forum and get high visibility in the event, please contact [sponsoring@openworldforum.org][2]
 
-<a name="eztoc1082290_0_1_1" id="eztoc1082290_0_1_1"></a><h4><b><b>Forum Operator</b></b></h4>
+## Speaker / Program Ideas/ Partnerships opportunities
 
-<ul>
+* You have a suggestion for a speaker or topic at the Open World Forum 2012? Want to contribute?  ** **
+* For partnership opportunities
+* For organization and operations
 
-<li>Have a suggestion for a speaker or topic at the Open World Forum 2013 ? Want to contribute ?</li>
+Please contact [contact@openworldforum.org][3]
 
-<li>For partnership opportunities</li>
+## Media Partnership Opportunities
 
-<li>For organization and operations</li>
+For media-related enquiries, please contact [press@openworldforum.org][4].
 
-</ul>
-
-<p>Please contact&nbsp;<a href="mailto:team@openworldforum.org" target="_self">contact@openworldforum.org</a>&nbsp;</p><a name="eztoc1082290_0_2" id="eztoc1082290_0_2"></a>
-
-<h3><b>Media Partnership Opportunities</b></h3>
-
-<p>
-For media-related enquiries, please contact <a href="mailto:press@openworldforum.org" target="_self">press@openworldforum.org</a>.
-</p>
+ [2]: mailto:sponsoring%40openworldforum.org
+ [3]: mailto:team%40openworldforum.org
+ [4]: mailto:press%40openworldforum.org

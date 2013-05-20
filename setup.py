@@ -8,7 +8,7 @@ requires = deps.parse_requirements(['deps.txt'])
 depend_links = deps.parse_dependency_links(['deps_txt'])
 
 setuptools.setup(
-  name='OWF2013',
+  name='owf2013',
   version='0.1dev',
   url='http://www.openworldforum.org/',
   license='LGPL',

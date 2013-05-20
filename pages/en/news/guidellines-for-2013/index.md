@@ -1,4 +1,5 @@
 title: Vision and guidlines for the 2013 edition od the Open World Forum
+date: 2013/04/25
 
 #### The 2013 motto of the Open World Formum is "<b>Make It Happen!</b>"
 
@@ -21,7 +22,7 @@ global event** mixing state policies, social concerns, technology and economy. O
 take place at the Beffroi and will again be organized by Systematic Paris Region. More
 than **3,000 attendees** are expected for this next Edition, reflecting the revised and expanded program.
 
-###Vision and Guidelines for 2013 Program
+### Vision and Guidelines for 2013 Program
 
 The 2013 edition will be held in a global context where the FLOSS industry is still growing rapidly, unaffected by the current economy. For the first time, an Open-Source vendor has passed the **billion-dollar revenue mark**. **Public policies** have devoted special attention to FLOSS: in the **UK**, in **Québec** with the Bédard Plan, and in **France** with the Ayrault recommendation, to name a few. Furthermore, **emerging sectors** like mobile and cloud computing are **dominated by Open-Source**, such as the Android Operating System, and the OpenStack platform.
 
@@ -110,7 +111,7 @@ These topics will be explored deeper **during the second day**, through **worksh
 contribute to the **evolution of our field**, and of course provide the meeting point for the
 **world experts** to get together and talk about the present and future.
 
-###Code – Open Innovation
+### Code – Open Innovation
 
 From a technological standpoint, **during the Code day**, the focus will be on the following topics: Web, Infrastructure (Cloud, but not exclusively), Data and Mobility. The Web, especially with the user aspects, like the **UX** movement and the **Responsive Design** requirements, but also **accessibility**, a topic that will be increasingly important in the future.
 
