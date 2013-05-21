@@ -193,13 +193,12 @@ body {
   margin-bottom: 40px;
 }
 
-.section-button {
+#main .section-button {
   float: right;
   background-color: #B40001;
-  /*padding: 6px;*/
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 40px;
+  padding: 13px;
+  margin-top: 30px;
+  font-size: 2.2em;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
 }
@@ -241,6 +240,11 @@ body {
   background-color: #4F5961;
 }
 
+#speaker img {
+  width: 140px;
+  height: 140px;
+}
+
 .speaker-title {
   color: #FFFFFF;
 }
@@ -279,12 +283,17 @@ body {
   color: #B40001;
 }
 
-#all-latest-news {
+#main #all-latest-news {
   background-color: #4F5961;
 }
 
 #main .latest-news-card {
   background-color: #ffffff;
+}
+
+#main .latest-news-card img {
+  width: 300px;
+  height: 180px;
 }
 
 #main .latest-news-content {
@@ -300,6 +309,14 @@ body {
   font-weight: normal;
   font-size: 1.9em;
   line-height: 1.25em;
+  color: #525252;
+}
+
+#main .latest-news-content h4 > a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: normal;
+  /*font-size: 2em;*/
+  line-height: 1.3em;
   color: #525252;
 }
 
@@ -408,8 +425,8 @@ body {
 }
 
 #footer-links {
+  margin-top: 12px;
   width: 277px;
-  margin: 0;
   padding: 0;
   text-align: center;
 }
@@ -473,22 +490,25 @@ body {
 }
 
 #application-title {
+  margin-top: 28px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
-  font-size: 2.6em;
-  line-height: 0.7em;
+  font-size: 2em;
+  line-height: 0.1em;
   color: #FFFFFF;
 }
 
 #application-sub-title {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 2.6em;
+  font-size: 2em;
   color: #FFFFFF;
+  margin-bottom: 0  ;
 }
 
 #application-content {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.6em;
+  /*font-family: 'Open Sans Condensed', sans-serif;*/
+  font-family: 'Arial',serif;
+  font-size: 1.2em;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -527,7 +547,7 @@ body {
   line-height: 1em;
   margin-top: 30px;
   margin-bottom: 20px;
-  text-transform:uppercase;
+  /*text-transform:uppercase;*/
 }
 
 #main h4 {
