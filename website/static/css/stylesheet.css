@@ -1,7 +1,7 @@
 /* Stylesheet for the front-end */
 
 body {
-  background: #FFFFFF url("../pictures/background-green.png") no-repeat center 33px;
+  background: #FFFFFF url("../pictures/background-green.png") no-repeat center 32px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -31,6 +31,15 @@ body {
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   padding: 4px 10px;
+}
+
+#fast-acces-menu .lang-actif {
+  color: #4F5962;
+  text-decoration: none;
+}
+
+#fast-acces-menu .lang {
+  text-decoration: underline;
 }
 
 #fast-acces-menu li.fast-acces-right {
@@ -131,9 +140,18 @@ body {
   color: #4F5962;
 }
 
+#menu-nav > li:hover {
+  background-color: #ececec;
+}
+
 #menu-nav > li > .menu-registration {
   background-color: #B40001;
   color: #ffffff;
+}
+
+#menu-nav > li > .menu-registration:hover {
+  background-color: #ececec;
+  color: #4F5962;
 }
 
 #menu-nav > li > .active {
@@ -200,19 +218,19 @@ body {
 }
 
 #domains .domain p {
-  /* text-align: center; */
+   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.4em;
-  line-height: 1.2em;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 
 #domains .domain h3 {
   color: #4F5961;
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 2.3em;
   line-height: 1em;
   margin-top: 20px;
@@ -286,9 +304,9 @@ body {
 }
 
 #main .latest-news-content p {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
-  font-size: 1.3em;
+  font-size: 1em;
   line-height: 1.3em;
   color: #525252;
   margin-top: 10px;
