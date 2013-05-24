@@ -8,6 +8,7 @@ import time
 env.user = 'fermigier'
 env.group = 'fermigier'
 env.hosts = ['dedibox']
+env.hostname = ''
 
 
 env.app_name = local('python setup.py --name', capture=True).strip()
@@ -31,6 +32,25 @@ processes = 4
 threads = 2
 """
 
+# Not used yet.
+NGINX_CONFIG_TPL = """
+erver {
+  server_name owf2013.demo.abilian.com;
+
+  access_log /var/log/nginx/owf2013-access.log;
+
+  location /static/ {
+    root /home/fermigier/websites/owf2013/website;
+  }
+
+  location / { try_files $uri @owf2013; }
+  location @owf2013 {
+    include uwsgi_params;
+    uwsgi_pass unix:/home/fermigier/websites/owf2013/uwsgi.sock;
+  }
+
+}
+"""
 
 @task
 def setup():
