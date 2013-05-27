@@ -1,4 +1,6 @@
-title: Place
+title: Venue
+
+
 
 This year, the Open World Forum will be held at the Beffroi, in Montrouge
 
