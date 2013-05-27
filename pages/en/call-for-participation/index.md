@@ -30,9 +30,10 @@ We will demonstrate that innovation is carried by Free and Open-Source Software,
 ### Code: Open Innovation
 The Code main themes for 2013 are:
 * Big Data
-* Open Data
+* Open Data and dataviz
 * Mobile technologies
 * Next-gen Web
+* Web Accessibility
 * Cloud and Infrastructure as Code
 * devops
 * Internet of Things
