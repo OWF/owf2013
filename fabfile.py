@@ -10,6 +10,11 @@ env.group = 'fermigier'
 env.hosts = ['dedibox']
 env.hostname = ''
 
+#env.user = 'owf'
+#env.group = 'owf'
+#env.hosts = ['openwf.nexen.net']
+#env.hostname = ''
+
 
 env.app_name = local('python setup.py --name', capture=True).strip()
 env.app_root = '/home/{}/websites/{}'.format(env.user, env.app_name)

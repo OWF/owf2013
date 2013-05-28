@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-05-07 09:31+0200\n"
+"POT-Creation-Date: 2013-05-28 17:42+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -17,67 +17,224 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: website/application.py:188
-msgid "Page not found"
-msgstr "Page introuvable"
+#: website/crm/app.py:29
+msgid "last modification"
+msgstr ""
 
-#: website/views.py:93
-msgid "News"
-msgstr "Actualités"
+#: website/crm/extensions.py:238
+msgid "Not a valid choice"
+msgstr ""
 
-#: website/templates/_base.html:74
+#: website/templates/_base.html:75 website/templates/base.html:79
 msgid "Search"
 msgstr "Rechercher"
 
-#: website/templates/_base.html:96
+#: website/templates/_base.html:98
 msgid "Our partners"
 msgstr "Nos partenaires"
 
-#: website/templates/_base.html:102
+#: website/templates/_base.html:104
 msgid "Under the patronage of"
 msgstr "Sous le patronage de"
 
-#: website/templates/_base.html:107
+#: website/templates/_base.html:109
 msgid "Institution partners"
 msgstr "Partenaires institutionnels"
 
-#: website/templates/_base.html:125
+#: website/templates/_base.html:127
 msgid "Organizers"
 msgstr "Organisateurs"
 
-#: website/templates/_base.html:142
+#: website/templates/_base.html:144
 msgid "Diamond sponsor"
 msgstr "Sponsor Diamond"
 
-#: website/templates/_base.html:146
+#: website/templates/_base.html:148
 msgid "Platinum sponsors"
 msgstr "Sponsors Platinum"
 
-#: website/templates/_base.html:152
+#: website/templates/_base.html:154
 msgid "Gold sponsors"
 msgstr "Sponsors Gold"
 
-#: website/templates/_base.html:158
+#: website/templates/_base.html:160
 msgid "Silver sponsors"
 msgstr "Sponsors Gold"
 
-#: website/templates/_base.html:163
+#: website/templates/_base.html:165
 msgid "Bronze sponsors"
 msgstr "Sponsors Bronze"
 
-#: website/templates/index.html:95
-msgid "The speakers"
-msgstr "Les intervenants"
+#: website/templates/base.html:70
+msgid "My profile"
+msgstr ""
 
-#: website/templates/index.html:98
-msgid "All the speakers"
-msgstr "Tous les intervenants"
+#: website/templates/base.html:72
+msgid "Log out"
+msgstr ""
 
-#: website/templates/index.html:184
+#: website/templates/index.html:161
 msgid "Latest news"
 msgstr "Dernières nouvelles"
 
-#: website/templates/index.html:187
+#: website/templates/index.html:164
 msgid "All the latest news"
 msgstr "Toutes les nouvelles"
+
+#: website/templates/macros.html:2
+msgid "Audit Log"
+msgstr ""
+
+#: website/templates/macros.html:63
+msgid "Recent items"
+msgstr ""
+
+#: website/templates/macros.html:89
+msgid "Select all"
+msgstr ""
+
+#: website/templates/macros.html:90
+msgid "Unselect all"
+msgstr ""
+
+#: website/templates/macros.html:95
+msgid "Download"
+msgstr ""
+
+#: website/templates/macros.html:112
+msgid "Move to another folder"
+msgstr ""
+
+#: website/templates/macros.html:117
+msgid "Delete"
+msgstr ""
+
+#: website/templates/macros.html:154 website/templates/macros.html:193
+msgid "Title"
+msgstr ""
+
+#: website/templates/macros.html:155 website/templates/macros.html:195
+msgid "Size"
+msgstr ""
+
+#: website/templates/macros.html:156 website/templates/macros.html:196
+msgid "Owner"
+msgstr ""
+
+#: website/templates/macros.html:158 website/templates/macros.html:198
+msgid "Age"
+msgstr ""
+
+#: website/templates/macros.html:265
+msgid "Delete selected elements?"
+msgstr ""
+
+#: website/templates/macros.html:279
+#: website/templates/crm/projet_partenaire_view_widget.html:89
+#: website/templates/crm/visite_view.html:47
+#: website/templates/crm/visite_view.html:65
+msgid "Cancel"
+msgstr ""
+
+#: website/templates/macros.html:367
+msgid "This folder is currently empty. Why don't you upload some content?"
+msgstr ""
+
+#: website/templates/search.html:12 website/views/localized.py:198
+msgid "Search results"
+msgstr ""
+
+#: website/templates/search.html:20
+msgid "Your request didn't produce any results."
+msgstr ""
+
+#: website/templates/crm/base.html:20
+msgid "Create new..."
+msgstr ""
+
+#: website/templates/crm/home.html:9
+msgid "Dashboard"
+msgstr ""
+
+#: website/templates/crm/home.html:11
+msgid "Today (last 24h)"
+msgstr ""
+
+#: website/templates/crm/home.html:15
+msgid "This week"
+msgstr ""
+
+#: website/templates/crm/home.html:19
+msgid "This month"
+msgstr ""
+
+#: website/templates/crm/home.html:25
+msgid "Recent activities in the CRM application"
+msgstr ""
+
+#: website/templates/crm/list_view.html:5
+#, fuzzy
+msgid "Create New"
+msgstr "Dernières nouvelles"
+
+#: website/templates/crm/list_view.html:6
+msgid "Export to Excel"
+msgstr ""
+
+#: website/templates/crm/list_view.html:9
+msgid "Export XML"
+msgstr ""
+
+#: website/templates/crm/partenaire_related_contacts.html:2
+msgid "Add a contact"
+msgstr ""
+
+#: website/templates/crm/projet_partenaire_view_widget.html:4
+msgid "Add"
+msgstr ""
+
+#: website/templates/crm/projet_partenaire_view_widget.html:29
+msgid "Edit"
+msgstr ""
+
+#: website/templates/crm/projet_partenaire_view_widget.html:70
+msgid "Close"
+msgstr ""
+
+#: website/templates/crm/projet_partenaire_view_widget.html:87
+#, fuzzy
+msgid "Remove partner?"
+msgstr "Nos partenaires"
+
+#: website/templates/crm/visite_view.html:4
+msgid "Attachments"
+msgstr ""
+
+#: website/templates/crm/visite_view.html:7
+msgid "Upload an attachement"
+msgstr ""
+
+#: website/templates/crm/visite_view.html:39
+msgid "Upload new files"
+msgstr ""
+
+#: website/templates/crm/visite_view.html:49
+msgid "Upload"
+msgstr ""
+
+#: website/templates/crm/visite_view.html:63
+msgid "Delete attachment?"
+msgstr ""
+
+#: website/views/localized.py:118
+msgid "News"
+msgstr "Actualités"
+
+#: website/views/localized.py:190
+msgid "Site map"
+msgstr ""
+
+#: website/views/localized.py:208
+msgid "Page not found"
+msgstr "Page introuvable"
 
