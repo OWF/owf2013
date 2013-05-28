@@ -1,1 +1,1 @@
-"THINK" will focus on the main questions at the code of open source today: Open Data, Net Neutrality, Cloud Computing, commons, Smart Nodes and the Internet of Things. Key players in these domains will share their vision with the participants to further the evolution of the knowlegde society.
+"THINK" will focus on the main strategies such as public policy, collaborative innovation, training and jobs, MOOC, communities and women in tech. Key players in these fields will share their vision with the participants to further the evolution of the knowlegde society.
