@@ -26,5 +26,5 @@ title: Contact
 <h3><b>Partenariats médias</b></h3>
 
 <p>
-Pour tout ce qui est relatifs aux requêtes médias, merci de contacter <a href="mailto:press@openworldforum.org" target="_self">press@openworldforum.org</a>.
+Pour tout ce qui est relatif aux requêtes médias, merci de contacter <a href="mailto:press@openworldforum.org" target="_self">press@openworldforum.org</a>.
 </p>
