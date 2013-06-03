@@ -41,39 +41,40 @@ minification still load images */
 
 /* Bootstrap titles are too big. */
 h1 {
-    font-size: 24px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 18px;
-    margin: 18px 0 6px 0;
+  font-size: 18px;
+  margin: 18px 0 6px 0;
 }
 
 h3 {
-    font-size: 15px;
-    margin: 15px 0 5px 0;
+  font-size: 15px;
+  margin: 15px 0 5px 0;
 }
 
 h1, h2, h3 {
-    line-height: 20px;
+  line-height: 20px;
 }
 
 /* Override horizontal forms */
 .form-horizontal .control-label {
-    width: 260px; /* instead of 160px */
+  width: 260px; /* instead of 160px */
 }
 
 .form-horizontal .controls {
-    margin-left: 280px; /* as above + 20px */
+  margin-left: 280px; /* as above + 20px */
 }
 
 /* but not in modals */
 .modal .form-horizontal .control-label {
-    width: 160px;
+  width: 160px;
 }
 
 .modal .form-horizontal .controls {
-    margin-left: 180px; /* as above + 20px */
+  margin-left: 180px; /* as above + 20px */
 }
 
 /* make forms slightly denser */
@@ -83,18 +84,18 @@ label {
 
 /* Make buttons just slightly smaller, without using btn-small */
 .btn {
-    padding: 3px 10px;
+  padding: 3px 10px;
 }
 
 .form-horizontal textarea {
-    width: 300px;
-    height: 80px;
+  width: 300px;
+  height: 80px;
 }
 
 /* override bogus values in datepicker.css */
 .datepicker {
-    margin-top: 0 !important;
-    padding: 0 !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
 }
 
 /* Override strange defaults, broken when moveing from 2.04 to 2.2.1 */
@@ -109,26 +110,26 @@ label {
 */
 
 .navbar .brand {
-    padding: 5px 5px 5px;
+  padding: 5px 5px 5px;
 }
 
 .navbar .nav > li > a {
-    padding: 10px 8px 10px;
-    text-shadow: none;
+  padding: 10px 8px 10px;
+  text-shadow: none;
 }
 
 .navbar .nav > li > a:hover {
-    color: black;
-    text-decoration: none;
-    background-color: transparent;
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .navbar .brand {
-    text-shadow: none;
+  text-shadow: none;
 }
 
 .navbar-search .search-query {
-    border-radius: 3px;
+  border-radius: 3px;
 }
 
 /* typeahead hint is input box set behind seach input to show completion for 1st
@@ -147,218 +148,218 @@ label {
 
 /* Wells, action boxes, etc. */
 .nav-header {
-    padding: 2px 15px;
-    font-size: 13px;
+  padding: 2px 15px;
+  font-size: 13px;
 }
 
 /* TODO: document this ! */
 .header .navigation {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .header .navigation,
 .header .pagination,
 .header .pagination form {
-    display: inline;
+  display: inline;
 }
 
 .header .navigation {
-    float: left;
+  float: left;
 }
 
 .header .menu-right {
-    float: right;
-    margin-left: 5px;
-    padding-left: 5px;
-    border-left: solid 2px #ddd;
+  float: right;
+  margin-left: 5px;
+  padding-left: 5px;
+  border-left: solid 2px #ddd;
 }
 
 .header .recline-results-info {
-    line-height: 28px;
-    margin-left: 20px;
-    float: left;
+  line-height: 28px;
+  margin-left: 20px;
+  float: left;
 }
 
 .header .input-prepend {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 .header .input-prepend {
-    margin-bottom: auto;
+  margin-bottom: auto;
 }
 
 /* *********************************************************************** */
 
 /* TODO: doesn't work */
 .recent-item > a {
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    -webkit-text-overflow: ellipsis;
-    overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /* For Required fields - puts a yellow background color on inputs */
 input.highlight, select.highlight, textarea.highlight {
-    background-color: #FFC;
+  background-color: #FFC;
 }
 
 /* overriding Bootstrap w/ personal tastes */
 .nav-pills > li > a {
-    padding-top: 6px;
-    padding-bottom: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .nav-tabs > li > a {
-    padding-top: 5px;
-    padding-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .form-horizontal .control-group {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 /* help / tips */
 div.tip {
-    border-top: 1px solid #E5E5E5;
-    border-bottom: 1px solid #E5E5E5;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .tip h4 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Stream */
 .stream-body {
-    font-size: 90%;
+  font-size: 90%;
 }
 
 .stream-body h3 {
-    margin: 0;
+  margin: 0;
 }
 
 .stream-subtext {
-    color: #666;
-    font-style: italic;
+  color: #666;
+  font-style: italic;
 }
 
 .stream-body .stream-subtext {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .stream .stream-content {
-    margin: 10px 5px;
+  margin: 10px 5px;
 }
 
 .stream-avatar {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .stream-avatar > a > img {
-    display: block;
-    width: 45px;
-    height: 45px;
+  display: block;
+  width: 45px;
+  height: 45px;
 
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 
-    -moz-background-clip: border;
-    background-clip: border;
+  -moz-background-clip: border;
+  background-clip: border;
 }
 
 .stream-image-block {
-    padding: 3px 0;
+  padding: 3px 0;
 }
 
 .clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 /* faceted search */
 li.facet-item {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 li.facet-item img {
-    vertical-align: -1px;
+  vertical-align: -1px;
 }
 
 /* mugshot on top */
 .navbar .nav > li > a {
-    padding-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 /* My own (ugly) boxes */
 .property-box .nav > li > a {
-    display: inline;
-    background-color: white;
+  display: inline;
+  background-color: white;
 }
 
 .property-list {
-    padding-left: 14px;
-    padding-right: 14px;
-    margin-left: 0;
-    margin-bottom: 5px;
-    list-style: none;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 0;
+  margin-bottom: 5px;
+  list-style: none;
 }
 
 .property-list li {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* image-gallery in user.html */
 ul.image-gallery {
-    list-style: none;
+  list-style: none;
 }
 
 ul.image-gallery li {
-    float: left;
-    position: relative;
-    margin: 10px;
+  float: left;
+  position: relative;
+  margin: 10px;
 }
 
 /* jQuery-collapse */
 h3.main {
-    padding: 5px 0 5px 5px;
-    border-radius: 4px;
-    text-decoration: none;
-    margin: 10px 0 10px 0;
-    line-height: 1;
-    background: #eee;
+  padding: 5px 0 5px 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 10px 0 10px 0;
+  line-height: 1;
+  background: #eee;
 }
 
 h3.main a {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 div.collapsable h3 {
-    padding: 5px 0 5px 25px;
-    text-decoration: none;
-    margin: 10px 0 10px 0;
-    line-height: 1;
+  padding: 5px 0 5px 25px;
+  text-decoration: none;
+  margin: 10px 0 10px 0;
+  line-height: 1;
 
-    cursor: pointer;
-    background: #eee url("/static/icons/round-plus-16.png") no-repeat 4px center;
+  cursor: pointer;
+  background: #eee url("/static/icons/round-plus-16.png") no-repeat 4px center;
 }
 
 div.collapsable div {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 div.collapsable h3.active {
-    background: #eee url("/static/icons/round-minus-16.png") no-repeat 4px center;
+  background: #eee url("/static/icons/round-minus-16.png") no-repeat 4px center;
 }
 
 /*
@@ -377,91 +378,91 @@ h3 .active {
 /* Document preview */
 
 img.preview {
-    border: 1px black;
+  border: 1px black;
 }
 
 .preview-nav {
-    display: none;
-    background: #0c3b3d;
-    width: 64px;
-    height: 32px;
-    padding: 5px;
-    position: absolute;
-    top: 215px;
-    left: 720px;
-    border-radius: 5px 5px;
-    -moz-border-radius: 5px 5px;
-    -webkit-border-radius: 5px 5px;
+  display: none;
+  background: #0c3b3d;
+  width: 64px;
+  height: 32px;
+  padding: 5px;
+  position: absolute;
+  top: 215px;
+  left: 720px;
+  border-radius: 5px 5px;
+  -moz-border-radius: 5px 5px;
+  -webkit-border-radius: 5px 5px;
 }
 
 .preview-nav a {
-    display: block;
-    overflow: hidden;
-    text-indent: -900em;
-    height: 22px;
-    float: left;
-    padding: 5px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    -webkit-border-radius: 5px;
+  display: block;
+  overflow: hidden;
+  text-indent: -900em;
+  height: 22px;
+  float: left;
+  padding: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 .preview-nav a:hover {
-    background-color: #a1c436;
-    cursor: pointer;
+  background-color: #a1c436;
+  cursor: pointer;
 }
 
 .preview-prev {
-    width: 22px;
-    background: url(/static/images/prev.png) no-repeat center;
+  width: 22px;
+  background: url(/static/images/prev.png) no-repeat center;
 }
 
 .preview-next {
-    width: 22px;
-    background: url(/static/images/next.png) no-repeat center;
+  width: 22px;
+  background: url(/static/images/next.png) no-repeat center;
 }
 
 /* forms and jquery.validate */
 
 label.required {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 label.valid {
-    width: 24px;
-    height: 24px;
-    background: url(/static/images/valid.png) center center no-repeat;
-    display: inline-block;
-    text-indent: -9999px;
+  width: 24px;
+  height: 24px;
+  background: url(/static/images/valid.png) center center no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
 }
 
 label.error {
-    font-weight: bold;
-    color: red;
-    padding: 2px 8px;
-    margin-top: 2px;
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
 }
 
 /* Grid table (TODO: replace with Bootstrap tables) */
 table.grid, table.grid tbody {
-    width: 100%;
-    margin-bottom: 1.5em;
-    border-collapse: separate;
-    border-spacing: 0;
+  width: 100%;
+  margin-bottom: 1.5em;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
 .grid th.first {
-    padding-left: 6px;
+  padding-left: 6px;
 }
 
 .grid td, .grid th {
-    border-bottom: 1px solid #EBEBEB;
-    text-align: left;
-    vertical-align: top;
-    line-height: 16px;
-    font-size: 12px;
-    padding: 6px 10px 6px 0;
+  border-bottom: 1px solid #EBEBEB;
+  text-align: left;
+  vertical-align: top;
+  line-height: 16px;
+  font-size: 12px;
+  padding: 6px 10px 6px 0;
 }
 
 /* fix for datatables + bootstrap, cf. http://datatables.net/blog/Twitter_Bootstrap and
@@ -472,256 +473,256 @@ table.table thead .sorting_asc,
 table.table thead .sorting_desc,
 table.table thead .sorting_asc_disabled,
 table.table thead .sorting_desc_disabled {
-    cursor: pointer;
-    *cursor: hand;
+  cursor: pointer;
+  *cursor: hand;
 }
 
 table.table thead .sorting {
-    background: url('/static/images/sort_both.png') no-repeat center right;
+  background: url('/static/images/sort_both.png') no-repeat center right;
 }
 
 table.table thead .sorting_asc {
-    background: url('/static/images/sort_asc.png') no-repeat center right;
+  background: url('/static/images/sort_asc.png') no-repeat center right;
 }
 
 table.table thead .sorting_desc {
-    background: url('/static/images/sort_desc.png') no-repeat center right;
+  background: url('/static/images/sort_desc.png') no-repeat center right;
 }
 
 table.table thead .sorting_asc_disabled {
-    background: url('/static/images/sort_asc_disabled.png') no-repeat center right;
+  background: url('/static/images/sort_asc_disabled.png') no-repeat center right;
 }
 
 table.table thead .sorting_desc_disabled {
-    background: url('/static/images/sort_desc_disabled.png') no-repeat center right;
+  background: url('/static/images/sort_desc_disabled.png') no-repeat center right;
 }
 
 div.dataTables_length label {
-    float: left;
-    text-align: left;
+  float: left;
+  text-align: left;
 }
 
 div.dataTables_length select {
-    width: 75px;
+  width: 75px;
 }
 
 div.dataTables_filter label {
-    float: right;
+  float: right;
 }
 
 div.dataTables_info {
-    padding-top: 8px;
+  padding-top: 8px;
 }
 
 div.dataTables_paginate {
-    float: right;
-    margin: 0;
+  float: right;
+  margin: 0;
 }
 
 table.table {
-    clear: both;
-    margin-bottom: 6px !important;
+  clear: both;
+  margin-bottom: 6px !important;
 }
 
 /* user single view */
 .avatar-large {
-    position: relative;
-    z-index: 1;
-    margin-right: 30px;
-    margin: 0 18px 9px 0;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    border-radius: 7px;
+  position: relative;
+  z-index: 1;
+  margin-right: 30px;
+  margin: 0 18px 9px 0;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
 }
 
 .avatar-medium {
-    width: 45px;
-    height: 45px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .avatar-small {
-    width: 25px;
-    height: 25px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .avatar, .avatar a {
-    display: inline;
-    float: left;
+  display: inline;
+  float: left;
 }
 
 .community-list tr td .name {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .info {
-    display: block;
+  display: block;
 }
 
 .profile-nav {
-    clear: both;
-    border-width: 2px 0;
-    border-color: #E5E5E5;
-    border-style: solid;
+  clear: both;
+  border-width: 2px 0;
+  border-color: #E5E5E5;
+  border-style: solid;
 }
 
 /* ------------------------------------------------------------------------- */
 
 body {
-    padding-top: 50px;
-    padding-bottom: 40px;
-    background: url("/static/images/noise_bg.png") repeat !important;
-    /* background: url("/static/img/backgrd.png") repeat !important; TODO LATER */
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background: url("/static/images/noise_bg.png") repeat !important;
+  /* background: url("/static/img/backgrd.png") repeat !important; TODO LATER */
 }
 
 #wrapper {
-    padding: 15px;
-    background-color: white;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border: 1px solid #DBDBDB;
-    border-radius: 3px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  padding: 15px;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 }
 
 .avatar a {
-    position: relative;
-    float: left;
-    height: 45px;
-    width: 45px;
+  position: relative;
+  float: left;
+  height: 45px;
+  width: 45px;
 }
 
 ul.stream {
-    clear: both;
-    margin: 0;
-    list-style: none;
+  clear: both;
+  margin: 0;
+  list-style: none;
 }
 
 li.hentry {
-    border: 1px solid white;
-    border-bottom: 1px solid #E5E5E5;
-    display: block;
-    padding: 8px 0 0;
-    position: relative;
-    width: 100%;
+  border: 1px solid white;
+  border-bottom: 1px solid #E5E5E5;
+  display: block;
+  padding: 8px 0 0;
+  position: relative;
+  width: 100%;
 }
 
 li.hentry .entry_wrapper .entry_details span.action {
-    padding: 0 5px;
+  padding: 0 5px;
 }
 
 li.hentry .entry_wrapper {
-    font-size: 13px;
-    padding: 0 20px 0 10px;
-    overflow: hidden;
+  font-size: 13px;
+  padding: 0 20px 0 10px;
+  overflow: hidden;
 }
 
 li.hentry .entry_wrapper .entry-title {
-    font-size: 13px;
-    font-weight: bold;
-    margin-right: 50px;
-    display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 50px;
+  display: block;
 }
 
 .meta_actions {
-    float: left;
-    margin: 6px 0 9px;
-    width: 100%;
-    font-size: 11px;
+  float: left;
+  margin: 6px 0 9px;
+  width: 100%;
+  font-size: 11px;
 }
 
 .side_actions {
-    position: absolute;
-    right: 0;
-    top: 1px;
-    z-index: 500;
-    zoom: 1;
+  position: absolute;
+  right: 0;
+  top: 1px;
+  z-index: 500;
+  zoom: 1;
 }
 
 .interactions {
-    clear: both;
-    font-size: 11px;
-    line-height: 16px;
-    margin: 0 0 9px;
-    border-radius: 4px;
-    text-shadow: none;
-    width: 85%;
+  clear: both;
+  font-size: 11px;
+  line-height: 16px;
+  margin: 0 0 9px;
+  border-radius: 4px;
+  text-shadow: none;
+  width: 85%;
 }
 
 .side_actions a.flagged, .side_actions a.unflagged, .side_actions a.more_side_actions {
-    border: 1px solid white;
-    border-radius: 2px;
-    height: 16px;
-    width: 16px;
-    opacity: 0.5;
-    text-indent: -9999em;
-    font-size: 12px;
-    text-decoration: none;
+  border: 1px solid white;
+  border-radius: 2px;
+  height: 16px;
+  width: 16px;
+  opacity: 0.5;
+  text-indent: -9999em;
+  font-size: 12px;
+  text-decoration: none;
 }
 
 ul.drop_down {
-    background-color: white;
-    border: 1px solid #AAA;
-    right: 0;
-    padding: 5px;
-    position: absolute;
-    width: 175px;
-    z-index: 9999;
-    zoom: 1;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  background-color: white;
+  border: 1px solid #AAA;
+  right: 0;
+  padding: 5px;
+  position: absolute;
+  width: 175px;
+  z-index: 9999;
+  zoom: 1;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
 ul.drop_down li {
-    margin: 0 0 6px;
+  margin: 0 0 6px;
 }
 
 /* old, to review */
 /* ---------------------------------------------------------------- */
 
 .sidebar-nav {
-    padding: 9px 0;
+  padding: 9px 0;
 }
 
 /* Override some defaults */
 html, body {
-    /* background-color: #2F7069; */
+  /* background-color: #2F7069; */
 }
 
 .container > footer p {
-    text-align: center; /* center align it with the container */
+  text-align: center; /* center align it with the container */
 }
 
 .container {
-    width: 960px;
-    /* downsize our container to make the content feel a bit tighter and more cohesive.
+  width: 960px;
+  /* downsize our container to make the content feel a bit tighter and more cohesive.
 NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
 }
 
 /* The white background content wrapper */
 .container > .content {
-    background-color: #fff;
-    padding: 20px;
-    margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-    -webkit-border-radius: 0 0 6px 6px;
-    -moz-border-radius: 0 0 6px 6px;
-    border-radius: 0 0 6px 6px;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 }
 
 /* Page header tweaks */
 .page-header {
-    background-color: #f5f5f5;
-    padding: 20px 20px 10px;
-    margin: -20px -20px 20px;
+  background-color: #f5f5f5;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px;
 }
 
 /* Give a quick and non-cross-browser friendly divider */
@@ -733,125 +734,125 @@ NOTE: this removes two full columns from the grid, meaning you only go to 14 col
     }
 */
 .topbar .btn {
-    border: 0;
+  border: 0;
 }
 
 /* ********************************************************************************************** */
 /* CUSTOM */
 
 #session img {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    vertical-align: top;
-    margin-right: 6px;
-    border: none;
-    cursor: pointer;
-    border-image: initial;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+  margin-right: 6px;
+  border: none;
+  cursor: pointer;
+  border-image: initial;
 }
 
 .menu-left {
-    width: 170px;
-    border-right: 1px solid #eee;
-    margin-right: 0;
-    padding-right: 10px;
+  width: 170px;
+  border-right: 1px solid #eee;
+  margin-right: 0;
+  padding-right: 10px;
 }
 
 .advanced-search-filters .criterion {
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    clear: both;
-    padding: 0.2em 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  clear: both;
+  padding: 0.2em 0;
 }
 
 .advanced-search-filters .close {
-    float: none;
-    position: relative;
-    top: 8px;
-    margin-right: 8px;
+  float: none;
+  position: relative;
+  top: 8px;
+  margin-right: 8px;
 }
 
 /* Visite attachments */
 #attachments {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
 #attachments ul {
-    margin: 0;
+  margin: 0;
 }
 
 #attachments li {
-    display: block;
+  display: block;
 }
 
 #attachments button {
-    border: none;
+  border: none;
 }
 
 /* File Uploads */
 .btn.btn-file {
-    overflow: hidden;
-    position: relative;
-    vertical-align: middle;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
 }
 
 .btn.btn-file > input[type="file"] {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    cursor: pointer;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .fileupload {
-    margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .fileupload .uneditable-input {
-    display: inline-block;
-    margin-bottom: 0;
-    vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
 }
 
 .fileupload .thumbnail {
-    overflow: hidden;
-    display: inline-block;
-    margin-bottom: 5px;
-    vertical-align: middle;
-    text-align: center;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .fileupload .thumbnail > img {
-    display: inline-block;
-    vertical-align: middle;
-    max-height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
 }
 
 .fileupload .btn {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .fileupload-exists .fileupload-new,
 .fileupload-new .fileupload-exists {
-    display: none;
+  display: none;
 }
 
 .fileupload-inline .fileupload-controls {
-    display: inline;
+  display: inline;
 }
 
 .fileupload-new .input-append .btn-file {
-    -webkit-border-radius: 0 3px 3px 0;
-    -moz-border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
 }
 
 /* folder / documents objects table */
 table#objects-table tbody td > img + i,
 .folder-items li > img + i {
-    position: relative;
-    left: -14px;
-    font-size: 9px;
+  position: relative;
+  left: -14px;
+  font-size: 9px;
 }
 
 /* ************************************************************************** */
