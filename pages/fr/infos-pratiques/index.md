@@ -1,20 +1,23 @@
 title: Informations pratiques
 
 
-<p>L'Open World Forum se déroulera en plein centre de Paris, dans le Centre de Conventions EUROSITES GEORGE V. En venant à l'Open World Forum, les participants pourront allier prospection économique et technologique à la découverte de l'une des plus belles villes au monde.</p>
+<p>L'Open World Forum se déroulera au Beffroi de Montrouge.</p>
 
 <p>
-<b>EUROSITES-George V</b> 28, Avenue George V - 75008 Paris<br>Tel.: +33(0)1 53 82 60 00</p>&nbsp;<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Centre+culturel+le+Beffroi,+Place+Emile+Cresp,+Montrouge,+France&amp;aq=0&amp;oq=centre+culturel+le+&amp;sll=48.858859,2.34706&amp;sspn=0.138914,0.220757&amp;ie=UTF8&amp;hq=Centre+culturel+le+Beffroi,&amp;hnear=Place+Emile+Cresp,+92120+Montrouge,+Hauts-de-Seine,+%C3%8Ele-de-France,+France&amp;ll=48.81915,2.319569&amp;spn=0.008689,0.013797&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=16738854224866923059&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Centre+culturel+le+Beffroi,+Place+Emile+Cresp,+Montrouge,+France&amp;aq=0&amp;oq=centre+culturel+le+&amp;sll=48.858859,2.34706&amp;sspn=0.138914,0.220757&amp;ie=UTF8&amp;hq=Centre+culturel+le+Beffroi,&amp;hnear=Place+Emile+Cresp,+92120+Montrouge,+Hauts-de-Seine,+%C3%8Ele-de-France,+France&amp;ll=48.81915,2.319569&amp;spn=0.008689,0.013797&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=16738854224866923059" style="color:#0000FF;text-align:left">View Larger Map</a></small></a></small><br><br><br><a name="eztoc1297405_0_0_1" id="eztoc1297405_0_0_1"></a><h4>Comment accéder à l’Eurosite Georges V ?</h4><p>Idéalement situé entre l'Étoile et la Concorde, dans le quartier d'affaires le plus prestigieux de Paris, l'<b>Eurosites George V</b> est accessible facilement.</p>
+<b> Centre culturel Le Beffroi</b> 2 place Emilie Cresp - 92120 Montrouge <br>Tel.: +33(0)1 53 82 60 00</p>&nbsp;<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Centre+culturel+le+Beffroi,+Place+Emile+Cresp,+Montrouge,+France&amp;aq=0&amp;oq=centre+culturel+le+&amp;sll=48.858859,2.34706&amp;sspn=0.138914,0.220757&amp;ie=UTF8&amp;hq=Centre+culturel+le+Beffroi,&amp;hnear=Place+Emile+Cresp,+92120+Montrouge,+Hauts-de-Seine,+%C3%8Ele-de-France,+France&amp;ll=48.81915,2.319569&amp;spn=0.008689,0.013797&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=16738854224866923059&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Centre+culturel+le+Beffroi,+Place+Emile+Cresp,+Montrouge,+France&amp;aq=0&amp;oq=centre+culturel+le+&amp;sll=48.858859,2.34706&amp;sspn=0.138914,0.220757&amp;ie=UTF8&amp;hq=Centre+culturel+le+Beffroi,&amp;hnear=Place+Emile+Cresp,+92120+Montrouge,+Hauts-de-Seine,+%C3%8Ele-de-France,+France&amp;ll=48.81915,2.319569&amp;spn=0.008689,0.013797&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=16738854224866923059" style="color:#0000FF;text-align:left">View Larger Map</a></small></a></small><br><br><br><a name="eztoc1297405_0_0_1" id="eztoc1297405_0_0_1"></a><h4>Comment accéder au Beffroi ?</h4><p><b>Le Beffroi</b> est situé à la sortie de la nouvelle station de métro « Mairie de Montrouge », à l’extrémité de la ligne 4. 
+
+
+</p>
 
 <ul>
 <li>
-&nbsp;<b>EN MÉTRO</b><br>George V (ligne 1)Alma Marceau (ligne 9)</li>
+&nbsp;<b>EN MÉTRO</b><br>Montrouge (ligne 4) </li>
 
 <li>
-&nbsp;<b>EN BUS</b><br>Lignes 32, 42, 63, 72, 73, 80 et 92</li>
+&nbsp;<b>EN BUS</b><br>Lignes 68, 128, 126 (arrêt Mairie de Montrouge)</li>
 
 <li>
-&nbsp;<b>PARKINGS</b><br>Vinci Champs Élysées et Alma George V.</li>
+&nbsp;<b>PARKINGS</b><br>Parking Cresp, place Emile Cresp. Montrouge</li>
 
 </ul>
 
