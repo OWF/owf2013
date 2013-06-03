@@ -4,7 +4,7 @@ En termes technologiques dans le cadre de la **thématique Code**, un focus part
 
 L'<b>Infrastructure</b> n'est pas qu'un sujet technique et nous souhaitons l'aborder enfin sur son aspect d'organisation dans les Directions des Systèmes d'Information, avec notamment le mouvement **devops**, les impacts internes des nouveaux mécanismes de provisionnement de machines virtuelles.
 
-Les sujets Data, qui regroupent l'<b>Open Data</b>, et la réflexion à avoir pour peser les problématiques et les gains d'ouverture de jeu de données; mais aussi le **Big Data**, l'analyse batch ou semi temps réel des données en grande quantité, et l'avantage commercial ou métier que l'on peut en attendre.
+Les sujets Data, qui regroupent l'<b>Open Data</b> et la réflexion à avoir pour peser les problématiques et les gains d'ouverture de jeu de données; mais aussi le **Big Data**, l'analyse batch ou semi temps réel des données en grande quantité, et l'avantage commercial ou métier que l'on peut en attendre.
 
 Enfin Code abordera la **Mobilité**, puisqu'il s'agit d'un sujet important et en perpétuelle innovation, mais aussi particulièrement dominé par l'Open-Source, avec Android, Tizen, MeeGo ou encore FirefoxOS.
 
