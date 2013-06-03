@@ -1,0 +1,8 @@
+Version live 1.0
+================
+
++ Tracking Google Analytics
+- Vérifier que GA marche bien
+
+- Google webmaster tools
+- Redirects depuis l'ancien site

@@ -3,14 +3,17 @@
 <head>
   <title>{{ title or page.title }}</title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="/static/pictures/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon"
+      href="/static/pictures/favicon.ico"/>
 
   <script src="/static/js/jquery.js"></script>
   <script src="/static/js/bootstrap.js"></script>
   <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>-->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700'
+  <link
+      href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700'
       rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'
+      type='text/css'>
   <meta charset="UTF-8">
   <link href="/static/css/bootstrap.css" rel="stylesheet">
   <link href="/static/css/stylesheet.css" rel="stylesheet">
@@ -20,6 +23,7 @@
 <div id="fast-acces-div">
   <ul id="fast-acces-menu" class="container">
 
+    {#
     <li><a href="#aller-au-contenu">Aller au contenu</a></li>
     <li><b>|</b></li>
     <li><a href="#aller-a-la-navigation">Aller à la navigation</a></li>
@@ -29,50 +33,60 @@
     <li><a href="#plan-du-site">Plan du site</a></li>
     <li><b>|</b></li>
     <li><a href="#aide">Aide</a></li>
+    #}
 
-    <li class="fast-acces-right"><a class="fast-acces-a lang" href="/en/">English</a></li>
+    <li class="fast-acces-right"><a class="fast-acces-a lang" href="/en/">English</a>
+    </li>
     <li class="fast-acces-right"><b>|</b></li>
-    <li class="fast-acces-right"><a class="fast-acces-a lang-actif" href="/fr/">Français</a></li>
+    <li class="fast-acces-right"><a class="fast-acces-a lang-actif" href="/fr/">Français</a>
+    </li>
   </ul>
 </div>
 
 <header class="container">
-  <a href="{{ url_for(".home") }}"><img id="logo" src="/static/pictures/Calque1.png"/></a>
+  <a href="{{ url_for(".home") }}"><img id="logo"
+      src="/static/pictures/Calque1.png"/></a>
 
   <ul id="navbar-ul">
     <li class="navbar-newsletter">
-      <a href="http://eepurl.com/dACrj"><img width="25px" height="19px" src="/static/pictures/1366984852_White_Email.png"> Newsletter</a>
+      <a href="http://eepurl.com/dACrj"><img width="25px" height="19px"
+          src="/static/pictures/1366984852_White_Email.png"> Newsletter</a>
     </li>
     <li class="share-a">
       <a href="https://www.facebook.com/OpenWorldForum">
-        <img src="/static/pictures/1366984111_picons06.png" width="18px" height="18px" title="Facebook"/>
+        <img src="/static/pictures/1366984111_picons06.png" width="18px"
+            height="18px" title="Facebook"/>
       </a>
     </li>
     <li class="share-a">
       <a href="https://twitter.com/openworldforum">
-        <img src="/static/pictures/1366984104_picons03.png" width="23px" height="23px" title="Twitter"/>
+        <img src="/static/pictures/1366984104_picons03.png" width="23px"
+            height="23px" title="Twitter"/>
       </a>
     </li>
     <li class="share-a">
       <a href="http://www.linkedin.com/groups?gid=1561767&trk=group-name">
-        <img src="/static/pictures/1366984119_picons11.png" width="18px" height="18px" title="Linkedin"/>
+        <img src="/static/pictures/1366984119_picons11.png" width="18px"
+            height="18px" title="Linkedin"/>
       </a>
     </li>
     <li class="share-a">
       <a href="http://lanyrd.com/2013/owf2013/">
-        <img src="/static/pictures/Calque2.png" width="15px" height="17px" title="Lanyrd"/>
+        <img src="/static/pictures/Calque2.png" width="15px" height="17px"
+            title="Lanyrd"/>
       </a>
     </li>
     <li class="share-a">
       <a href="{{ url_for(".feed") }}">
-        <img src="/static/pictures/1366984127_picons20.png" width="18px" height="18px" title="Feed"/>
+        <img src="/static/pictures/1366984127_picons20.png" width="18px"
+            height="18px" title="Feed"/>
       </a>
     </li>
     <li class="search-form">
       <!--<img src="/static/pictures/MagnifyingGlass.png" width="16px" height="16px"/>-->
       <form action="/{{ lang }}/search">
-      <input name="qs" type="text" value="{{ request.args.get('qs', '') }}"/>
-      <a onclick="submit();">{{ _("Search") }}</a>
+        <input name="qs" type="text" value="{{ request.args.get('qs', '') }}"/>
+        <a onclick="submit();">{{ _("Search") }}</a>
       </form>
     </li>
   </ul>
@@ -81,15 +95,16 @@
   <div id="menu-nav-div" class="navbar">
     <ul id="menu-nav" class="nav">
       {% for entry in menu %}
-      <li><a href="{{ url_for(".home") }}{{ entry.path }}" class="{{ entry.class }}">{{ entry.label }}</a></li>
+        <li><a href="{{ url_for(".home") }}{{ entry.path }}"
+            class="{{ entry.class }}">{{ entry.label }}</a></li>
       {% endfor %}
     </ul>
   </div>
 </header>
 
 <div id="main">
-{% block main %}
-{% endblock %}
+  {% block main %}
+  {% endblock %}
 </div>
 
 <div>
@@ -102,19 +117,23 @@
       <div class="row">
         <div class="span2 partners-span">
           <p class="partners-sub-title">{{ _("Under the patronage of") }}</p>
-          <img id="rd-productif" src="/static/pictures/ministere-du-redressement-productif_logoSponsor.jpg"/>
+          <img id="rd-productif"
+              src="/static/pictures/ministere-du-redressement-productif_logoSponsor.jpg"/>
         </div>
         <div class="span5 partners-span">
 
           <p class="partners-sub-title">{{ _("Institution partners") }}</p>
 
           <div>
-            <img id="iledefrance" src="/static/pictures/Direccte-Ile-de-France_logoSponsor.jpg"/>
+            <img id="iledefrance"
+                src="/static/pictures/Direccte-Ile-de-France_logoSponsor.jpg"/>
 
             <div id="institutionnels">
               <div>
-                <img src="/static/pictures/Region-Ile-de-France_logoSponsor.png"/>
-                <img src="/static/pictures/Agence-regionale-de-developpement-Paris-Ile-de-France_logoSponsor.jpg"/>
+                <img
+                    src="/static/pictures/Region-Ile-de-France_logoSponsor.png"/>
+                <img
+                    src="/static/pictures/Agence-regionale-de-developpement-Paris-Ile-de-France_logoSponsor.jpg"/>
               </div>
               <div>
                 <img src="/static/pictures/La-Fonderie_logoSponsor.png"/>
@@ -128,12 +147,15 @@
 
           <div id="organisateur">
             <div>
-              <img class="organisateur-img" src="/static/pictures/Systematic_large.png"/>
+              <img class="organisateur-img"
+                  src="/static/pictures/Systematic_large.png"/>
               <img src="/static/pictures/Smile_logoSponsor.png"/>
             </div>
             <div>
-              <img id="alterway" class="organisateur-img" src="/static/pictures/logo_aw_rvb_copie.png"/>
-              <img class="organisateur-img" src="/static/pictures/af83_logoSponsor.png"/>
+              <img id="alterway" class="organisateur-img"
+                  src="/static/pictures/logo_aw_rvb_copie.png"/>
+              <img class="organisateur-img"
+                  src="/static/pictures/af83_logoSponsor.png"/>
             </div>
           </div>
         </div>
@@ -142,31 +164,44 @@
       <div id="sponsor" class="row">
         <div class="span2">
           <p class="partners-sub-title">{{ _("Diamond sponsor") }}</p>
-          <img id="suse" class="sponsor-img" src="/static/pictures/Suse_logoSponsor.jpg"/>
+          <img id="suse" class="sponsor-img"
+              src="/static/pictures/Suse_logoSponsor.jpg"/>
         </div>
         <div id="platinium" class="span2">
           <p class="partners-sub-title">{{ _("Platinum sponsors") }}</p>
-          <img class="sponsor-img" src="/static/pictures/logo_aw_rvb_copie.png"/>
-          <img class="sponsor-img" src="/static/pictures/Smile_logoSponsor2.png"/>
-          <img class="sponsor-img" src="/static/pictures/Microsoft_logoSponsor.png"/>
+          <img class="sponsor-img"
+              src="/static/pictures/logo_aw_rvb_copie.png"/>
+          <img class="sponsor-img"
+              src="/static/pictures/Smile_logoSponsor2.png"/>
+          <img class="sponsor-img"
+              src="/static/pictures/Microsoft_logoSponsor.png"/>
         </div>
         <div class="span2">
           <p class="partners-sub-title">{{ _("Gold sponsors") }}</p>
-          <img class="sponsor-img" src="/static/pictures/INRIA_logoSponsor.jpg"/>
-          <img class="sponsor-img" src="/static/pictures/Google_logoSponsor.png"/>
-          <img class="sponsor-img" src="/static/pictures/Groupe-Laposte_logoSponsor.png"/>
+          <img class="sponsor-img"
+              src="/static/pictures/INRIA_logoSponsor.jpg"/>
+          <img class="sponsor-img"
+              src="/static/pictures/Google_logoSponsor.png"/>
+          <img class="sponsor-img"
+              src="/static/pictures/Groupe-Laposte_logoSponsor.png"/>
         </div>
         <div class="span2">
           <p class="partners-sub-title">{{ _("Silver sponsors") }}</p>
-          <img class="sponsor-img" src="/static/pictures/af83_logoSponsor2.png"/>
-          <img class="sponsor-img" src="/static/pictures/Ysance_logoSponsor.png"/>
+          <img class="sponsor-img"
+              src="/static/pictures/af83_logoSponsor2.png"/>
+          <img class="sponsor-img"
+              src="/static/pictures/Ysance_logoSponsor.png"/>
         </div>
         <div class="span4">
           <p class="partners-sub-title">{{ _("Bronze sponsors") }}</p>
-          <img id="blackduck" class="sponsor-img" src="/static/pictures/Black-Duck_logoSponsor.png"/>
-          <img class="sponsor-img" src="/static/pictures/Hewlett-Packard_logoSponsor.png"/>
-          <img class="sponsor-img" src="/static/pictures/Accenture_logoSponsor.png"/>
-          <img id="xwiki" class="sponsor-img" src="/static/pictures/Xwiki_logoSponsor.png"/>
+          <img id="blackduck" class="sponsor-img"
+              src="/static/pictures/Black-Duck_logoSponsor.png"/>
+          <img class="sponsor-img"
+              src="/static/pictures/Hewlett-Packard_logoSponsor.png"/>
+          <img class="sponsor-img"
+              src="/static/pictures/Accenture_logoSponsor.png"/>
+          <img id="xwiki" class="sponsor-img"
+              src="/static/pictures/Xwiki_logoSponsor.png"/>
           <img id="jamento" src="/static/pictures/Jamendo_logoSponsor.png"/>
         </div>
       </div>
@@ -192,6 +227,24 @@
       img1.attr('src', '/static/pictures/ellipse-red.png');
       img2.attr('src', '/static/pictures/ellipse-grey.png');
     }
-  })
+  });
+
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-9730554-3', 'openworldforum.org');
+  ga('send', 'pageview');
+  ga('create', 'UA-15824279-2', 'openworldforum.org');
+  ga('send', 'pageview');
+
 </script>
 </html>
