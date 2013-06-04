@@ -10,10 +10,7 @@ the future. The event was launched in 2008 and now takes place **annually in
 Paris**, with more than 200 speakers from **40 countries** and an international
 audience of **2,100 participants** in 2012. The Forum’s steering organisation
 brings together the main international technology communities and the major
-open-source software associations of the French-speaking world (Adullact, AFUL,
-CNLL, PLOSS, Silicon Sentier), with support from key institutions in Europe
-(European Commission) and France (Mairie de Paris – the Paris city authority,
-the Paris regional authority, Paris Region Economic Development Agency).
+open-source software associations of the French-speaking world (Adullact, AFUL, CNLL, FLOSS, Silicon Sentier), with support from key institutions in Europe (European Commission) and France (Mairie de Paris – the Paris city authority, the Paris regional authority, Paris Region Economic Development Agency).
 
 
 The Open World Forum is back for its **sixth edition**. It will be held on the
