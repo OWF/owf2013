@@ -4,9 +4,9 @@ title : Practical Information
 
 This year, the Open World Forum will be held at the Beffroi, in Montrouge
 
-The Beffroi is a congress center of 10 000 sqaure meters, with a plenaty hall of 732 seats, a second, smaller amphitheater of 236 seats, a multi-use space of 1000 square meters which can be used for exhibitions and 9 other small rooms.
+The Beffroi is a congress center of 10 000 square meters, with a plenary hall of 732 seats, a second, smaller amphitheater of 236 seats, a multi-use space of 1000 square meters which can be used for exhibitions and 9 other small rooms.
 
-A terrace of 700 sqaure meters on the roof of the building allows us to hold the netxorking cocktail in a unique setting.
+A terrace of 700 square meters on the roof of the building allows us to hold the networking cocktail in a unique setting.
 
 Centre culturel Le Beffroi
 2 Place Emile Cresp,
