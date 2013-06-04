@@ -27,4 +27,4 @@ The web sites for the previous editions have not been conserved, however you can
 
 - [Archive for the 2008 site](http://web.archive.org/web/20081217024415/http://www.openworldforum.org/)
 
-More information avaiable soon!
+More information available soon!
