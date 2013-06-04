@@ -1,3 +1,3 @@
 title: Press
 
-TODO
+For media-related enquiries, please contact press@openworldforum.org.
