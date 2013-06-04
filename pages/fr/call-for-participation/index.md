@@ -1,5 +1,6 @@
 title: Appel à Participation
 
+## Appel à Participation
 L'Open World Forum est le premier sommet européen rassemblant politiques, décideurs et experts pour débattre de l'impact technologique, économique et social des technologies libres et ouvertes. L'événement a été fondé en 2008 et se tient désormais annuellement à Paris, France, avec plus de 200 orateurs venus de 24 pays et une audience internationale de 2100 personnes en 2012. L'Open World Forum est organisé en partenariat avec toutes les grandes communautés internationales du Logiciel Libre et les grands acteurs du numérique.
 
 L'Open World Forum revient pour sa sixième édition les 3, 4 et 5 octobre 2013 et change de lieu pour s'agrandir et accompagner son ambition de s'imposer comme le plus grand événement mondial au confluent du politique, du sociétal, de la technologie et de l'économie. L'Open World Forum 2013 se tiendra donc au Beffroi, à Paris (métro Mairie de Montrouge) et sera à nouveau organisé par le pôle Systematic. Plus de 3000 personnes sont attendues pour cette nouvelle édition, une forte croissance qui reflète un programme rénové et un souffle nouveau qui va porter l'événement aux toutes premières positions mondiales.
