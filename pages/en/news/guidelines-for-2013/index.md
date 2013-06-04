@@ -15,7 +15,7 @@ open-source software associations of the French-speaking world (Adullact, AFUL, 
 
 The Open World Forum is back for its **sixth edition**. It will be held on the
 **3rd, 4th and 5th of October 2013**, and will take place in a completely new
-seting in order to accommodate a larger audience. This edition will be a
+venue in order to accommodate a larger audience. This edition will be a
 milestone on the way to become the **premier global event** mixing state
 policies, social concerns, technology and economy. OWF will take place at the
 Beffroi and will again be organized by Systematic Paris Region. More than
