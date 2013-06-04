@@ -11,7 +11,7 @@ L'Open World Forum revient pour sa sixième édition les **3, 4 et 5 octobre 201
 
 ### GRANDES LIGNES DU PROGRAMME 2013
 
-L'édition 2013 se tient dans un contexte mondial où le poids de l'industrie du Logiciel Libre et de l'Open Source est toujours **en augmentation très forte**, inaffecté par la crise. Pour la première fois, un éditeur Open Source a passé **le milliard de dollars** de revenus. **Les politiques publiques** ont consacré une place de choix au Logiciel Libre, comme en **Angleterre**, au **Québec** avec les avancées actuelles sur le plan Bédard, ou en **France** avec la Circulaire Ayrault, pour n'en citer que quelques-uns. En outre, les** secteurs émergents** comme le mobile sont **dominés par le Libre**, avec les systèmes d'exploitation Android et l'annonce de FirefoxOS de Mozilla.
+L'édition 2013 se tient dans un contexte mondial où le poids de l'industrie du Logiciel Libre et de l'Open Source est toujours **en augmentation très forte**, inaffecté par la crise. Pour la première fois, un éditeur Open Source a passé **le milliard de dollars** de revenus. **Les politiques publiques** ont consacré une place de choix au Logiciel Libre, comme en **Angleterre**, au **Québec** avec les avancées actuelles sur le plan Bédard, ou en **France** avec [la Circulaire Ayrault](http://cnll.fr/news/le-cnll-se-rejouit-de-la-circulaire-ayrault-sur-les-logiciels-libres/), pour n'en citer que quelques-uns. En outre, les **secteurs émergents** comme le mobile sont **dominés par le Libre**, avec les systèmes d'exploitation Android et l'annonce de FirefoxOS de Mozilla.
 
 Pour cette édition 2013, le nouveau lieu est un premier changement très attendu par les sponsors, qui va permettre de mettre à disposition des stands, et donc de** valoriser commercialement les innovations** de chacun des exposants. Ceci va permettre une meilleure **reconnaissance des acteurs et des communautés**.
 
@@ -21,11 +21,11 @@ Un** livre blanc** sera par ailleurs produit pour faire mieux connaître **notre
 
 Enfin une **“Demo Cup” étudiante** sera tenue pour récompenser les meilleures équipes d'étudiants ayant réalisé un projet Open-Source. Ceci donnera lieu avant l'événement à une **compétition inter-universités et écoles**, qui permettra de faire connaître l'Open World Forum plus largement aux étudiants les plus motivés et les plus doués.
 
-Cette édition portera une attention toute particulière au recrutement** d'intervenants féminins**. Conjugué à la présence des étudiants des universités et des élèves d'écoles d'ingénieur, ceci contribuera, nous l'espérons, à rendre** nos professions plus attractives pour les étudiantes**.
+Cette édition portera une attention toute particulière au recrutement **d'intervenants féminins**. Conjugué à la présence des étudiants des universités et des élèves d'écoles d'ingénieur, ceci contribuera, nous l'espérons, à rendre **nos professions plus attractives pour les étudiantes**.
 
 La diversification, notamment Homme-Femme, constitue un élément clef de la culture libre qui dirige l'Open World Forum. Cette année sera organisé un track spécifique **“Étudiantes du Numérique”** dans le cadre de l'organisation de la “Student Démo Cup”.
 
-Nous notons par ailleurs** la présence importante de femmes du Numérique** au sein de l'Open World Forum avec Sabrina Peseux pour le pôle Systematic, en charge de l'organisation de l'OWF, d'Elisabeth Racine du pôle Cap Digital, Vice-Présidente du Comité de Programme en charge d'Experiment, et de Véronique Torner, Présidente de l'Open CIO Summit.
+Nous notons par ailleurs **la présence importante de femmes du Numérique** au sein de l'Open World Forum avec Sabrina Peseux pour le pôle Systematic, en charge de l'organisation de l'OWF, d'Elisabeth Racine du pôle Cap Digital, Vice-Présidente du Comité de Programme en charge d'Experiment, et de Véronique Torner, Présidente de l'Open CIO Summit.
 
 L'édition 2013 est présidée par Pierre Queinnec et vice-présidée par Stefane Fermigier, Jean-Séverin Lair, Philippe Montargès et Elisabeth Racine. L'Open World Forum reste structuré sur les trois composantes qui ont fait son succès, Think, Code et Experiment. Chaque thématique est représentée par un Vice-Président; Philippe Montargès sur Think, Stefane Fermigier sur Code, et Elisabeth Racine sur Experiment. Cette année un **VP Grand Utilisateur**, Jean-Séverin Lair, apporte une **vision de grand témoin**, primordiale dans le programme 2013.
 
@@ -48,8 +48,7 @@ Ces thèmes seront portés par des intervenants** qui ont réussi à innover** e
 - Fondations et Communautés technologiques du Logiciel Libre et de l'Open-Source
 - Grandes organisations professionnelles du secteur
 
-La **première journée** sera consacrée à des keynotes, des conférences et des tables rondes, enchaînées à** rythme soutenu**. Elles aborderont les grandes thématiques retenues pour
-cette sixième édition. La matinée sera l'occasion d'aborder le** poids réel, actuel et à venir **de l'Open-Source dans l'économie numérique mondiale, ainsi que le** rôle des politiques publiques** en la matière, les problématiques de **gouvernance**, d'**éducation **et d'**achats**,pour finir enfin sur les **clefs d'un succès** industriel ou communautaire embarquant des composants Open-Source.
+La **première journée** sera consacrée à des keynotes, des conférences et des tables rondes, enchaînées à** rythme soutenu**. Elles aborderont les grandes thématiques retenues pour cette sixième édition. La matinée sera l'occasion d'aborder le** poids réel, actuel et à venir **de l'Open-Source dans l'économie numérique mondiale, ainsi que le** rôle des politiques publiques** en la matière, les problématiques de **gouvernance**, d'**éducation** et d'**achats**,pour finir enfin sur les **clefs d'un succès** industriel ou communautaire embarquant des composants Open-Source.
 
 L'**après-midi** sera plus particulièrement tourné vers le rôle de** catalyseur d'innovation **et les stratégies d'exécution jouées par l'Open-Source dans les grands chantiers technologiques, éducatifs et économiques, notamment dans l'**infrastructure** et le **Cloud**, le** Big Data** et les plateformes **Hadoop**, le **Web** de demain et la **Mobilité**.
 

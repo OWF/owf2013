@@ -169,7 +169,7 @@ body {
 
 #middle-img h1 {
   /*width: 480px;*/
-  text-align: center;
+  text-align: right;
   float: right;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
@@ -180,6 +180,7 @@ body {
 #middle-img span {
   color: #B40001;
   font-weight: bold;
+  line-height: 1.3em;
 }
 
 .section-title {
@@ -323,7 +324,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-size: 1em;
-  line-height: 1.3em;
+  line-height: 1.45em;
   color: #525252;
   margin-top: 10px;
 }
@@ -557,6 +558,7 @@ body {
 #main p, #main li {
   font-size: 1em;
   line-height: 1.45em;
+  text-align: justify;
 }
 
 /* buttons */

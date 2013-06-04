@@ -18,6 +18,7 @@
 
                 {{ entry.html|safe }}
 
+                    {#
                 <div class="post-item-panel">
                   <ul>
                     <li class="date">
@@ -28,7 +29,6 @@
                     <li>
                       <p><i class="icon-user"></i>par Admin</p>
                     </li>
-                    {#
                   <li>
                     <p><i class="icon-tags"></i><a href="">marketing</a>, <a
                       href="">SEO</a></p>
@@ -36,9 +36,9 @@
                   <li class="comments"><p><i
                       class="icon-comments-alt"></i><span>2 comments</span>
                   </p></li>
-                  #}
                   </ul>
                 </div>
+                  #}
               </article>
               {% if not loop.last %}
                 <hr>
