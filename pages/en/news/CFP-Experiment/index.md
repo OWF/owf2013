@@ -7,9 +7,9 @@ Les projets sélectionnés bénéficient d’un espace et d’une valorisation d
 
 To take part to EXPERIMENT : complete and send the form before the 18th of june at 12:00 to [experiment@openworldforum.org][4].
 
-[Download the CFP here](<a href="/static/Documents/Call_for_participation_OWF13_experiment_EN.pdf">"Call_for_participation_OWF13_experiment_EN"</a>)
+[Download the CFP here](/static/Documents/Call_for_participation_OWF13_experiment_EN.pdf")
 
-[Download the form here](<a href="l'emplacement de ton fichier">le nom de ton fichier</a> )
+[Download the application form here](/static/Documents/formOWF13AAPExperiment_VE_v2.odt)
 
 
  [4]: mailto:experiment%40openworldforum.org
