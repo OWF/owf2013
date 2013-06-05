@@ -190,45 +190,25 @@
           </div>
           <div class="item">
             <div class="row">
-              <div class="span4 latest-news-card">
-                <img src="/static/pictures/actu.jpg" width="300" height="180"/>
+              {% for item in news[3:6] %}
+                <div class="span4 latest-news-card">
+                  <img
+                      src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
+                      width="300" height="225"/>
 
-                <div class="latest-news-content">
-                  <h4>Coup de projecteur sur: Harald Welte</h4>
-                  <span class="latest-news-date">11 octobre, 2012</span>
+                  <div class="latest-news-content">
+                    <h4><a
+                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+                    </h4>
+                    <span
+                        class="latest-news-date">{{ item.date | dateformat }}</span>
 
-                  <p>Harald Welte est célèbre pour ces contributions à de
-                    nombreux projets libres, dont le
-                    noyau Linus,
-                    NetFilter, Openmoko, Osmocom, ainsi que GPL Violations.</p>
+                    <p><a
+                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="span4 latest-news-card">
-                <img src="/static/pictures/actu.jpg" width="300" height="180"/>
-
-                <div class="latest-news-content">
-                  <h4>Coup de projecteur sur: Harald Welte</h4>
-                  <span class="latest-news-date">11 octobre, 2012</span>
-
-                  <p>Harald Welte est célèbre pour ces contributions à de
-                    nombreux projets libres, dont le
-                    noyau Linus,
-                    NetFilter, Openmoko, Osmocom, ainsi que GPL Violations.</p>
-                </div>
-              </div>
-              <div class="span4 latest-news-card">
-                <img src="/static/pictures/actu.jpg" width="300" height="180"/>
-
-                <div class="latest-news-content">
-                  <h4>Coup de projecteur sur: Harald Welte</h4>
-                  <span class="latest-news-date">11 octobre, 2012</span>
-
-                  <p>Harald Welte est célèbre pour ces contributions à de
-                    nombreux projets libres, dont le
-                    noyau Linus,
-                    NetFilter, Openmoko, Osmocom, ainsi que GPL Violations.</p>
-                </div>
-              </div>
+              {% endfor %}
             </div>
           </div>
         </div>
