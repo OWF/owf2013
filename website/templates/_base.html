@@ -3,6 +3,9 @@
 <head>
   <title>{{ title or page.title }}</title>
 
+  <meta name="google-site-verification"
+      content="kfGFousDWgE8TxYr_Ue4OywCllC4hTPHvBvybFodLPM"/>
+
   <link rel="shortcut icon" type="image/x-icon"
       href="/static/pictures/favicon.ico"/>
 
@@ -35,10 +38,14 @@
     <li><a href="#aide">Aide</a></li>
     #}
 
-    <li class="fast-acces-right"><a class="fast-acces-a lang {% if lang =='en' %}lang-actif{% endif %}" href="/en/">English</a>
+    <li class="fast-acces-right"><a
+        class="fast-acces-a lang {% if lang =='en' %}lang-actif{% endif %}"
+        href="/en/">English</a>
     </li>
     <li class="fast-acces-right"><b>|</b></li>
-    <li class="fast-acces-right"><a class="fast-acces-a lang {% if lang =='fr' %}lang-actif{% endif %}" href="/fr/">Français</a>
+    <li class="fast-acces-right"><a
+        class="fast-acces-a lang {% if lang =='fr' %}lang-actif{% endif %}"
+        href="/fr/">Français</a>
     </li>
   </ul>
 </div>
@@ -112,70 +119,33 @@
     <div class="container">
       <h1 class="section-title partners-title">{{ _("Our partners") }}</h1>
     </div>
+
     <div class="container">
 
-<!--
       <div class="row">
-        <div class="span2 partners-span">
-          <p class="partners-sub-title">{{ _("Under the patronage of") }}</p>
-          <img id="rd-productif"
-              src="/static/pictures/ministere-du-redressement-productif_logoSponsor.jpg"/>
-        </div>
+
         <div class="span5 partners-span">
-
-          <p class="partners-sub-title">{{ _("Institution partners") }}</p>
-
-          <div>
-            <img id="iledefrance"
-                src="/static/pictures/Direccte-Ile-de-France_logoSponsor.jpg"/>
-
-            <div id="institutionnels">
-              <div>
-                <img
-                    src="/static/pictures/Region-Ile-de-France_logoSponsor.png"/>
-                <img
-                    src="/static/pictures/Agence-regionale-de-developpement-Paris-Ile-de-France_logoSponsor.jpg"/>
-              </div>
-              <div>
-                <img src="/static/pictures/La-Fonderie_logoSponsor.png"/>
-                <img src="/static/pictures/Ville-de-Paris_logoSponsor.jpg"/>
-              </div>
-            </div>
-          </div>
-        </div>
--->
-        <div class="span4 partners-span">
           <p class="partners-sub-title">{{ _("Organizers") }}</p>
+
           <div id="organisateur">
-            <div>
-              <img class="organisateur-img"
-                  src="/static/pictures/Systematic_large.png"/>
-              <img src="/static/pictures/Smile_logoSponsor.png"/>
-            </div>
-            <div>
-              <img id="alterway" class="organisateur-img"
-                  src="/static/pictures/logo_aw_rvb_copie.png"/>
-              <img class="organisateur-img"
-                  src="/static/pictures/af83_logoSponsor.png"/>
-              <img class="organisateur-img"
-                  src="/static/pictures/INRIA_logoSponsor.jpg"/>
-             <img class="organisateur-img"
-                  src="/static/pictures/cap_digital_logosponsors.jpg"/>
-            </div>
+            <img class="organisateur-img"
+                src="/static/pictures/Systematic_large.png"/>
+            <img class="organisateur-img"
+                src="/static/pictures/Smile_logoSponsor.png"/>
+            <img id="alterway" class="organisateur-img"
+                src="/static/pictures/logo_aw_rvb_copie.png"/>
+            <img class="organisateur-img"
+                src="/static/pictures/af83_logoSponsor.png"/>
+            <img class="organisateur-img"
+                src="/static/pictures/INRIA_logoSponsor.jpg"/>
+            <img class="organisateur-img"
+                src="/static/pictures/cap_digital_logosponsors.jpg"/>
           </div>
         </div>
-      </div>
-      <div id="hr-partner" class="hr"></div>
-      <div id="sponsor" class="row">
-        <div class="span2">
-          <!--
-          <p class="partners-sub-title">{{ _("Diamond sponsor") }}</p>
-          <img id="suse" class="sponsor-img"
-              src="/static/pictures/Suse_logoSponsor.jpg"/>
-        </div>
-       -->
-        <div id="platinium" class="span2">
+
+        <div id="platinium" class="span3">
           <p class="partners-sub-title">{{ _("Platinum sponsors") }}</p>
+
           <img class="sponsor-img"
               src="/static/pictures/logo_aw_rvb_copie.png"/>
           <img class="sponsor-img"
@@ -183,24 +153,21 @@
           <img class="sponsor-img"
               src="/static/pictures/INRIA_logoSponsor.jpg"/>
         </div>
-        <!--
-          <div class="span2">
-          <p class="partners-sub-title">{{ _("Gold sponsors") }}</p>
-        </div>
-        -->
-          <div class="span3">
+
+        <div class="span3">
           <p class="partners-sub-title">{{ _("Silver sponsors") }}</p>
+
           <img class="sponsor-img"
               src="/static/pictures/af83_logoSponsor2.png"/>
           <img class="sponsor-img"
               src="/static/pictures/abilian_logosponsors.png"/>
 
         </div>
-        </div>
       </div>
     </div>
   </div>
 </div>
+
 
 {% if lang == 'fr' %}
   {% include "_footer_fr.html" %}

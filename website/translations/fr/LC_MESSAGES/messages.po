@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-05-28 17:42+0200\n"
+"POT-Creation-Date: 2013-06-05 19:44+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -25,53 +25,161 @@ msgstr ""
 msgid "Not a valid choice"
 msgstr ""
 
-#: website/templates/_base.html:75 website/templates/base.html:79
+#: website/rfp/forms.py:51
+msgid "Not a valid Twitter account"
+msgstr ""
+
+#: website/rfp/presenters.py:80
+msgid "Undefined"
+msgstr ""
+
+#: website/rfp/views.py:75 website/rfp/views.py:161
+msgid "Your profile has been updated !"
+msgstr ""
+
+#: website/rfp/templates/rfp/_talks_helper.html:6
+#: website/rfp/templates/rfp/talk_proposals.html:28
+#: website/rfp/templates/rfp/talks_dashboard.html:14
+#: website/templates/macros.html:154 website/templates/macros.html:193
+msgid "Title"
+msgstr ""
+
+#: website/rfp/templates/rfp/_talks_helper.html:7
+#: website/rfp/templates/rfp/talk_proposals.html:28
+#: website/rfp/templates/rfp/talks_dashboard.html:14
+msgid "Speaker"
+msgstr ""
+
+#: website/rfp/templates/rfp/_talks_helper.html:8
+msgid "Type"
+msgstr ""
+
+#: website/rfp/templates/rfp/about.html:5
+msgid "About Us"
+msgstr ""
+
+#: website/rfp/templates/rfp/about.html:5
+msgid "The team behind this project !"
+msgstr ""
+
+#: website/rfp/templates/rfp/change_password.html:6
+msgid "Change your password"
+msgstr ""
+
+#: website/rfp/templates/rfp/closed_talk_proposal.html:5
+msgid "Talk Proposal is Closed !"
+msgstr ""
+
+#: website/rfp/templates/rfp/index.html:8
+msgid "Thank you for the Proposals"
+msgstr ""
+
+#: website/rfp/templates/rfp/index.html:9
+msgid "You will be notified by email as soon as possible"
+msgstr ""
+
+#: website/rfp/templates/rfp/index.html:18
+msgid "Here is the Schedule"
+msgstr ""
+
+#: website/rfp/templates/rfp/speakers.html:6
+msgid "The Speakers"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_edit.html:15
+#: website/rfp/templates/rfp/user_profile.html:19
+msgid "Information"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_edit.html:18
+#: website/rfp/templates/rfp/talk_edit.html:21
+#: website/rfp/templates/rfp/talk_proposal.html:29
+#: website/rfp/templates/rfp/user_profile.html:23
+msgid "Internet"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_proposal.html:5
+msgid "Submit Your Talk"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_proposal.html:9
+msgid "Warning!"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_proposal.html:9
+msgid "Talk duration is 25 min including Q/A!"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_proposal.html:16
+msgid "About Your Talk"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_proposal.html:24
+msgid "About Yourself"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_proposals.html:7
+msgid "Talk Proposals"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_proposals.html:28
+msgid "State"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_proposals.html:28
+#: website/rfp/templates/rfp/talks_dashboard.html:14
+msgid "Points"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_show.html:7
+msgid "Talk"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_show.html:74
+msgid "Vote Up"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_show.html:78
+msgid "Vote Down"
+msgstr ""
+
+#: website/rfp/templates/rfp/talk_show.html:82
+#: website/rfp/templates/rfp/talks_dashboard.html:27
+#: website/rfp/templates/rfp/talks_dashboard.html:32
+msgid "Validate"
+msgstr ""
+
+#: website/rfp/templates/rfp/talks_dashboard.html:7
+msgid "Talk Dashboard"
+msgstr ""
+
+#: website/templates/_base.html:96 website/templates/base.html:79
 msgid "Search"
 msgstr "Rechercher"
 
-#: website/templates/_base.html:98
+#: website/templates/_base.html:120
 msgid "Our partners"
 msgstr "Nos partenaires"
 
-#: website/templates/_base.html:104
-msgid "Under the patronage of"
-msgstr "Sous le patronage de"
-
-#: website/templates/_base.html:109
-msgid "Institution partners"
-msgstr "Partenaires institutionnels"
-
-#: website/templates/_base.html:127
+#: website/templates/_base.html:128
 msgid "Organizers"
 msgstr "Organisateurs"
 
-#: website/templates/_base.html:144
-msgid "Diamond sponsor"
-msgstr "Sponsor Diamond"
-
-#: website/templates/_base.html:148
+#: website/templates/_base.html:147
 msgid "Platinum sponsors"
-msgstr "Sponsors Platinum"
+msgstr "Sponsors Platine"
 
-#: website/templates/_base.html:154
-msgid "Gold sponsors"
-msgstr "Sponsors Gold"
-
-#: website/templates/_base.html:160
+#: website/templates/_base.html:158
 msgid "Silver sponsors"
-msgstr "Sponsors Gold"
-
-#: website/templates/_base.html:165
-msgid "Bronze sponsors"
-msgstr "Sponsors Bronze"
+msgstr "Sponsors Argent"
 
 #: website/templates/base.html:70
 msgid "My profile"
-msgstr ""
+msgstr "Mon profil"
 
 #: website/templates/base.html:72
 msgid "Log out"
-msgstr ""
+msgstr "Déconnexion"
 
 #: website/templates/index.html:161
 msgid "Latest news"
@@ -107,10 +215,6 @@ msgstr ""
 
 #: website/templates/macros.html:117
 msgid "Delete"
-msgstr ""
-
-#: website/templates/macros.html:154 website/templates/macros.html:193
-msgid "Title"
 msgstr ""
 
 #: website/templates/macros.html:155 website/templates/macros.html:195
