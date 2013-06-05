@@ -6,4 +6,6 @@ Vous êtes journaliste ou blogueur ?
 
 Vous désirez des informations concernant l'OWF ?
 
-Contactez nous à l'adresse suivante : press@openworldforum.org
+Contactez nous à l'adresse suivante : [press@openworldforum.org][4].
+
+ [4]: mailto:press%40openworldforum.org
