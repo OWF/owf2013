@@ -2,13 +2,13 @@ title: Editions précédentes
 
 ## 5ème édition (2012)
 
-[Le site](http://2012.openworldforum.org/) (TODO)
+[Le site](http://2012.openworldforum.org/) 
 
 Les supports de présentation: [sur SlideShare](http://fr.slideshare.net/OpenWorldForum/presentations).
 
-Les videos: TODO
+Les videos: [sur notre webTV](http://openworldforum.tv/) et [sur YouTube](http://www.youtube.com/user/OpenWorldForum)
 
-Les photos: TODO
+Les photos: [sur Flickr](http://www.flickr.com/photos/67985356@N07/)
 
 [Bilan de l'édition 2012](http://fr.slideshare.net/OpenWorldForum/open-world-forum-2012-outcomes).
 
@@ -17,21 +17,15 @@ Les photos: TODO
 
 Le site: <http://2011.openworldforum.org/>
 
-Les supports de présentation: TODO
+Les supports de présentation: [sur SlideShare](http://fr.slideshare.net/OpenWorldForum/presentations).
 
-Les videos: TODO
+Les videos: [sur YouTube](http://www.youtube.com/user/OpenWorldForum)
 
-Les photos: TODO
+Les photos: [sur Flickr](http://www.flickr.com/photos/67985356@N07/)
 
 ## 3ème édition (2010)
 
 Le site: <http://2010.openworldforum.org/>
-
-Les supports de présentation: TODO
-
-Les videos: TODO
-
-Les photos: TODO
 
 ## Editions antérieures
 
