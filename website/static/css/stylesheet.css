@@ -350,8 +350,15 @@ body {
   padding: 4px;
 }
 
+/* Sponsors / partners */
+
 #partners {
   margin-bottom: 60px;
+}
+
+#partners img {
+  margin: 10px;
+  float: left;
 }
 
 .partners-title {
@@ -364,65 +371,16 @@ body {
 
 .partners-sub-title {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.8em;
+  margin-bottom: 25px;
 }
 
 #hr-partner {
   margin: 18px 0;
 }
 
-#rd-productif {
-  display: block;
-  margin: 23px auto 0 auto;
-}
 
-#iledefrance {
-  margin: 10px 5px;
-  display: block;
-  float: left;
-}
-
-#institutionnels {
-  margin-left: 80px;
-}
-
-#institutionnels img {
-  margin: 5px;
-}
-
-#alterway {
-  margin-top: 20px;
-}
-
-.organisateur-img {
-  margin: 10px;
-  float: left;
-}
-
-.sponsor-img {
-  margin: auto;
-}
-
-#suse {
-  margin-top: 20px;
-  display: block;
-}
-
-#platinium img {
-  margin: 8px 5px;
-}
-
-#blackduck {
-  margin: 15px;
-}
-
-#xwiki {
-  margin-left: 18px;
-}
-
-#jamento {
-  margin-left: 13px;
-}
+/* Footer */
 
 #footer-links {
   margin-top: 12px;
