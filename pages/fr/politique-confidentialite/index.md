@@ -1,3 +1,3 @@
 title: Politique de confidentialité
 
-TODO
+Plus d'informations à venir
