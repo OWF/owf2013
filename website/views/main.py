@@ -18,6 +18,20 @@ __all__ = ['setup']
 
 blueprint = Blueprint('main', __name__, url_prefix='/')
 
+ROOT = 'http://www.openworldforum.org'
+REDIRECTS = [
+  ('programme/', '/fr/programme/'),
+  ('open-innovation-summit-fr/', '/'),
+  ('connect/', '/'),
+  ('awards/', '/'),
+  ('Univers/Think/', '/fr/think/'),
+  ('Univers/Code/', '/fr/code/'),
+  ('Univers/Experiment/', '/fr/experiment/'),
+  ('Univers/', '/fr/'),
+  ('Conferences/', '/fr/programme/'),
+  ('rss/feed/news', '/en/feed/'),
+  ('rss/RSS', '/en/feed/'),
+]
 
 #
 # Global (app-level) routes
@@ -26,6 +40,21 @@ blueprint = Blueprint('main', __name__, url_prefix='/')
 def index():
   # TODO: redirect depending on HTTP headers & cookie
   return redirect(url_for("localized.home", lang='fr'))
+
+
+@blueprint.route('/robots.txt')
+def robots_txt():
+  return ""
+
+
+@blueprint.route('<path:path>')
+def catch_all(path):
+  print path
+  for source, target in REDIRECTS:
+    if path.startswith(source):
+      return redirect(ROOT + target)
+
+  abort(404)
 
 
 @blueprint.route('/image/<path:path>')
