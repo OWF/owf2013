@@ -4,4 +4,4 @@ Créé en 1991, Smile est le premier intégrateur français et européen de solu
 
 Smile, c'est également 37,1 millions d’euros de CA en 2011 et, à ce jour, 600 collaborateurs répartis sur 16 agences : Paris, Lyon, Nantes, Bordeaux, Montpellier, Marseille, Lille, Grenoble, Barcelone (Espagne), Kiev et Kharkov (Ukraine), Genève (Suisse), Casablanca (Maroc), Amsterdam, Utrecht et Bruxelles (Benelux).
 
-http://www.smile.fr
+[http://www.smile.fr](http://www.smile.fr)

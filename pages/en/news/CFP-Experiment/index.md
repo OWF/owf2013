@@ -6,7 +6,7 @@ Selected projects enjoy space and enhancement during the event.
 
 To take part to EXPERIMENT : complete and send the form before the 18th of june at 12:00 to [experiment@openworldforum.org][4].
 
-[Download the CFP here](/static/Documents/Call_for_participation_OWF13_experiment_EN.pdf")
+[Download the CFP here](/static/Documents/Call_for_participation_OWF13_experiment_EN.pdf)
 
 [Download the application form here](/static/Documents/formOWF13AAPExperiment_VE_v2.odt)
 
