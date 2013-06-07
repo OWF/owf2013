@@ -21,7 +21,7 @@ blueprint = Blueprint('main', __name__, url_prefix='/')
 ROOT = 'http://www.openworldforum.org'
 REDIRECTS = [
   ('programme/', '/fr/programme/'),
-  ('open-innovation-summit-fr/', '/'),
+  ('open-innovation-summit-fr', '/'),
   ('connect/', '/'),
   ('awards/', '/'),
   ('Univers/Think/', '/fr/think/'),
@@ -29,6 +29,7 @@ REDIRECTS = [
   ('Univers/Experiment/', '/fr/experiment/'),
   ('Univers/', '/fr/'),
   ('Conferences/', '/fr/programme/'),
+  ('News/', '/fr/news/'),
   ('rss/feed/news', '/en/feed/'),
   ('rss/RSS', '/en/feed/'),
 ]
@@ -49,7 +50,6 @@ def robots_txt():
 
 @blueprint.route('<path:path>')
 def catch_all(path):
-  print path
   for source, target in REDIRECTS:
     if path.startswith(source):
       return redirect(ROOT + target)

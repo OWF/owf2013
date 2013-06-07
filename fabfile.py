@@ -41,6 +41,7 @@ threads = 2
 NGINX_CONFIG_TPL = """
 erver {
   server_name owf2013.demo.abilian.com;
+  server_name www.openworldforum.org openworldforum.org;
 
   access_log /var/log/nginx/owf2013-access.log;
 
