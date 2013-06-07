@@ -22,4 +22,4 @@ Implication dans des projets à l’international
 Collaboration avec la Californie : signature de l’accord « Digital Sister Cities » entre la ville de San Francisco et la ville de Paris, qui lui a permis de travailler sur des projets concrets comme le projet Sebastian.
 Accompagnement d’entreprises aux Etats-Unis, Canada, Chine, Corée du Sud, Japon, Israël, Brésil, etc.
 
-http://www.capdigital.com/
+[http://www.capdigital.com/](http://www.capdigital.com/)
