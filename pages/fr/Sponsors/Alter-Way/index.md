@@ -6,4 +6,4 @@ De l'alliance sous la marque Alter Way, de ses équipes spécialisées emblémat
 Dirigé par ses fondateurs, Philippe Montargès et Véronique Torner, Alter Way procure des solutions globales et particulières pour les grandes entreprises et le secteur public.
 Alter Way, c'est une compétence reconnue sur le marché du libre et votre partenaire de qualité pour longtemps !
 
-http://www.alterway.fr
+[http://www.alterway.fr](http://www.alterway.fr)
