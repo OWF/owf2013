@@ -189,6 +189,7 @@ def feed():
 def sitemap():
   page = {'title': _(u"Site map")}
   pages = get_pages()
+  pages = [ p for p in pages if p.path.startswith(g.lang) ]
 
   return render_template('sitemap.html', page=page, pages=pages)
 

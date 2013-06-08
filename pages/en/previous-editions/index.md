@@ -6,7 +6,7 @@ title: Previous Editions
 
 The presentations: [on SlideShare](http://fr.slideshare.net/OpenWorldForum/presentations).
 
-The videos on our [WebTV](openworldforum.tv) and [Youtube](http://www.youtube.com/user/OpenWorldForum)
+The videos on our [WebTV](http://openworldforum.tv/) and [Youtube](http://www.youtube.com/user/OpenWorldForum)
 
 The pictures on [Flickr](http://www.flickr.com/photos/67985356@N07/)
 
@@ -15,7 +15,7 @@ The pictures on [Flickr](http://www.flickr.com/photos/67985356@N07/)
 
 ## 4th edition (2011)
 
-[The Site](http://2011.openworldforum.org/)
+[The 2011 website](http://2011.openworldforum.org/)
 
 The presentations: [on SlideShare](http://fr.slideshare.net/OpenWorldForum/presentations).
 
@@ -25,7 +25,7 @@ The pictures on [Flickr](http://www.flickr.com/photos/67985356@N07/)
 
 ## 3rd edition (2010)
 
-[The Site](http://2010.openworldforum.org/)
+[The 2012 website](http://2010.openworldforum.org/)
 
 
 ## Previous Editions

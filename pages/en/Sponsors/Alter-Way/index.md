@@ -9,4 +9,4 @@ Managed by its founders, Philippe Montargès and Véronique Torner, Alter Way pr
 
 Alter Way, it’s a distinctive skill on the Free market and a robust partner at your side for a long time.
 
-[http://www.alterway.fr](http://www.alterway.fr)
+<http://www.alterway.fr/>

@@ -10,4 +10,4 @@ Dirigé par ses fondateurs, Philippe Montargès et Véronique Torner, Alter Way 
 
 Alter Way, c'est une compétence reconnue sur le marché du libre et votre partenaire de qualité pour longtemps !
 
-[http://www.alterway.fr](http://www.alterway.fr)
+<http://www.alterway.fr/>

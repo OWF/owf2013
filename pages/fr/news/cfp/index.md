@@ -30,6 +30,9 @@ Voici les thèmes majeurs de cette 6eme édition:
 * Le Cloud: une opportunité ou un lock-in?
 * CIO Summit
 
+<a class="btn" href="#envoi-proposition">Envoyez votre proposition</a>
+
+
 ### Code: Innovation Ouverte
 
 Les thèmes majeurs de Code pour 2013 sont:
@@ -48,6 +51,9 @@ Les thèmes majeurs de Code pour 2013 sont:
 
 L'Open Source Developers Conference (OSDC) se tient aussi simultanément en collaboration avec l'Open World Forum. Vous pouvez vous référer au site d'OSDC pour la procédure d'appel à participation: <http://osdc.fr>
 
+<a class="btn" href="#envoi-proposition">Envoyez votre proposition</a>
+
+
 ### Experiment : Un Monde Ouvert
 
 La Journée EXPERIMENT, journée de découverte de l'Open Source ouverte au grand public. Dans l’esprit de Futur En Seine, EXPERIMENT vise à faire découvrir à un public toujours plus nombreux les projets Open Source: logiciels libres, imprimantes 3D, objets connectés et intelligents... grâce à des conférences autour de la citoyenneté et Internet, les arts libres et des ateliers. Les enfants seront à l'honneur avec un programme d'ateliers et de mini-conférences spécialement dédiées: KIDEXPERIMENT.
@@ -55,9 +61,13 @@ La Journée EXPERIMENT, journée de découverte de l'Open Source ouverte au gran
 L'appel a participation est disponible ici:
 <http://www.capdigital.com/evenements/aap-experiment-owf-2013/>
 
-## Informations relatives à l’envoi de Propositions
+<a class="btn" href="#envoi-proposition">Envoyez votre proposition</a>
 
-Merci d’envoyer vos propositions à program@openworldforum.org
+
+<a id="envoi-proposition"></a>
+## Vous souhaitez participer ?
+
+Merci d’envoyer vos propositions à [program@openworldforum.org](mailto:program@openworldforum.org).
 
 Vous devrez inclure à votre proposition les éléments suivants :
 
@@ -67,12 +77,14 @@ Vous devrez inclure à votre proposition les éléments suivants :
 * La description de votre présentation (200 mots maximum)
 * Une biographe de 100 mots de l’intervenant ainsi qu’une photo
 
-Délai de soumission: 30 juin 2013.
+**Délai de soumission: 30 juin 2013.**
 
 Vos propositions seront soumises à l’approbation des track-leaders appropriés.
 
-### Des Questions?
+
+## Des questions?
 
 N’hésitez pas à consulter [le programme des conférences](/fr/programme/) a jour.
 
-Si vous avez des questions, n’hésitez pas a nous contacter: contact@openworldforum.org
+Si vous avez des questions, n’hésitez pas a nous contacter:
+[contact@openworldforum.org](mailto:contact@openworldforum.org).

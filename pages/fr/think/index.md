@@ -26,3 +26,10 @@ Les **DSI**, Grands Utilisateurs de Logiciels Libres et Open-Source, seront invi
 Enfin la **seconde journée** verra se décliner l'ensemble de ces thèmes au sein de **comités de travail et de réflexion**, qui permettront de contribuer à l'évolution de notre secteur et de favoriser la **dynamique communautaire mondiale** de l'Open-Source.
 
 Enfin un temps particulier sera consacré lors de l'Open World Forum 2013 à la **restitution des travaux des Etats Généraux de l'Open-Source (EGOS).**
+
+## Appel à proposition
+
+Vous souhaitez soumettre une proposition d'intervention lors de l'Open World Forum ?
+
+<a class="btn" href="/fr/news/cfp/#envoi-proposition">Envoyez votre proposition</a>
+

@@ -1,30 +1,28 @@
 title: Contact
 
-<p><b><a href="http://openworldforum.org/eng/user/register" target="_blank">Vous voulez participer ?</a></b></p>
+## Participer en tant que visiteur
 
-<p><b>Devenir Sponsor</b></p>
+[Inscrivez-vous](/fr/registration/)
 
-<p>Si vous êtes intéressé pour devenir sponsor de l'Open World Forum et ainsi gagner une très grande visibilité au cours de l'événement, merci de contacter&nbsp;<a href="mailto:sponsoring@openworldforum.org" target="_self">sponsoring@openworldforum.org</a></p>
+## Devenir Sponsor
 
-<a name="eztoc1082290_0_1" id="eztoc1082290_0_1"></a>
-<h3><b>Devenir Speaker, proposer des idées de programme ou devenir partenaire</b></h3>
+Si vous êtes intéressé à devenir sponsor de l'Open World Forum et ainsi
+gagner une très grande visibilité au cours de l'événement, merci de contacter
+<a href="mailto:sponsoring@openworldforum.org">sponsoring@openworldforum.org</a>.
 
-<a name="eztoc1082290_0_1_1" id="eztoc1082290_0_1_1"></a><h4><b><b>Forum Operator</b></b></h4>
+## Devenir Speaker, proposer des idées de programme ou devenir partenaire
 
-<ul>
+- Vous avez une suggestion de speaker ou de sujet pour l'Open World Forum 2013?
+  Vous voulez contribuer ?
 
-<li>Vous avez une suggestion de speaker ou de sujet pour l'Open World Forum 2013 ? Vous voulez contribuer ?</li>
+- Pour des possibilités de partenariat
 
-<li>Pour des possibilités de partenariat</li>
+- Pour organiser des opérations
 
-<li>Pour organiser des opérations</li>
+Merci de contacter
+<a href="mailto:team@openworldforum.org">contact@openworldforum.org</a>
 
-</ul>
+## Partenariats médias
 
-<p>Merci de contacter&nbsp;<a href="mailto:team@openworldforum.org" target="_self">contact@openworldforum.org</a>&nbsp;</p><a name="eztoc1082290_0_2" id="eztoc1082290_0_2"></a>
-
-<h3><b>Partenariats médias</b></h3>
-
-<p>
-Pour tout ce qui est relatif aux requêtes médias, merci de contacter <a href="mailto:press@openworldforum.org" target="_self">press@openworldforum.org</a>.
-</p>
+Pour tout ce qui est relatif aux requêtes médias, merci de contacter <a
+href="mailto:press@openworldforum.org">press@openworldforum.org</a>.

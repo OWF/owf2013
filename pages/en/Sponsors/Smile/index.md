@@ -4,4 +4,4 @@ In business since 1991, Smile is the first European integrator of open source so
 
 Smile has a turnover of over 37.1 M€ in 2011, and a staff of 600 in Europe, working at 16 agencies, in Paris, Lyon, Nantes, Lille, Bordeaux, Montpellier, Marseille, Grenoble (France), Amsterdam, Utrecht and Brussels (Netherlands), Barcelona (Spain), Kiev and Kharkov (Ukraine), Geneva (Switzerland) and Casablanca (Morocco).
 
-[http://www.smile.fr](ttp://www.smile.fr)
+<http://www.smile.fr/>

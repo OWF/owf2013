@@ -55,7 +55,7 @@ The Call for Participation is available here:
 
 ## Guidelines to submit Proposals
 
-Please submit your proposal by email to program@openworldforum.org. You will need to prepare the following information:
+Please submit your proposal by email to [program@openworldforum.org](mailto:program@openworldforum.org). You will need to prepare the following information:
 
 * Your full name, title and organization
 * Contact information
@@ -69,7 +69,7 @@ Your proposal will be submitted to the appropriate track leaders for approval.
 
 ### Any Questions?
 
-For regular updates on the program, please check out the conference webpage at: <http://www.openworldforum.org/en/program/>.
+For regular updates on the program, please check out the [schedule webpage](/en/schedule/).
 
 If you have any questions or enquiries, please do not hesitate to contact us at: contact@openworldforum.org
 
