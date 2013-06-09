@@ -8,7 +8,7 @@ Please submit your proposal for subjects, talks, lectures or participation in pa
 
 ## 2013 Themes
 
-### Think: Make it Happen!
+### Think: *Make it Happen!*
 
 Think will be held over the course of the two first days, and will outline the major role of Free and Open-Source Software in the digital economy. The "Make it Happen!" baseline sums up the focus on building a successful free and open-source strategy, from a technological and commercial standpoint.
 
@@ -28,7 +28,10 @@ We will demonstrate that innovation is carried by Free and Open-Source Software,
 * Cloud as a lock-in or an opportunity?
 * CIO Summit
 
-### Code: Open Innovation
+<a class="btn" href="/en/news/CFP/#submit-proposal">Submit a proposal</a>
+
+
+### Code: *Open Innovation*
 
 The Code main themes for 2013 are:
 
@@ -44,16 +47,22 @@ The Code main themes for 2013 are:
 * Software Quality
 * Student Demo Cup
 
+<a class="btn" href="/en/news/CFP/#submit-proposal">Submit a proposal</a>
+
 The Open Source Developers Conference (OSDC) is also held simultaneously in collaboration with Open World Forum. Please see the OSDC website for the Call-for-Paper procedure: <http://osdc.fr/>
 
-### Experiment: An Open World
+### Experiment: *An Open World*
 
 Experiment: An Open World aims to introduce and promote the Free and Open Source philosophy of mutual, shared and responsible production. The day dedicated to this dimension will allow the public to test and benchmark Open Source applications and hardware, in order to discover the Internet of Things, to rediscover co-creation, to meet the Makers and to DIY. Children are welcome to test and participate, with a special schedule dedicated to them: KIDEXPERIMENT.
 
 The Call for Participation is available here:
 <http://www.capdigital.com/en/events/call-for-proposal-experiment-owf-2013/>
 
-## Guidelines to submit Proposals
+<a class="btn" href="/en/news/CFP/#submit-proposal">Submit a proposal</a>
+
+
+<a id="submit-proposal"></a>
+## Guidelines to submit proposals
 
 Please submit your proposal by email to [program@openworldforum.org](mailto:program@openworldforum.org). You will need to prepare the following information:
 

@@ -24,5 +24,4 @@ Merci de contacter
 
 ## Partenariats médias
 
-Pour tout ce qui est relatif aux requêtes médias, merci de contacter <a
-href="mailto:press@openworldforum.org">press@openworldforum.org</a>.
+Pour tout ce qui est relatif aux requêtes médias, merci de contacter [press@openworldforum.org](mailto:press@openworldforum.org).

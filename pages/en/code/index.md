@@ -10,3 +10,5 @@ The Data topics, which include **Open Data**, and the necessary thinking to have
 Lastly, we will talk about **Mobility** as it is a vital and fast-evolving subject, that has the important characteristic to be largely dominated by Open Source with Android, Tizen, Ubuntu or FirefoxOS.
 
 The Code topics will be led by a **track-leader team that has been almost entirely renewed**.
+
+<a class="btn" href="/en/news/CFP/#submit-proposal">Submit a proposal</a>

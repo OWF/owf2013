@@ -1,6 +1,6 @@
 title:  Think - Make It Happen!
 
-Think will be held over the course of the two first days, and will outline the major role of FLOSS in the digital economy. The “<b>Make it Happen!</b>” baseline **very concretely** sums up the focus on building a successful free and open-source strategy, from a technological and commercial standpoint. 
+Think will be held over the course of the two first days, and will outline the major role of FLOSS in the digital economy. The “<b>Make it Happen!</b>” baseline **very concretely** sums up the focus on building a successful free and open-source strategy, from a technological and commercial standpoint.
 
 The **opening day** format will differ from the previous editions as talks will happen in a **single-track schedule** in the largest auditorium. This enables us to concentrate on having the best schedule in a unique plenary session, dedicated to decision-makers in the private and public sectors. Talks will be more concise and will introduce the **think tanks and workshops** that will be held on the **second day**.
 
@@ -9,13 +9,13 @@ This renewed format will support the 2013 focus: **making it happen**. The FLOSS
 We will demonstrate that **innovation** with FLOSS is accessible **to all companies and organisations**. It is nowadays easier to innovate in each market because of the availability of free and innovative technologies. **This demystification of practical innovation** will be the major theme of this sixth edition of the Open World Forum.
 
 All of our speakers have **successfully innovated** with free and open-source software and will **share their experiences** around its use and impact. Shared innovation and the platforms available for **collaborative innovation** will be represented. More practically, speakers will document the way they succeeded in bringing innovation through FLOSS in the following sectors:
- 
+
 * Digital economy
 * Media
 * Education
 * Public sector
 * Foundations and Communities
- 
+
 
 The **opening day** will be dedicated to **keynotes, conferences and panels**. The individual talk slot format will be shorter than previous editions, so we can have a **very dynamic and interesting program**. The morning will be the opportunity to approach **the real impact** of Open-Source in the world digital economy, as well as the impact of **state policies**, the governance, educational and business issues. We'll end this sequence with some **industrial, organizational, community and government success stories** that might inspire attendees to choose Free and Open-Source Software for their next projects.
 
@@ -24,3 +24,6 @@ The afternoon will focus on the innovation catalyst role that Open-Source plays 
 **CIOs** and major users of FLOSS will be invited to take part in the fifth edition of the **Open CIO Summit**, which is scheduled for the end of the day.
 
 These topics will be explored deeper **during the second day**, through **workshops and think tanks** led by industry and community leaders. This will enable attendees to contribute to the **evolution of our field**, and of course provide the meeting point where the **world experts** will get together and talk about the present and the future.
+
+<a class="btn" href="/en/news/CFP/#submit-proposal">Submit a proposal</a>
+

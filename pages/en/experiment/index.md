@@ -5,3 +5,5 @@ Experiment 2013 will showcase the **social innovations** that have been brought 
 During the Experiment day, there will be several **conferences and workshops** addressed **to novices** as well as to professionals that are concerned with social issues: beginning with **artistic creation** all the way to **democracy** and interconnected objects. These topics, addressed by the Free and Open Source, will allow us to further our understanding in these areas and also their application in the real life.
 
 **Children** are most welcome to test and participate, with a special schedule dedicated to them: KIDEXPERIMENT. There will be a number of **discovery workshops** for various free or open source software and hardware as well as **mini-conferences** for young people on the topics of democracy and free art.
+
+<a class="btn" href="/en/news/CFP/#submit-proposal">Submit a proposal</a>
