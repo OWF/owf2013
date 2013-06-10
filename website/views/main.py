@@ -40,6 +40,7 @@ REDIRECTS = [
   ('Articles/', '/fr/news/'),
   ('Conferences/', '/fr/programme/'),
   ('News/', '/fr/news/'),
+  ('fr/News/', '/fr/news/'),
   ('Partenaires-presse/', '/fr/presse/'),
   ('Sponsors/', '/fr/sponsors/'),
   ('Tracks/', '/fr/programme/'),
