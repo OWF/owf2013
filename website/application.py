@@ -6,13 +6,14 @@ from os.path import join, dirname, exists
 import re
 
 from flask import Flask, abort, request, g
+from flask.ext.admin import Admin
 from flask.ext.frozen import Freezer
 from flask.ext.flatpages import FlatPages
 from flask.ext.markdown import Markdown
 from flask.ext.assets import Environment as AssetManager
 
 import abilian
-from abilian.core.extensions import Babel, db
+from abilian.core.extensions import Babel, db, mail
 from abilian.web.filters import init_filters
 
 from .views import setup as setup_views
@@ -37,12 +38,18 @@ def create_app(config=None):
 #
 def setup(app):
   db.init_app(app)
+  mail.init_app(app)
+  admin = Admin(app)
 
   setup_filters_and_processors(app)
 
   # Register our own blueprints / apps
   setup_views(app)
   setup_crm(app)
+  from .cfp import register_plugin as register_cfp
+  register_cfp(app)
+  from .security import register_plugin as register_security
+  register_security(app)
 
   # Add some extensions
   whoosh = Whoosh(app)

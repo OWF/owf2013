@@ -73,6 +73,24 @@ def drop_db():
 
 
 @manager.command
+def add_user(email, password):
+  from website.security import User2
+  user = User2(email=email, password=password, active=True)
+  db.session.add(user)
+  db.session.commit()
+  print "Password updated"
+
+
+@manager.command
+def set_password(email, password):
+  from website.security import User2
+  user = User2.query.filter(User2.email==email).one()
+  user.password = password
+  db.session.commit()
+  print "Password updated"
+
+
+@manager.command
 def index_content():
   whoosh = app.extensions['whoosh']
   pages = app.extensions['pages']

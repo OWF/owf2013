@@ -1,0 +1,16 @@
+{% with p=proposal %}
+Speaker:
+
+- name: {{ p.speaker_name }}
+- email: {{ p.speaker_email }}
+- organisation: {{ p.speaker_organization }}
+- title: {{ p.speaker_title }}
+- Bio: {{ p.speaker_bio }}
+
+Talk proposal:
+
+- title: {{ p.title }}
+- theme: {{ p.theme }}
+- abstract: {{ p.abstract }}
+
+{% endwith %}

@@ -61,13 +61,15 @@ La Journée EXPERIMENT, journée de découverte de l'Open Source ouverte au gran
 L'appel a participation est disponible ici:
 <http://www.capdigital.com/evenements/aap-experiment-owf-2013/>
 
-<a class="btn" href="#envoi-proposition">Envoyez votre proposition</a>
-
 
 <a id="envoi-proposition"></a>
 ## Vous souhaitez participer ?
 
-Merci d’envoyer vos propositions à [program@openworldforum.org](mailto:program@openworldforum.org).
+Nous vous remercions d'utiliser le [formulaire de soumission de propositions](/cfp/)
+
+**Délai de soumission: 30 juin 2013.**
+
+Vos propositions seront soumises à l’approbation des track-leaders appropriés.
 
 Vous devrez inclure à votre proposition les éléments suivants :
 
@@ -77,10 +79,7 @@ Vous devrez inclure à votre proposition les éléments suivants :
 * La description de votre présentation (200 mots maximum)
 * Une biographe de 100 mots de l’intervenant ainsi qu’une photo
 
-**Délai de soumission: 30 juin 2013.**
-
-Vos propositions seront soumises à l’approbation des track-leaders appropriés.
-
+<a class="btn-primary" href="/cfp/">Soumettre une proposition</a>
 
 ## Des questions?
 

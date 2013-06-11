@@ -60,13 +60,13 @@ REDIRECTS = [
 #
 # Global (app-level) routes
 #
-@blueprint.route('/')
+@blueprint.route('')
 def index():
   # TODO: redirect depending on HTTP headers & cookie
   return redirect(url_for("localized.home", lang='fr'))
 
 
-@blueprint.route('/robots.txt')
+@blueprint.route('robots.txt')
 def robots_txt():
   return ""
 
@@ -80,7 +80,7 @@ def catch_all(path):
   abort(404)
 
 
-@blueprint.route('/image/<path:path>')
+@blueprint.route('image/<path:path>')
 def image(path):
   hsize = int(request.args.get("h", 0))
   vsize = int(request.args.get("v", 0))
@@ -119,12 +119,12 @@ def image(path):
   return response
 
 
-@blueprint.route('/feed/')
+@blueprint.route('feed/')
 def global_feed():
   return redirect("/en/feed/", 301)
 
 
-@blueprint.route('/sitemap.xml')
+@blueprint.route('sitemap.xml')
 def sitemap_xml():
   today = datetime.date.today()
   recently = datetime.date(year=today.year, month=today.month, day=1)

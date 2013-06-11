@@ -58,13 +58,15 @@ Experiment: An Open World aims to introduce and promote the Free and Open Source
 The Call for Participation is available here:
 <http://www.capdigital.com/en/events/call-for-proposal-experiment-owf-2013/>
 
-<a class="btn" href="/en/news/CFP/#submit-proposal">Submit a proposal</a>
-
 
 <a id="submit-proposal"></a>
 ## Guidelines to submit proposals
 
-Please submit your proposal by email to [program@openworldforum.org](mailto:program@openworldforum.org). You will need to prepare the following information:
+**Deadline to send your proposal: June 30th, 2013.**
+
+Please [submit your proposal to the CFP form](/cfp/).
+
+You will need to prepare the following information:
 
 * Your full name, title and organization
 * Contact information
@@ -72,9 +74,10 @@ Please submit your proposal by email to [program@openworldforum.org](mailto:prog
 * A 200 word max. abstract of your presentation
 * A 100-word speaker bio + photo
 
-Deadline to send your proposal: June 30th, 2013.
-
 Your proposal will be submitted to the appropriate track leaders for approval.
+
+<a class="btn-primary" href="/cfp/">Submit a proposal</a>
+
 
 ### Any Questions?
 

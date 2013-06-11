@@ -51,7 +51,7 @@
 </div>
 
 <header class="container">
-  <a href="{{ url_for(".home") }}"><img id="logo"
+  <a href="{{ url_for("localized.home") }}"><img id="logo"
       src="/static/pictures/Calque1.png"/></a>
 
   <ul id="navbar-ul">
@@ -84,7 +84,7 @@
       </a>
     </li>
     <li class="share-a">
-      <a href="{{ url_for(".feed") }}">
+      <a href="{{ url_for("localized.feed") }}">
         <img src="/static/pictures/1366984127_picons20.png" width="18px"
             height="18px" title="Feed"/>
       </a>
@@ -102,7 +102,7 @@
   <div id="menu-nav-div" class="navbar">
     <ul id="menu-nav" class="nav">
       {% for entry in menu %}
-        <li><a href="{{ url_for(".home") }}{{ entry.path }}"
+        <li><a href="{{ url_for("localized.home") }}{{ entry.path }}"
             class="{{ entry.class }}">{{ entry.label }}</a></li>
       {% endfor %}
     </ul>
@@ -110,6 +110,7 @@
 </header>
 
 <div id="main">
+
   {% block main %}
   {% endblock %}
 </div>
