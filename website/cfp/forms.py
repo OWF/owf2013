@@ -9,7 +9,7 @@ THEMES = [
   "THINK : Public Policies",
   "THINK : Collaborative and shared Innovation",
   "THINK : Education & Job",
-  "THINK : Massive Open Online Courses (MOOC)"
+  "THINK : Massive Open Online Courses (MOOC)",
   "THINK : Foundations and Communities",
   "THINK : Women in Tech",
   "THINK : Successes and Testimonials",
@@ -47,13 +47,13 @@ class TalkProposalForm(Form):
   _speaker_email_valid = Check(EmailValidator(), 'speaker_email')
 
   speaker_bio = TextareaNode(title=u"Your bio", columns=60)
-  _speaker_bio_valid = Check(MinLengthValidator(50), 'speaker_bio')
+  _speaker_bio_valid = Check(RequiredValidator(), 'speaker_bio')
 
   title = EntryNode(title=u"Your talk title")
-  _title_valid = Check(MinLengthValidator(10), 'title')
+  _title_valid = Check(RequiredValidator(), 'title')
 
   abstract = TextareaNode(title=u"Your talk abstract", rows=15, columns=60)
-  _abstract_valid = Check(MinLengthValidator(100), 'abstract')
+  _abstract_valid = Check(RequiredValidator(), 'abstract')
 
   theme = RadioNode(title=u"Choose a theme",
                     buttons=THEMES)

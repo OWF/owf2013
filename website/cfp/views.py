@@ -44,7 +44,7 @@ def submit_form():
     msg = Markup(
       "Thank you for your submission. <a href='/'>Back to the home page.</a>")
     flash(msg, "success")
-    return redirect(url_for(".submit_form"))
+    return redirect(url_for(".display_form"))
 
   else:
     page = dict(title="Submit your proposal")

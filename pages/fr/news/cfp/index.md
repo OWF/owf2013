@@ -10,7 +10,7 @@ Si vous êtes expert(e)s sur l'une de ces thématiques, ou avez une analyse, un 
 
 ### Think: Vouloir c'est Pouvoir!
 
-Les travaux de la thématique Think qui seront tenus sur deux jours, mettront en exergue le rôle majeur du Logiciel Libre et de l'Open-Source dans l'économie du numérique. Le mot d'ordre de ces deux journées peut se résumer par l'adag que ce soit d'un poine “vouloir c'est pouvoir”, ou comment concrètement réussir une stratégie libre et open-sourcet de vue technologique ou commercial.
+Les travaux de la thématique [THINK](/fr/think/) qui seront tenus sur deux jours, mettront en exergue le rôle majeur du Logiciel Libre et de l'Open-Source dans l'économie du numérique. Le mot d'ordre de ces deux journées peut se résumer par l'adag que ce soit d'un poine “vouloir c'est pouvoir”, ou comment concrètement réussir une stratégie libre et open-sourcet de vue technologique ou commercial.
 
 Le format de la première journée, Think, est rénové en 2013 afin de concentrer la conférence sur une unique plénière, permettant de réunir les meilleurs intervenants sur cette journée consacrée aux décideurs et aux entreprises, administrations et collectivités utilisatrices. Ce changement de format permet de présenter de façon concentrée et marquante les sujets qui seront explicités plus en détail la seconde journée, lors des ateliers (workshops) et dans les groupes de réflexion (think tanks).
 
@@ -35,7 +35,7 @@ Voici les thèmes majeurs de cette 6eme édition:
 
 ### Code: Innovation Ouverte
 
-Les thèmes majeurs de Code pour 2013 sont:
+Les thèmes majeurs de [CODE](/fr/code/) pour 2013 sont:
 
 * Big Data
 * Open Data and dataviz
@@ -43,7 +43,7 @@ Les thèmes majeurs de Code pour 2013 sont:
 * Web moderne
 * Accessibilité Web
 * Cloud et Infrastructure as Code
-* devops
+* Devops
 * Internet of Things
 * Meetup cross-distributions
 * Qualité logicielle
@@ -56,7 +56,7 @@ L'Open Source Developers Conference (OSDC) se tient aussi simultanément en coll
 
 ### Experiment : Un Monde Ouvert
 
-La Journée EXPERIMENT, journée de découverte de l'Open Source ouverte au grand public. Dans l’esprit de Futur En Seine, EXPERIMENT vise à faire découvrir à un public toujours plus nombreux les projets Open Source: logiciels libres, imprimantes 3D, objets connectés et intelligents... grâce à des conférences autour de la citoyenneté et Internet, les arts libres et des ateliers. Les enfants seront à l'honneur avec un programme d'ateliers et de mini-conférences spécialement dédiées: KIDEXPERIMENT.
+La Journée [EXPERIMENT](/fr/experiment/), journée de découverte de l'Open Source ouverte au grand public. Dans l’esprit de Futur En Seine, EXPERIMENT vise à faire découvrir à un public toujours plus nombreux les projets Open Source: logiciels libres, imprimantes 3D, objets connectés et intelligents... grâce à des conférences autour de la citoyenneté et Internet, les arts libres et des ateliers. Les enfants seront à l'honneur avec un programme d'ateliers et de mini-conférences spécialement dédiées: KIDEXPERIMENT.
 
 L'appel a participation est disponible ici:
 <http://www.capdigital.com/evenements/aap-experiment-owf-2013/>
@@ -79,7 +79,7 @@ Vous devrez inclure à votre proposition les éléments suivants :
 * La description de votre présentation (200 mots maximum)
 * Une biographe de 100 mots de l’intervenant ainsi qu’une photo
 
-<a class="btn-primary" href="/cfp/">Soumettre une proposition</a>
+<a class="btn btn-primary" href="/cfp/">Soumettre une proposition</a>
 
 ## Des questions?
 

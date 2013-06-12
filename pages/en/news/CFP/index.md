@@ -76,7 +76,7 @@ You will need to prepare the following information:
 
 Your proposal will be submitted to the appropriate track leaders for approval.
 
-<a class="btn-primary" href="/cfp/">Submit a proposal</a>
+<a class="btn btn-primary" href="/cfp/">Submit a proposal</a>
 
 
 ### Any Questions?

@@ -3,16 +3,16 @@
 
 ## Development environment (without Vagrant)
 
-1. You should have installed *Python 2.7*, *pip* and *virtualenv*
+1. You should have installed *Python 2.7*, *pip* and *virtualenv*.
   
   Under Debian / Ubuntu, this should be as easy as:
 
-      apt-get install python2.7 python-pip virtualenvwrapper
+          apt-get install python2.7 python-pip virtualenvwrapper
 
   On Mac OS with homebrew, you should install:
 
-      brew install python
-      brew pip instal virtualenvwrapper
+          brew install python
+          brew pip install virtualenvwrapper
 
 2. Type `mkvirtualenv owf`
 
