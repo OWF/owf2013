@@ -10,13 +10,13 @@ Si vous êtes expert(e)s sur l'une de ces thématiques, ou avez une analyse, un 
 
 ### THINK : *Vouloir c'est Pouvoir!*
 
-Les travaux de la thématique [THINK](/fr/think/) qui seront tenus sur deux jours, mettront en exergue le rôle majeur du Logiciel Libre et de l'Open-Source dans l'économie du numérique. Le mot d'ordre de ces deux journées peut se résumer par l'adag que ce soit d'un poine “vouloir c'est pouvoir”, ou comment concrètement réussir une stratégie libre et open-sourcet de vue technologique ou commercial.
+Les travaux de la thématique [THINK](/fr/think/) qui seront tenus sur deux jours, mettront en exergue le rôle majeur du Logiciel Libre et de l'Open-Source dans l'économie du numérique. Le mot d'ordre de ces deux journées peut se résumer par l'adage “vouloir c'est pouvoir”, ou comment concrètement réussir une stratégie libre et open-source que ce soit d'un point de vue technologique ou commercial.
 
 Le format de la première journée, THINK, est rénové en 2013 afin de concentrer la conférence sur une unique plénière, permettant de réunir les meilleurs intervenants sur cette journée consacrée aux décideurs et aux entreprises, administrations et collectivités utilisatrices. Ce changement de format permet de présenter de façon concentrée et marquante les sujets qui seront explicités plus en détail la seconde journée, lors des ateliers (workshops) et dans les groupes de réflexion (think tanks).
 
 Ce format permet aussi de porter le focus 2013 de l'événement : la concrétisation. L'industrie du Logiciel Libre et de l'Open-Source est aujourd'hui à un point où il faut faire passer de l'intention, de la décision politique ou stratégique, à l'application et à l'achat pratique. De la même façon, le focus 2013 portera sur ce passage à l'acte, aussi bien en termes d'achat que d'un point de vue technologique.
 
-Ceci afin de prouver que l'innovation, en grande majorité actuellement portée par l'Open- Source et le Logiciel Libre, est accessible à toutes les entreprises. Et qu'il est possible de réaliser l'innovation dans son domaine d'activité de façon plus simple qu'auparavant, en s'appuyant sur des technologies novatrices et libres. Cette démystification de l'innovation et sa concrétisation sera le thème majeur de cette sixième édition de l'Open World Forum.
+Ceci afin de prouver que l'innovation, en grande majorité actuellement portée par l'Open- Source et le Logiciel Libre, est accessible à toutes les entreprises. Et qu'il est possible de réaliser l'innovation dans son domaine d'activité de façon plus simple qu'auparavant, en s'appuyant sur des technologies novatrices et libres. Cette démystification de l'innovation et sa concrétisation seront le thème majeur de cette sixième édition de l'Open World Forum.
 
 Voici les thèmes majeurs de cette 6eme édition:
 
@@ -24,7 +24,7 @@ Voici les thèmes majeurs de cette 6eme édition:
 * Innovation collaborative et partagée
 * Education & Job
 * Massive Open Online Courses (MOOC)
-* Fondations and Communautes
+* Fondations and Communautés
 * Femmes du Numérique
 * Succès et Témoignages
 * Le Cloud: une opportunité ou un lock-in?
@@ -58,7 +58,7 @@ L'Open Source Developers Conference (OSDC) se tient aussi simultanément en coll
 
 La Journée [EXPERIMENT](/fr/experiment/), journée de découverte de l'Open Source ouverte au grand public. Dans l’esprit de Futur En Seine, EXPERIMENT vise à faire découvrir à un public toujours plus nombreux les projets Open Source: logiciels libres, imprimantes 3D, objets connectés et intelligents... grâce à des conférences autour de la citoyenneté et Internet, les arts libres et des ateliers. Les enfants seront à l'honneur avec un programme d'ateliers et de mini-conférences spécialement dédiées: KIDEXPERIMENT.
 
-L'appel a participation est disponible ici:
+L'appel à participation est disponible ici:
 <http://www.capdigital.com/evenements/aap-experiment-owf-2013/>
 
 
@@ -83,7 +83,7 @@ Vous devrez inclure à votre proposition les éléments suivants :
 
 ## Des questions?
 
-N’hésitez pas à consulter [le programme des conférences](/fr/programme/) a jour.
+N’hésitez pas à consulter [le programme des conférences](/fr/programme/) à jour.
 
-Si vous avez des questions, n’hésitez pas a nous contacter:
+Si vous avez des questions, n’hésitez pas à nous contacter:
 [contact@openworldforum.org](mailto:contact@openworldforum.org).
