@@ -8,9 +8,9 @@ Please submit your proposal for subjects, talks, lectures or participation in pa
 
 ## 2013 Themes
 
-### Think: *Make it Happen!*
+### THINK: *Make it Happen!*
 
-Think will be held over the course of the two first days, and will outline the major role of Free and Open-Source Software in the digital economy. The "Make it Happen!" baseline sums up the focus on building a successful free and open-source strategy, from a technological and commercial standpoint.
+THINK will be held over the course of the two first days, and will outline the major role of Free and Open-Source Software in the digital economy. The "Make it Happen!" baseline sums up the focus on building a successful free and open-source strategy, from a technological and commercial standpoint.
 
 The opening day format will differ from the previous editions as talks will happen in a single-track schedule in the largest auditorium. This enables us to concentrate on having the best schedule in a unique plenary session, dedicated to decision-makers in the private and public sectors. Talks will be more concise and will be followed byt the Think tanks and workshops that will be held on the second day.
 
@@ -31,9 +31,9 @@ We will demonstrate that innovation is carried by Free and Open-Source Software,
 <a class="btn" href="/en/news/CFP/#submit-proposal">Submit a proposal</a>
 
 
-### Code: *Open Innovation*
+### CODE: *Open Innovation*
 
-The Code main themes for 2013 are:
+The CODE main themes for 2013 are:
 
 * Big Data
 * Open Data and dataviz
@@ -51,9 +51,9 @@ The Code main themes for 2013 are:
 
 The Open Source Developers Conference (OSDC) is also held simultaneously in collaboration with Open World Forum. Please see the OSDC website for the Call-for-Paper procedure: <http://osdc.fr/>
 
-### Experiment: *An Open World*
+### EXPERIMENT: *An Open World*
 
-Experiment: An Open World aims to introduce and promote the Free and Open Source philosophy of mutual, shared and responsible production. The day dedicated to this dimension will allow the public to test and benchmark Open Source applications and hardware, in order to discover the Internet of Things, to rediscover co-creation, to meet the Makers and to DIY. Children are welcome to test and participate, with a special schedule dedicated to them: KIDEXPERIMENT.
+EXPERIMENT: An Open World aims to introduce and promote the Free and Open Source philosophy of mutual, shared and responsible production. The day dedicated to this dimension will allow the public to test and benchmark Open Source applications and hardware, in order to discover the Internet of Things, to rediscover co-creation, to meet the Makers and to DIY. Children are welcome to test and participate, with a special schedule dedicated to them: KIDEXPERIMENT.
 
 The Call for Participation is available here:
 <http://www.capdigital.com/en/events/call-for-proposal-experiment-owf-2013/>

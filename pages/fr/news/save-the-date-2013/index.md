@@ -3,7 +3,7 @@ date: 2013/02/26
 
 L'Open World Forum revient pour sa sixième édition les 3, 4 et 5 octobre 2013 et change de lieu pour s'agrandir et accompagner son ambition de s'imposer comme le plus grand événement au confluent du politique, du sociétal, de la technologie et de l'économie. L'Open World Forum 2013 se tiendra donc au **[Beffroi](/fr/lieu/)** (métro Mairie de Montrouge) et sera à nouveau organisé par le pôle Systematic.
 
-L'édition sera présidée par **Pierre Queinnec** et vice-présidée par **Stefane Fermigier**, **Jean-Séverin Lair**, **Philippe Montargès** et **Elisabeth Racine**. L'Open World Forum reste structuré sur les trois composantes qui ont fait son succès, Think, Code et Experiment. Chaque thématique est représentée par un Vice-Président; Philippe Montargès sur Think, Stefane Fermigier sur Code, et Elisabeth Racine sur Experiment. L'équipe est complétée par Jean-Séverin Lair qui apporte une vision Grand Utilisateur, primordiale dans le programme 2013.
+L'édition sera présidée par **Pierre Queinnec** et vice-présidée par **Stefane Fermigier**, **Jean-Séverin Lair**, **Philippe Montargès** et **Elisabeth Racine**. L'Open World Forum reste structuré sur les trois composantes qui ont fait son succès, THINK, CODE et EXPERIMENT. Chaque thématique est représentée par un Vice-Président; Philippe Montargès sur THINK, Stefane Fermigier sur CODE, et Elisabeth Racine sur EXPERIMENT. L'équipe est complétée par Jean-Séverin Lair qui apporte une vision Grand Utilisateur, primordiale dans le programme 2013.
 
 Enfin un temps particulier sera consacré lors de l'Open World Forum 2013 à la restitution des travaux des Etats Généraux de l'Open-Source (EGOS).
 

@@ -67,21 +67,21 @@ curricula**.
 For this edition, **women are well-represented and involved** in the
 organization of the Open World Forum  with Sabrina Peseux, for the Systematic
 Paris-Region cluster, in charge of the organization of the OWF, Elisabeth
-Racine, for the Cap Digital cluster, Vice- President in charge of Experiment,
+Racine, for the Cap Digital cluster, Vice-President in charge of EXPERIMENT,
 and Véronique Torner, President of the Open CIO Summit.
 
 The 2013 edition will be chaired by Pierre Queinnec, who has appointed Stefane
 Fermigier, Jean-Séverin Lair, Philippe Montargès and Elisabeth Racine as
 vice-presidents. The Open World Forum will keep the threefold structure that
-has made its success; Think, Code and Experiment. Each track will be led by a
-Vice-President; Philippe Montargès for Think, Stefane Fermigier for Code, and
-Elisabeth Racine for Experiment. This year a **VP Users**, Jean-Séverin Lair,
+has made its success; THINK, CODE and EXPERIMENT. Each track will be led by a
+Vice-President; Philippe Montargès for THINK, Stefane Fermigier for CODE, and
+Elisabeth Racine for EXPERIMENT. This year a **VP Users**, Jean-Séverin Lair,
 brings in his **vision as a major Free Software user**, a dimension that is
 essential for the 2013 program.
 
-### Think – Make it happen!
+### THINK – Make it happen!
 
-Think will be held over the course of the two first days, and will outline the major role of FLOSS in the digital economy. The “<b>Make it Happen!</b>” baseline **very concretely** sums up the focus on building a successful free and open-source strategy, from a technological and commercial standpoint. 
+THINK will be held over the course of the two first days, and will outline the major role of FLOSS in the digital economy. The “<b>Make it Happen!</b>” baseline **very concretely** sums up the focus on building a successful free and open-source strategy, from a technological and commercial standpoint.
 
 The **opening day** format will differ from the previous editions as talks will happen in a **single-track schedule** in the largest auditorium. This enables us to concentrate on having the best schedule in a unique plenary session, dedicated to decision-makers in the private and public sectors. Talks will be more concise and will introduce the **think tanks and workshops** that will be held on the **second day**.
 
@@ -90,13 +90,13 @@ This renewed format will support the 2013 focus: **making it happen**. The FLOSS
 We will demonstrate that **innovation** with FLOSS is accessible **to all companies and organisations**. It is nowadays easier to innovate in each market because of the availability of free and innovative technologies. **This demystification of practical innovation** will be the major theme of this sixth edition of the Open World Forum.
 
 All of our speakers have **successfully innovated** with free and open-source software and will **share their experiences** around its use and impact. Shared innovation and the platforms available for **collaborative innovation** will be represented. More practically, speakers will document the way they succeeded in bringing innovation through FLOSS in the following sectors:
- 
+
 * Digital economy
 * Media
 * Education
 * Public sector
 * Foundations and Communities
- 
+
 
 The **opening day** will be dedicated to **keynotes, conferences and panels**. The individual talk slot format will be shorter than previous editions, so we can have a **very dynamic and interesting program**. The morning will be the opportunity to approach **the real impact** of Open-Source in the world digital economy, as well as the impact of **state policies**, the governance, educational and business issues. We'll end this sequence with some **industrial, organizational, community and government success stories** that might inspire attendees to choose Free and Open-Source Software for their next projects.
 
@@ -106,9 +106,9 @@ The afternoon will focus on the innovation catalyst role that Open-Source plays 
 
 These topics will be explored deeper **during the second day**, through **workshops and think tanks** led by industry and community leaders. This will enable attendees to contribute to the **evolution of our field**, and of course provide the meeting point where the **world experts** will get together and talk about the present and the future.
 
-### Code – Open Innovation
+### CODE – Open Innovation
 
-From a technological standpoint, **during the Code days**, the focus will be on the following topics: Web, Infrastructure (Cloud, but not exclusively), Data and Mobility. The Web, especially with the user aspects, like the **UX** movement and the **Responsive Design** requirements, but also **accessibility**, a topic that will be increasingly important in the future.
+From a technological standpoint, **during the CODE days**, the focus will be on the following topics: Web, Infrastructure (Cloud, but not exclusively), Data and Mobility. The Web, especially with the user aspects, like the **UX** movement and the **Responsive Design** requirements, but also **accessibility**, a topic that will be increasingly important in the future.
 
 **Infrastructure** is not solely a technical topic and we want to approach it from its organizational point of view within the IT departments as well, with a focus on the **devops** movement, the internal impacts for development teams of the new VM provisioning platforms and technologies.
 
@@ -116,13 +116,13 @@ The Data topics, which include **Open Data**, and the necessary thinking to have
 
 Lastly, we will talk about **Mobility** as it is a vital and fast-evolving subject, that has the important characteristic to be largely dominated by Open Source with Android, Tizen, Ubuntu or FirefoxOS.
 
-The Code topics will be led by a **track-leader team that has been almost entirely renewed**.
+The CODE topics will be led by a **track-leader team that has been almost entirely renewed**.
 
-### Experiment - An Open World
+### EXPERIMENT - An Open World
 
-Experiment 2013 will showcase the social innovations that have been brought forth by the Free Software and the Open Source; software and also hardware innovations, artistic and organizational ones as well. Embraced as a sharing philosophy, the FLOSS movement has paved the way for distributing knowledge (Wikipedia, Creative Commons) and allows for new ways of learning and experimenting in the IT world, which have a major impact on our everyday lives.
+EXPERIMENT 2013 will showcase the social innovations that have been brought forth by the Free Software and the Open Source; software and also hardware innovations, artistic and organizational ones as well. Embraced as a sharing philosophy, the FLOSS movement has paved the way for distributing knowledge (Wikipedia, Creative Commons) and allows for new ways of learning and experimenting in the IT world, which have a major impact on our everyday lives.
 
-During the Experiment day, there will be several conferences and workshops addressed to novices as well as to professionals that are concerned with social issues: beginning with artistic creation all the way to democracy and interconnected objects. These topics, addressed by the Free and Open Source, will allow us to further our understanding in these areas and also their application in the real life.
+During the EXPERIMENT day, there will be several conferences and workshops addressed to novices as well as to professionals that are concerned with social issues: beginning with artistic creation all the way to democracy and interconnected objects. These topics, addressed by the Free and Open Source, will allow us to further our understanding in these areas and also their application in the real life.
 
 Children are most welcome to test and participate, with a special schedule dedicated to them: KIDEXPERIMENT. There will be a number of discovery workshops for various free or open source software and hardware as well as mini-conferences for young people on the topics of democracy and free art.
 

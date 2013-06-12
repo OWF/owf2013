@@ -8,11 +8,11 @@ Si vous êtes expert(e)s sur l'une de ces thématiques, ou avez une analyse, un 
 
 ## Thèmes 2013
 
-### Think: Vouloir c'est Pouvoir!
+### THINK : *Vouloir c'est Pouvoir!*
 
 Les travaux de la thématique [THINK](/fr/think/) qui seront tenus sur deux jours, mettront en exergue le rôle majeur du Logiciel Libre et de l'Open-Source dans l'économie du numérique. Le mot d'ordre de ces deux journées peut se résumer par l'adag que ce soit d'un poine “vouloir c'est pouvoir”, ou comment concrètement réussir une stratégie libre et open-sourcet de vue technologique ou commercial.
 
-Le format de la première journée, Think, est rénové en 2013 afin de concentrer la conférence sur une unique plénière, permettant de réunir les meilleurs intervenants sur cette journée consacrée aux décideurs et aux entreprises, administrations et collectivités utilisatrices. Ce changement de format permet de présenter de façon concentrée et marquante les sujets qui seront explicités plus en détail la seconde journée, lors des ateliers (workshops) et dans les groupes de réflexion (think tanks).
+Le format de la première journée, THINK, est rénové en 2013 afin de concentrer la conférence sur une unique plénière, permettant de réunir les meilleurs intervenants sur cette journée consacrée aux décideurs et aux entreprises, administrations et collectivités utilisatrices. Ce changement de format permet de présenter de façon concentrée et marquante les sujets qui seront explicités plus en détail la seconde journée, lors des ateliers (workshops) et dans les groupes de réflexion (think tanks).
 
 Ce format permet aussi de porter le focus 2013 de l'événement : la concrétisation. L'industrie du Logiciel Libre et de l'Open-Source est aujourd'hui à un point où il faut faire passer de l'intention, de la décision politique ou stratégique, à l'application et à l'achat pratique. De la même façon, le focus 2013 portera sur ce passage à l'acte, aussi bien en termes d'achat que d'un point de vue technologique.
 
@@ -33,7 +33,7 @@ Voici les thèmes majeurs de cette 6eme édition:
 <a class="btn" href="#envoi-proposition">Envoyez votre proposition</a>
 
 
-### Code: Innovation Ouverte
+### CODE : *Innovation Ouverte*
 
 Les thèmes majeurs de [CODE](/fr/code/) pour 2013 sont:
 
@@ -54,7 +54,7 @@ L'Open Source Developers Conference (OSDC) se tient aussi simultanément en coll
 <a class="btn" href="#envoi-proposition">Envoyez votre proposition</a>
 
 
-### Experiment : Un Monde Ouvert
+### *EXPERIMENT* : *Un Monde Ouvert*
 
 La Journée [EXPERIMENT](/fr/experiment/), journée de découverte de l'Open Source ouverte au grand public. Dans l’esprit de Futur En Seine, EXPERIMENT vise à faire découvrir à un public toujours plus nombreux les projets Open Source: logiciels libres, imprimantes 3D, objets connectés et intelligents... grâce à des conférences autour de la citoyenneté et Internet, les arts libres et des ateliers. Les enfants seront à l'honneur avec un programme d'ateliers et de mini-conférences spécialement dédiées: KIDEXPERIMENT.
 
@@ -67,7 +67,7 @@ L'appel a participation est disponible ici:
 
 Nous vous remercions d'utiliser le [formulaire de soumission de propositions](/cfp/)
 
-**Délai de soumission: 30 juin 2013.**
+**Date limite de soumission: 30 juin 2013.**
 
 Vos propositions seront soumises à l’approbation des track-leaders appropriés.
 

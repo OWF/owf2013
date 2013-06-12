@@ -11,17 +11,17 @@ We will demonstrate that **innovation with FLOSS is accessible to **all companie
 
 ###Friday, the 4th of October
 
-The Think theme will be explored deeper during the second day, **through workshops and think tanks** led by industry and community leaders. This will enable attendees to contribute to the **evolution of our field**, and of course, provide the meeting point where the **world experts** will get together and talk about the present and the future.
+The THINK theme will be explored deeper during the second day, **through workshops and think tanks** led by industry and community leaders. This will enable attendees to contribute to the **evolution of our field**, and of course, provide the meeting point where the **world experts** will get together and talk about the present and the future.
 
 
-In the same time we will launch the Code Theme. The focus will be on the following
+In the same time we will launch the CODE Theme. The focus will be on the following
 topics: Web, Infrastructure (Cloud, but not exclusively), Data and Mobility. The Web, especially with the user aspects, like the **UX** movement and the **Responsive Design** requirements, but also **accessibility**, a topic that will be increasingly important in the future.
 
 
-###Saturday, the 5th of October
+### Saturday, the 5th of October
 
-Code will continue during the third day as well.
+CODE will continue during the third day as well.
 
-Saturday is experiment day, addressed to novices as well as to professionals that are concerned with social issues: beginning with **artistic creation** all the way to **democracy** and interconnected objects, the topics addressed by the Free and Open Source will allow us to further our understanding in these areas but just as well to apply them in real life.
+Saturday is EXPERIMENT day, addressed to novices as well as to professionals that are concerned with social issues: beginning with **artistic creation** all the way to **democracy** and interconnected objects, the topics addressed by the Free and Open Source will allow us to further our understanding in these areas but just as well to apply them in real life.
 
 **Children** are most welcome to test and participate, with a special schedule dedicated to them: KIDEXPERIMENT. There will be a number of **discovery workshops** for various free or open source software and hardware as well as **mini-conferences** for young people on the topics of democracy and free art.
