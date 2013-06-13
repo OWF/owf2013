@@ -7,7 +7,7 @@ L'édition sera présidée par **Pierre Queinnec** et vice-présidée par **Stef
 
 Enfin un temps particulier sera consacré lors de l'Open World Forum 2013 à la restitution des travaux des Etats Généraux de l'Open-Source (EGOS).
 
-La [ligne directrice du programme 2013](/fr/programme/) sera dévoilée **début Mars**, après validation par le Program Committee.
+La [ligne directrice du programme 2013](/fr/programme/) sera dévoilée **début Mars**, après validation par le Programme Committee.
 
 ### Lieu
 
@@ -21,7 +21,7 @@ Enfin une terrasse d'environ 700 mètres carrés sur les toits du bâtiment perm
 
 **Stefane Fermigier** est impliqué publiquement depuis 15 ans dans la promotion du logiciel libre, en tant que co-fondateur et ancien président de l’[AFUL](http://www.aful.org/), co-fondateur et président du [Groupe Thématique Logiciel Libre (GTLL) du pôle de compétitivité Systematic](http://www.gt-logiciel-libre.org/), co-fondateur et vice-président du [CNLL](http://www.cnll.fr/). Il a également fondé deux sociétés éditrices de logiciels libres, [Nuxeo](http://www.nuxeo.com/) et [Abilian](http://www.abilian.com/), et a contribué personnellement à plusieurs projets Python et Apache. Il fait partie du comité d’organisation de l’OWF depuis sa création.
 
-**Jean-Séverin Lair**, sous-directeur des systèmes d'information du Ministère de la Culture et de la Communication depuis 2008, il a reconduit la politique de ce ministère qui est depuis longtemps de s'appuyer sur un socle logiciel libre aussi bien en exploitation que sur le poste utilisateur. Il coordonne les travaux du groupe interministériel DISIC sur le logiciel libre. Auparavant à l'Agence du Développement de l'Administration Electronique, puis à la Direction Générale de la Modernisation de l'Etat, il avait déjà contribué au développement d'une dynamique interministérielle d'usage du logiciel libre, en encadrant des travaux commun sur l'interopérabilité, la mutualisation, la forge des administrations, les licences, les achats...
+**Jean-Séverin Lair**, sous-directeur des systèmes d'information du Ministère de la Culture et de la Communication depuis 2008, il a reconduit la politique de ce ministère qui est depuis longtemps de s'appuyer sur un socle logiciel libre aussi bien en exploitation que sur le poste utilisateur. Il coordonne les travaux du groupe interministériel DISIC sur le logiciel libre. Auparavant à l'Agence du Développement de l'Administration Electronique, puis à la Direction Générale de la Modernisation de l'Etat, il avait déjà contribué au développement d'une dynamique interministérielle d'usage du logiciel libre, en encadrant des travaux communs sur l'interopérabilité, la mutualisation, la forge des administrations, les licences, les achats...
 
 **Philippe Montargès** est co-fondateur (2006) et dirigeant de Alter Way, Opérateur de Services Open Source (CA 2012 de 11 M€, 120 personnes - <http://alterway.fr/> ).
 
