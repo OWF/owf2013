@@ -10,7 +10,7 @@ Le format de la première journée, consacrée entièrement au thème [THINK](/f
 
 Ce format permet aussi de porter le focus 2013 de l'événement: **la concrétisation**. L'industrie du Logiciel Libre et de l'Open-Source est aujourd'hui à un point où il faut faire passer de l'intention, de la décision politique ou stratégique, à l'application et à l'achat pratique. Ainsi, le focus 2013 portera sur ce passage à l'acte, aussi bien en termes d'achat que d'un point de vue technologique.
 
-L'objectif étant de prouver que l'innovation, en grande majorité actuellement portée par l'Open-Source et le Logiciel Libre, est accessible à toutes les entreprises, et qu'il est possible de réaliser l'innovation dans son domaine d'activité de façon plus simple qu'auparavant, en s'appuyant sur des technologies novatrices et libres. Cette démystification de l'innovation et sa concrétisation sera le thème majeur de cette sixième édition de l'Open World Forum.
+L'objectif étant de prouver que l'innovation, en grande majorité actuellement portée par l'Open-Source et le Logiciel Libre, est accessible à toutes les entreprises, et qu'il est possible de réaliser l'innovation dans son domaine d'activité de façon plus simple qu'auparavant, en s'appuyant sur des technologies novatrices et libres. Cette démystification de l'innovation et sa concrétisation seront le thème majeur de cette sixième édition de l'Open World Forum.
 
 <a class="btn" href="/fr/news/cfp/#envoi-proposition">Envoyez une proposition d'intervention</a>
 
