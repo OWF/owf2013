@@ -15,9 +15,9 @@ L'édition 2013 se tient dans un contexte mondial où le poids de l'industrie du
 
 Pour cette édition 2013, le nouveau lieu est un premier changement très attendu par les sponsors, qui va permettre de mettre à disposition des stands, et donc de** valoriser commercialement les innovations** de chacun des exposants. Ceci va permettre une meilleure **reconnaissance des acteurs et des communautés**.
 
-Pour la première fois, des **écoles d'ingénieur et des universités seront impliquées** dans le déroulement de l'évènement, afin de démontrer aux futurs diplômés **le dynamisme de notre filière**. Leur engagement est primordial pour la santé de notre écosystème, où les tensions sur le recrutement sont à leur comble. Leur implication se matérialise, outre leur présence, par un track **Education, Job & FLOSS** qui mettra un accent particulier sur les nouvelles pratiques telles que les MOOC (Massive Open Online Courses) en les confrontant avec les visions des filières plus classiques.
+Pour la première fois, des **écoles d'ingénieurs et des universités seront impliquées** dans le déroulement de l'évènement, afin de démontrer aux futurs diplômés **le dynamisme de notre filière**. Leur engagement est primordial pour la santé de notre écosystème, où les tensions sur le recrutement sont à leur comble. Leur implication se matérialise, outre leur présence, par un track **Education, Job & FLOSS** qui mettra un accent particulier sur les nouvelles pratiques telles que les MOOC (Massive Open Online Courses) en les confrontant avec les visions des filières plus classiques.
 
-Un** livre blanc** sera par ailleurs produit pour faire mieux connaître **notre filière** auprès des étudiants. Il sera à terme diffusé dans les écoles d'ingénieur et les partenaires académiques partenaires.
+Un** livre blanc** sera par ailleurs produit pour faire mieux connaître **notre filière** auprès des étudiants. Il sera à terme diffusé dans les écoles d'ingénieurs et les partenaires académiques partenaires.
 
 Enfin une **“Demo Cup” étudiante** sera tenue pour récompenser les meilleures équipes d'étudiants ayant réalisé un projet Open-Source. Ceci donnera lieu avant l'événement à une **compétition inter-universités et écoles**, qui permettra de faire connaître l'Open World Forum plus largement aux étudiants les plus motivés et les plus doués.
 
@@ -37,7 +37,7 @@ Le format de la première journée, **THINK**, est **rénové en 2013** afin de 
 
 Ce format permet aussi de porter le focus 2013 de l'événement: la **concrétisation**. L'industrie du Logiciel Libre et de l'Open-Source est aujourd'hui à un point où il faut faire **passer de l'intention**, de la décision politique ou stratégique, **à l'application** et à l'achat pratique. De la même façon, le focus 2013 portera sur ce **passage à l'acte**, aussi bien en termes d'achat que d'un point de vue technologique.
 
-Ceci afin de prouver que **l'innovation**, en grande majorité actuellement portée par l'Open-Source et le Logiciel Libre, **est accessible à toutes les entreprises**, et qu'il est possible de réaliser l'innovation dans son domaine d'activité de façon plus simple qu'auparavant, en s'appuyant sur des technologies novatrices et libres. Cette **démystification de l'innovation** et sa concrétisation sera le thème majeur de cette sixième édition de l'Open World Forum.
+Ceci afin de prouver que **l'innovation**, en grande majorité actuellement portée par l'Open-Source et le Logiciel Libre, **est accessible à toutes les entreprises**, et qu'il est possible de réaliser l'innovation dans son domaine d'activité de façon plus simple qu'auparavant, en s'appuyant sur des technologies novatrices et libres. Cette **démystification de l'innovation** et sa concrétisation seront le thème majeur de cette sixième édition de l'Open World Forum.
 
 Ces thèmes seront portés par des intervenants** qui ont réussi à innover** et partagent leur expérience autour de l'impact de leur utilisation, et contributions éventuelles à l'Open- Source. L**'innovation partagée** et les plateformes d'**innovation collaborative** seront notamment représentées. Plus concrètement, les intervenants témoigneront de leurs succès dans les domaines suivants:
 
@@ -48,7 +48,7 @@ Ces thèmes seront portés par des intervenants** qui ont réussi à innover** e
 - Fondations et Communautés technologiques du Logiciel Libre et de l'Open-Source
 - Grandes organisations professionnelles du secteur
 
-La **première journée** sera consacrée à des keynotes, des conférences et des tables rondes, enchaînées à** rythme soutenu**. Elles aborderont les grandes thématiques retenues pour cette sixième édition. La matinée sera l'occasion d'aborder le** poids réel, actuel et à venir **de l'Open-Source dans l'économie numérique mondiale, ainsi que le** rôle des politiques publiques** en la matière, les problématiques de **gouvernance**, d'**éducation** et d'**achats**,pour finir enfin sur les **clefs d'un succès** industriel ou communautaire embarquant des composants Open-Source.
+La **première journée** sera consacrée à des keynotes, des conférences et des tables rondes, enchaînées à ** rythme soutenu**. Elles aborderont les grandes thématiques retenues pour cette sixième édition. La matinée sera l'occasion d'aborder le** poids réel, actuel et à venir **de l'Open-Source dans l'économie numérique mondiale, ainsi que le** rôle des politiques publiques** en la matière, les problématiques de **gouvernance**, d'**éducation** et d'**achats**,pour finir enfin sur les **clefs d'un succès** industriel ou communautaire embarquant des composants Open-Source.
 
 L'**après-midi** sera plus particulièrement tourné vers le rôle de** catalyseur d'innovation **et les stratégies d'exécution jouées par l'Open-Source dans les grands chantiers technologiques, éducatifs et économiques, notamment dans l'**infrastructure** et le **Cloud**, le** Big Data** et les plateformes **Hadoop**, le **Web** de demain et la **Mobilité**.
 
@@ -64,7 +64,7 @@ En termes technologiques dans le cadre de la **thématique CODE**, un focus part
 
 **L'Infrastructure** n'est pas qu'un sujet technique et nous souhaitons l'aborder enfin sur son aspect d'organisation dans les Directions des Systèmes d'Information, avec notamment le mouvement **devops**, les impacts internes des nouveaux mécanismes de provisionnement de machines virtuelles.
 
-Les sujets Data, qui regroupent l'**Open Data** et la réflexion à avoir pour peser les problématiques et les gains d'ouverture de jeu de données; mais aussi le** Big Data**, l'analyse batch ou semi temps réel des données en grande quantité, et l'avantage commercial ou métier que l'on peut en attendre.
+Les sujets Data, qui regroupent l'**Open Data** et la réflexion à avoir pour peser les problématiques et les gains d'ouverture de jeu de données; mais aussi le** Big Data**, l'analyse batch ou semi-temps réel des données en grande quantité, et l'avantage commercial ou métier que l'on peut en attendre.
 
 Enfin CODE abordera la **Mobilité**, puisqu'il s'agit d'un sujet important et en perpétuelle innovation, mais aussi particulièrement dominé par l'Open-Source, avec Android, Tizen, MeeGo ou encore FirefoxOS.
 
