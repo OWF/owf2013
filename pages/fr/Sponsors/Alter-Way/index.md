@@ -1,6 +1,6 @@
 title: Alter Way
 
-Alter Way, opérateur de services Open Source, fourni 5 types de services : consulting, formation, intégration et services professionnels (solutions), hébergement à valeur ajoutée et web design et consulting e-marketing.
+Alter Way, opérateur de services Open Source, fournis 5 types de service : consulting, formation, intégration et services professionnels (solutions), hébergement à valeur ajoutée et web design et consulting e-marketing.
 
 Alter Way couvre les besoins principaux en terme de technologies de l'information : CMS, ECM, e-commerce, CRM, business intelligence, emploi, mailing, gestion de systèmes et de réseau.
 
