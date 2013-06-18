@@ -1,6 +1,6 @@
 title: Press
 
-The sixth Open World Forum – being staged in Paris on 3, 4 and 5 October – will bring together more than 2000 Free / Open Source decision-makers from around the world, to cross-fertilize initiatives and map out the digital future.
+The sixth Open World Forum – staged in Paris on the 3rd, 4th and 5th of October – will bring together more than 2000 Free / Open Source decision-makers from around the world, to cross-fertilize initiatives and map out the digital future.
 
 Are you a journalist or a blogger?
 
