@@ -7,6 +7,6 @@ The result of the union, under the Alter Way brand, of its specialized emblemati
 
 Managed by its founders, Philippe Montargès and Véronique Torner, Alter Way provides a global and single solution to large enterprise, public sector and SMB.
 
-Alter Way, it’s a distinctive skill on the Free market and a robust partner at your side for a long time.
+Alter Way has a distinctive skill on the Free market and can be a robust partner at your side for a long time.
 
 [http://www.alterway.fr](http://www.alterway.fr)
