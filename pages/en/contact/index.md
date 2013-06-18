@@ -6,7 +6,7 @@ title: Contact us
 
 ## Sponsorhip Opportunities
 
-If you are interested in becoming sponsor of the Open World Forum and get important visibility during the event, please contact [sponsoring@openworldforum.org][2]
+If you are interested in becoming a sponsor of the Open World Forum and getting important visibility during the event, please contact [sponsoring@openworldforum.org][2]
 
 ## Speaker / Program Ideas/ Partnerships opportunities
 
