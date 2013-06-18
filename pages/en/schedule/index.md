@@ -1,15 +1,15 @@
 title: Schedule
 
-###Thursday, the 3rd of October
+###Thursday, October 3rd
 
 The **opening day** format will differ from the previous editions as talks will happen in a **single-track schedule** in the largest auditorium. This enables us to concentrate on having the best schedule in a unique plenary session, dedicated to decision-makers in the private and public sectors. Talks will be more concise and will introduce the **think tanks and workshops** that will be held on the **second day**.
 
-This renewed format will support the 2013 motto: **Make It Happen!**. The FLOSS industry is now at a point where we need to have IT departments take the **step from intention**, either from strategy or political decision, to **actual use or purchase**.
+This renewed format will support the 2013 motto: **Make It Happen!**. The FLOSS industry is now at a point where we need to have IT departments take the **step from intention**, either in strategy or political decision, to **actual use or purchase**.
 
 We will demonstrate that **innovation with FLOSS is accessible to **all companies and organisations**. It is nowadays easier to innovate in each market because of the availability of free and innovative technologies. This **demystifcation of practical innovation** will be the major theme of this sixth edition of the Open World Forum
 
 
-###Friday, the 4th of October
+###Friday, October 4th
 
 The THINK theme will be explored deeper during the second day, **through workshops and think tanks** led by industry and community leaders. This will enable attendees to contribute to the **evolution of our field**, and of course, provide the meeting point where the **world experts** will get together and talk about the present and the future.
 
@@ -18,7 +18,7 @@ In the same time we will launch the CODE Theme. The focus will be on the followi
 topics: Web, Infrastructure (Cloud, but not exclusively), Data and Mobility. The Web, especially with the user aspects, like the **UX** movement and the **Responsive Design** requirements, but also **accessibility**, a topic that will be increasingly important in the future.
 
 
-### Saturday, the 5th of October
+### Saturday, October 5th
 
 CODE will continue during the third day as well.
 
