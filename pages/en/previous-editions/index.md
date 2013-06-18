@@ -30,7 +30,7 @@ The pictures on [Flickr](http://www.flickr.com/photos/67985356@N07/)
 
 ## Previous Editions
 
-The web sites for the previous editions have not been conserved, however you can still find some information on archive.org:
+The web sites for the previous editions are no longer available, however you can still find some information on archive.org:
 
 - [Archive for the 2009 site](http://web.archive.org/web/20091212025904/http://openworldforum.org/?)
 
