@@ -55,8 +55,7 @@ The Open Source Developers Conference (OSDC) is also held simultaneously in coll
 
 EXPERIMENT: An Open World aims to introduce and promote the Free and Open Source philosophy of mutual, shared and responsible production. The day dedicated to this dimension will allow the public to test and benchmark Open Source applications and hardware, in order to discover the Internet of Things, to rediscover co-creation, to meet the Makers and to DIY. Children are welcome to test and participate, with a special schedule dedicated to them: KIDEXPERIMENT.
 
-The Call for Participation is available here:
-<http://www.capdigital.com/en/events/call-for-proposal-experiment-owf-2013/>
+[The Call for Participation is available here.](http://www.openworldforum.org/en/news/CFP-Experiment/)
 
 
 <a id="submit-proposal"></a>
