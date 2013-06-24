@@ -58,8 +58,7 @@ L'Open Source Developers Conference (OSDC) se tient aussi simultanément en coll
 
 La Journée [EXPERIMENT](/fr/experiment/), journée de découverte de l'Open Source ouverte au grand public. Dans l’esprit de Futur En Seine, EXPERIMENT vise à faire découvrir à un public toujours plus nombreux les projets Open Source: logiciels libres, imprimantes 3D, objets connectés et intelligents... grâce à des conférences autour de la citoyenneté et Internet, les arts libres et des ateliers. Les enfants seront à l'honneur avec un programme d'ateliers et de mini-conférences spécialement dédiées: KIDEXPERIMENT.
 
-L'appel à participation est disponible ici:
-<http://www.capdigital.com/evenements/aap-experiment-owf-2013/>
+[L'appel à participation est disponible ici.](http://www.openworldforum.org/fr/news/CFP-Experiment/)
 
 
 <a id="envoi-proposition"></a>
