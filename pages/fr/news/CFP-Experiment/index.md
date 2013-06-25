@@ -4,7 +4,7 @@ Le Comité de Pilotage d'EXPERIMENT de l’Open World Forum 2013 lance un appel 
 
 Les projets sélectionnés bénéficient d’un espace et d’une valorisation dans le cadre de la manifestation.
 
-Modalité de participation : compléter et renvoyer  le formulaire de participation avant mardi 18 juin à 12 :00 à [experiment@openworldforum.org][4].
+Modalité de participation : compléter et renvoyer  le formulaire de participation avant le 30 juin à [experiment@openworldforum.org][4].
 
 - [Télécharger l'appel à participation ici](/static/Documents/AAP_OWF13_experiment_V2-30juin.pdf)
 
