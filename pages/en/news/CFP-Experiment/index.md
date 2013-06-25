@@ -4,7 +4,7 @@ The EXPERIMENT organization comitee is calling Makers and Doers, students and sc
 
 Selected projects enjoy space and enhancement during the event.
 
-To take part to EXPERIMENT : complete and send the form before the 18th of june at 12:00 to [experiment@openworldforum.org][4].
+To take part to EXPERIMENT : complete and send the form before the 30th of june to [experiment@openworldforum.org][4].
 
 [Download the CFP here](/static/Documents/Call_for_participation_OWF13_experiment_EN.pdf)
 
