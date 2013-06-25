@@ -1,7 +1,7 @@
-from yota import Form, Check
-from yota.nodes import *
-from yota.validators import RequiredValidator, EmailValidator, \
-  MinLengthValidator
+from abilian.web.forms import required, email
+from flask.ext.wtf import Form
+from flask.ext.wtf.html5 import EmailField
+from wtforms import StringField, TextAreaField, RadioField
 
 
 THEMES = [
@@ -33,33 +33,29 @@ THEMES = [(x, x) for x in THEMES]
 
 
 class TalkProposalForm(Form):
-  speaker_name = EntryNode(title=u"Your name")
-  _speaker_name_valid = Check(RequiredValidator(), 'speaker_name')
+  speaker_name = StringField(label=u"Your name",
+                             validators=[required()])
 
-  speaker_title = EntryNode(title=u"Your title")
-  _speaker_title_valid = Check(RequiredValidator(), 'speaker_title')
+  speaker_title = StringField(label=u"Your title",
+                              validators=[required()])
 
-  speaker_organization = EntryNode(title=u"Your organization")
-  _speaker_organization_valid = Check(RequiredValidator(),
-                                      'speaker_organization')
+  speaker_organization = StringField(label=u"Your organization",
+                                     validators=[required()])
 
-  speaker_email = EntryNode(title=u"Your email address")
-  _speaker_email_valid = Check(EmailValidator(), 'speaker_email')
+  speaker_email = EmailField(label=u"Your email address",
+                             validators=[required(), email()])
 
-  speaker_bio = TextareaNode(title=u"Your bio", columns=60)
-  _speaker_bio_valid = Check(RequiredValidator(), 'speaker_bio')
+  speaker_bio = TextAreaField(label=u"Your bio",
+                              validators=[required()])
 
-  title = EntryNode(title=u"Your talk title")
-  _title_valid = Check(RequiredValidator(), 'title')
+  title = StringField(label=u"Your talk title",
+                      validators=[required()])
 
-  abstract = TextareaNode(title=u"Your talk abstract", rows=15, columns=60)
-  _abstract_valid = Check(RequiredValidator(), 'abstract')
+  abstract = TextAreaField(label=u"Your talk abstract",
+                           validators=[required()])
 
-  theme = RadioNode(title=u"Choose a theme",
-                    buttons=THEMES)
-  _theme_valid = Check(RequiredValidator(), 'theme')
+  theme = RadioField(label=u"Choose a theme",
+                     choices=THEMES, validators=[required()])
 
   # sub_theme = RadioNode(title=u"Select one or several subthemes")
   # _radio_valid = Check(RequiredValidator(), 'sub_theme')
-
-  submit = SubmitNode(title="Submit")

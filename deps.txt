@@ -7,6 +7,7 @@ Flask==0.9
 Flask-Admin==1.0.6
 Flask-Assets==0.8
 Flask-Babel==0.8
+Flask-Bootstrap==2.3.1-1
 Flask-DebugToolbar==0.8.0
 Flask-FlatPages==0.5
 -e git+https://github.com/sfermigier/flask-linktester.git@6cd463031f1182aa6e228e29b8839ce65b62af8f#egg=Flask_LinkTester-dev

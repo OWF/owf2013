@@ -7,6 +7,7 @@ import re
 
 from flask import Flask, abort, request, g
 from flask.ext.admin import Admin
+from flask.ext.bootstrap import Bootstrap
 from flask.ext.frozen import Freezer
 from flask.ext.flatpages import FlatPages
 from flask.ext.markdown import Markdown
@@ -40,6 +41,7 @@ def setup(app):
   db.init_app(app)
   mail.init_app(app)
   admin = Admin(app)
+  bootstrap = Bootstrap(app)
 
   setup_filters_and_processors(app)
 

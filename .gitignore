@@ -7,7 +7,6 @@
 /dist
 /whoosh_index
 /website/static2
-/website/cfp_not_used
 
 .webassets-cache
 .idea

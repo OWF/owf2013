@@ -1,5 +1,7 @@
 {% extends "_base.html" %}
 
+{% from "cfp/macros.html" import m_renderfield %}
+
 {% block main %}
 
   <div class="container" style="width: 940px;">
@@ -23,13 +25,35 @@
                 {%- endif %}
               {%- endwith %}
 
-              <p>Please refer to the <a href="/en/news/CFP/">call for participants</a>
-              if you have any question on this form.</p>
+              <p>Please refer to the <a href="/en/news/CFP/">call for
+                participants</a>
+                if you have any question on this form.</p>
 
               <p>Please fill the form below (all fields are mandatory):</p>
 
               <hr>
-              {{ form|safe }}
+              <form method="post"
+                  action="#">
+
+                {% for field in form %}
+                  {% if field.type == 'CSRFTokenField' %}
+                    {{ field() }}
+                  {% else %}
+                    {{ m_renderfield(field) }}
+                  {% endif %}
+                {% endfor %}
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary" name="_action"
+                      value="add">
+                    Save
+                  </button>
+                  <button type="submit" class="btn cancel" name="_action"
+                      value="cancel">
+                    Cancel
+                  </button>
+                </div>
+              </form>
 
             </article>
           </div>

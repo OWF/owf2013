@@ -583,3 +583,10 @@ h1 {
   margin-bottom: 20px;
 }
 
+ul#theme {
+  list-style-type: none;
+}
+
+ul#theme li label {
+  display: inline;
+}
