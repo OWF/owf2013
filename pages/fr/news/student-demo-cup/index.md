@@ -9,3 +9,4 @@ Remise des prix durant l’événement, **le 4 octobre 2013 au Beffroi de Montro
 
 
 
+<a href="http://www.educationjobandfloss.org/student-demo-cup-opensource/" target="_blank"><img src="/static/pictures/call_student_demo_cup.jpg" alt="Student Demo Cup"></a>
