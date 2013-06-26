@@ -2,7 +2,7 @@ title : Student Demo Cup
 
 ###Student Demo Cup
 
-The Student Demo Cup is open to all French students. 
+The Student Demo Cup is open to all students. 
 
 Send us your project before the **12th of July**. If you are selected, 
 an expert will guide you throughout your participation in the 2013 Open World Forum Demo Cup
