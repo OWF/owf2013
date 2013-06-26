@@ -1,4 +1,5 @@
 title: Appel à participation EXPERIMENT
+date: 2013/06/01
 
 Le Comité de Pilotage d'EXPERIMENT de l’Open World Forum 2013 lance un appel à participation destiné aux « Makers » et « Doers », étudiants et écoles, artistes et designers, associations et entreprises acteurs de l’Internet des Objets (objets qui connectent monde physique et Internet), et hackers en tout genre.  Cet appel à participation concerne des œuvres et réalisations déjà financées et réalisées pouvant être exposées dans un espace collectif et qui ont une interaction avec le public.
 

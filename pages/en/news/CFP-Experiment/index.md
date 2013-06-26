@@ -1,4 +1,5 @@
 title: Call for Participation EXPERIMENT
+date: 2013/06/01
 
 The EXPERIMENT organization comitee is calling Makers and Doers, students and schools, artists and designers, associations and companies,and hackers to participate in the project. This call for participation concerns every work and realization which could be exhibited in collective space and have an interaction with the audience.
 

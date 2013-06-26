@@ -1,4 +1,5 @@
 title: Call for Participation
+date: 2013/06/01
 
 The Open World Forum is the first European summit to gather political representatives, decision-makers and experts to debate the technological, economic and social impacts that the Free and Open-Source technologies bring to the market. The forum was first held in 2008, and is now organized annually in Paris, France, with more than 200 speakers coming from 24 countries, and a global audience that was 2100-people strong in 2012. The Open World Forum is held in partnership with all the major international communities in Free Software and with the key players in the digital economy.
 

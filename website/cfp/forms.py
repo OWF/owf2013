@@ -15,6 +15,7 @@ THEMES = [
   "THINK : Successes and Testimonials",
   "THINK : Cloud as a lock-in or an opportunity?",
   "THINK : CIO Summit",
+  "THINK : Legal and licensing aspects of open source",
   "THINK : Other",
   # Code
   "CODE : Big Data",

@@ -1,4 +1,5 @@
 title: Appel à Participation
+date: 2013/06/01
 
 L'Open World Forum est le premier sommet européen rassemblant politiques, décideurs et experts pour débattre de l'impact technologique, économique et social des technologies libres et ouvertes. L'événement a été fondé en 2008 et se tient désormais annuellement à Paris, France, avec plus de 200 orateurs venus de 24 pays et une audience internationale de 2100 personnes en 2012. L'Open World Forum est organisé en partenariat avec toutes les grandes communautés internationales du Logiciel Libre et les grands acteurs du numérique.
 

@@ -1,6 +1,6 @@
 title : Student Demo Cup
+date: 2013/06/25
 
-###Student Demo Cup
 
 Envoyez-nous votre projet avant le **12 juillet**. Si vous êtes sélectionné(e), 
 un expert vous accompagnera pour participer à la Student Demo Cup de l’Open World Forum 2013.
