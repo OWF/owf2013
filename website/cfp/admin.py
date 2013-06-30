@@ -1,9 +1,11 @@
-from flask import render_template
+import StringIO
+from flask import render_template, make_response
 from flask.ext.admin import BaseView, expose
 from flask.ext.admin.contrib.sqlamodel import ModelView
 from flask.ext.login import current_user
 from abilian.core.extensions import db
 import itertools
+import csv
 
 from .models import TalkProposal
 from .forms import THEMES
@@ -33,6 +35,20 @@ class AllTalksAdminView(BaseView):
 
     return render_template("cfp/alltalks.html",
                            themes=themes, proposals=proposals)
+
+  @expose("/export.csv")
+  def csv(self):
+    output = StringIO.StringIO()
+    writer = csv.writer(output)
+    for tp in TalkProposal.query.all():
+      row = [tp.created_at.strftime("%Y/%m/%d"),
+             tp.speaker_name.encode("utf8"),
+             tp.title.encode("utf8"),
+             tp.theme.encode("utf8")]
+      writer.writerow(row)
+    response = make_response(output.getvalue())
+    response.headers['Content-Type'] = 'application/csv'
+    return response
 
 
 def register_plugin(app):

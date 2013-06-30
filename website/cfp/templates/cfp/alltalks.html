@@ -20,7 +20,7 @@
   </tr>
   {% for theme in themes %}
     <tr>
-      <td>{{ theme.name }}</td>
+      <td><a href="#{{ theme.name|lower }}">{{ theme.name }}</a></td>
       <td style="text-align: center;">{{ theme.count }}</td>
     </tr>
   {% endfor %}
@@ -29,6 +29,7 @@
 <h1>Details</h1>
 
 {% for theme, props in proposals %}
+  <a id="{{ theme|lower }}"
   <h2>{{ theme }}</h2>
   {% for proposal in props %}
     <h3>{{ proposal.title }}</h3>
