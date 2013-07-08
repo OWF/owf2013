@@ -35,14 +35,14 @@ MAIN_MENU = {'fr': [('', u'Accueil'),
                     ('programme/', u'Programme'),
                     ('lieu/', u'Lieu'),
                     ('news/', u'Actualités'),
-                    ('registration/', u'Inscription', 'menu-registration')],
+                    ('../registration/', u'Inscription', 'menu-registration')],
              'en': [('', u'Home'),
                     ('about/', u'About'),
                     ('speakers/', u"Speakers"),
                     ('schedule/', u'Schedule'),
                     ('venue/', u'Venue'),
                     ('news/', u'News'),
-                    ('registration/', u'Registration', 'menu-registration')]}
+                    ('../registration/', u'Registration', 'menu-registration')]}
 
 IMAGE_SIZES = {
     'small': (300, 180),

@@ -4,6 +4,7 @@ import locale
 from os import mkdir
 from os.path import join, dirname, exists
 import re
+from abilian.application import PluginManager
 
 from flask import Flask, abort, request, g
 from flask.ext.admin import Admin
@@ -19,14 +20,20 @@ from abilian.web.filters import init_filters
 
 from .views import setup as setup_views
 from .crm import setup as setup_crm
+from website.registration.models import Track
+from website.tracks import TRACKS
 from .whoosh import Whoosh
 
 
 __all__ = ['create_app', 'create_db']
 
 
+class Application(Flask, PluginManager):
+  pass
+
+
 def create_app(config=None):
-  app = Flask(__name__)
+  app = Application(__name__)
   if not config:
     from . import config
   app.config.from_object(config)
@@ -48,10 +55,11 @@ def setup(app):
   # Register our own blueprints / apps
   setup_views(app)
   setup_crm(app)
-  from .cfp import register_plugin as register_cfp
-  register_cfp(app)
-  from .security import register_plugin as register_security
-  register_security(app)
+
+  #app.load_plugins()
+  app.register_plugin("website.cfp")
+  app.register_plugin("website.security")
+  app.register_plugin("website.registration")
 
   # Add some extensions
   whoosh = Whoosh(app)
@@ -72,6 +80,7 @@ def setup(app):
   setup_template_loader(app)
 
   create_db(app)
+  load_tracks(app)
 
 
 def setup_babel(app):
@@ -107,8 +116,6 @@ def create_db(app):
 
   with app.app_context():
     db.create_all()
-    for k,v in db.get_binds().items():
-      print v, k
 
     # alembic_ini = join(dirname(__file__), '..', 'alembic.ini')
     # alembic_cfg = flask_alembic.FlaskAlembicConfig(alembic_ini)
@@ -121,6 +128,15 @@ def create_db(app):
     #               can_login=False)
     #   db.session.add(root)
     #   db.session.commit()
+
+
+def load_tracks(app):
+  with app.app_context():
+    if Track.query.count() == 0:
+      for track_id, track_title, track_theme, track_day in TRACKS:
+        track = Track(title=track_title, theme=track_theme, day=track_day)
+        db.session.add(track)
+      db.session.commit()
 
 
 def setup_filters_and_processors(app):

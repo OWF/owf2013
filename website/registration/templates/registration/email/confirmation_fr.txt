@@ -1,0 +1,9 @@
+Merci de vous être inscrit sur le site de l'Open World Forum.
+
+Il vous reste encore à confirmer votre inscription, en suivant ce lien:
+
+{{ url_for("registration.confirmation", token=token, _external=True) }}
+
+Cordialement,
+
+  L'équipe d'organisation

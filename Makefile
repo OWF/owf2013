@@ -16,6 +16,7 @@ all:
 	./manage.py build
 
 clean:
+	rm -rf data/abilian.db
 	rm -rf build 
 	rm -rf ./static/.webassets-cache
 	rm -rf *.egg *.egg-info

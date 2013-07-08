@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-06-05 19:44+0200\n"
+"POT-Creation-Date: 2013-07-08 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,151 +25,106 @@ msgstr ""
 msgid "Not a valid choice"
 msgstr ""
 
-#: website/rfp/forms.py:51
-msgid "Not a valid Twitter account"
+#: website/registration/forms.py:29 website/registration/forms.py:43
+msgid "Your email address"
 msgstr ""
 
-#: website/rfp/presenters.py:80
-msgid "Undefined"
+#: website/registration/forms.py:32 website/registration/forms.py:46
+msgid "Will you come on Oct. 3th? (Thursday)"
 msgstr ""
 
-#: website/rfp/views.py:75 website/rfp/views.py:161
-msgid "Your profile has been updated !"
+#: website/registration/forms.py:33 website/registration/forms.py:47
+msgid "Will you come on Oct. 4th? (Friday)"
 msgstr ""
 
-#: website/rfp/templates/rfp/_talks_helper.html:6
-#: website/rfp/templates/rfp/talk_proposals.html:28
-#: website/rfp/templates/rfp/talks_dashboard.html:14
-#: website/templates/macros.html:154 website/templates/macros.html:193
-msgid "Title"
+#: website/registration/forms.py:34 website/registration/forms.py:48
+msgid "Will you come on Oct. 5th? (Saturday)"
 msgstr ""
 
-#: website/rfp/templates/rfp/_talks_helper.html:7
-#: website/rfp/templates/rfp/talk_proposals.html:28
-#: website/rfp/templates/rfp/talks_dashboard.html:14
-msgid "Speaker"
+#: website/registration/forms.py:50
+msgid "First name"
 msgstr ""
 
-#: website/rfp/templates/rfp/_talks_helper.html:8
-msgid "Type"
+#: website/registration/forms.py:51
+msgid "Last name"
 msgstr ""
 
-#: website/rfp/templates/rfp/about.html:5
-msgid "About Us"
+#: website/registration/forms.py:52
+msgid "Organization"
 msgstr ""
 
-#: website/rfp/templates/rfp/about.html:5
-msgid "The team behind this project !"
+#: website/registration/forms.py:53
+msgid "URL"
 msgstr ""
 
-#: website/rfp/templates/rfp/change_password.html:6
-msgid "Change your password"
+#: website/registration/forms.py:54
+msgid "Biography"
 msgstr ""
 
-#: website/rfp/templates/rfp/closed_talk_proposal.html:5
-msgid "Talk Proposal is Closed !"
+#: website/registration/views.py:27
+msgid "Register as a participant"
 msgstr ""
 
-#: website/rfp/templates/rfp/index.html:8
-msgid "Thank you for the Proposals"
+#: website/registration/views.py:44
+msgid "This is not your email"
 msgstr ""
 
-#: website/rfp/templates/rfp/index.html:9
-msgid "You will be notified by email as soon as possible"
+#: website/registration/views.py:64
+msgid ""
+"Thanks for registering to the OWF. An email has been sent to you with "
+"further instructions."
 msgstr ""
 
-#: website/rfp/templates/rfp/index.html:18
-msgid "Here is the Schedule"
+#: website/registration/views.py:79
+msgid "Confirm your participation"
 msgstr ""
 
-#: website/rfp/templates/rfp/speakers.html:6
-msgid "The Speakers"
+#: website/registration/views.py:109
+msgid "Please confirm your participation at the Open World Forum 2013"
 msgstr ""
 
-#: website/rfp/templates/rfp/talk_edit.html:15
-#: website/rfp/templates/rfp/user_profile.html:19
-msgid "Information"
+#: website/registration/templates/registration/form.html:28
+msgid ""
+"Please read the <a href='/en/schedule/'>schedule</a> if you have any "
+"question."
 msgstr ""
 
-#: website/rfp/templates/rfp/talk_edit.html:18
-#: website/rfp/templates/rfp/talk_edit.html:21
-#: website/rfp/templates/rfp/talk_proposal.html:29
-#: website/rfp/templates/rfp/user_profile.html:23
-msgid "Internet"
+#: website/registration/templates/registration/form.html:36
+msgid "Days you are attending the OWF:"
 msgstr ""
 
-#: website/rfp/templates/rfp/talk_proposal.html:5
-msgid "Submit Your Talk"
-msgstr ""
-
-#: website/rfp/templates/rfp/talk_proposal.html:9
-msgid "Warning!"
-msgstr ""
-
-#: website/rfp/templates/rfp/talk_proposal.html:9
-msgid "Talk duration is 25 min including Q/A!"
-msgstr ""
-
-#: website/rfp/templates/rfp/talk_proposal.html:16
-msgid "About Your Talk"
-msgstr ""
-
-#: website/rfp/templates/rfp/talk_proposal.html:24
-msgid "About Yourself"
-msgstr ""
-
-#: website/rfp/templates/rfp/talk_proposals.html:7
-msgid "Talk Proposals"
-msgstr ""
-
-#: website/rfp/templates/rfp/talk_proposals.html:28
-msgid "State"
-msgstr ""
-
-#: website/rfp/templates/rfp/talk_proposals.html:28
-#: website/rfp/templates/rfp/talks_dashboard.html:14
-msgid "Points"
-msgstr ""
-
-#: website/rfp/templates/rfp/talk_show.html:7
-msgid "Talk"
-msgstr ""
-
-#: website/rfp/templates/rfp/talk_show.html:74
-msgid "Vote Up"
-msgstr ""
-
-#: website/rfp/templates/rfp/talk_show.html:78
-msgid "Vote Down"
-msgstr ""
-
-#: website/rfp/templates/rfp/talk_show.html:82
-#: website/rfp/templates/rfp/talks_dashboard.html:27
-#: website/rfp/templates/rfp/talks_dashboard.html:32
-msgid "Validate"
-msgstr ""
-
-#: website/rfp/templates/rfp/talks_dashboard.html:7
-msgid "Talk Dashboard"
+#: website/registration/templates/registration/form.html:42
+#: website/registration/templates/registration/form.html:54
+msgid ""
+"Which tracks are you most interested in? (You can always change your "
+"choice later)"
 msgstr ""
 
 #: website/templates/_base.html:96 website/templates/base.html:79
 msgid "Search"
 msgstr ""
 
-#: website/templates/_base.html:120
+#: website/templates/_base.html:121
 msgid "Our partners"
 msgstr ""
 
 #: website/templates/_base.html:128
-msgid "Organizers"
+msgid "Institutional partners"
 msgstr ""
 
-#: website/templates/_base.html:147
+#: website/templates/_base.html:145
+msgid "Organizer"
+msgstr ""
+
+#: website/templates/_base.html:152
+msgid "Co-organizers"
+msgstr ""
+
+#: website/templates/_base.html:167
 msgid "Platinum sponsors"
 msgstr ""
 
-#: website/templates/_base.html:158
+#: website/templates/_base.html:178
 msgid "Silver sponsors"
 msgstr ""
 
@@ -217,6 +172,10 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
+#: website/templates/macros.html:154 website/templates/macros.html:193
+msgid "Title"
+msgstr ""
+
 #: website/templates/macros.html:155 website/templates/macros.html:195
 msgid "Size"
 msgstr ""
@@ -244,7 +203,7 @@ msgstr ""
 msgid "This folder is currently empty. Why don't you upload some content?"
 msgstr ""
 
-#: website/templates/search.html:12 website/views/localized.py:198
+#: website/templates/search.html:12 website/views/localized.py:199
 msgid "Search results"
 msgstr ""
 
@@ -336,7 +295,7 @@ msgstr ""
 msgid "Site map"
 msgstr ""
 
-#: website/views/localized.py:208
+#: website/views/localized.py:209
 msgid "Page not found"
 msgstr ""
 

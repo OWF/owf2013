@@ -1,0 +1,109 @@
+{% extends "_base.html" %}
+
+{% from "registration/macros.html" import m_renderfield %}
+
+{% block main %}
+
+  <div class="container" style="width: 940px;">
+
+    <div class="row show-grid">
+      <div class="span12">
+
+        <div class="row show-grid clear-both">
+          <div class="span12 main-column two-columns-right">
+            <article>
+              <h1 class="page-title">{{ page.title }}</h1>
+
+              {%- with messages = get_flashed_messages(with_categories=true) %}
+                {%- if messages %}
+                  {%- for category, message in messages %}
+                    <div class="alert alert-block alert-{{ category }}">
+                      <a class="close" data-dismiss="alert">&times;</a>
+                      {{ message }}
+                    </div>
+                  {%- endfor %}
+                {%- endif %}
+              {%- endwith %}
+
+              <p>{{ _("Please read the <a href='/en/schedule/'>schedule</a> if you have any question.")|safe }}</p>
+
+              <hr>
+              <form method="post" action="#">
+
+                {{ form.csrf_token() }}
+                {{ m_renderfield(form.email) }}
+
+                {{ _("Days you are attending the OWF:") }}
+                {{ m_renderfield(form.coming_on_oct_3, with_label=False) }}
+
+                {{ m_renderfield(form.coming_on_oct_4, with_label=False) }}
+                <div id="oct4_subform"
+                    style="margin-left: 40px; display: none;">
+                  <p>{{ _("Which tracks are you most interested in? (You can always change your choice later)") }}</p>
+
+                  {% for track in tracks %}
+                    {% if track.day == 'FRI' %}
+                      {{ m_renderfield(form['track_%s' % track.id], with_label=False) }}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+
+                {{ m_renderfield(form.coming_on_oct_5, with_label=False) }}
+                <div id="oct5_subform"
+                    style="margin-left: 40px; display: none;">
+                  <p>{{ _("Which tracks are you most interested in? (You can always change your choice later)") }}</p>
+
+                  {% for track in tracks %}
+                    {% if track.day == 'SAT' %}
+                      {{ m_renderfield(form['track_%s' % track.id], with_label=False) }}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary" name="_action"
+                      value="add">
+                    Save
+                  </button>
+                  <button type="submit" class="btn cancel" name="_action"
+                      value="cancel">
+                    Cancel
+                  </button>
+                </div>
+              </form>
+
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <script>
+    if ($("#coming_on_oct_4").is(":checked")) {
+            $("#oct4_subform").show({duration: 400});
+    }
+    if ($("#coming_on_oct_5").is(":checked")) {
+            $("#oct5_subform").show({duration: 400});
+    }
+
+    $("#coming_on_oct_4").change(function() {
+          if ($(this).is(":checked")) {
+            $("#oct4_subform").show({duration: 400});
+          } else {
+            $("#oct4_subform").hide({duration: 400});
+          }
+        }
+    );
+    $("#coming_on_oct_5").change(function() {
+          if ($(this).is(":checked")) {
+            $("#oct5_subform").show({duration: 400});
+          } else {
+            $("#oct5_subform").hide({duration: 400});
+          }
+        }
+    );
+  </script>
+
+{% endblock %}
