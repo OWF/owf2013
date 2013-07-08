@@ -9,6 +9,7 @@ from flask.ext.testing import TestCase
 
 from abilian.core.extensions import db
 from abilian.core.subjects import User
+from manage import dump_routes
 
 from website.application import create_app
 from website import config
@@ -68,6 +69,9 @@ class IntegrationTestCase(TestCase):
     config = TestConfig()
     config.NO_LOGIN = self.no_login
     self.app = create_app(config)
+
+    for rule in self.app.url_map.iter_rules():
+      print rule
 
     return self.app
 

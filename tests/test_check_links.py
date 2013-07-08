@@ -30,10 +30,11 @@ class TestLinks(BaseTestCase):
   init_data = True
 
   def test_links(self):
-    # TODO remove once the english site is ready.
-    self.crawler.black_list = set(['/en/'])
+    self.crawler.black_list = {'/fr/../*', '/en/../*'}
     #self.crawler.verbosity = 1
+    self.crawler.crawl("/registration/")
     self.crawler.crawl("/fr/")
+    self.crawler.crawl("/en/")
 
 
 @skipUnless(RUN_SLOW_TESTS, "Not running slow tests")
