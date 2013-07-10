@@ -6,7 +6,7 @@ from os.path import join, dirname, exists
 import re
 from abilian.application import PluginManager
 
-from flask import Flask, abort, request, g
+from flask import Flask, abort, request, g, session
 from flask.ext.admin import Admin
 from flask.ext.bootstrap import Bootstrap
 from flask.ext.frozen import Freezer
@@ -22,6 +22,7 @@ from .views import setup as setup_views
 from .crm import setup as setup_crm
 from website.registration.models import Track
 from website.tracks import TRACKS
+from website.util import preferred_language
 from .whoosh import Whoosh
 
 
@@ -90,7 +91,12 @@ def setup_babel(app):
   babel = Babel(app)
 
   def get_locale():
-    return getattr(g, 'lang', 'en')
+    lang = getattr(g, 'lang')
+    if not lang:
+      lang = session.get('lang')
+    if not lang:
+      lang = preferred_language()
+    return lang
 
   babel.add_translations('website')
   babel.localeselector(get_locale)
@@ -164,8 +170,8 @@ def setup_filters_and_processors(app):
     if m:
       g.lang = m.group(1)
     else:
-      g.lang = 'fr'
-    if not g.lang in app.config['ALLOWED_LANGS']:
+      g.lang = ''
+    if g.lang and not g.lang in app.config['ALLOWED_LANGS']:
       abort(404)
 
   @app.context_processor

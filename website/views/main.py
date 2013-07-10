@@ -9,9 +9,10 @@ from PIL import Image
 import datetime
 
 from flask import Blueprint, redirect, url_for, request, abort, make_response, \
-    render_template, current_app as app
+    render_template, current_app as app, session
 
 from ..content import get_pages
+from website.util import preferred_language
 
 
 __all__ = ['setup']
@@ -20,7 +21,18 @@ blueprint = Blueprint('main', __name__, url_prefix='/')
 
 ROOT = 'http://www.openworldforum.org'
 REDIRECTS = [
+  ('en/program/', '/en/schedule/'),
+  ('en/Schedule', '/en/schedule/'),
   ('programme/', '/fr/programme/'),
+  ('Programme/', '/fr/programme/'),
+  ('Register', '/registration/'),
+  ('en/register/', '/registration/'),
+  ('join_form', '/registration/'),
+  ('fre', '/fr/'),
+  ('en/Sponsors', '/en/'),
+  ('fr/accueil', '/fr/'),
+  ('en/News', '/en/news/'),
+  ('News', '/fr/news/'),
   ('open-innovation-summit-fr', '/'),
   ('connect/', '/'),
   ('awards/', '/'),
@@ -62,8 +74,13 @@ REDIRECTS = [
 #
 @blueprint.route('')
 def index():
-  # TODO: redirect depending on HTTP headers & cookie
-  return redirect(url_for("localized.home", lang='fr'))
+  lang = session.get('lang')
+  if not lang:
+    lang = preferred_language()
+  if lang == 'fr':
+    return redirect(url_for("localized.home", lang='fr'))
+  else:
+    return redirect(url_for("localized.home", lang='en'))
 
 
 @blueprint.route('robots.txt')

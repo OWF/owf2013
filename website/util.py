@@ -7,8 +7,10 @@ def preferred_language():
   langs = [lang.strip() for lang in langs]
   langs = [lang.split(';')[0] for lang in langs]
   langs = [lang.strip() for lang in langs]
-  for lang in ALLOWED_LANGS:
-    if lang in langs:
+  for lang in langs:
+    if len(lang) > 2:
+      lang = lang[0:2]
+    if lang in ALLOWED_LANGS:
       return lang
   return 'en'
 

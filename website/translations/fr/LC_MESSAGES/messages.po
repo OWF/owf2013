@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-08 11:06+0200\n"
+"POT-Creation-Date: 2013-07-10 09:30+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -61,15 +61,15 @@ msgstr "URL"
 msgid "Biography"
 msgstr "Biographie"
 
-#: website/registration/views.py:27
+#: website/registration/views.py:28
 msgid "Register as a participant"
 msgstr "Inscrivez-vous comme participant"
 
-#: website/registration/views.py:44
+#: website/registration/views.py:45
 msgid "This is not your email"
 msgstr "Ce n'est pas votre email"
 
-#: website/registration/views.py:64
+#: website/registration/views.py:70
 msgid ""
 "Thanks for registering to the OWF. An email has been sent to you with "
 "further instructions."
@@ -77,11 +77,11 @@ msgstr ""
 "Merci de vous être inscrit(e) à l'OWF. Un mail vous a été envoyé avec "
 "plus d'instructions."
 
-#: website/registration/views.py:79
-msgid "Confirm your participation"
-msgstr "Confirmer votre participation"
+#: website/registration/views.py:89
+msgid "Your registration has been confirmed."
+msgstr ""
 
-#: website/registration/views.py:109
+#: website/registration/views.py:128
 msgid "Please confirm your participation at the Open World Forum 2013"
 msgstr "Veuillez confirmer votre participation à l'Open World Forum 2013"
 
@@ -118,19 +118,19 @@ msgstr "Nos partenaires"
 msgid "Institutional partners"
 msgstr ""
 
-#: website/templates/_base.html:145
+#: website/templates/_base.html:143
 msgid "Organizer"
 msgstr "Organisateur"
 
-#: website/templates/_base.html:152
+#: website/templates/_base.html:150
 msgid "Co-organizers"
 msgstr "Co-organisateurs"
 
-#: website/templates/_base.html:167
+#: website/templates/_base.html:165
 msgid "Platinum sponsors"
 msgstr "Sponsors Platine"
 
-#: website/templates/_base.html:178
+#: website/templates/_base.html:176
 msgid "Silver sponsors"
 msgstr "Sponsors Argent"
 
@@ -209,7 +209,7 @@ msgstr ""
 msgid "This folder is currently empty. Why don't you upload some content?"
 msgstr ""
 
-#: website/templates/search.html:12 website/views/localized.py:199
+#: website/templates/search.html:12 website/views/localized.py:200
 msgid "Search results"
 msgstr ""
 
@@ -295,15 +295,18 @@ msgstr ""
 msgid "Delete attachment?"
 msgstr ""
 
-#: website/views/localized.py:118
+#: website/views/localized.py:119
 msgid "News"
 msgstr "Actualités"
 
-#: website/views/localized.py:190
+#: website/views/localized.py:191
 msgid "Site map"
 msgstr "Plan du site"
 
-#: website/views/localized.py:209
+#: website/views/localized.py:210
 msgid "Page not found"
 msgstr "Page introuvable"
+
+#~ msgid "Confirm your participation"
+#~ msgstr "Confirmer votre participation"
 

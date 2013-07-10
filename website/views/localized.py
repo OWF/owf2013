@@ -9,7 +9,7 @@ import re
 import datetime
 from PIL import Image
 
-from flask import Blueprint, request, render_template, make_response, g, url_for
+from flask import Blueprint, request, render_template, make_response, g, url_for, session
 from flask import current_app as app
 from flask.ext.babel import gettext as _
 
@@ -78,6 +78,7 @@ def alt_url_for(*args, **kw):
 
 @blueprint.context_processor
 def inject_context_variables():
+  session['lang'] = g.lang
   return dict(lang=g.lang,
               url_for=alt_url_for)
 
