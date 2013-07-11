@@ -7,18 +7,22 @@
   
   Under Debian / Ubuntu, this should be as easy as:
 
-          apt-get install python2.7 python-pip virtualenvwrapper
+          apt-get install python2.7 python-pip virtualenvwrapper 
+  
+  You might need to install additional dependencies such as:
+          
+          apt-get install libxml2-dev libxslt-dev libpq-dev python-dev
 
   On Mac OS with homebrew, you should install:
 
           brew install python
           brew pip install virtualenvwrapper
 
-2. Type `mkvirtualenv owf`
+2. Type `mkvirtualenv owf` or 'virtualenv owf' (second parameter is the name of your cloned directory)
 
-3. Type `pip install -r deps.txt`
+3. Type `pip install -r deps.txt` (you might need to run this command as root user, or with sudo)
 
-4. Type `make run` and point your browser to the URL given by the logs.
+4. Type `make run` and point your browser to the URL given by the logs (eg. http://0.0.0.0:5002/).
 
 
 ## Development environment (using Vagrant)
@@ -38,5 +42,3 @@ available immediately on browser.
 ## Production environment
 
 Not done yet.
-
-aa
