@@ -28,9 +28,11 @@
 <body>
 <div id="fast-acces-div">
   <ul id="fast-acces-menu" class="container">
-    <li><a href="#main">Aller au contenu</a></li>
-    <li><a href="#menu-nav">Aller à la navigation</a></li>
-    <li><a href="#search-form">Aller à la recherche</a></li>
+    {% if lang == 'fr' %}
+      {% include "_skiplink_fr.html" %}
+    {% else %}
+      {% include "_skiplink_en.html" %}
+    {% endif %}
     <li class="fast-acces-right"><a
         class="fast-acces-a lang {% if lang =='en' %}lang-actif{% endif %}"
         href="/en/">English</a>
