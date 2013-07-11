@@ -22,27 +22,15 @@
   <link href="/static/css/stylesheet.css" rel="stylesheet">
 </head>
 <body>
-
 <div id="fast-acces-div">
   <ul id="fast-acces-menu" class="container">
-
-    {#
-    <li><a href="#aller-au-contenu">Aller au contenu</a></li>
-    <li><b>|</b></li>
-    <li><a href="#aller-a-la-navigation">Aller à la navigation</a></li>
-    <li><b>|</b></li>
-    <li><a href="#aller-a-la-recherche">Aller à la recherche</a></li>
-    <li><b>|</b></li>
-    <li><a href="#plan-du-site">Plan du site</a></li>
-    <li><b>|</b></li>
-    <li><a href="#aide">Aide</a></li>
-    #}
-
+    <li><a href="#main">Aller au contenu</a></li>
+    <li><a href="#menu-nav">Aller à la navigation</a></li>
+    <li><a href="#search-form">Aller à la recherche</a></li>
     <li class="fast-acces-right"><a
         class="fast-acces-a lang {% if lang =='en' %}lang-actif{% endif %}"
         href="/en/">English</a>
     </li>
-    <li class="fast-acces-right"><b>|</b></li>
     <li class="fast-acces-right"><a
         class="fast-acces-a lang {% if lang =='fr' %}lang-actif{% endif %}"
         href="/fr/">Français</a>
@@ -50,7 +38,7 @@
   </ul>
 </div>
 
-<header class="container">
+<header class="container" role="banner">
   <a href="{{ url_for("localized.home") }}"><img id="logo"
       src="/static/pictures/Calque1.png"/ alt="Open World Forum"></a>
 
@@ -89,7 +77,7 @@
             height="18px" alt="Feed"/>
       </a>
     </li>
-    <li class="search-form">
+    <li class="search-form" id="search-form">
       <!--<img src="/static/pictures/MagnifyingGlass.png" width="16px" height="16px"/>-->
       <form action="/{{ lang }}/search">
         <input name="qs" type="text" value="{{ request.args.get('qs', '') }}"/>
@@ -99,7 +87,7 @@
   </ul>
 
 
-  <div id="menu-nav-div" class="navbar">
+  <div id="menu-nav-div" class="navbar" role="navigation">
     <ul id="menu-nav" class="nav">
       {% for entry in menu %}
         <li><a href="{{ url_for("localized.home") }}{{ entry.path }}"
