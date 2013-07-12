@@ -2,7 +2,7 @@ title : Organisateurs
 
 ###Organisateur
 
-<a id="systematic"><a href="http://systematic-paris-region.org/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Logo Systematic_sponsor page.jpg" width="750" alt="Pôle Systematic Paris-Region"></a></a>
+<a name="systematic"><a href="http://systematic-paris-region.org/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Logo Systematic_sponsor page.jpg" width="750" alt="Pôle Systematic Paris-Region"></a></a>
 
 Le pôle de compétitivité **SYSTEMATIC PARIS-REGION** rassemble 600 acteurs clés dans la région parisienne, 
 tous centrés sur le champ des systèmes à dominante logicielle et se concentrant sur des marchés à forte dimension 
@@ -20,7 +20,7 @@ Paris-Région.
 
 ###Co-Organisateurs
 
-<a id="af83"><a href="http://www.af83.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
+<a name="af83"><a href="http://www.af83.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
 
 **af83** est une agence digitale innovante qui offre à ses clients une large gamme de services digitaux. 
 Nos expertises clés reposent sur trois domaines de compétence : design, développement sur mesure et 
@@ -40,7 +40,7 @@ entreprises cross-sectorielles telles que le Groupe SEB, SFR, LaSer, Intel, Cana
 
 
 
-<a id="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
+<a name="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
 
 **Alter Way**, opérateur de services Open Source, fourni 5 types de services : consulting, formation, intégration et 
 services professionnels (solutions), hébergement à valeur ajoutée et web design et consulting e-marketing.
@@ -59,7 +59,7 @@ Alter Way, c'est une compétence reconnue sur le marché du libre et votre parte
 
 
 
-<a id="cap"><a href="http://www.capdigital.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Cap_sponsor page.jpg" width="400" alt="Cap Digital"></a></a>
+<a name="cap"><a href="http://www.capdigital.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Cap_sponsor page.jpg" width="400" alt="Cap Digital"></a></a>
 
 **Cap Digital** est le pôle de compétitivité de la filière des contenus et services numériques. Ses 9 communautés de 
 domaine regroupent plus de 650 adhérents : 570 PME, 20 grands groupes, 50 établissements publics, écoles, et 
@@ -96,7 +96,7 @@ et plus de 40 sociétés ont participé aux missions internationales pilotées p
 
 
 
-<a id="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
+<a name="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
 
 Etablissement public de recherche à caractère scientifique et technologique (EPST), **Inria**, créé en 1967, est le 
 seul institut public de recherche entièrement dédié aux sciences du numérique. A l’interface des sciences informatiques 
@@ -105,7 +105,7 @@ et des mathématiques, les 3 400 chercheurs d'Inria inventent les technologies n
 
 
 
-<a id="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
+<a name="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
 
 Créé en 1991, **Smile** est le premier intégrateur français et européen de solutions open source. Multi-spécialiste et 
 forte d'une gamme de 18 domaines d'expertise, la société explore les meilleures solutions du marché dans les domaines 
