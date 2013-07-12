@@ -2,7 +2,7 @@ title : Organisateurs
 
 ###Organisateur
 
-<a href="http://systematic-paris-region.org/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Logo Systematic_sponsor page.jpg" alt="Pôle Systematic Paris-Region"></a>
+<a href="http://systematic-paris-region.org/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Logo Systematic_sponsor page.jpg" width="750" alt="Pôle Systematic Paris-Region"></a>
 
 Le pôle de compétitivité SYSTEMATIC PARIS-REGION rassemble 600 acteurs clés dans la région parisienne, 
 tous centrés sur le champ des systèmes à dominante logicielle et se concentrant sur des marchés à forte dimension 
