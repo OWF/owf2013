@@ -40,7 +40,7 @@ entreprises cross-sectorielles telles que le Groupe SEB, SFR, LaSer, Intel, Cana
 
 
 
-<a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" alt="Alter Way"></a>
+<a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a>
 
 Alter Way, opérateur de services Open Source, fourni 5 types de services : consulting, formation, intégration et 
 services professionnels (solutions), hébergement à valeur ajoutée et web design et consulting e-marketing.
@@ -59,7 +59,7 @@ Alter Way, c'est une compétence reconnue sur le marché du libre et votre parte
 
 
 
-<a href="http://www.capdigital.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Cap_sponsor page.jpg" alt="Cap Digital"></a>
+<a href="http://www.capdigital.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Cap_sponsor page.jpg" width="400" alt="Cap Digital"></a>
 
 Cap Digital est le pôle de compétitivité de la filière des contenus et services numériques. Ses 9 communautés de 
 domaine regroupent plus de 650 adhérents : 570 PME, 20 grands groupes, 50 établissements publics, écoles, et 
