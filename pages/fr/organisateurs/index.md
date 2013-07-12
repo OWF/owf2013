@@ -92,3 +92,26 @@ et plus de 40 sociétés ont participé aux missions internationales pilotées p
 
 + Collaboration avec la Californie : signature de l’accord « Digital Sister Cities » entre la ville de San Francisco et la ville de Paris, qui lui a permis de travailler sur des projets concrets comme le projet Sebastian.
 + Accompagnement d’entreprises aux Etats-Unis, Canada, Chine, Corée du Sud, Japon, Israël, Brésil, etc.
+
+
+
+
+<a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a>
+
+Etablissement public de recherche à caractère scientifique et technologique (EPST), Inria, créé en 1967, est le 
+seul institut public de recherche entièrement dédié aux sciences du numérique. A l’interface des sciences informatiques 
+et des mathématiques, les 3 400 chercheurs d'Inria inventent les technologies numériques de demain.
+
+
+
+
+<a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a>
+
+Créé en 1991, Smile est le premier intégrateur français et européen de solutions open source. Multi-spécialiste et 
+forte d'une gamme de 18 domaines d'expertise, la société explore les meilleures solutions du marché dans les domaines 
+de la gestion de contenus, des portails, de la GED, de l’e-commerce, du mobile, des ERP, du décisionnel, du CRM et des 
+outils systèmes en développant une pratique opérationnelle d’une large palette d’outils.
+
+Smile, c'est également 37,1 millions d’euros de CA en 2011 et, à ce jour, 600 collaborateurs répartis sur 
+16 agences : Paris, Lyon, Nantes, Bordeaux, Montpellier, Marseille, Lille, Grenoble, Barcelone (Espagne), Kiev et 
+Kharkov (Ukraine), Genève (Suisse), Casablanca (Maroc), Amsterdam, Utrecht et Bruxelles (Benelux).
