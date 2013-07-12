@@ -2,7 +2,7 @@ title : Our Sponsors
 
 ###Platinum Sponsors
 
-<a id="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
+<a name="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
 
 **Alter Way**, the Open Source services operator, provides 5 key services: consulting (Consulting), training 
 (Formation), integration and professional services (Solutions), hosting with added value (Hosting) 
@@ -17,12 +17,12 @@ large enterprise, public sector and SMB.
 
 Alter Way has a distinctive skill on the Free market and can be a robust partner at your side for a long time.
 
-<a id="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
+<a name="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
 
 **Inria** is is the only public research body fully dedicated to computational sciences. Combining computer sciences with 
 mathematics, Inria’s 3,400 researchers strive to invent the digital technologies of the future.
 
-<a id="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
+<a name="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
 
 In business since 1991, **Smile** is the first European integrator of open source solutions. Multi-specialist with a large 
 range of 18 offers, Smile deploys the best open source solutions in the market in a variety of domains such as: content 
@@ -34,7 +34,7 @@ Barcelona (Spain), Kiev and Kharkov (Ukraine), Geneva (Switzerland) and Casablan
 
 ###Silver Sponsors
 
-<a id="abilian"><a href="http://www.abilian.com/fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/abilian_page sponsor.png" width="400" alt="abilian"></a></a>
+<a name="abilian"><a href="http://www.abilian.com/fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/abilian_page sponsor.png" width="400" alt="abilian"></a></a>
 
 **Abilian** est un éditeur de logiciels open source qui propose des solutions innovantes pour votre entreprise ou 
 votre organisation, dans les domaines de la collaboration émergente (entreprise 2.0), des processus métiers et de la 
@@ -51,7 +51,7 @@ disposition d’espaces de partage documentaire collaboratif, c’est la deuxiè
 Cet engouement s’inscrit dans un contexte général de transformation profonde de la façon dont travaillent les 
 entreprises à l’aube du 21ème siècle.
 
-<a id="af83"><a href="http://www.af83.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
+<a name="af83"><a href="http://www.af83.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
 
 **af83** is an innovative digital agency offering clients a comprehensive range of digital services. 
 With an ultimate focus on quality user experiences, our core expertise lies in three areas: design, custom 
