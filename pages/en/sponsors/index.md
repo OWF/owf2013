@@ -34,6 +34,23 @@ Barcelona (Spain), Kiev and Kharkov (Ukraine), Geneva (Switzerland) and Casablan
 
 ###Silver Sponsors
 
+<a id="abilian"><a href="http://www.abilian.com/fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/abilian_page sponsor.png" width="400" alt="abilian"></a></a>
+
+**Abilian** est un éditeur de logiciels open source qui propose des solutions innovantes pour votre entreprise ou 
+votre organisation, dans les domaines de la collaboration émergente (entreprise 2.0), des processus métiers et de la 
+gestion de l'information.
+
+Une plateforme de collaboration émergente est l'outil idéal pour partager des informations, communiquer, 
+collaborer et dynamiser l’activité de votre organisation au quotidien.
+
+Les réseaux sociaux d’entreprises, et autres applications “entreprise 2.0”, connaissent actuellement un engouement 
+irréfutable. Ainsi, les 3/4 des DRH interrogés par l’Observatoire des DRH et de la e-transformation en 2011 
+considèrent la mise à disposition d’un réseau social d’entreprise comme nécessaire ou souhaitable. Après la mise à 
+disposition d’espaces de partage documentaire collaboratif, c’est la deuxième priorité pour ces mêmes DRH.
+
+Cet engouement s’inscrit dans un contexte général de transformation profonde de la façon dont travaillent les 
+entreprises à l’aube du 21ème siècle.
+
 <a id="af83"><a href="http://www.af83.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
 
 **af83** is an innovative digital agency offering clients a comprehensive range of digital services. 
