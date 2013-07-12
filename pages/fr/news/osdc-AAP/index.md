@@ -1,6 +1,6 @@
 title : L'appel à participation de l'ODSC
 
-###5e Open Source Developers Conference en France
+##5e Open Source Developers Conference en France
 
 Centre culturel du Beffroi de Montrouge, Paris, 4 & 5 octobre 2013
 
