@@ -4,7 +4,7 @@ title : Organisateurs
 
 <a href="http://systematic-paris-region.org/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Logo Systematic_sponsor page.jpg" width="750" alt="Pôle Systematic Paris-Region"></a>
 
-Le pôle de compétitivité SYSTEMATIC PARIS-REGION rassemble 600 acteurs clés dans la région parisienne, 
+<a id="systematic">Le pôle de compétitivité SYSTEMATIC PARIS-REGION</a> rassemble 600 acteurs clés dans la région parisienne, 
 tous centrés sur le champ des systèmes à dominante logicielle et se concentrant sur des marchés à forte dimension 
 sociale. Basé sur 5 secteurs clés, automobile et transport, logiciel libre et Open Source, sécurité et défense, 
 design de système et outils de développement, télécommunications, ce pôle de compétitivité cherche à développer 
@@ -114,4 +114,4 @@ outils systèmes en développant une pratique opérationnelle d’une large pale
 
 Smile, c'est également 37,1 millions d’euros de CA en 2011 et, à ce jour, 600 collaborateurs répartis sur 
 16 agences : Paris, Lyon, Nantes, Bordeaux, Montpellier, Marseille, Lille, Grenoble, Barcelone (Espagne), Kiev et 
-Kharkov (Ukraine), Genève (Suisse), Casablanca (Maroc), Amsterdam, Utrecht et Bruxelles (Benelux).
+Kharkov (Ukraine), Genève (Suisse), Casablanca (Maroc), Amsterdam, Utrecht et Bruxelles <a href="#systematic">(Benelux)</a>.
