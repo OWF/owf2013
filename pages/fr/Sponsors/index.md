@@ -2,7 +2,7 @@ title : Nos Sponsors
 
 ###Sponsors Platinum 
 
-<a id="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
+<a name="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
 
 **Alter Way**, opérateur de services Open Source, fourni 5 types de services : consulting, formation, intégration et 
 services professionnels (solutions), hébergement à valeur ajoutée et web design et consulting e-marketing.
@@ -18,13 +18,13 @@ particulières pour les grandes entreprises et le secteur public.
 
 Alter Way, c'est une compétence reconnue sur le marché du libre et votre partenaire de qualité pour longtemps !
 
-<a id="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
+<a name="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
 
 Etablissement public de recherche à caractère scientifique et technologique (EPST), **Inria**, créé en 1967, est le 
 seul institut public de recherche entièrement dédié aux sciences du numérique. A l’interface des sciences informatiques 
 et des mathématiques, les 3 400 chercheurs d'Inria inventent les technologies numériques de demain.
 
-<a id="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
+<a name="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
 
 Créé en 1991, **Smile** est le premier intégrateur français et européen de solutions open source. Multi-spécialiste et 
 forte d'une gamme de 18 domaines d'expertise, la société explore les meilleures solutions du marché dans les domaines 
@@ -37,7 +37,7 @@ Kharkov (Ukraine), Genève (Suisse), Casablanca (Maroc), Amsterdam, Utrecht et B
 
 ###Sponsors Silver
 
-<a id="abilian"><a href="http://www.abilian.com/fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/abilian_page sponsor.png" width="400" alt="abilian"></a></a>
+<a name="abilian"><a href="http://www.abilian.com/fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/abilian_page sponsor.png" width="400" alt="abilian"></a></a>
 
 **Abilian** est un éditeur de logiciels open source qui propose des solutions innovantes pour votre entreprise ou 
 votre organisation, dans les domaines de la collaboration émergente (entreprise 2.0), des processus métiers et de la 
@@ -54,7 +54,7 @@ disposition d’espaces de partage documentaire collaboratif, c’est la deuxiè
 Cet engouement s’inscrit dans un contexte général de transformation profonde de la façon dont travaillent les 
 entreprises à l’aube du 21ème siècle.
 
-<a id="af83"><a href="http://www.af83.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
+<a name="af83"><a href="http://www.af83.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
 
 **af83** est une agence digitale innovante qui offre à ses clients une large gamme de services digitaux. 
 Nos expertises clés reposent sur trois domaines de compétence : design, développement sur mesure et 
