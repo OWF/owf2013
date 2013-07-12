@@ -2,7 +2,7 @@ title : Organizers
 
 ###Organizer
 
-<a id="systematic-en"><a href="http://systematic-paris-region.org/en/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Logo Systematic_sponsor page.jpg" width="750" alt="Pôle Systematic Paris-Region"></a></a>
+<a id="systematic"><a href="http://systematic-paris-region.org/en/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Logo Systematic_sponsor page.jpg" width="750" alt="Pôle Systematic Paris-Region"></a></a>
 
 The French **SYSTEMATIC PARIS-REGION** competitiveness cluster brings together 600 key players in the Paris region working 
 in the field of software-dominant systems and focusing on markets with a strong social dimension. Based on 
@@ -17,7 +17,7 @@ Government, its economic development agencies and from the Paris-Region local au
 
 ###Co-Organizers
 
-<a id="af83-en"><a href="http://www.af83.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
+<a id="af83"><a href="http://www.af83.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
 
 **af83** is an innovative digital agency offering clients a comprehensive range of digital services. 
 With an ultimate focus on quality user experiences, our core expertise lies in three areas: design, custom 
@@ -34,7 +34,7 @@ We specialize in a range of markets such as consumer goods, media, telecommunica
 Our clients include global enterprises like Group SEB, SFR, LaSer, Intel, Canal+, and other world leaders.
 
 
-<a id="alter way-en"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
+<a id="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
 
 **Alter Way**, the Open Source services operator, provides 5 key services: consulting (Consulting), training 
 (Formation), integration and professional services (Solutions), hosting with added value (Hosting) 
@@ -51,7 +51,7 @@ Alter Way has a distinctive skill on the Free market and can be a robust partner
 
 
 
-<a id="cap-en"><a href="http://www.capdigital.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Cap_sponsor page.jpg" width="400" alt="Cap Digital"></a></a>
+<a id="cap"><a href="http://www.capdigital.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Cap_sponsor page.jpg" width="400" alt="Cap Digital"></a></a>
 
 **Cap Digital** est le pôle de compétitivité de la filière des contenus et services numériques. Ses 9 communautés de 
 domaine regroupent plus de 650 adhérents : 570 PME, 20 grands groupes, 50 établissements publics, écoles, et 
@@ -85,12 +85,12 @@ et plus de 40 sociétés ont participé aux missions internationales pilotées p
 + Collaboration avec la Californie : signature de l’accord « Digital Sister Cities » entre la ville de San Francisco et la ville de Paris, qui lui a permis de travailler sur des projets concrets comme le projet Sebastian.
 + Accompagnement d’entreprises aux Etats-Unis, Canada, Chine, Corée du Sud, Japon, Israël, Brésil, etc.
 
-<a id="inria-en"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
+<a id="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
 
 **Inria** is is the only public research body fully dedicated to computational sciences. Combining computer sciences with 
 mathematics, Inria’s 3,400 researchers strive to invent the digital technologies of the future.
 
-<a id="smile-en"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
+<a id="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
 
 In business since 1991, **Smile** is the first European integrator of open source solutions. Multi-specialist with a large 
 range of 18 offers, Smile deploys the best open source solutions in the market in a variety of domains such as: content 
