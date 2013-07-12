@@ -1,9 +1,9 @@
 title : Nos Sponsors
 
-!###Diamond Partners!
+!###Sponsors Diamond!
 
 
-###Platinum
+###Sponsors Platinum 
 
 <a id="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
 
@@ -38,9 +38,9 @@ Smile, c'est également 37,1 millions d’euros de CA en 2011 et, à ce jour, 60
 16 agences : Paris, Lyon, Nantes, Bordeaux, Montpellier, Marseille, Lille, Grenoble, Barcelone (Espagne), Kiev et 
 Kharkov (Ukraine), Genève (Suisse), Casablanca (Maroc), Amsterdam, Utrecht et Bruxelles (Benelux).
 
-!###Gold!
+!###Sponsors Gold!
 
-###Silver
+###Sponsors Silver
 
 <a id="abilian"><a href="http://www.abilian.com/fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/abilian_page sponsor.png" width="400" alt="af83"></a></a>
 
