@@ -1,15 +1,15 @@
 title: Les grandes lignes de l’Edition 2013 de l'OWF dévoilées
 date: 2013/04/25
 
-#### L’Open World Forum récidive en 2013 et présente sa nouvelle édition avec pour leitmotiv “Make It Happen!”
+##L’Open World Forum récidive en 2013 et présente sa nouvelle édition avec pour leitmotiv <span lang="en">“Make It Happen</span> !”
 
-#### Découvrez l’intégralité des nouveautés du programme et du format.
+__Découvrez l’intégralité des nouveautés du programme et du format.__
 
 L'**Open World Forum** est le **premier sommet européen** rassemblant politiques, décideurs et experts pour débattre de l'impact technologique, économique et social des technologies libres et ouvertes. L'évènement a été** fondé en 2008** et se tient désormais **annuellement à Paris**, France, avec plus de **200 orateurs **venus de 24 pays et une **audience internationale de 2100 personnes** en 2012. L'Open World Forum est organisé en partenariat avec toutes les grandes communautés internationales du Logiciel Libre et les grands acteurs du numérique.
 
 L'Open World Forum revient pour sa sixième édition les **3, 4 et 5 octobre 2013** et change de lieu pour s'agrandir et accompagner son ambition de s'imposer comme le plus grand évènement mondial au confluent du politique, du sociétal, de la technologie et de l'économie. L'Open World Forum 2013 se tiendra donc au **Beffroi** (métro Mairie de Montrouge) et sera à nouveau organisé par le pôle Systematic. **Plus de 3000 personnes sont attendues** pour cette nouvelle édition, une forte croissance qui reflète un programme rénové et un souffle qui va porter l'évènement aux toutes premières positions mondiales.
 
-### GRANDES LIGNES DU PROGRAMME 2013
+## GRANDES LIGNES DU PROGRAMME 2013
 
 L'édition 2013 se tient dans un contexte mondial où le poids de l'industrie du Logiciel Libre et de l'Open Source est toujours **en augmentation très forte**, inaffecté par la crise. Pour la première fois, un éditeur Open Source a passé **le milliard de dollars** de revenus. **Les politiques publiques** ont consacré une place de choix au Logiciel Libre, comme en **Angleterre**, au **Québec** avec les avancées actuelles sur le plan Bédard, ou en **France** avec [la Circulaire Ayrault](http://cnll.fr/news/le-cnll-se-rejouit-de-la-circulaire-ayrault-sur-les-logiciels-libres/), pour n'en citer que quelques-uns. En outre, les **secteurs émergents** comme le mobile sont **dominés par le Libre**, avec les systèmes d'exploitation Android et l'annonce de FirefoxOS de Mozilla.
 
@@ -29,7 +29,7 @@ Nous notons par ailleurs **la présence importante de femmes du Numérique** au 
 
 L'édition 2013 est présidée par Pierre Queinnec et vice-présidée par Stefane Fermigier, Jean-Séverin Lair, Philippe Montargès et Elisabeth Racine. L'Open World Forum reste structuré sur les trois composantes qui ont fait son succès, THINK, CODE et EXPERIMENT. Chaque thématique est représentée par un Vice-Président; Philippe Montargès sur THINK, Stefane Fermigier sur CODE, et Elisabeth Racine sur EXPERIMENT. Cette année un **VP Grand Utilisateur**, Jean-Séverin Lair, apporte une **vision de grand témoin**, primordiale dans le programme 2013.
 
-### THINK – Vouloir c'est Pouvoir
+## THINK – Vouloir c'est Pouvoir
 
 Les travaux de la thématique THINK qui seront tenus sur deux jours, mettront en exergue le rôle majeur du Logiciel Libre et de l'Open-Source dans l'économie du numérique. Le mot d'ordre de ces deux journées peut se résumer par l'adage **“vouloir c'est pouvoir”**, ou comment** concrètement réussir une stratégie libre et open-source** que ce soit d'un point de vue technologique ou commercial.
 
@@ -58,7 +58,7 @@ Enfin la **seconde journée** verra se décliner l'ensemble de ces thèmes au se
 
 Enfin un temps particulier sera consacré lors de l'Open World Forum 2013 à la **restitution des travaux des Etats Généraux de l'Open-Source (EGOS).**
 
-### CODE – Innovation Ouverte
+## CODE – Innovation Ouverte
 
 En termes technologiques dans le cadre de la **thématique CODE**, un focus particulier sera fait sur les sujets Web, Infrastructure (Cloud mais pas uniquement), Data et Mobilité. Le Web, avec notamment les aspects utilisateur, comme l'**UX** et le **Responsive Design**, mais aussi l'**accessibilité**, qui est un sujet qui va prendre une importance forte dans les années à venir.
 
@@ -70,7 +70,7 @@ Enfin CODE abordera la **Mobilité**, puisqu'il s'agit d'un sujet important et e
 
 Les sujets seront portés par une **équipe de track-leaders quasiment entièrement renouvelée.**
 
-### EXPERIMENT – Un Monde Ouvert
+## EXPERIMENT – Un Monde Ouvert
 
 EXPERIMENT 2013 présentera les** innovations sociétales** apportées par le Logiciel Libre et l'Open Source ; innovations logicielles bien entendu mais aussi matérielles, artistiques, et organisationnelles. Appréhendé comme philosophie du partage, le Logiciel Libre est un formidable vecteur de** diffusion des connaissances** (Wikipédia, Creative Commons) et permet de nouvelles formes d’apprentissage et d’**expérimentation** du monde informatique qui ont un impact **très concret dans notre quotidien**.
 

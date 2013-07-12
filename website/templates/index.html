@@ -23,7 +23,7 @@
         <a href="/{{ lang }}/think/">
           <img src="/static/pictures/idea-img.png" alt="" />
 
-          <h3>THINK</h3>
+          <h2>THINK</h2>
 
           {{ blocks['think'] }}
 
@@ -37,7 +37,7 @@
         <a href="/{{ lang }}/code/">
           <img src="/static/pictures/keyboard-img.png" alt="" />
 
-          <h3>CODE</h3>
+          <h2>CODE</h2>
 
           {{ blocks['code'] }}
 
@@ -51,7 +51,7 @@
         <a href="/{{ lang }}/experiment/">
           <img src="/static/pictures/experience-img.png" alt="" />
 
-          <h3>EXPERIMENT</h3>
+          <h2>EXPERIMENT</h2>
 
           {{ blocks['experiment'] }}
 
@@ -160,8 +160,8 @@
       <div class="container">
         <h1 class="section-title latest-news-title">{{ _("Latest news") }}</h1>
 
-        <h3 id="all-latest-news" class="section-button"><a
-            class="section-button-a" href="{{ url_for(".news") }}">{{ _("All the latest news") }}</a></h3>
+        <button id="all-latest-news" class="section-button"><a
+            class="section-button-a" href="{{ url_for(".news") }}">{{ _("All the latest news") }}</a></button>
       </div>
       <div id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
@@ -174,9 +174,9 @@
                       width="300" height="225" alt="" />
 
                   <div class="latest-news-content">
-                    <h4><a
+                    <h2><a
                         href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
-                    </h4>
+                    </h2>
                     <span
                         class="latest-news-date">{{ item.date | dateformat }}</span>
 
@@ -197,9 +197,9 @@
                       width="300" height="225" alt="" />
 
                   <div class="latest-news-content">
-                    <h4><a
+                    <h2><a
                         href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
-                    </h4>
+                    </h2>
                     <span
                         class="latest-news-date">{{ item.date | dateformat }}</span>
 

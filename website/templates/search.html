@@ -9,16 +9,25 @@
         <div class="row show-grid clear-both">
           <div class="span12 main-column two-columns-right">
             <article>
-              <h1 class="page-title">{{ _("Search results") }}</h1>
+              {% if lang == 'fr' %}
+                <h1 class="page-title">{{ _("Résultat(s) de recherche") }}</h1>
+              {% else %}
+                <h1 class="page-title">{{ _("Search results") }}</h1>
+              {% endif %}
 
               {% for r in results %}
-                <h4><a href="/{{ r.path }}">{{ r.title }}</a></h4>
-
+                <h2><a href="/{{ r.path }}">{{ r.title }}</a></h2>
                 <p>{{ r.summary }}</p>
+              
               {% else %}
-              <p>
-                {{ _("Your request didn't produce any results.") }}
-              </p>
+                {% if lang == 'fr' %}
+                  <p>{{ _("Aucun résultat connu pour votre requête.") }}</p>
+                {% else %}
+                  <p>{{ _("Your request didn't produce any results.") }}</p>
+                {% endif %}
+              
+
+              
               {% endfor %}
 
             </article>
