@@ -114,4 +114,4 @@ outils systèmes en développant une pratique opérationnelle d’une large pale
 
 Smile, c'est également 37,1 millions d’euros de CA en 2011 et, à ce jour, 600 collaborateurs répartis sur 
 16 agences : Paris, Lyon, Nantes, Bordeaux, Montpellier, Marseille, Lille, Grenoble, Barcelone (Espagne), Kiev et 
-Kharkov (Ukraine), Genève (Suisse), Casablanca (Maroc), Amsterdam, Utrecht et Bruxelles <a href="#systematic">(Benelux)</a>.
+Kharkov (Ukraine), Genève (Suisse), Casablanca (Maroc), Amsterdam, Utrecht et Bruxelles (Benelux).
