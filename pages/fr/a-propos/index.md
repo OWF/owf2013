@@ -14,5 +14,5 @@ L’organisation de l’Open World Forum 2013 est pilotée par le pôle de comp�
 
 Vous pouvez retrouver ci-dessous le bilan de l'édition 2012 de l'Open World Forum:
 
-<iframe src="http://fr.slideshare.net/slideshow/embed_code/16005999" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+<iframe title="Slideshare Open World Forum 2012" src="http://fr.slideshare.net/slideshow/embed_code/16005999" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
 
