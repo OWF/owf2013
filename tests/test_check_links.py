@@ -30,7 +30,7 @@ class TestLinks(BaseTestCase):
   init_data = True
 
   def test_links(self):
-    self.crawler.black_list = {'/fr/../*', '/en/../*'}
+    self.crawler.black_list = {'//*', '/fr/../*', '/en/../*'}
     #self.crawler.verbosity = 1
     self.crawler.crawl("/registration/")
     self.crawler.crawl("/fr/")

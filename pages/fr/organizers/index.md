@@ -20,7 +20,7 @@ Paris-Région.
 
 ###Co-Organisateurs
 
-<a name="af83"><a href="http://www.af83.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
+<a name="af83"><a href="http://www.af83.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
 
 **af83** est une agence digitale innovante qui offre à ses clients une large gamme de services digitaux. 
 Nos expertises clés reposent sur trois domaines de compétence : design, développement sur mesure et 
