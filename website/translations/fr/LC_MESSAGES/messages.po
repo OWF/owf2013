@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-10 09:30+0200\n"
+"POT-Creation-Date: 2013-07-14 16:48+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: website/registration/views.py:89
 msgid "Your registration has been confirmed."
-msgstr ""
+msgstr "Votre inscription a été confirmée."
 
 #: website/registration/views.py:128
 msgid "Please confirm your participation at the Open World Forum 2013"
@@ -116,23 +116,28 @@ msgstr "Nos partenaires"
 
 #: website/templates/_base.html:128
 msgid "Institutional partners"
-msgstr ""
+msgstr "Partenaires institutionnels"
 
-#: website/templates/_base.html:143
+#: website/templates/_base.html:146
 msgid "Organizer"
 msgstr "Organisateur"
 
-#: website/templates/_base.html:150
+#: website/templates/_base.html:153
 msgid "Co-organizers"
 msgstr "Co-organisateurs"
 
-#: website/templates/_base.html:165
+#: website/templates/_base.html:167
 msgid "Platinum sponsors"
 msgstr "Sponsors Platine"
 
-#: website/templates/_base.html:176
+#: website/templates/_base.html:178
 msgid "Silver sponsors"
 msgstr "Sponsors Argent"
+
+#: website/templates/_base.html:190
+#, fuzzy
+msgid "Press Partners"
+msgstr "Partenaires presse"
 
 #: website/templates/base.html:70
 msgid "My profile"
@@ -141,6 +146,11 @@ msgstr "Mon profil"
 #: website/templates/base.html:72
 msgid "Log out"
 msgstr "Déconnexion"
+
+#: website/templates/index.html:31 website/templates/index.html:45
+#: website/templates/index.html:59
+msgid "Learn more"
+msgstr "En savoir plus"
 
 #: website/templates/index.html:161
 msgid "Latest news"
@@ -306,7 +316,4 @@ msgstr "Plan du site"
 #: website/views/localized.py:210
 msgid "Page not found"
 msgstr "Page introuvable"
-
-#~ msgid "Confirm your participation"
-#~ msgstr "Confirmer votre participation"
 

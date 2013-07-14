@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-10 09:30+0200\n"
+"POT-Creation-Date: 2013-07-14 16:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,20 +112,24 @@ msgstr ""
 msgid "Institutional partners"
 msgstr ""
 
-#: website/templates/_base.html:143
+#: website/templates/_base.html:146
 msgid "Organizer"
 msgstr ""
 
-#: website/templates/_base.html:150
+#: website/templates/_base.html:153
 msgid "Co-organizers"
 msgstr ""
 
-#: website/templates/_base.html:165
+#: website/templates/_base.html:167
 msgid "Platinum sponsors"
 msgstr ""
 
-#: website/templates/_base.html:176
+#: website/templates/_base.html:178
 msgid "Silver sponsors"
+msgstr ""
+
+#: website/templates/_base.html:190
+msgid "Press Partners"
 msgstr ""
 
 #: website/templates/base.html:70
@@ -134,6 +138,11 @@ msgstr ""
 
 #: website/templates/base.html:72
 msgid "Log out"
+msgstr ""
+
+#: website/templates/index.html:31 website/templates/index.html:45
+#: website/templates/index.html:59
+msgid "Learn more"
 msgstr ""
 
 #: website/templates/index.html:161
