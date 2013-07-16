@@ -11,7 +11,7 @@
         <div class="span8 main-column two-columns-right">
           <article>
             <a href="{{ url_for(".news_item", slug=page.slug) }}"><h1 class="page-title">{{ page.title }}</h1></a>
-            <span class="news-date">{{ page.date | dateformat }}</span>
+            <p class="news-date">{{ page.date | dateformat }}</p>
             <img alt="" src="{{ url_for(".image_for_news", slug=page.slug, size="large") }}"/>
 
             {{ page.html|safe }}

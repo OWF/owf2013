@@ -19,7 +19,7 @@
                limit: 15,
                engine: Hogan,
                header: '<b><i>Documents</i></b>',
-               template: '<img src="{{icon}}" width="16" height="16" /> {{value}}'
+               template: '<img src="{{icon}}" alt="" width="16" height="16" /> {{value}}'
              }
          ];
 
@@ -36,7 +36,7 @@
                              limit: 15,
                              engine: Hogan,
                              header: '<b><i>Contacts</i></b>',
-                             template: '{{#photo}}<img src="{{photo}}" width="16" height="16" /> {{/photo}}{{value}}'
+                             template: '{{#photo}}<img alt="" src="{{photo}}" width="16" height="16" /> {{/photo}}{{value}}'
                            });
              datasets.push({ name: 'projets',
                              remote: '/search/live?type=projets&q=%QUERY',

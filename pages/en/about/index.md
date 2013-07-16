@@ -14,4 +14,4 @@ The Open World Forum will take place at the Beffroi, in Montrouge and will be or
 
 The summary for the 2012 edition of the Open World Forum can be found below:
 
-<iframe src="http://fr.slideshare.net/slideshow/embed_code/16005999" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+<iframe title="Slideshare Open World Forum" src="http://fr.slideshare.net/slideshow/embed_code/16005999" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>

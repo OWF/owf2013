@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+{% if lang == 'fr' %}
+  {% include "_head_fr.html" %}
+{% else %}
+  {% include "_head_en.html" %}
+{% endif %}
   <title>{{ title or page.title }}</title>
 
   <meta name="google-site-verification"
@@ -22,27 +26,17 @@
   <link href="/static/css/stylesheet.css" rel="stylesheet">
 </head>
 <body>
-
 <div id="fast-acces-div">
   <ul id="fast-acces-menu" class="container">
-
-    {#
-    <li><a href="#aller-au-contenu">Aller au contenu</a></li>
-    <li><b>|</b></li>
-    <li><a href="#aller-a-la-navigation">Aller à la navigation</a></li>
-    <li><b>|</b></li>
-    <li><a href="#aller-a-la-recherche">Aller à la recherche</a></li>
-    <li><b>|</b></li>
-    <li><a href="#plan-du-site">Plan du site</a></li>
-    <li><b>|</b></li>
-    <li><a href="#aide">Aide</a></li>
-    #}
-
+    {% if lang == 'fr' %}
+      {% include "_skiplink_fr.html" %}
+    {% else %}
+      {% include "_skiplink_en.html" %}
+    {% endif %}
     <li class="fast-acces-right"><a
         class="fast-acces-a lang {% if lang =='en' %}lang-actif{% endif %}"
         href="/en/">English</a>
     </li>
-    <li class="fast-acces-right"><b>|</b></li>
     <li class="fast-acces-right"><a
         class="fast-acces-a lang {% if lang =='fr' %}lang-actif{% endif %}"
         href="/fr/">Français</a>
@@ -50,46 +44,46 @@
   </ul>
 </div>
 
-<header class="container">
+<header class="container" role="banner">
   <a href="{{ url_for("localized.home") }}"><img id="logo"
-      src="/static/pictures/Calque1.png"/></a>
+      src="/static/pictures/Calque1.png"/ alt="Open World Forum"></a>
 
   <ul id="navbar-ul">
     <li class="navbar-newsletter">
-      <a href="http://eepurl.com/dACrj"><img width="25px" height="19px"
+      <a href="http://eepurl.com/dACrj"><img alt="newsletter" width="25px" height="19px"
           src="/static/pictures/1366984852_White_Email.png"> Newsletter</a>
     </li>
     <li class="share-a">
       <a href="https://www.facebook.com/OpenWorldForum">
-        <img src="/static/pictures/1366984111_picons06.png" width="18px"
-            height="18px" title="Facebook"/>
+        <img alt="Facebook Open Word Forum" src="/static/pictures/1366984111_picons06.png" width="18px"
+            height="18px"/>
       </a>
     </li>
     <li class="share-a">
       <a href="https://twitter.com/openworldforum">
-        <img src="/static/pictures/1366984104_picons03.png" width="23px"
-            height="23px" title="Twitter"/>
+        <img alt="Twitter Open World Forum" src="/static/pictures/1366984104_picons03.png" width="23px"
+            height="23px"/>
       </a>
     </li>
     <li class="share-a">
       <a href="http://www.linkedin.com/groups?gid=1561767&trk=group-name">
-        <img src="/static/pictures/1366984119_picons11.png" width="18px"
-            height="18px" title="Linkedin"/>
+        <img alt="Linkedin" src="/static/pictures/1366984119_picons11.png" width="18px"
+            height="18px"/>
       </a>
     </li>
     <li class="share-a">
       <a href="http://lanyrd.com/2013/owf2013/">
         <img src="/static/pictures/Calque2.png" width="15px" height="17px"
-            title="Lanyrd"/>
+            alt="Lanyrd"/>
       </a>
     </li>
     <li class="share-a">
       <a href="{{ url_for("localized.feed") }}">
         <img src="/static/pictures/1366984127_picons20.png" width="18px"
-            height="18px" title="Feed"/>
+            height="18px" alt="Feed"/>
       </a>
     </li>
-    <li class="search-form">
+    <li class="search-form" id="search-form">
       <!--<img src="/static/pictures/MagnifyingGlass.png" width="16px" height="16px"/>-->
       <form action="/{{ lang }}/search">
         <input name="qs" type="text" value="{{ request.args.get('qs', '') }}"/>
@@ -99,7 +93,7 @@
   </ul>
 
 
-  <div id="menu-nav-div" class="navbar">
+  <div id="menu-nav-div" class="navbar" role="navigation">
     <ul id="menu-nav" class="nav">
       {% for entry in menu %}
         <li><a href="{{ url_for("localized.home") }}{{ entry.path }}"
@@ -146,40 +140,40 @@
           <p class="partners-sub-title">{{ _("Organizer") }}</p>
 
           <a href="/{{ lang }}/organizers/#systematic"
-              target="_blank"><img src="/static/pictures/Systematic_large.png"/></a>
+              target="_blank"><img src="/static/pictures/Systematic_large.png" alt="Systematic"/></a>
         </div>
 
         <div class="span4 partners-span">
           <p class="partners-sub-title">{{ _("Co-organizers") }}</p>
 
-          <a href="/{{ lang }}/organizers/#smile"><img
+          <a href="/{{ lang }}/organizers/#smile"><img alt="Smile"
               src="/static/pictures/Smile_logoSponsor.png"/></a>
-          <a href="/{{ lang }}/organizers/#alter way"><img
+          <a href="/{{ lang }}/organizers/#alter way"><img alt="Alter Way"
               src="/static/pictures/logo_aw_rvb_copie.png"/></a>
-          <a href="/{{ lang }}/organizers/#af83"><img src="/static/pictures/af83_logoSponsor.png"/></a>
-          <a href="/{{ lang }}/organizers/#inria"><img
+          <a href="/{{ lang }}/organizers/#af83"><img alt="af83" src="/static/pictures/af83_logoSponsor.png"/></a>
+          <a href="/{{ lang }}/organizers/#inria"><img alt="Inria"
               src="/static/pictures/INRIA_logoSponsor.jpg"/></a>
-          <a href="/{{ lang }}/organizers/#cap"><img
+          <a href="/{{ lang }}/organizers/#cap"><img alr="Cap Digital"
               src="/static/pictures/cap_digital_logosponsors.jpg"/></a>
         </div>
 
         <div class="span2">
           <p class="partners-sub-title">{{ _("Platinum sponsors") }}</p>
 
-          <a href="/{{ lang }}/sponsors/#alter way"><img
+          <a href="/{{ lang }}/sponsors/#alter way"><img alt="Ater Way"
               src="/static/pictures/logo_aw_rvb_copie.png"/></a>
-          <a href="/{{ lang }}/sponsors/#smile"><img
+          <a href="/{{ lang }}/sponsors/#smile"><img alt="Smile"
               src="/static/pictures/Smile_logoSponsor2.png"/></a>
-          <a href="/{{ lang }}/sponsors/#inria"><img
+          <a href="/{{ lang }}/sponsors/#inria"><img alt="Inria"
               src="/static/pictures/INRIA_logoSponsor.jpg"/></a>
         </div>
 
         <div class="span2">
           <p class="partners-sub-title">{{ _("Silver sponsors") }}</p>
 
-          <a href="/{{ lang }}/sponsors/#af83"><img
+          <a href="/{{ lang }}/sponsors/#af83"><img alt="af83"
               src="/static/pictures/af83_logoSponsor2.png"/></a>
-          <a href="/{{ lang }}/sponsors/#abilian"><img
+          <a href="/{{ lang }}/sponsors/#abilian"><img alt='Abilian'
               src="/static/pictures/abilian_logosponsors.png"/></a>
         </div>
 

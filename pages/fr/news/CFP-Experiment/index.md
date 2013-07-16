@@ -7,9 +7,9 @@ Les projets sélectionnés bénéficient d’un espace et d’une valorisation d
 
 Modalité de participation : compléter et renvoyer  le formulaire de participation avant le 30 juin à [experiment@openworldforum.org][4].
 
-- [Télécharger l'appel à participation ici](/static/Documents/AAP_OWF13_experiment_V2-30juin.pdf)
+- [Télécharger l'appel à participation (0.663 mb/pdf)](/static/Documents/AAP_OWF13_experiment_V2-30juin.pdf)
 
-- [Télécharger le formulaire d'inscription ici](/static/Documents/formOWF13AAPExperiment_VF_30juinV2.odt)
+- [Télécharger le formulaire d'inscription (0.755 mb/pdf)](/static/Documents/formOWF13AAPExperiment_VF_30juinV2.odt)
 
 
  [4]: mailto:experiment%40openworldforum.org

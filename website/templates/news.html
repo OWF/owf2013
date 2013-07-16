@@ -13,7 +13,7 @@
             {% for entry in news %}
               <article>
                 <a href="{{ url_for(".news_item", slug=entry.slug) }}"><h2>{{ entry.title }}</h2></a>
-                <span class="news-date">{{ entry.date | dateformat }}</span>
+                <p class="news-date">{{ entry.date | dateformat }}</p>
                 <img alt="" src="{{ url_for(".image_for_news", slug=entry.slug, size="large") }}"/>
 
                 {{ entry.html|safe }}
