@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-14 16:48+0200\n"
+"POT-Creation-Date: 2013-07-16 08:24+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -106,35 +106,35 @@ msgstr ""
 "Quelles sont les sessions qui vous intéressent le plus ? (Vous pourrez "
 "toujours changer votre choix ultérieurement.)"
 
-#: website/templates/_base.html:96 website/templates/base.html:79
+#: website/templates/_base.html:90 website/templates/base.html:79
 msgid "Search"
 msgstr "Rechercher"
 
-#: website/templates/_base.html:121
+#: website/templates/_base.html:115
 msgid "Our partners"
 msgstr "Nos partenaires"
 
-#: website/templates/_base.html:128
+#: website/templates/_base.html:122
 msgid "Institutional partners"
 msgstr "Partenaires institutionnels"
 
-#: website/templates/_base.html:146
+#: website/templates/_base.html:140
 msgid "Organizer"
 msgstr "Organisateur"
 
-#: website/templates/_base.html:153
+#: website/templates/_base.html:147
 msgid "Co-organizers"
 msgstr "Co-organisateurs"
 
-#: website/templates/_base.html:167
+#: website/templates/_base.html:161
 msgid "Platinum sponsors"
 msgstr "Sponsors Platine"
 
-#: website/templates/_base.html:178
+#: website/templates/_base.html:172
 msgid "Silver sponsors"
 msgstr "Sponsors Argent"
 
-#: website/templates/_base.html:190
+#: website/templates/_base.html:184
 #, fuzzy
 msgid "Press Partners"
 msgstr "Partenaires presse"
@@ -219,11 +219,19 @@ msgstr ""
 msgid "This folder is currently empty. Why don't you upload some content?"
 msgstr ""
 
-#: website/templates/search.html:12 website/views/localized.py:200
+#: website/templates/search.html:13
+msgid "Résultat(s) de recherche"
+msgstr ""
+
+#: website/templates/search.html:15 website/views/localized.py:200
 msgid "Search results"
 msgstr ""
 
-#: website/templates/search.html:20
+#: website/templates/search.html:24
+msgid "Aucun résultat connu pour votre requête."
+msgstr ""
+
+#: website/templates/search.html:26
 msgid "Your request didn't produce any results."
 msgstr ""
 
