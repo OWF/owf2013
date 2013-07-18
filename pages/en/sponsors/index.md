@@ -66,3 +66,16 @@ af83 has built the expertise of its team of 50+ experts by managing and serving 
 as well as building state-of-the-art Open Source technology solutions such as [U.C.Engine](http://ucengine.af83.com). 
 We specialize in a range of markets such as consumer goods, media, telecommunications, consumer services, and high tech. 
 Our clients include global enterprises like Group SEB, SFR, LaSer, Intel, Canal+, and other world leaders.
+
+<a name="hp"><a href="http://www.hp.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/HP_sponsor page.png" width="400" alt="HP"></a></a>
+
+As the world's largest IT company, **HP** focuses on simplifying technology experiences for all its customers - from 
+individual consumers to large enterprises. HP helps businesses focus on innovation instead of IT operations by 
+offering robust solutions based on HP inventions, open source software, and industry-standard hardware in a converged 
+infrastructure. In fact, as the leading provider of scalable Linux platforms, HP ships one Linux server every minute. 
+HP not only uses open source within the company extensively but also contributes our expertise to hundreds of open 
+source projects worldwide. In fact, we built tools for open source governance in enterprises, then released them as an 
+open source project called FOSSology.
+ 
+Also, HP actively drives industry-wide discussions on open source best practices as part of the Linux Foundation's 
+Open Compliance Program and SPDX workgroup
