@@ -70,3 +70,17 @@ rencontrées par ses clients, ainsi que par la construction de solutions technol
 exigence telle que [U.C.Engine](http://ucengine.af83.com). Nous sommes spécialisés dans des secteurs comme les 
 consumer goods, les médias, les télécommunications, les services et l'high tech. Nos clients sont de grandes 
 entreprises cross-sectorielles telles que le Groupe SEB, SFR, LaSer, Intel, Canal+ et autres leaders mondiaux.
+
+<a name="hp"><a href="http://www.hp.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/HP_sponsor page.png" width="400" alt="HP"></a></a>
+
+**HP** est une entreprise localisée dans plus de 170 pays. Nous explorons les différents moyens technologiques et 
+serviciels qui peuvent aider les personnes et les entreprises à faire face à leurs problèmes et à leurs défis et 
+réaliser leurs aspirations et leurs rêves en exploitant pleinement leurs capacités. Nous mettons en oeuvre de nouvelles 
+idées et de nouvelles manières de penser pour créer des expériences plus simples, efficaces et fiables en matière de 
+technologie, en améliorant sans cesse la manière dont nos clients vivent et travaillent. Nulle autre entreprise n'offre 
+de produit technologique plus complet que celui de HP. Nous mettons en oeuvre des infrastructures et des offres 
+business qui s'étendent des engins les plus petits aux installations de super-ordinateurs parmi les plus puissantes du 
+monde. Nous offrons aux consommateurs une large gamme de produits et de services s'étendant de la photographie 
+numérique au divertissement numérique et de l'informatique à l'impression maison. Cette game exhaustive nous aide à 
+faire correspondre les bons produits, services et solutions aux besoins spécifiques de nos consommateurs.
+
