@@ -33,7 +33,7 @@
 
 3. Run `vagrant ssh -c 'cd /vagrant ; make run'`
 
-4. Point your browser to `http://localhost:5002/
+4. Point your browser to http://localhost:5002/
 
 Every changes you do in the project file (on the host machine) should be 
 available immediately on browser.
