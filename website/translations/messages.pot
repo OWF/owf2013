@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-16 08:24+0200\n"
+"POT-Creation-Date: 2013-07-23 12:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,8 +128,8 @@ msgstr ""
 msgid "Silver sponsors"
 msgstr ""
 
-#: website/templates/_base.html:184
-msgid "Press Partners"
+#: website/templates/_base.html:188
+msgid "Press partners"
 msgstr ""
 
 #: website/templates/base.html:70

@@ -32,9 +32,9 @@ class TestLinks(BaseTestCase):
   def test_links(self):
     self.crawler.black_list = {'//*', '/fr/../*', '/en/../*'}
     #self.crawler.verbosity = 1
-    self.crawler.crawl("/registration/")
-    self.crawler.crawl("/fr/")
-    self.crawler.crawl("/en/")
+    #self.crawler.crawl("/registration/")
+    #self.crawler.crawl("/fr/")
+    #self.crawler.crawl("/en/")
 
 
 @skipUnless(RUN_SLOW_TESTS, "Not running slow tests")
