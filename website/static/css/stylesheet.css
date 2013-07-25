@@ -590,3 +590,8 @@ ul#theme {
 ul#theme li label {
   display: inline;
 }
+
+#partners #institutional-partners a img {
+  padding-right: 45px;
+  padding-bottom: 30px;
+}
