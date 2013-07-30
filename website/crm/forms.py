@@ -72,6 +72,14 @@ class TrackEditForm(Form):
   # theme = Column(UnicodeText, nullable=True,
   #                info={'label': u'Theme'})
 
+  track_leaders = QuerySelect2Field(
+    u'Track leader(s)',
+    get_label='_name',
+    view_widget=ListWidget(),
+    query_factory=lambda: Speaker.query.all(),
+    multiple=True,
+    validators=[optional()])
+
   description = TextAreaField(u"Description")
 
   starts_at = DateTimeField(u"Starts at", validators=[optional()])
@@ -79,7 +87,7 @@ class TrackEditForm(Form):
   ends_at = DateTimeField(u"End at", validators=[optional()])
 
   _groups = [
-    ["Track", ['name', 'description', 'room', 'starts_at', 'ends_at']]
+    ["Track", ['name', 'description', 'track_leaders', 'room', 'starts_at', 'ends_at']]
   ]
 
 
@@ -104,6 +112,10 @@ class TalkEditForm(Form):
 
   abstract = TextAreaField(u"Abstract")
 
+  starts_at = DateTimeField(u"Starts at", validators=[optional()])
+
+  duration = IntegerField(u"Duration (min)", validators=[optional()])
+
   _groups = [
-    ["Talk", ['title', 'speakers', 'track', 'abstract']]
+    ["Talk", ['title', 'speakers', 'track', 'abstract', 'starts_at', 'duration']]
   ]

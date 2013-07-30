@@ -24,15 +24,15 @@ class Speakers(Module):
   icon = 'user'
 
   list_view_columns = [
-    dict(name='first_name', width=35),
-    dict(name='last_name', width=35),
+    dict(name='first_name', width=35, linkable=True),
+    dict(name='last_name', width=35, linkable=True),
     dict(name='email', width=3),
   ]
 
   edit_form_class = SpeakerEditForm
 
   related_views = [
-    (u'Talks', 'talks', ('title', 'track', 'starts_at', 'ends_at')),
+    (u'Talks', 'talks', ('title', 'track', 'starts_at', 'duration')),
   ]
 
 
@@ -42,7 +42,7 @@ class Rooms(Module):
   icon = 'home'
 
   list_view_columns = [
-    dict(name='name', width=50),
+    dict(name='name', width=50, linkable=True),
     dict(name='capacity', width=50),
   ]
 
@@ -59,16 +59,16 @@ class Tracks(Module):
   icon = 'calendar'
 
   list_view_columns = [
-    dict(name='name', width=40),
+    dict(name='name', width=40, linkable=True),
     dict(name='theme', width=30),
     dict(name='starts_at', width=15),
-    dict(name='end_at', width=15),
+    dict(name='ends_at', width=15),
   ]
 
   edit_form_class = TrackEditForm
 
   related_views = [
-    (u'Talks', 'talks', ('title', 'starts_at', 'ends_at')),
+    (u'Talks', 'talks', ('title', 'starts_at', 'duration')),
   ]
 
 
@@ -78,15 +78,17 @@ class Talks(Module):
   icon = 'volume-up'
 
   list_view_columns = [
-    dict(name='title', width=40),
+    dict(name='title', width=40, linkable=True),
     dict(name='track', width=30),
     dict(name='starts_at', width=15),
-    dict(name='end_at', width=15),
+    dict(name='duration', width=15),
   ]
 
   edit_form_class = TalkEditForm
 
-  related_views = []
+  related_views = [
+    (u'Speakers', 'speakers', ('first_name', 'last_name')),
+  ]
 
 
 #

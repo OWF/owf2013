@@ -4,6 +4,7 @@ import locale
 from os import mkdir
 from os.path import join, dirname, exists
 import re
+from abilian.services import audit_service, index_service, activity_service
 
 from flask import Flask, abort, request, g, session
 from flask.ext.admin import Admin
@@ -77,6 +78,15 @@ def setup(app):
 
   create_db(app)
   load_tracks(app)
+
+  audit_service.init_app(app)
+  audit_service.start()
+
+  #index_service.init_app(app)
+  #index_service.start()
+
+  activity_service.init_app(app)
+  activity_service.start()
 
 
 def setup_babel(app):

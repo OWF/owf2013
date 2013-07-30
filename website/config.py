@@ -14,6 +14,10 @@ FLATPAGES_ROOT = '../pages'
 SQLALCHEMY_DATABASE_URI = "sqlite:///../data/abilian.db"
 SQLALCHEMY_ECHO = "True"
 
+BROKER_URL = "sqla+" + SQLALCHEMY_DATABASE_URI
+CELERY_RESULT_BACKEND = "database"
+CELERY_RESULT_DBURI = SQLALCHEMY_DATABASE_URI
+
 
 #
 # Application configuration

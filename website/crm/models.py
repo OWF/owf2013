@@ -106,6 +106,14 @@ class Room(Entity, ValidationMixin):
                     info={'label': u'Capacity'})
 
 
+track_leader_to_track = Table(
+  'track_leader_to_track', db.Model.metadata,
+  Column('speaker_id', Integer, ForeignKey('speaker.id')),
+  Column('track_id', Integer, ForeignKey('track2.id')),
+  UniqueConstraint('speaker_id', 'track_id'),
+)
+
+
 class Track2(Entity, ValidationMixin):
   __tablename__ = 'track2'
 
@@ -125,6 +133,9 @@ class Track2(Entity, ValidationMixin):
 
   ends_at = Column(DateTime, nullable=True,
                    info={'label': u'Ends at'})
+
+  track_leaders = relationship(Speaker, secondary=track_leader_to_track,
+                               backref='lead_tracks')
 
 
 speaker_to_talk = Table(
@@ -147,3 +158,9 @@ class Talk(Entity, ValidationMixin):
   title = Column(UnicodeText(200), nullable=False)
 
   abstract = Column(UnicodeText(2000), nullable=False)
+
+  starts_at = Column(DateTime, nullable=True,
+                     info={'label': u'Starts at'})
+
+  duration = Column(Integer, nullable=True,
+                    info={'label': u'Duration'})

@@ -23,6 +23,9 @@ def register_plugin(app):
 
   @app.before_request
   def check_permissions():
+    if app.config.get('DEBUG'):
+      return
+
     if request.path.startswith("/crm/"):
       if not current_user.is_authenticated():
         abort(403)

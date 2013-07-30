@@ -1,5 +1,5 @@
 import StringIO
-from flask import make_response
+from flask import make_response, current_app
 from flask.ext.admin import expose
 from flask.ext.admin.contrib.sqlamodel import ModelView
 from flask.ext.login import current_user
@@ -13,6 +13,8 @@ class RegistrationView(ModelView):
   column_list = ['email', 'coming_on_oct_3', 'coming_on_oct_4', 'coming_on_oct_5']
 
   def is_accessible(self):
+    if current_app.config.get('DEBUG'):
+      return True
     return current_user.is_authenticated()
 
   @expose("/export.csv")
@@ -32,6 +34,8 @@ class TrackView(ModelView):
   column_list = ['day', 'theme', 'title']
 
   def is_accessible(self):
+    if current_app.config.get('DEBUG'):
+      return True
     return current_user.is_authenticated()
 
 

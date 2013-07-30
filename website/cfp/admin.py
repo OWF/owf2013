@@ -1,5 +1,5 @@
 import StringIO
-from flask import render_template, make_response
+from flask import render_template, make_response, current_app
 from flask.ext.admin import BaseView, expose
 from flask.ext.admin.contrib.sqlamodel import ModelView
 from flask.ext.login import current_user
@@ -15,12 +15,16 @@ class TalkProposalView(ModelView):
   column_list = ['speaker_name', 'speaker_organization', 'title', 'theme']
 
   def is_accessible(self):
+    if current_app.config.get('DEBUG'):
+      return True
     return current_user.is_authenticated()
 
 
 class AllTalksAdminView(BaseView):
 
   def is_accessible(self):
+    if current_app.config.get('DEBUG'):
+      return True
     return current_user.is_authenticated()
 
   @expose("/")
