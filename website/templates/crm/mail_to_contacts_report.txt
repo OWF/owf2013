@@ -1,0 +1,15 @@
+Vous avez envoyé le mail suivant via l'Extranet SPR:
+
+>       De: {{ sender }}
+>    Objet: {{ subject }}
+>  Message:
+>  {%- for line in body.split('\n') %}
+>    {{ line }}
+   {%- endfor %}
+>
+
+À la liste de contacts suivants:
+
+{% for r in recipients %}
+{{ r }}
+{%- endfor %}

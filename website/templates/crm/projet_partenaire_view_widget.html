@@ -36,30 +36,9 @@
             <h2>{{ labels.partenaire }}: {{ row.partenaire }}</h2>
           </div>
           <div class="modal-body">
-            <table>
-              <thead>
-              <th>{{ labels.depenses }}</th>                
-              <th>{{ labels.effort }}</th>
-              <th>{{ labels.projection }}</th>
-              <th>{{ labels.assiette }}</th>
-              <th>{{ labels.taux_aide }}</th>
-              <th>{{ labels.aide }}</th>
-              <th>{{ labels.financeur }}</th>          
-              </thead>
 
-              <tbody>
-                <tr>
-                  <td>{{ row.depenses }}</td>
-                  <td>{{ row.effort }}</td>
-                  <td>{{ row.projection }}</td>
-                  <td>{{ row.assiette }}</td>
-                  <td>{{ row.taux_aide }}</td>
-                  <td>{{ row.aide }}</td>
-                  <td>{{ row.financeur }}</td>
-                </tr>
-              </tbody>
-            </table>
-            
+             {{ row.lignes }}
+
             <h2 style="text-transform: capitalize;">{{ labels.description }}</h2>
             <p>{{ row.description }}</p>
             <h2 style="text-transform: capitalize;">{{ labels.role }}</h2>

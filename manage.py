@@ -35,7 +35,7 @@ def dump_routes():
   Dump all the routes declared by the application.
   """
   for rule in app.url_map.iter_rules():
-    print rule
+    print rule, rule.methods, rule.endpoint
 
 
 @manager.command

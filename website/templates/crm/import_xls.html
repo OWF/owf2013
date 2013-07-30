@@ -1,0 +1,76 @@
+{% extends "crm/base.html" %}
+
+{% block main %}
+  <form method="POST" action="{{ url_for('.validate_imported_data') }}" enctype="multipart/form-data">
+    {{ csrf }}
+    <input type="hidden" name="filename" value="{{ filename }}" />
+    <input type="hidden" name="item_count" value="{{ modified_items|length }}" />
+
+    <table class="excel-import table table-bordered table-condensed" style="border-collapse: collapse;">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Nom</th>
+          <th>Attribut</th>
+          <th>Valeur actuelle</th>
+          <th>Nouvelle valeur</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- set columns_map = excel.attr_to_column %}
+        {%- for data in modified_items %}
+          {%- set item_idx=loop.index %}
+          {%- set rowspan = data.modified|length + 1 %}
+          <tr class="item-row{%- if data.required_missing %} error{%- endif %}">
+            <td rowspan="{{ rowspan }}">{{ data.metadata.row }}</td>
+            <td rowspan="{{ rowspan }}">
+              {%- if data.required_missing %}
+                <i class="error icon-warning-sign"></i>
+              {%- endif %}
+              {%- if not data.is_new %}
+                <a href={{ data.item._url }}>{{ data.item._name }}</a>
+                <input type="hidden" name="item_{{ item_idx }}_id" value="{{ data.item.id }}" />
+              {%- endif %}
+              <input type="hidden" name="item_{{ item_idx }}_attrs_sig" value="{{ data.attr_signature }}" />
+          </td></tr>
+          {%- for attr, update in data.modified.items() %}
+            {% set col = columns_map[attr] %}
+            <tr{%- if update.error %} class="error"{%- endif %}>
+              <td>{%- if col.required %}<b>{%- endif %}{{ col.label }}{%- if col.required %}</b>{%- endif %}
+                {%- if not update.error %}
+                  <input type="hidden" name="item_{{ item_idx }}_attrs" value="{{ attr }}" />
+                  <input type="hidden" name="item_{{ item_idx }}_attr_{{ attr }}" value="{{ update.update }}" />
+                {%- else %}
+                  <i class="error icon-warning-sign"></i>
+                {%- endif %}
+              </td>
+              <td>
+                {%- if update.current %}
+                {{ update.render_current(excel) }}
+              {%- endif %}
+              </td>
+              <td>{%- if not update.error %}
+                {{ update.render_value(excel) }}
+                {%- else %}
+                  {{ update.error_msg }}
+                {%- endif %}
+              </td>
+              <td>{%- if not (data.required_missing or update.error) %}
+                <input type="checkbox" name="item_{{ item_idx }}_import" value="{{ attr }}" checked="checked" />
+                {%- endif %}
+              </td>
+            </tr>
+          {%- endfor %}
+        {%- endfor %}
+      </tbody>
+    </table>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary" name="_action" value="validate">{{ _("Validate") }}</button>
+      <button type="submit" class="btn cancel" name="_action" value="cancel">{{ _("Cancel") }}</button>    
+    </div>
+    
+
+  </form>
+{% endblock %}

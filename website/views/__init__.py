@@ -1,8 +1,9 @@
+#
+# Register blueprints on app
+#
+def register_plugin(app):
+  from .localized import localized
+  app.register_blueprint(localized)
 
-from .localized import register_plugin as setup_localized
-from .main import register_plugin as setup_main
-
-
-def setup(app):
-  setup_localized(app)
-  setup_main(app)
+  from .main import main
+  app.register_blueprint(main)

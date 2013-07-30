@@ -19,7 +19,7 @@ from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks
 
 __all__ = ['setup']
 
-blueprint = Blueprint('localized', __name__, url_prefix='/<string(length=2):lang>')
+localized = Blueprint('localized', __name__, url_prefix='/<string(length=2):lang>')
 
 
 #
@@ -57,7 +57,7 @@ def get_menu():
   return menu
 
 
-@blueprint.context_processor
+@localized.context_processor
 def inject_menu():
   return dict(menu=get_menu())
 
@@ -76,19 +76,19 @@ def alt_url_for(*args, **kw):
     return url_for(*args, lang=g.lang, **kw)
 
 
-@blueprint.context_processor
+@localized.context_processor
 def inject_context_variables():
   session['lang'] = g.lang
   return dict(lang=g.lang,
               url_for=alt_url_for)
 
 
-@blueprint.url_defaults
+@localized.url_defaults
 def add_language_code(endpoint, values):
   values.setdefault('lang', g.lang)
 
 
-@blueprint.url_value_preprocessor
+@localized.url_value_preprocessor
 def pull_lang(endpoint, values):
   g.lang = values.pop('lang')
 
@@ -96,7 +96,7 @@ def pull_lang(endpoint, values):
 #
 # Localized routes
 #
-@blueprint.route('/')
+@localized.route('/')
 def home():
   template = "index.html"
   page = {'title': 'Open World Forum 2013'}
@@ -105,14 +105,14 @@ def home():
   return render_template(template, page=page, news=news, blocks=blocks)
 
 
-@blueprint.route('/<path:path>/')
+@localized.route('/<path:path>/')
 def page(path=""):
   page = get_page_or_404(g.lang + "/" + path + "/index")
   template = page.meta.get('template', '_page.html')
   return render_template(template, page=page)
 
 
-@blueprint.route('/news/')
+@localized.route('/news/')
 def news():
   all_news = get_news(lang=g.lang)
   recent_news = get_news(lang=g.lang, limit=5)
@@ -121,7 +121,7 @@ def news():
                          recent_news=recent_news)
 
 
-@blueprint.route('/news/<slug>/')
+@localized.route('/news/<slug>/')
 def news_item(slug):
   page = get_page_or_404(g.lang + "/news/" + slug)
   recent_news = get_news(lang=g.lang, limit=5)
@@ -129,7 +129,7 @@ def news_item(slug):
                          recent_news=recent_news)
 
 
-@blueprint.route('/news/<slug>/image')
+@localized.route('/news/<slug>/image')
 def image_for_news(slug):
   assert not '/' in slug
   size = request.args.get('size', 'large')
@@ -175,7 +175,7 @@ def image_for_news(slug):
   return response
 
 
-@blueprint.route('/feed/')
+@localized.route('/feed/')
 def feed():
   news_items = get_news(lang=g.lang, limit=FEED_MAX_LINKS)
   now = datetime.datetime.now()
@@ -186,7 +186,7 @@ def feed():
   return response
 
 
-@blueprint.route('/sitemap/')
+@localized.route('/sitemap/')
 def sitemap():
   page = {'title': _(u"Site map")}
   pages = get_pages()
@@ -195,7 +195,7 @@ def sitemap():
   return render_template('sitemap.html', page=page, pages=pages)
 
 
-@blueprint.route('/search')
+@localized.route('/search')
 def search():
   page = {'title': _(u"Search results")}
   qs = request.args.get('qs', '')
@@ -205,14 +205,7 @@ def search():
   return render_template("search.html", page=page, results=results)
 
 
-@blueprint.errorhandler(404)
+@localized.errorhandler(404)
 def page_not_found(error):
   page = {'title': _(u"Page not found")}
   return render_template('404.html', page=page), 404
-
-
-#
-# Register blueprint on app
-#
-def register_plugin(app):
-  app.register_blueprint(blueprint)

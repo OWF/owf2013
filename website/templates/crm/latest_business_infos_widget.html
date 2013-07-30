@@ -1,0 +1,8 @@
+<table>
+  <thead><tr><th></th><th>Valeur</th><th>Année</th></tr></thead>
+  <tbody>
+    {%- for d in data %}
+      <tr><td>{{ d.label }}</td><td>{{ d.value|default('', true) }}</td><td>{{ d.year|default('', true) }}</td></tr>
+    {%- endfor %}
+  </tbody>
+</table>

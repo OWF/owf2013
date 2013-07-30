@@ -11,8 +11,8 @@ from flask.ext.babel import (
 
 from abilian.web.frontend import Module, CRUDApp
 
-from .forms import SpeakerEditForm
-from .models import Speaker
+from .forms import SpeakerEditForm, RoomEditForm, TrackEditForm, TalkEditForm
+from .models import Speaker, Room, Track2, Talk
 
 
 #
@@ -21,16 +21,70 @@ from .models import Speaker
 class Speakers(Module):
   managed_class = Speaker
 
+  icon = 'user'
+
   list_view_columns = [
-    dict(name='_name', width=35),
-    dict(name='site_web', label="Web", width=25),
-    dict(name='type_cotisation', width=20),
-    dict(name='type_organisation', label="Type", width=15),
-    dict(name='updated_at', label=_l(u'last modification',),
-         display_fmt=format_datetime, width=15),
+    dict(name='first_name', width=35),
+    dict(name='last_name', width=35),
+    dict(name='email', width=3),
   ]
 
   edit_form_class = SpeakerEditForm
+
+  related_views = [
+    (u'Talks', 'talks', ('title', 'track', 'starts_at', 'ends_at')),
+  ]
+
+
+class Rooms(Module):
+  managed_class = Room
+
+  icon = 'home'
+
+  list_view_columns = [
+    dict(name='name', width=50),
+    dict(name='capacity', width=50),
+  ]
+
+  edit_form_class = RoomEditForm
+
+  related_views = [
+    (u'Tracks', 'tracks', ('name', 'starts_at', 'ends_at')),
+  ]
+
+
+class Tracks(Module):
+  managed_class = Track2
+
+  icon = 'calendar'
+
+  list_view_columns = [
+    dict(name='name', width=40),
+    dict(name='theme', width=30),
+    dict(name='starts_at', width=15),
+    dict(name='end_at', width=15),
+  ]
+
+  edit_form_class = TrackEditForm
+
+  related_views = [
+    (u'Talks', 'talks', ('title', 'starts_at', 'ends_at')),
+  ]
+
+
+class Talks(Module):
+  managed_class = Talk
+
+  icon = 'volume-up'
+
+  list_view_columns = [
+    dict(name='title', width=40),
+    dict(name='track', width=30),
+    dict(name='starts_at', width=15),
+    dict(name='end_at', width=15),
+  ]
+
+  edit_form_class = TalkEditForm
 
   related_views = []
 
@@ -39,5 +93,5 @@ class Speakers(Module):
 # Main App
 #
 class CRM(CRUDApp):
-  modules = [Speakers()]
+  modules = [Speakers(), Rooms(), Tracks(), Talks()]
   url = "/crm"

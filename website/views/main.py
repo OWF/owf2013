@@ -17,7 +17,7 @@ from website.util import preferred_language
 
 __all__ = ['setup']
 
-blueprint = Blueprint('main', __name__, url_prefix='/')
+main = Blueprint('main', __name__, url_prefix='/')
 
 ROOT = 'http://www.openworldforum.org'
 REDIRECTS = [
@@ -72,7 +72,7 @@ REDIRECTS = [
 #
 # Global (app-level) routes
 #
-@blueprint.route('')
+@main.route('')
 def index():
   lang = session.get('lang')
   if not lang:
@@ -83,12 +83,12 @@ def index():
     return redirect(url_for("localized.home", lang='en'))
 
 
-@blueprint.route('robots.txt')
+@main.route('robots.txt')
 def robots_txt():
   return ""
 
 
-@blueprint.route('<path:path>')
+@main.route('<path:path>')
 def catch_all(path):
   for source, target in REDIRECTS:
     if path.startswith(source):
@@ -97,7 +97,7 @@ def catch_all(path):
   abort(404)
 
 
-@blueprint.route('image/<path:path>')
+@main.route('image/<path:path>')
 def image(path):
   hsize = int(request.args.get("h", 0))
   vsize = int(request.args.get("v", 0))
@@ -136,12 +136,12 @@ def image(path):
   return response
 
 
-@blueprint.route('feed/')
+@main.route('feed/')
 def global_feed():
   return redirect("/en/feed/", 301)
 
 
-@blueprint.route('sitemap.xml')
+@main.route('sitemap.xml')
 def sitemap_xml():
   today = datetime.date.today()
   recently = datetime.date(year=today.year, month=today.month, day=1)
@@ -155,4 +155,4 @@ def sitemap_xml():
 # Register blueprint on app
 #
 def register_plugin(app):
-  app.register_blueprint(blueprint)
+  app.register_blueprint(main)

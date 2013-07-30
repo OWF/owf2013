@@ -1,0 +1,105 @@
+{% extends "crm/base.html" %}
+
+{% block main %}
+{%- set recipients_count = recipients.count() %}
+<h2>{{ _("Send mail") }}</h2>
+
+<form id="mailto-contacts" action="{{ url_for(".mail_to_contacts", **request.args) }}" enctype="multipart/form-data" method="POST">
+  {{ csrf }}
+  <p>
+    <div>
+      <span class="span1 text-right">{{ _("From")}}:</span>&nbsp;
+      <span>{{ g.user._name }}&nbsp;({{ g.user.email }})</span>
+    </div>
+    <div>
+      <span class="span1 text-right">{{ _("To") }}:</span>&nbsp;
+      <span>
+        <a data-toggle="modal" href="#recipients_modal">
+          {{ _("{count:d} recipients").format(count=recipients_count) }}
+        </a>
+        <div id="recipients_modal" class="modal hide fade">            
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>{{ _("recipients") }}</h3>
+          </div>
+          <div class="modal-body"  style="max-height: 500px;">
+            <table class="table table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th>Nom</th>
+                  <th>Partenaire</th>
+                  <th>email</th>
+                </tr>
+              </thead>
+              <tbody>
+                {%- for c in recipients %}
+                  <tr>
+                    <td><b>{{ c.nom }}</b>&nbsp;{{ c.prenom }}</td>
+                    <td>{{ c.partenaire.nom }}</td>
+                    <td>{{ c.email }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </span>
+    </div>
+  </p>
+
+  {%- set field_errors= form['subject'].errors %}
+  <div class="control-group {%- if field_errors %} error{%- endif %}">
+    <label class="control-label required" for="subject">{{ _("Subject") }}:</label>
+    <div class="controls">
+      {%- if field_errors %}
+        <span class="help-inline">{% for error in field_errors %}{{ _(error)|e }}. {% endfor %}</span>
+      {%- endif %}
+      <input name="subject" type="text" class="input-block-level" value="{{ subject or "" |default("") }}" />
+    </div>
+  </div>
+
+  {%- set field_errors= form['body'].errors %}
+  <div class="control-group {%- if field_errors %} error{%- endif %}">
+    <label class="control-label required{%- if field_errors %} error{%- endif %}" for="body">{{ _("Message") }}:</label>
+    <div class="controls">
+      {%- if field_errors %}
+        <span class="help-inline">{% for error in field_errors %}{{ error|e }}. {% endfor %}</span>
+      {%- endif %}
+      <textarea name="body" type="text" rows="12" class="input-block-level">{{ body or "" |default("") }}</textarea>
+    </div>
+  </div>
+
+  {%- for c in recipients %}
+    <input type="hidden" name="recipients-{{ loop.index }}" value="{{ c.id }}" />
+  {%- endfor %}
+
+  <div class="form-actions">
+    <input class="btn btn-primary" type="submit" name="action.send" value="{{ _("Send") }}"
+           {%- if recipients_count > 10 %}data-toggle="modal" href="#modal-confirm"{%- endif %}
+           />
+    <input class="btn" type="submit" name="action.cancel" value="{{ _("Cancel") }}" />
+  </div>
+
+  {%- if recipients_count > 10 %}
+    <div id="modal-confirm" class="modal fade hide">
+      <div class="modal-header">
+        <h3>{{ _("Please confirm") }}</h3>
+      </div>
+      <div class="modal-body">
+        {%- trans count=recipients_count %}
+          <p class="lead">You are about to send a mail to {{ count }} persons!</p>
+          <p>If you have verified the recipients list then just confirm.</p>
+          <p>If unsure just cancel.</p>
+        {%- endtrans %}
+      </div>
+      <div class="modal-footer">
+        <input class="btn btn-primary" type="submit" name="action.send" value="{{ _("Send") }}"/>
+        <input class="btn" type="submit" name="action.cancel" value="{{ _("Cancel") }}" />
+        <button class="btn" data-dismiss="modal" name="action.cancel">{{ _("Close") }}</button>
+      </div>
+    </div>
+  {%- endif %}
+
+</form>
+
+{% endblock %}

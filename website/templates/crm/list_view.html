@@ -2,12 +2,71 @@
 
 {% block main %}
 
-<a class="btn" href="{{ request.url }}new"><i class="icon-plus"></i>{{ _("Create New") }}</a>
-<a class="btn datatable-export" href="{{ request.url }}export_xls"><i class="icon-align-justify"></i>{{ _("Export to Excel") }}</a>
+<a class="btn" href="{{ request.url }}new"><i class="icon-plus"></i> {{ _("Create New") }}</a>
 
-{% if module.export_xml %}
+{%- set EXCEL_ACTIONS = module.excel_export_actions %}
+{%- set EXCEL_SUPPORT_IMPORT = module.EXCEL_IMPORT_EXPORT and g.is_manager %}
+
+{%- if EXCEL_ACTIONS or EXCEL_SUPPORT_IMPORT %}
+  {%- set BUTTON_CLASS = '' %}
+  <div class="btn-group">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#-">Excel<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li>
+    {%- else %}
+      {%- set BUTTON_CLASS = ' btn' %}
+    {%- endif %}
+    <a class="datatable-export{{ BUTTON_CLASS }}" data-toggle="dropdown" href="{{ url_for('.export_to_xls') }}"><i class="icon-align-justify"></i>{{ _("Export to Excel") }}</a>
+    {%- if EXCEL_ACTIONS or EXCEL_SUPPORT_IMPORT %}
+     </li>
+    {%- for action_url, label in EXCEL_ACTIONS %}
+      <li>
+        <a class="datatable-export" data-toggle="dropdown" href="{{ action_url }}"><i class="icon-align-justify"></i>{{ label }}</a>
+      </li>
+    {%- endfor %}
+      
+    {%- if EXCEL_SUPPORT_IMPORT %}
+      <li class="divider"></li>
+      <li><a href="#modal-excel-upload" data-toggle="modal"><i class="icon-upload"></i>{{ _("Import from Excel") }}</a></li>
+      <li class="divider"></li>
+      <li><a href="{{ url_for('.export_to_xls', import_template=1) }}" title="{{ _("Download a file suitable for importing new objects") }}"><i class="icon-download"></i>{{ _("Download import template") }}</a></li>
+    {%- endif %}
+  </ul>
+{%- endif %}
+
+{%- if EXCEL_SUPPORT_IMPORT %}
+  <div class="modal hide fade" id="modal-excel-upload" role="dialog">
+    <form method="POST" action="{{ url_for(".import_xls_file") }}" enctype="multipart/form-data" style="margin-bottom: 0;">
+      
+      {{ csrf }}
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h3>{{ _("Upload Excel file") }}</h3>
+      </div>
+      
+      <div class="modal-body">
+        <input type="file" name="file" />
+      </div>
+      
+      <div class="modal-footer">
+        <button data-dismiss="modal" class="btn">{{ _("Cancel") }}</button>
+        <button class="btn btn-primary" type="submit" name="action"
+                value="upload">{{ _("Upload") }}</button>
+      </div>
+    </form>
+  </div>
+{%- endif %}
+{%- if EXCEL_ACTIONS or EXCEL_SUPPORT_IMPORT %}
+  </div>
+{%- endif %}
+
+{%- if module.export_xml %}
   <a class="btn" href="{{ url_for('.export_xml') }}"><i><small>&lt;/&gt;</small></i>&nbsp;{{ _("Export XML") }}</a>
 {% endif %}
+
+{%- if module.mail_to_contacts %}
+<a class="btn datatable-export" href="{{ url_for('.mail_to_contacts') }}" title="{{ _("Send an email to selected contacts") }}"><i class="icon-envelope"></i> {{ _("Send an email") }}</a>
+{%- endif %}
 
 <hr />
 

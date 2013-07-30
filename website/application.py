@@ -4,7 +4,6 @@ import locale
 from os import mkdir
 from os.path import join, dirname, exists
 import re
-from abilian.application import PluginManager
 
 from flask import Flask, abort, request, g, session
 from flask.ext.admin import Admin
@@ -15,14 +14,13 @@ from flask.ext.markdown import Markdown
 from flask.ext.assets import Environment as AssetManager
 
 import abilian
+from abilian.application import PluginManager
 from abilian.core.extensions import Babel, db, mail
 from abilian.web.filters import init_filters
 
-from .views import setup as setup_views
-from .crm import setup as setup_crm
-from website.registration.models import Track
-from website.tracks import TRACKS
-from website.util import preferred_language
+from .registration.models import Track
+from .tracks import TRACKS
+from .util import preferred_language
 from .whoosh import Whoosh
 
 
@@ -50,17 +48,14 @@ def setup(app):
   mail.init_app(app)
   admin = Admin(app)
   bootstrap = Bootstrap(app)
-
   setup_filters_and_processors(app)
 
-  # Register our own blueprints / apps
-  setup_views(app)
-  setup_crm(app)
-
   #app.load_plugins()
+  app.register_plugin("website.views")
   app.register_plugin("website.cfp")
   app.register_plugin("website.security")
   app.register_plugin("website.registration")
+  app.register_plugin("website.crm")
 
   # Add some extensions
   whoosh = Whoosh(app)

@@ -1,23 +1,47 @@
 # coding=utf-8
 
 """
-Entity objects for the CRM applications.
+Data model
+==========
 
-Part of the code is generated (imported from the `generated` module), part
-is hand-crafted.
+Speaker:
+– Nom
+– Prénom
+– Email
+– Phone
+– Organisation
+– Titre
+– Bio
+– Photo
+– Twitter handle
+– Github handle
+– Sourceforge handle
 
-The goal is to have everything generated someday.
+Tracks:
+– Room
+– Theme (THINK/CODE/EXPERIMENT)
+– Date/Heure de début
+– Date/Heure de fin
+
+Talks:
+– Speaker
+– Track
+– Titre
+– Abstract
+
 """
 
 import logging
+from abilian.core.extensions import db
 
-from sqlalchemy.schema import Column
-from sqlalchemy.types import UnicodeText
+from sqlalchemy.orm import relation, relationship
+from sqlalchemy.schema import Column, ForeignKey, Table, UniqueConstraint
+from sqlalchemy.types import UnicodeText, DateTime, Integer, LargeBinary
 
 from savalidation import ValidationMixin
 from flask.ext.babel import gettext as _
 
-from abilian.core.entities import Entity
+from abilian.core.entities import Entity, IdMixin
 
 from .extensions import EmailAddress, PhoneNumber
 
@@ -33,9 +57,10 @@ __all__ = ['Speaker'] # + Talk, Track, Session ?
 class Speaker(Entity, ValidationMixin):
   __tablename__ = 'speaker'
 
-  title = Column(UnicodeText, nullable=True,
-                 info={'label': u'Title'})
-  title_CHOICES = [('', ''), ('Mr', 'Mr'), ('Mrs', 'Mrs'), ('Dr', 'Dr'), ('Pr', 'Pr')]
+  salutation = Column(UnicodeText, nullable=True,
+                      info={'label': u'Title'})
+  salutation_CHOICES = [('', ''), ('Mr', 'Mr'), ('Mrs', 'Mrs'), ('Dr', 'Dr'),
+                        ('Pr', 'Pr')]
 
   first_name = Column(UnicodeText, nullable=True,
                       info={'searchable': True, 'label': u'First name'})
@@ -52,6 +77,73 @@ class Speaker(Entity, ValidationMixin):
   bio = Column(UnicodeText, nullable=True,
                info={'label': u'Biography'})
 
+  website = Column(UnicodeText, nullable=True,
+                   info={'label': u'Web site'})
+
+  twitter_handle = Column(UnicodeText, nullable=True,
+                          info={'label': u'Twitter handle'})
+
+  github_handle = Column(UnicodeText, nullable=True,
+                         info={'label': u'GitHub handle'})
+
+  sourceforge_handle = Column(UnicodeText, nullable=True,
+                              info={'label': u'Sourceforge handle'})
+
+  photo = Column(LargeBinary, nullable=True)
+
   @property
   def _name(self):
     return '%s %s' % (self.first_name, self.last_name)
+
+
+class Room(Entity, ValidationMixin):
+  __tablename__ = 'room'
+
+  name = Column(UnicodeText, nullable=False,
+                info={'label': u'Name'})
+
+  capacity = Column(Integer, nullable=False,
+                    info={'label': u'Capacity'})
+
+
+class Track2(Entity, ValidationMixin):
+  __tablename__ = 'track2'
+
+  room_id = Column(ForeignKey(Room.id), nullable=True)
+  room = relationship(Room, backref="tracks")
+
+  name = Column(UnicodeText, nullable=False,
+                info={'label': u'name'})
+
+  theme = Column(UnicodeText, nullable=True,
+                 info={'label': u'Theme'})
+
+  description = Column(UnicodeText)
+
+  starts_at = Column(DateTime, nullable=True,
+                     info={'label': u'Starts at'})
+
+  ends_at = Column(DateTime, nullable=True,
+                   info={'label': u'Ends at'})
+
+
+speaker_to_talk = Table(
+  'speaker_to_talk', db.Model.metadata,
+  Column('speaker_id', Integer, ForeignKey('speaker.id')),
+  Column('talk_id', Integer, ForeignKey('talk.id')),
+  UniqueConstraint('speaker_id', 'talk_id'),
+)
+
+
+class Talk(Entity, ValidationMixin):
+  __tablename__ = 'talk'
+
+  track_id = Column(ForeignKey(Track2.id), nullable=False)
+  track = relationship(Track2, backref="talks")
+
+  speakers = relationship(Speaker, secondary=speaker_to_talk,
+                          backref='talks')
+
+  title = Column(UnicodeText(200), nullable=False)
+
+  abstract = Column(UnicodeText(2000), nullable=False)

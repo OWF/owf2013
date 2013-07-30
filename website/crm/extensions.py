@@ -3,25 +3,74 @@
 """
 WTForms extensions (fields, widgets, validators).
 """
-
-from jinja2 import Markup, escape
 import operator
+from functools import partial
+from jinja2 import Markup, escape
 from sqlalchemy import UnicodeText
 from flask import render_template
-from flask.ext.babel import format_date
+from flask.ext.babel import gettext as _, format_date
 from wtforms import ValidationError, SelectMultipleField
 from wtforms.compat import string_types, text_type
-
-from wtforms.ext.sqlalchemy.fields import QuerySelectField, get_pk_from_identity, has_identity_key
+from wtforms.ext.sqlalchemy.fields import get_pk_from_identity, has_identity_key
 from wtforms.fields import DateField, SelectFieldBase, SelectField
 from wtforms.widgets import Select, Input, html_params
 
+from abilian.web.widgets import EntityWidget, ListWidget
 
 # TODO
 SIRET = UnicodeText
 PhoneNumber = UnicodeText
 URL = UnicodeText
 EmailAddress = UnicodeText
+
+
+def siret_unformat(data):
+  """ Remove all characters but digits. Effective filtering for formatted sirets
+ numbers (societe.com, verif.com...).
+  """
+  if isinstance(data, basestring):
+    data = filter(lambda c: c.isdigit(), unicode(data).strip())
+  return data
+
+
+def luhn(n):
+  """
+  Validate that a string made of numeric characters verify Luhn test. Used by
+  siret validator
+
+  from http://rosettacode.org/wiki/Luhn_test_of_credit_card_numbers#Python
+  """
+  r = [int(ch) for ch in str(n)][::-1]
+  return (sum(r[0::2]) + sum(sum(divmod(d*2,10)) for d in r[1::2])) % 10 == 0
+
+
+def validate_siret():
+  def _validate_siret(form, field):
+    """ SIRET validator
+    """
+    siret = (field.data or u'').strip()
+
+    if len(siret) != 14:
+      raise ValidationError(_(u'SIRET must have exactly 14 characters ({count})'
+                              ).format(count=len(siret)))
+
+    if not all((c >= '0' and c <= '9') for c in siret):
+      # specific SIRET like for MONACO, i.e MONACOCONFO001
+      # -  Principauté de Monaco "001"
+      # - la Guadeloupe "458"
+      # - la Martinique "462"
+      # - la Guyane "496"
+      # - la Réunion "372
+      if not siret[-3:] in ('001', "458", "462", "496", "372"):
+        raise ValidationError(
+          _(u'SIRET looks like special SIRET but geographical code seems invalid'
+            u' ({code})').format(code=siret[-3:]))
+
+    elif not luhn(siret):
+      raise ValidationError(
+        _(u'SIRET number is invalid (length is ok: verify numbers)'))
+
+  return _validate_siret
 
 
 class SiretWidget(object):
@@ -35,6 +84,45 @@ class SiretWidget(object):
     return u'<a href="{url}">{siret}</a><i class="icon-share-alt"></i>'\
       .format(url=url, siret=siret)
 
+
+class ContactPartenaireViewWidget(EntityWidget):
+  def render_view(self, field):
+    rendered = EntityWidget.render_view(self, field)
+    p = field.object_data
+    if p:
+      from .forms import PartenaireEditForm
+      field = PartenaireEditForm(obj=p).gt_ou_ad
+      rendered += u'<div>{}</div>'.format(field.render_view())
+    return rendered
+
+
+class LatestBusinessInfosWidget(object):
+
+  def __init__(self, bi_Form=None):
+    self._labels = None
+    self.bi_Form = bi_Form
+
+  @property
+  def labels(self):
+    if self._labels is None:
+      self._labels = {}
+      if self.bi_Form:
+        for attr, field in self.bi_Form()._fields.items():
+          self._labels[attr] = field.label.text or attr
+    return self._labels
+
+  def render_view(self, field):
+    bi_infos = field.object_data
+    data = []
+    labels = self.labels
+    for attr, infos in bi_infos.items():
+      data.append(dict(
+        label=labels.get(attr, attr),
+        value=infos[0],
+        year=infos[1]))
+
+    return render_template('crm/latest_business_infos_widget.html',
+                           data=data)
 
 class DateInput(Input):
   """
@@ -119,8 +207,9 @@ class Select2Ajax(object):
 
     extra_args = Markup(html_params(**kwargs))
     url = field.ajax_source
-    object_name = field._data._name if field._data else ""
-    object_id = field._data.id if field._data else ""
+    data = field.data # accessor / obj lookup
+    object_name = data._name if data else ""
+    object_id = data.id if data else ""
 
     return Markup(render_template(self.template,
                                   name=field.name,
@@ -162,15 +251,16 @@ class QuerySelect2Field(SelectFieldBase):
   being `None`. The label for this blank choice can be set by specifying the
   `blank_text` parameter.
   """
-  # PATCHED!
-  widget = Select2()
-
   def __init__(self, label=None, validators=None, query_factory=None,
                get_pk=None, get_label=None, allow_blank=False,
-               blank_text='', **kwargs):
+               blank_text='', widget=None, multiple=False, **kwargs):
+    if widget is None:
+      widget = Select2(multiple=multiple)
+    kwargs['widget'] = widget
+    self.multiple = multiple
     super(QuerySelect2Field, self).__init__(label, validators, **kwargs)
 
-    # PACTHED!
+    # PATCHED!
     if query_factory:
       self.query_factory = query_factory
 
@@ -194,11 +284,17 @@ class QuerySelect2Field(SelectFieldBase):
     self._object_list = None
 
   def _get_data(self):
-    if self._formdata is not None:
-      for pk, obj in self._get_object_list():
-        if pk == self._formdata:
-          self._set_data(obj)
-          break
+    formdata = self._formdata
+    if formdata is not None:
+      if not self.multiple:
+        formdata = [formdata]
+      formdata = set(formdata)
+      data = [obj for pk, obj in self._get_object_list()
+              if pk in formdata]
+      if data:
+        if not self.multiple:
+          data = data[0]
+        self._set_data(data)
     return self._data
 
   def _set_data(self, data):
@@ -218,23 +314,30 @@ class QuerySelect2Field(SelectFieldBase):
     if self.allow_blank:
       yield ('__None', self.blank_text, self.data is None)
 
+    predicate = (operator.contains
+                 if (self.multiple and self.data is not None)
+                 else operator.eq)
+    # remember: operator.contains(b, a) ==> a in b
+    # so: obj in data ==> contains(data, obj)
+    predicate = partial(predicate, self.data)
+
     for pk, obj in self._get_object_list():
-      yield (pk, self.get_label(obj), obj == self.data)
+      yield (pk, self.get_label(obj), predicate(obj))
 
   def process_formdata(self, valuelist):
-    if valuelist:
-      if self.allow_blank and valuelist[0] == '__None':
-        self.data = None
-      else:
-        self._data = None
-        self._formdata = valuelist[0]
+    if not valuelist or valuelist[0] == '__None':
+      self.data = [] if self.multiple else None
+    else:
+      self._data = None
+      if not self.multiple:
+        valuelist = valuelist[0]
+      self._formdata = valuelist
 
   def pre_validate(self, form):
     if not self.allow_blank or self.data is not None:
-      for pk, obj in self._get_object_list():
-        if self.data == obj:
-          break
-      else:
+      data = set(self.data if self.multiple else [self.data])
+      valid = {obj for pk, obj in self._get_object_list()}
+      if (data - valid):
         raise ValidationError(self.gettext('Not a valid choice'))
 
 
