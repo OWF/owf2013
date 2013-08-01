@@ -79,6 +79,35 @@
          );
      }
 
+
+     function datetimePickerSetup() {
+         /*
+          * automatically concat datepicker + timepicker in hidden input
+          */
+         $('.datetimepicker').each(
+             function() {
+                 var $self = $(this);
+                 var $datepicker = $('#'+ this.id + '-date');
+                 var $timepicker = $('#'+ this.id + '-time');
+
+                 $datepicker.parent().on(
+                     'changeDate',
+                     function updateDateTime(e) {
+                         $self.val($datepicker.val() + ' ' + $timepicker.val());
+                     }
+                 );
+
+                 $timepicker.timepicker().on(
+                     'changeTime.timepicker',
+                     function updateDateTime(e) {
+                         $self.val($datepicker.val() + ' ' + e.time.value);
+                     }
+                 );
+             }
+         );
+     }
+
+
      function appInit() {
          initLiveSearch();
 
@@ -106,7 +135,15 @@
                }
              });
 
-         $(".datepicker").datepicker({weekStart: 1, format: 'dd/mm/yyyy'});
+         $(".datepicker").datepicker({weekStart: 1});
+
+         $(".timepicker").timepicker({defaultTime: "10:00", minuteStep: 15})
+            .on('click.timepicker',
+                function(e) {
+                    e.preventDefault();
+                    $(this).timepicker('showWidget');
+                });
+         datetimePickerSetup();
 
          $(".select2").select2({width: "220px", placeholder: "", allowClear: true});
 
@@ -126,6 +163,8 @@
 
      $(document).ready(appInit);
 }(jQuery));
+
+
 
 /*
  * Fancy file upload. Doesn't work well enough yet.

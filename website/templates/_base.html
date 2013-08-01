@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
-{% if lang == 'fr' %}
-  {% include "_head_fr.html" %}
-{% else %}
-  {% include "_head_en.html" %}
-{% endif %}
+<head {% if lang == 'fr' %}lang="fr-FR"{% else %}lang="en-EN"{% endif %}>
   <title>{{ title or page.title }}</title>
 
   <meta name="google-site-verification"

@@ -33,18 +33,15 @@ Talks:
 
 import logging
 from abilian.core.extensions import db
-
-from sqlalchemy.orm import relation, relationship
+from sqlalchemy.orm import relationship
 from sqlalchemy.schema import Column, ForeignKey, Table, UniqueConstraint
 from sqlalchemy.types import UnicodeText, DateTime, Integer, LargeBinary
-
 from savalidation import ValidationMixin
-from flask.ext.babel import gettext as _
+from abilian.core.entities import Entity
 
-from abilian.core.entities import Entity, IdMixin
 
-from .extensions import EmailAddress, PhoneNumber
-
+PhoneNumber = UnicodeText
+EmailAddress = UnicodeText
 
 logger = logging.getLogger(__package__)
 
@@ -67,6 +64,9 @@ class Speaker(Entity, ValidationMixin):
 
   last_name = Column(UnicodeText, nullable=True,
                      info={'searchable': True, 'label': u'Last name'})
+
+  organisation = Column(UnicodeText, nullable=True,
+                        info={'searchable': True, 'label': u'Organisation'})
 
   email = Column(EmailAddress,
                  info={'label': 'E-mail'})

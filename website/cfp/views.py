@@ -1,5 +1,4 @@
 from markupsafe import Markup
-from werkzeug.datastructures import MultiDict
 from flask import Blueprint, render_template, request, flash, redirect, \
   url_for, current_app as app
 from flask.ext.mail import Message

@@ -1,14 +1,5 @@
 # coding=utf-8
 
-"""
-This module sets up the CRM webapp by instanciating and customizing a class
-defined in Abilian Core.
-"""
-from flask.ext.babel import (
-  gettext as _, ngettext as _n, lazy_gettext as _l,
-  format_datetime, format_date,
-  )
-
 from abilian.web.frontend import Module, CRUDApp
 
 from .forms import SpeakerEditForm, RoomEditForm, TrackEditForm, TalkEditForm

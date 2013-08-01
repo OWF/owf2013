@@ -6,13 +6,14 @@
 
 from flask.ext.wtf.form import Form
 from wtforms.validators import optional
-from wtforms.fields import TextField, TextAreaField, IntegerField, DateTimeField
+from wtforms.fields import TextField, TextAreaField, IntegerField
 
-from abilian.web.forms import required, strip
-from abilian.web.widgets import EmailWidget, ListWidget
+from abilian.web.forms.validators import required
+from abilian.web.forms.filters import strip
+from abilian.web.forms.widgets import EmailWidget, ListWidget
+from abilian.web.forms.fields import Select2Field, QuerySelect2Field, DateTimeField
 
 from .models import Speaker, Room, Track2
-from .extensions import Select2Field, QuerySelect2Field
 
 
 class SpeakerEditForm(Form):
@@ -32,6 +33,8 @@ class SpeakerEditForm(Form):
 
   telephone = TextField(u'Telephone', filters=(strip,), validators=[optional()])
 
+  organisation = TextField(u'Organisation', filters=(strip,), validators=[optional()])
+
   bio = TextAreaField(u'Biography', validators=[optional()])
 
   website = TextField(u'Web site', filters=(strip,), validators=[optional()])
@@ -43,7 +46,7 @@ class SpeakerEditForm(Form):
   sourceforge_handle = TextField(u'Sourceforge handle', filters=(strip,), validators=[optional()])
 
   _groups = [
-    ["Speaker", ['title', 'first_name', 'last_name', 'email', 'telephone', 'bio']],
+    ["Speaker", ['title', 'first_name', 'last_name', 'email', 'telephone', 'organisation', 'bio']],
     ["Additionnal details", ['website', 'twitter_handle', 'github_handle', 'sourceforge_handle']],
   ]
 

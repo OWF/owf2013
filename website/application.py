@@ -79,14 +79,13 @@ def setup(app):
   create_db(app)
   load_tracks(app)
 
-  audit_service.init_app(app)
-  audit_service.start()
-
-  #index_service.init_app(app)
-  #index_service.start()
-
-  activity_service.init_app(app)
-  activity_service.start()
+  if not app.config.get('TESTING'):
+    audit_service.init_app(app)
+    audit_service.start()
+    #index_service.init_app(app)
+    #index_service.start()
+    activity_service.init_app(app)
+    activity_service.start()
 
 
 def setup_babel(app):

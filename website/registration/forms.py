@@ -1,5 +1,4 @@
-from abilian.web.forms import required, email
-from flask.ext.wtf import Form, BooleanField, TextField, TextAreaField
+from flask.ext.wtf import Form, BooleanField, TextField, TextAreaField, required, email
 from flask.ext.wtf.html5 import EmailField
 from flask.ext.babel import lazy_gettext as _l
 
