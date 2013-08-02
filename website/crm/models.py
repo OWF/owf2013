@@ -33,7 +33,7 @@ Talks:
 
 import logging
 from abilian.core.extensions import db
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, deferred
 from sqlalchemy.schema import Column, ForeignKey, Table, UniqueConstraint
 from sqlalchemy.types import UnicodeText, DateTime, Integer, LargeBinary
 from savalidation import ValidationMixin
@@ -89,7 +89,7 @@ class Speaker(Entity, ValidationMixin):
   sourceforge_handle = Column(UnicodeText, nullable=True,
                               info={'label': u'Sourceforge handle'})
 
-  photo = Column(LargeBinary, nullable=True)
+  photo = deferred(Column(LargeBinary, nullable=True))
 
   @property
   def _name(self):

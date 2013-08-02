@@ -3,15 +3,18 @@ Main view (mostly technical views like sitemap or images).
 """
 
 from cStringIO import StringIO
+from itertools import groupby
 import mimetypes
 from os.path import join
 from PIL import Image
 import datetime
+from abilian.services.image import crop_and_resize
 
 from flask import Blueprint, redirect, url_for, request, abort, make_response, \
     render_template, current_app as app, session
 
 from ..content import get_pages
+from website.crm.models import Talk, Speaker
 from website.util import preferred_language
 
 
@@ -148,6 +151,40 @@ def sitemap_xml():
   response = make_response(render_template('sitemap.xml', pages=get_pages(),
                                            today=today, recently=recently))
   response.headers['Content-Type'] = 'text/xml'
+  return response
+
+
+@main.route('program')
+def program():
+  talks = Talk.query.order_by(Talk.track_id).all()
+  data = groupby(talks, lambda t: t.track)
+  page = dict(title="Program")
+  return render_template("program.html", page=page, data=data)
+
+
+@main.route('photo/<int:speaker_id>')
+def photo(speaker_id):
+  size = int(request.args.get('s', 55))
+  if size > 500:
+    raise ValueError("Error, size = %d" % size)
+
+  speaker = Speaker.query.get(speaker_id)
+  if not speaker:
+    abort(404)
+
+  if speaker.photo:
+    data = speaker.photo
+  else:
+    data = DEFAULT_USER_MUGSHOT
+
+  etag = None
+
+  # TODO: caching
+  if size:
+    data = crop_and_resize(data, size)
+
+  response = make_response(data)
+  response.headers['content-type'] = 'image/jpeg'
   return response
 
 

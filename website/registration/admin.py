@@ -10,7 +10,7 @@ from .models import Registration, Track
 
 
 class RegistrationView(ModelView):
-  column_list = ['email', 'coming_on_oct_3', 'coming_on_oct_4', 'coming_on_oct_5']
+  column_list = ['email', 'confirmed_at', 'coming_on_oct_3', 'coming_on_oct_4', 'coming_on_oct_5']
 
   def is_accessible(self):
     if current_app.config.get('DEBUG'):
