@@ -8,6 +8,7 @@ import mimetypes
 from os.path import join
 from PIL import Image
 import datetime
+from werkzeug.exceptions import NotFound
 from abilian.services.image import crop_and_resize
 
 from flask import Blueprint, redirect, url_for, request, abort, make_response, \
@@ -154,7 +155,7 @@ def sitemap_xml():
   return response
 
 
-@main.route('program')
+@main.route('program/')
 def program():
   tracks = Track2.query.order_by(Track2.starts_at).all()
   for track in tracks:
@@ -165,7 +166,7 @@ def program():
   return render_template("program.html", page=page, days=days)
 
 
-@main.route('speakers')
+@main.route('speakers/')
 def speakers():
   speakers = Speaker.query.order_by(Speaker.last_name).all()
   page = dict(title="Speakers")
@@ -197,16 +198,15 @@ def photo(speaker_id):
 
   speaker = Speaker.query.get(speaker_id)
   if not speaker:
-    abort(404)
+    raise NotFound()
 
   if speaker.photo:
     data = speaker.photo
   else:
-    data = DEFAULT_USER_MUGSHOT
-
-  etag = None
+    raise NotFound()
 
   # TODO: caching
+
   if size:
     data = crop_and_resize(data, size)
 

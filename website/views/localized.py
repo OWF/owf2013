@@ -3,6 +3,7 @@ Localized view (i.e. language-specific subsites).
 """
 
 from cStringIO import StringIO
+from itertools import groupby
 import mimetypes
 from os.path import join, exists
 import random
@@ -13,16 +14,17 @@ from PIL import Image
 from flask import Blueprint, request, render_template, make_response, g, url_for, session
 from flask import current_app as app
 from flask.ext.babel import gettext as _
+from werkzeug.exceptions import NotFound
 
 from ..config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
 from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks
-from website.crm.models import Speaker
+from ..crm.models import Speaker, Track2
 
 
 __all__ = ['setup']
 
 localized = Blueprint('localized', __name__, url_prefix='/<string(length=2):lang>')
-
+route = localized.route
 
 #
 # Menu management
@@ -98,7 +100,7 @@ def pull_lang(endpoint, values):
 #
 # Localized routes
 #
-@localized.route('/')
+@route('/')
 def home():
   template = "index.html"
   page = {'title': 'Open World Forum 2013'}
@@ -109,14 +111,14 @@ def home():
                          page=page, news=news, speakers=speakers, blocks=blocks)
 
 
-@localized.route('/<path:path>/')
+@route('/<path:path>/')
 def page(path=""):
   page = get_page_or_404(g.lang + "/" + path + "/index")
   template = page.meta.get('template', '_page.html')
   return render_template(template, page=page)
 
 
-@localized.route('/news/')
+@route('/news/')
 def news():
   all_news = get_news(lang=g.lang)
   recent_news = get_news(lang=g.lang, limit=5)
@@ -125,7 +127,7 @@ def news():
                          recent_news=recent_news)
 
 
-@localized.route('/news/<slug>/')
+@route('/news/<slug>/')
 def news_item(slug):
   page = get_page_or_404(g.lang + "/news/" + slug)
   recent_news = get_news(lang=g.lang, limit=5)
@@ -133,7 +135,7 @@ def news_item(slug):
                          recent_news=recent_news)
 
 
-@localized.route('/news/<slug>/image')
+@route('/news/<slug>/image')
 def image_for_news(slug):
   assert not '/' in slug
   size = request.args.get('size', 'large')
@@ -179,7 +181,7 @@ def image_for_news(slug):
   return response
 
 
-@localized.route('/feed/')
+@route('/feed/')
 def feed():
   news_items = get_news(lang=g.lang, limit=FEED_MAX_LINKS)
   now = datetime.datetime.now()
@@ -190,7 +192,7 @@ def feed():
   return response
 
 
-@localized.route('/sitemap/')
+@route('/sitemap/')
 def sitemap():
   page = {'title': _(u"Site map")}
   pages = get_pages()
@@ -199,7 +201,7 @@ def sitemap():
   return render_template('sitemap.html', page=page, pages=pages)
 
 
-@localized.route('/search')
+@route('/search')
 def search():
   page = {'title': _(u"Search results")}
   qs = request.args.get('qs', '')
@@ -207,6 +209,34 @@ def search():
   results = whoosh.search(qs)
   results = [ r for r in results if r['path'].startswith(g.lang) ]
   return render_template("search.html", page=page, results=results)
+
+
+@route('/program/')
+def program():
+  tracks = Track2.query.order_by(Track2.starts_at).all()
+  for track in tracks:
+    print track.starts_at.date(), track
+  days = groupby(tracks, lambda t: t.starts_at.date())
+  days = [(day, list(tracks)) for day, tracks in days]
+  page = dict(title="Program")
+  return render_template("program.html", page=page, days=days)
+
+
+@route('/speakers/')
+def speakers():
+  speakers = Speaker.query.order_by(Speaker.last_name).all()
+  page = dict(title="Speakers")
+  return render_template("speakers.html", page=page, speakers=speakers)
+
+
+@route('/speakers/<int:speaker_id>')
+def speaker(speaker_id):
+  speaker = Speaker.query.get(speaker_id)
+  if not speaker:
+    raise NotFound()
+
+  page = dict(title=u"Speaker : {}".format(speaker))
+  return render_template("speaker.html", page=page, speaker=speaker)
 
 
 @localized.errorhandler(404)
