@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-23 12:55+0200\n"
+"POT-Creation-Date: 2013-08-03 09:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,47 +17,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: website/crm/app.py:29
-msgid "last modification"
+#: website/crm/forms.py:109 website/crm/forms.py:114
+msgid "Only PNG or JPG image files are accepted"
 msgstr ""
 
-#: website/crm/extensions.py:238
-msgid "Not a valid choice"
+#: website/crm/forms.py:122
+msgid "Could not decode image file"
 msgstr ""
 
-#: website/registration/forms.py:29 website/registration/forms.py:43
+#: website/registration/forms.py:28 website/registration/forms.py:42
 msgid "Your email address"
 msgstr ""
 
-#: website/registration/forms.py:32 website/registration/forms.py:46
+#: website/registration/forms.py:31 website/registration/forms.py:45
 msgid "Will you come on Oct. 3th? (Thursday)"
 msgstr ""
 
-#: website/registration/forms.py:33 website/registration/forms.py:47
+#: website/registration/forms.py:32 website/registration/forms.py:46
 msgid "Will you come on Oct. 4th? (Friday)"
 msgstr ""
 
-#: website/registration/forms.py:34 website/registration/forms.py:48
+#: website/registration/forms.py:33 website/registration/forms.py:47
 msgid "Will you come on Oct. 5th? (Saturday)"
 msgstr ""
 
-#: website/registration/forms.py:50
+#: website/registration/forms.py:49
 msgid "First name"
 msgstr ""
 
-#: website/registration/forms.py:51
+#: website/registration/forms.py:50
 msgid "Last name"
 msgstr ""
 
-#: website/registration/forms.py:52
+#: website/registration/forms.py:51
 msgid "Organization"
 msgstr ""
 
-#: website/registration/forms.py:53
+#: website/registration/forms.py:52
 msgid "URL"
 msgstr ""
 
-#: website/registration/forms.py:54
+#: website/registration/forms.py:53
 msgid "Biography"
 msgstr ""
 
@@ -100,35 +100,39 @@ msgid ""
 "choice later)"
 msgstr ""
 
-#: website/templates/_base.html:90 website/templates/base.html:79
+#: website/templates/_base.html:86 website/templates/base.html:79
 msgid "Search"
 msgstr ""
 
-#: website/templates/_base.html:115
+#: website/templates/_base.html:111
 msgid "Our partners"
 msgstr ""
 
-#: website/templates/_base.html:122
+#: website/templates/_base.html:118
 msgid "Institutional partners"
 msgstr ""
 
-#: website/templates/_base.html:140
+#: website/templates/_base.html:136
 msgid "Organizer"
 msgstr ""
 
-#: website/templates/_base.html:147
+#: website/templates/_base.html:142
 msgid "Co-organizers"
 msgstr ""
 
-#: website/templates/_base.html:161
+#: website/templates/_base.html:160
+msgid "Diamond Sponsor"
+msgstr ""
+
+#: website/templates/_base.html:168
 msgid "Platinum sponsors"
 msgstr ""
 
-#: website/templates/_base.html:172
+#: website/templates/_base.html:177
 msgid "Silver sponsors"
 msgstr ""
 
-#: website/templates/_base.html:188
+#: website/templates/_base.html:193
 msgid "Press partners"
 msgstr ""
 
@@ -145,78 +149,35 @@ msgstr ""
 msgid "Learn more"
 msgstr ""
 
-#: website/templates/index.html:161
+#: website/templates/index.html:71
+msgid "Some speakers"
+msgstr ""
+
+#: website/templates/index.html:124
 msgid "Latest news"
 msgstr ""
 
-#: website/templates/index.html:164
+#: website/templates/index.html:128
 msgid "All the latest news"
 msgstr ""
 
-#: website/templates/macros.html:2
-msgid "Audit Log"
-msgstr ""
-
-#: website/templates/macros.html:63
-msgid "Recent items"
-msgstr ""
-
-#: website/templates/macros.html:89
-msgid "Select all"
+#: website/templates/macros.html:31
+msgid "Menu"
 msgstr ""
 
 #: website/templates/macros.html:90
-msgid "Unselect all"
+msgid "Audit Log"
 msgstr ""
 
-#: website/templates/macros.html:95
-msgid "Download"
-msgstr ""
-
-#: website/templates/macros.html:112
-msgid "Move to another folder"
-msgstr ""
-
-#: website/templates/macros.html:117
-msgid "Delete"
-msgstr ""
-
-#: website/templates/macros.html:154 website/templates/macros.html:193
-msgid "Title"
-msgstr ""
-
-#: website/templates/macros.html:155 website/templates/macros.html:195
-msgid "Size"
-msgstr ""
-
-#: website/templates/macros.html:156 website/templates/macros.html:196
-msgid "Owner"
-msgstr ""
-
-#: website/templates/macros.html:158 website/templates/macros.html:198
-msgid "Age"
-msgstr ""
-
-#: website/templates/macros.html:265
-msgid "Delete selected elements?"
-msgstr ""
-
-#: website/templates/macros.html:279
-#: website/templates/crm/projet_partenaire_view_widget.html:89
-#: website/templates/crm/visite_view.html:47
-#: website/templates/crm/visite_view.html:65
-msgid "Cancel"
-msgstr ""
-
-#: website/templates/macros.html:367
-msgid "This folder is currently empty. Why don't you upload some content?"
+#: website/templates/macros.html:150
+msgid "Recent items"
 msgstr ""
 
 #: website/templates/search.html:13
 msgid "Résultat(s) de recherche"
 msgstr ""
 
-#: website/templates/search.html:15 website/views/localized.py:200
+#: website/templates/search.html:15 website/views/localized.py:204
 msgid "Search results"
 msgstr ""
 
@@ -228,40 +189,116 @@ msgstr ""
 msgid "Your request didn't produce any results."
 msgstr ""
 
-#: website/templates/crm/base.html:20
-msgid "Create new..."
-msgstr ""
-
-#: website/templates/crm/home.html:9
-msgid "Dashboard"
-msgstr ""
-
-#: website/templates/crm/home.html:11
-msgid "Today (last 24h)"
-msgstr ""
-
-#: website/templates/crm/home.html:15
-msgid "This week"
-msgstr ""
-
-#: website/templates/crm/home.html:19
-msgid "This month"
-msgstr ""
-
-#: website/templates/crm/home.html:25
+#: website/templates/crm/home.html:7
 msgid "Recent activities in the CRM application"
+msgstr ""
+
+#: website/templates/crm/import_xls.html:70
+msgid "Validate"
+msgstr ""
+
+#: website/templates/crm/import_xls.html:71
+#: website/templates/crm/list_view.html:52
+#: website/templates/crm/mail_to_contacts.html:80
+#: website/templates/crm/mail_to_contacts.html:97
+#: website/templates/crm/projet_partenaire_view_widget.html:68
+#: website/templates/crm/view_with_attachments.html:47
+#: website/templates/crm/view_with_attachments.html:65
+msgid "Cancel"
 msgstr ""
 
 #: website/templates/crm/list_view.html:5
 msgid "Create New"
 msgstr ""
 
-#: website/templates/crm/list_view.html:6
+#: website/templates/crm/list_view.html:19
 msgid "Export to Excel"
 msgstr ""
 
-#: website/templates/crm/list_view.html:9
+#: website/templates/crm/list_view.html:30
+msgid "Import from Excel"
+msgstr ""
+
+#: website/templates/crm/list_view.html:32
+msgid "Download a file suitable for importing new objects"
+msgstr ""
+
+#: website/templates/crm/list_view.html:32
+msgid "Download import template"
+msgstr ""
+
+#: website/templates/crm/list_view.html:44
+msgid "Upload Excel file"
+msgstr ""
+
+#: website/templates/crm/list_view.html:54
+#: website/templates/crm/view_with_attachments.html:49
+msgid "Upload"
+msgstr ""
+
+#: website/templates/crm/list_view.html:64
 msgid "Export XML"
+msgstr ""
+
+#: website/templates/crm/list_view.html:68
+msgid "Send an email to selected contacts"
+msgstr ""
+
+#: website/templates/crm/list_view.html:68
+msgid "Send an email"
+msgstr ""
+
+#: website/templates/crm/mail_to_contacts.html:5
+msgid "Send mail"
+msgstr ""
+
+#: website/templates/crm/mail_to_contacts.html:11
+msgid "From"
+msgstr ""
+
+#: website/templates/crm/mail_to_contacts.html:15
+msgid "To"
+msgstr ""
+
+#: website/templates/crm/mail_to_contacts.html:18
+msgid "{count:d} recipients"
+msgstr ""
+
+#: website/templates/crm/mail_to_contacts.html:23
+msgid "recipients"
+msgstr ""
+
+#: website/templates/crm/mail_to_contacts.html:52
+msgid "Subject"
+msgstr ""
+
+#: website/templates/crm/mail_to_contacts.html:63
+msgid "Message"
+msgstr ""
+
+#: website/templates/crm/mail_to_contacts.html:77
+#: website/templates/crm/mail_to_contacts.html:96
+msgid "Send"
+msgstr ""
+
+#: website/templates/crm/mail_to_contacts.html:86
+msgid "Please confirm"
+msgstr ""
+
+#: website/templates/crm/mail_to_contacts.html:89
+#, python-format
+msgid ""
+"\n"
+"          <p class=\"lead\">You are about to send a mail to %(count)s "
+"persons!</p>\n"
+"          <p>If you have verified the recipients list then just "
+"confirm.</p>\n"
+"          <p>If unsure just cancel.</p>"
+msgstr ""
+
+#: website/templates/crm/mail_to_contacts.html:98
+#: website/templates/crm/projet_partenaire_view_widget.html:49
+msgid "Close"
 msgstr ""
 
 #: website/templates/crm/partenaire_related_contacts.html:2
@@ -276,43 +313,35 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: website/templates/crm/projet_partenaire_view_widget.html:70
-msgid "Close"
-msgstr ""
-
-#: website/templates/crm/projet_partenaire_view_widget.html:87
+#: website/templates/crm/projet_partenaire_view_widget.html:66
 msgid "Remove partner?"
 msgstr ""
 
-#: website/templates/crm/visite_view.html:4
+#: website/templates/crm/view_with_attachments.html:4
 msgid "Attachments"
 msgstr ""
 
-#: website/templates/crm/visite_view.html:7
+#: website/templates/crm/view_with_attachments.html:7
 msgid "Upload an attachement"
 msgstr ""
 
-#: website/templates/crm/visite_view.html:39
+#: website/templates/crm/view_with_attachments.html:39
 msgid "Upload new files"
 msgstr ""
 
-#: website/templates/crm/visite_view.html:49
-msgid "Upload"
-msgstr ""
-
-#: website/templates/crm/visite_view.html:63
+#: website/templates/crm/view_with_attachments.html:63
 msgid "Delete attachment?"
 msgstr ""
 
-#: website/views/localized.py:119
+#: website/views/localized.py:123
 msgid "News"
 msgstr ""
 
-#: website/views/localized.py:191
+#: website/views/localized.py:195
 msgid "Site map"
 msgstr ""
 
-#: website/views/localized.py:210
+#: website/views/localized.py:214
 msgid "Page not found"
 msgstr ""
 

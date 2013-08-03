@@ -15,9 +15,11 @@ class Speakers(Module):
   icon = 'user'
 
   list_view_columns = [
-    dict(name='first_name', width=35, linkable=True),
-    dict(name='last_name', width=35, linkable=True),
-    dict(name='email', width=3),
+    dict(name='salutation', width=5, linkable=True),
+    dict(name='first_name', width=20, linkable=True),
+    dict(name='last_name', width=25, linkable=True),
+    dict(name='organisation', width=25, linkable=True),
+    dict(name='email', width=25),
   ]
 
   edit_form_class = SpeakerEditForm
@@ -50,10 +52,10 @@ class Tracks(Module):
   icon = 'calendar'
 
   list_view_columns = [
-    dict(name='name', width=40, linkable=True),
-    dict(name='theme', width=30),
-    dict(name='starts_at', width=15),
-    dict(name='ends_at', width=15),
+    dict(name='name', width=45, linkable=True),
+    dict(name='theme', width=15),
+    dict(name='starts_at', width=20),
+    dict(name='ends_at', width=20),
   ]
 
   edit_form_class = TrackEditForm
@@ -71,8 +73,8 @@ class Talks(Module):
   list_view_columns = [
     dict(name='title', width=40, linkable=True),
     dict(name='track', width=30),
-    dict(name='starts_at', width=15),
-    dict(name='duration', width=15),
+    dict(name='starts_at', width=20),
+    dict(name='duration', width=10),
   ]
 
   edit_form_class = TalkEditForm

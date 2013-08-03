@@ -13,27 +13,41 @@
             <article>
               <h1 class="page-title">{{ page.title }}</h1>
 
-              {% for track, talks in data %}
-                <h2>{{ track.name }}</h2>
+              {% for day, tracks in days %}
+                <h2>{{ day|dateformat }}</h2>
 
-                <p>Start at: {{ track.starts_at }}</p>
-                <p>Ends at: {{ track.ends_at }}</p>
-                <p>
-                  {{ track.description }}
-                </p>
+                {% for track in tracks %}
+                  <h3>{{ track.name }}</h3>
 
-                {% for talk in talks|sort(attribute='starts_at') %}
-
-                  <h3>{{ talk.title }}</h3>
-
-                  <p>Speakers:
-                    {% for speaker in talk.speakers %}
-                      {{ speaker.name }}{% endfor %}
+                  <p>Theme: {{ track.theme }}</p>
+                  <p>Room: {{ track.room }}</p>
+                  <p>Start at: {{ track.starts_at }}</p>
+                  <p>Ends at: {{ track.ends_at }}</p>
+                  {% if track.track_leaders %}
+                  <p>Track leaders:
+                    {% for track_leader in track.track_leaders %}
+                      <a href="/speaker/{{ track_leader.id }}">{{ track_leader }}</a>
+                    {% endfor %}
+                  </p>
+                  {% endif %}
+                  <p>
+                    {{ track.description|nl2br|safe }}
                   </p>
 
-                  <p>Abstract:
-                    {{ talk.abstract }}
-                  </p>
+                  {% for talk in talks|sort(attribute='starts_at') %}
+
+                    <h4>{{ talk.title }}</h4>
+
+                    <p>Speakers:
+                      {% for speaker in talk.speakers %}
+                        {{ speaker.name }}{% endfor %}
+                    </p>
+
+                    <p>Abstract:
+                      {{ talk.abstract }}
+                    </p>
+
+                  {% endfor %}
 
                 {% endfor %}
 

@@ -5,6 +5,7 @@ Localized view (i.e. language-specific subsites).
 from cStringIO import StringIO
 import mimetypes
 from os.path import join, exists
+import random
 import re
 import datetime
 from PIL import Image
@@ -15,6 +16,7 @@ from flask.ext.babel import gettext as _
 
 from ..config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
 from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks
+from website.crm.models import Speaker
 
 
 __all__ = ['setup']
@@ -101,8 +103,10 @@ def home():
   template = "index.html"
   page = {'title': 'Open World Forum 2013'}
   news = get_news(lang=g.lang, limit=6)
+  speakers = random.sample(Speaker.query.all(), 6)
   blocks = get_blocks(g.lang)
-  return render_template(template, page=page, news=news, blocks=blocks)
+  return render_template(template,
+                         page=page, news=news, speakers=speakers, blocks=blocks)
 
 
 @localized.route('/<path:path>/')

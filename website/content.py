@@ -2,6 +2,7 @@
 
 """
 from os.path import join
+import random
 import re
 from unicodedata import normalize
 import bleach
@@ -16,6 +17,9 @@ from .config import ABSTRACT_LENGTH
 
 
 # Monkey patch
+from website.crm.models import Speaker
+
+
 Page__init__orig = Page.__init__
 
 

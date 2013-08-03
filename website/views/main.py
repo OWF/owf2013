@@ -14,7 +14,7 @@ from flask import Blueprint, redirect, url_for, request, abort, make_response, \
     render_template, current_app as app, session
 
 from ..content import get_pages
-from website.crm.models import Talk, Speaker
+from website.crm.models import Talk, Speaker, Track2
 from website.util import preferred_language
 
 
@@ -156,10 +156,37 @@ def sitemap_xml():
 
 @main.route('program')
 def program():
-  talks = Talk.query.order_by(Talk.track_id).all()
-  data = groupby(talks, lambda t: t.track)
+  tracks = Track2.query.order_by(Track2.starts_at).all()
+  for track in tracks:
+    print track.starts_at.date(), track
+  days = groupby(tracks, lambda t: t.starts_at.date())
+  days = [(day, list(tracks)) for day, tracks in days]
   page = dict(title="Program")
-  return render_template("program.html", page=page, data=data)
+  return render_template("program.html", page=page, days=days)
+
+
+@main.route('speakers')
+def speakers():
+  speakers = Speaker.query.order_by(Speaker.last_name).all()
+  page = dict(title="Speakers")
+  return render_template("speakers.html", page=page, speakers=speakers)
+
+
+@main.route('speaker/<int:speaker_id>')
+def speaker(speaker_id):
+  speaker = Speaker.query.get(speaker_id)
+  if not speaker:
+    abort(404)
+
+  page = dict(title=u"Speaker : {}".format(speaker))
+  return render_template("speaker.html", page=page, speaker=speaker)
+
+  #day1_trakc = tracks.query.order_by(Tra)
+  #oct_5 =
+  #day1_talks = Talk.query..filter(Talk.starts_at <  order_by(Talk.track_id).all()
+  #talks = Talk.query.order_by(Talk.track_id).all()
+  #data = groupby(talks, lambda t: t.track)
+  #return render_template("program.html", page=page, data=data)
 
 
 @main.route('photo/<int:speaker_id>')

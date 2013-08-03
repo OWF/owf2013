@@ -45,6 +45,10 @@ class ImageWidget(FileInput):
 class ImageField(FileField):
   widget = ImageWidget()
 
+  def populate_obj(self, obj, name):
+    if self.has_file():
+      setattr(obj, name, self.data.read())
+
 
 ModelForm = model_form_factory(Form)
 
@@ -94,6 +98,7 @@ class SpeakerEditForm(ModelForm):
 
   def validate_photo(self, field):
     if not field.has_file():
+      field.data = None
       return
 
     data = field.data
@@ -117,7 +122,6 @@ class SpeakerEditForm(ModelForm):
       raise ValidationError(_(u'Could not decode image file'))
 
     data.stream.seek(0)
-    field.data = data.read()
 
 
 class RoomEditForm(Form):

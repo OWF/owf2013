@@ -1,0 +1,61 @@
+{% extends "_base.html" %}
+
+{% from "_macros.html" import m_sidebar, m_details %}
+
+{% block main %}
+  <div class="container" style="width: 940px;">
+
+    <div class="row show-grid">
+      <div class="span12">
+
+        <div class="row show-grid clear-both">
+          <div class="span12 main-column two-columns-right">
+            <article class="speakers" id="speakers">
+              <h1 class="page-title">{{ page.title }}</h1>
+
+              <ul>
+                {% for speaker in speakers %}
+                  <li>
+                    <span class="span2">
+                      <img src="/photo/{{ speaker.id }}?s=150">
+                    </span>
+
+                    <span class="span7">
+                      <h2><a href="{{ url_for(".speaker", speaker_id=speaker.id) }}">{{ speaker }}</a></h2>
+
+                      {% if speaker.bio %}
+                        <p>{{ speaker.bio|nl2br|safe }}</p>
+                      {% else %}
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore
+                          magna
+                          aliqua. Ut enim ad minim veniam, quis nostrud
+                          exercitation
+                          ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat.
+                          Duis aute irure dolor in reprehenderit in voluptate
+                          velit
+                          esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                          sint occaecat cupidatat non proident, sunt in culpa
+                          qui
+                          officia deserunt mollit anim id est laborum.</p>
+                      {% endif %}
+                    </span>
+
+                    <span class="span2 details">
+                      {{ m_details(speaker) }}
+                    </span>
+
+                    <span class="clearfix"></span>
+                  </li>
+                {% endfor %}
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+{% endblock %}

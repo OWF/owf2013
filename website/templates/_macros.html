@@ -8,7 +8,8 @@
         {% for item in recent_news %}
           <li>
             <span class="news-date">{{ item.date|dateformat }}</span>
-            <span class="latest-news-menu-content"><a href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a></span>
+            <span class="latest-news-menu-content"><a
+                href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a></span>
           </li>
           {% if not loop.last %}
             <div class="hr"></div>
@@ -18,4 +19,17 @@
     </div>
   </div>
   <!-- END RIGHT-SIDEBAR -->
+{% endmacro %}
+
+{% macro m_details(speaker) %}
+  {% if speaker.website %}
+    <p><b>Website</b>: <a href="{{ speaker.website }}">{{ speaker.website }}</a>
+    </p>
+  {% endif %}
+
+  {% if speaker.twitter_handle %}
+    <p><b>Twitter</b>: <a
+        href="https://twitter.com/{{ speaker.twitter_handle }}">@{{ speaker.twitter_handle }}</a>
+    </p>
+  {% endif %}
 {% endmacro %}

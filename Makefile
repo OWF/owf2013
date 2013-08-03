@@ -28,6 +28,9 @@ push:
 	rsync -e ssh -avz --exclude .git --exclude .tox \
 		./ dedi:owf2013/
 
+fetch-db:
+	rsync -vz -e ssh dedi:websites/owf2013/data/abilian.db data/abilian.db
+
 update-pot:
 	# _n => ngettext, _l => lazy_gettext
 	pybabel extract -F etc/babel.cfg -k "_n:1,2" -k "_l"\

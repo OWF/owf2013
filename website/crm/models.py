@@ -135,7 +135,7 @@ class Track2(Entity, ValidationMixin):
                    info={'label': u'Ends at'})
 
   track_leaders = relationship(Speaker, secondary=track_leader_to_track,
-                               backref='lead_tracks')
+                               backref='leads_tracks')
 
 
 speaker_to_talk = Table(
