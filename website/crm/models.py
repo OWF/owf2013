@@ -137,6 +137,10 @@ class Track2(Entity, ValidationMixin):
   track_leaders = relationship(Speaker, secondary=track_leader_to_track,
                                backref='leads_tracks')
 
+  @property
+  def abstract(self):
+    return self.description
+
 
 speaker_to_talk = Table(
   'speaker_to_talk', db.Model.metadata,

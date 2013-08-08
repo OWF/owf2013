@@ -11,7 +11,7 @@
         <div class="row show-grid clear-both">
           <div class="span12 main-column two-columns-right">
             <article>
-              <h1 class="page-title">{{ _("Track: {}".format(track.name)) }}</h1>
+              <h1 class="page-title">{{ _("Track: {}").format(track.name) }}</h1>
 
               <p>Theme: {{ track.theme }}</p>
 
@@ -32,7 +32,7 @@
 
               {% if track.description %}
                 <p>
-                  {{ track.description|nl2br|safe }}
+                  {{ track.description|markdown }}
                 </p>
               {% else %}
                 <p>
@@ -41,10 +41,20 @@
               {% endif %}
 
               <h2>{{ _("Talks") }}</h2>
+              {#
               {% for talk in track.talks|sort(attribute='starts_at') %}
+              #}
+              {% for talk in track.talks %}
 
                 <a id="talk_{{ talk.id }}"></a>
                 <h3>{{ talk.title }}</h3>
+
+                {% if talk.starts_at %}
+                  <p>Starts at: {{ talk.starts_at }}</p>
+                {% endif %}
+                {% if talk.duration %}
+                  <p>Duration: {{ talk.duration }} minutes</p>
+                {% endif %}
 
                 <p>Speakers:
                   {% for speaker in talk.speakers %}
@@ -53,10 +63,13 @@
                   {% endfor %}
                 </p>
 
+                {% if talk.speakers|length == 1 %}
+                  {% set speaker = talk.speakers[0] %}
+                  <img style="float: right; margin: 10px; width: 120px;"
+                      src="{{ url_for(".photo", speaker_id=speaker.id, s=120) }}"/>
+                {% endif %}
                 {% if talk.abstract %}
-                  <p>Abstract:
-                    {{ talk.abstract }}
-                  </p>
+                  {{ talk.abstract|markdown }}
                 {% else %}
                   <p>
                     {{ linuxipsum() }}

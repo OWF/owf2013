@@ -12,7 +12,7 @@ import datetime
 from PIL import Image
 from abilian.services.image import crop_and_resize
 
-from flask import Blueprint, request, render_template, make_response, g, url_for, session
+from flask import Blueprint, request, render_template, make_response, g, url_for, session, redirect
 from flask import current_app as app
 from flask.ext.babel import gettext as _
 from werkzeug.exceptions import NotFound
@@ -86,6 +86,8 @@ def alt_url_for(obj, *args, **kw):
   elif isinstance(obj, Talk):
     talk = obj
     return "%s#talk_%d" % (url_for(".track", track_id=talk.track.id), talk.id)
+  elif obj in ('THINK', 'CODE', 'EXPERIMENT'):
+    return url_for(".page", path=obj.lower())
   else:
     return url_for(obj, *args, lang=g.lang, **kw)
 
@@ -224,8 +226,7 @@ def search():
 @route('/program/')
 def program():
   tracks = Track2.query.order_by(Track2.starts_at).all()
-  for track in tracks:
-    print track.starts_at.date(), track
+  tracks = [ t for t in tracks if t.starts_at]
   days = groupby(tracks, lambda t: t.starts_at.date())
   days = [(day, list(tracks)) for day, tracks in days]
   page = dict(title=_(u"Program"))
@@ -262,7 +263,7 @@ def photo(speaker_id):
   if speaker.photo:
     data = speaker.photo
   else:
-    raise NotFound()
+    return redirect("/static/images/silhouette_unknown.png")
 
   # TODO: caching
 

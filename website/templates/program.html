@@ -14,13 +14,14 @@
               <h1 class="page-title">{{ page.title }}</h1>
 
               {% for day, tracks in days %}
-                {% if not loop.first %}<hr>{% endif %}
+                {% if not loop.first %}
+                  <hr>{% endif %}
                 <h2>{{ day|dateformat }}</h2>
 
                 {% for track in tracks %}
-                  <h3>{{ track.name }}</h3>
+                  <h3><a href="{{ url_for(track) }}">{{ track.name }}</a></h3>
 
-                  <p>Theme: {{ track.theme }}</p>
+                  <p>Theme: <a href="{{ url_for(track.theme) }}">{{ track.theme }}</a></p>
 
                   <p>Room: {{ track.room }}</p>
 
@@ -30,14 +31,15 @@
                   {% if track.track_leaders %}
                     <p>Track leaders:
                       {% for track_leader in track.track_leaders %}
-                        <a href="/speaker/{{ track_leader.id }}">{{ track_leader }}</a>
+                        <a href="{{ url_for(track_leader) }}">{{ track_leader }}</a>
+                        {%- if not loop.last %} / {%- endif %}
                       {% endfor %}
                     </p>
                   {% endif %}
 
                   {% if track.description %}
                     <p>
-                      {{ track.description|nl2br|safe }}
+                      {{ track.description|markdown }}
                     </p>
                   {% else %}
                     <p>
@@ -45,25 +47,17 @@
                     </p>
                   {% endif %}
 
-                  {% for talk in talks|sort(attribute='starts_at') %}
+                  <h4>{{ _("Talks") }}</h4>
+                  {% for talk in track.talks %}
 
-                    <h4>{{ talk.title }}</h4>
+                    <h5><a href="{{ url_for(talk) }}">{{ talk.title }}</a></h5>
 
                     <p>Speakers:
                       {% for speaker in talk.speakers %}
-                        {{ speaker.name }}{% endfor %}
+                        <a href="{{ url_for(talk) }}">{{ speaker._name }}</a>
+                        {%- if not loop.last %} / {%- endif %}
+                      {% endfor %}
                     </p>
-
-                    {% if talk.abstract %}
-                      <p>Abstract:
-                        {{ talk.abstract }}
-                      </p>
-                    {% else %}
-                      <p>
-                        {{ linuxipsum() }}
-                      </p>
-                    {% endif %}
-
                   {% endfor %}
 
                 {% endfor %}

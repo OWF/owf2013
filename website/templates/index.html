@@ -79,7 +79,7 @@
       <div class="row">
         {% for speaker in speakers[0:6] %}
           <div class="span2">
-            <a href="{{ url_for(".speaker", speaker_id=speaker.id) }}">
+            <a href="{{ url_for(speaker) }}">
               <img class="speaker-img"
                   src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
                   alt=""/>

@@ -26,7 +26,7 @@
                       </h2>
 
                       {% if speaker.bio %}
-                        <p>{{ speaker.bio|nl2br|safe }}</p>
+                        <p>{{ speaker.bio|markdown }}</p>
                       {% else %}
                         <p>{{ linuxipsum() }}</p>
                       {% endif %}

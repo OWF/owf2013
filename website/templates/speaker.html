@@ -16,7 +16,7 @@
               <h2>Biography</h2>
 
               {% if speaker.bio %}
-              {{ speaker.bio|nl2br|safe }}
+              {{ speaker.bio|markdown }}
               {% else %}
                 {{ linuxipsum() }}
               {% endif %}
@@ -27,7 +27,7 @@
                 {% for track in speaker.leads_tracks %}
                   <h3><a href="{{ url_for(track) }}">{{ track }}</a></h3>
 
-                  {{ track.abstract|nl2br|safe }}
+                  {{ track.abstract|markdown }}
                 {% endfor %}
               {% endif %}
 
@@ -37,13 +37,17 @@
                 {% for talk in speaker.talks %}
                   <h3><a href="{{ url_for(talk) }}">{{ talk }}</a></h3>
 
-                  {{ talk.abstract|nl2br|safe }}
+                  <p>Track: <a href="{{ url_for(talk.track) }}">{{ talk.track._name }}</a></p>
+
+                  {{ talk.abstract|markdown }}
                 {% endfor %}
               {% endif %}
             </div>
 
             <div class="span3">
+              {% if speaker.photo %}
               <img src="{{ url_for(".photo", speaker_id=speaker.id, s=250) }}">
+              {% endif %}
 
               {{ m_details(speaker) }}
             </div>

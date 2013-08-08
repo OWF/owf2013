@@ -141,7 +141,7 @@ class TrackEditForm(Form):
     view_widget=ListWidget(),
     query_factory=lambda: Room.query.all(),
     multiple=False,
-    validators=[optional()])
+    validators=[required()])
 
   name = TextField(u'Name', filters=(strip,), validators=[required()])
 
@@ -161,9 +161,9 @@ class TrackEditForm(Form):
 
   description = TextAreaField(u"Description")
 
-  starts_at = DateTimeField(u"Starts at", validators=[optional()])
+  starts_at = DateTimeField(u"Starts at", validators=[required()])
 
-  ends_at = DateTimeField(u"End at", validators=[optional()])
+  ends_at = DateTimeField(u"End at", validators=[required()])
 
   _groups = [
     ["Track",
@@ -181,7 +181,7 @@ class TalkEditForm(Form):
     view_widget=ListWidget(),
     query_factory=lambda: Speaker.query.all(),
     multiple=True,
-    validators=[optional()])
+    validators=[required()])
 
   track = QuerySelect2Field(
     u'Track',
