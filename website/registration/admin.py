@@ -21,9 +21,17 @@ class RegistrationView(ModelView):
   def csv(self):
     output = StringIO.StringIO()
     writer = csv.writer(output)
+    tracks = [t.name for t in Track.query.all()]
     for r in Registration.query.all():
       row = [r.created_at.strftime("%Y/%m/%d"),
-             r.email.encode("utf8")]
+             r.confirmed_at.strftime("%Y/%m/%d"),
+             r.email.encode("utf8"),
+             r.comming_on_oct_3,
+             r.comming_on_oct_4,
+             r.comming_on_oct_5]
+      #for track in tracks:
+      #  row.append()
+
       writer.writerow(row)
     response = make_response(output.getvalue())
     response.headers['Content-Type'] = 'application/csv'
@@ -37,6 +45,20 @@ class TrackView(ModelView):
     if current_app.config.get('DEBUG'):
       return True
     return current_user.is_authenticated()
+
+  @expose("/export.csv")
+  def csv(self):
+    output = StringIO.StringIO()
+    writer = csv.writer(output)
+    for t in Track.query.all():
+      participants = t.participants
+      confirmed_participants = [p for p in participants if p.confirmed_at]
+      row = [t.theme, t.title.encode("utf8"), len(confirmed_participants), len(participants)]
+
+      writer.writerow(row)
+    response = make_response(output.getvalue())
+    response.headers['Content-Type'] = 'application/csv'
+    return response
 
 
 def register_plugin(app):

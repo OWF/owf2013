@@ -15,6 +15,8 @@ class TalkProposal(Entity):
   speaker_email = Column(UnicodeText, nullable=False)
   speaker_bio = Column(UnicodeText, nullable=False)
 
+  #status = Column(UnicodeText)
+
   @property
   def _name(self):
     return self.title

@@ -22,6 +22,7 @@ from abilian.web.filters import init_filters
 from .registration.models import Track
 from .tracks import TRACKS
 from .util import preferred_language
+from website import linuxipsum
 from .whoosh import Whoosh
 
 
@@ -164,6 +165,7 @@ def setup_filters_and_processors(app):
     locale.setlocale(locale.LC_TIME, current_locale)
     return formatted
 
+
   @app.url_defaults
   def add_language_code(endpoint, values):
     values.setdefault('lang', g.lang)
@@ -179,8 +181,9 @@ def setup_filters_and_processors(app):
       abort(404)
 
   @app.context_processor
-  def inject_app():
-    return dict(app=app)
+  def inject_context():
+    return dict(app=app,
+                linuxipsum=linuxipsum.generate)
 
   @app.before_request
   def before_request():

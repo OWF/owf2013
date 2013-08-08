@@ -10,6 +10,7 @@ import random
 import re
 import datetime
 from PIL import Image
+from abilian.services.image import crop_and_resize
 
 from flask import Blueprint, request, render_template, make_response, g, url_for, session
 from flask import current_app as app
@@ -18,7 +19,7 @@ from werkzeug.exceptions import NotFound
 
 from ..config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
 from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks
-from ..crm.models import Speaker, Track2
+from ..crm.models import Speaker, Track2, Talk
 
 
 __all__ = ['setup']
@@ -69,15 +70,24 @@ def inject_menu():
 #
 # Deal with language
 #
-def alt_url_for(*args, **kw):
-  if isinstance(args[0], Page):
-    page = args[0]
+def alt_url_for(obj, *args, **kw):
+  if isinstance(obj, Page):
+    page = obj
     if re.match("../news/", page.path):
       return url_for(".news_item", slug=page.meta['slug'])
     else:
       return url_for(".page", path=page.meta['path'][3:])
+  elif isinstance(obj, Speaker):
+    speaker = obj
+    return url_for(".speaker", speaker_id=speaker.id)
+  elif isinstance(obj, Track2):
+    track = obj
+    return url_for(".track", track_id=track.id)
+  elif isinstance(obj, Talk):
+    talk = obj
+    return "%s#talk_%d" % (url_for(".track", track_id=talk.track.id), talk.id)
   else:
-    return url_for(*args, lang=g.lang, **kw)
+    return url_for(obj, *args, lang=g.lang, **kw)
 
 
 @localized.context_processor
@@ -218,25 +228,57 @@ def program():
     print track.starts_at.date(), track
   days = groupby(tracks, lambda t: t.starts_at.date())
   days = [(day, list(tracks)) for day, tracks in days]
-  page = dict(title="Program")
+  page = dict(title=_(u"Program"))
   return render_template("program.html", page=page, days=days)
 
 
 @route('/speakers/')
 def speakers():
   speakers = Speaker.query.order_by(Speaker.last_name).all()
-  page = dict(title="Speakers")
+  page = dict(title=_("Speakers"))
   return render_template("speakers.html", page=page, speakers=speakers)
 
 
-@route('/speakers/<int:speaker_id>')
+@route('/speakers/<int:speaker_id>/')
 def speaker(speaker_id):
   speaker = Speaker.query.get(speaker_id)
   if not speaker:
     raise NotFound()
 
-  page = dict(title=u"Speaker : {}".format(speaker))
+  page = dict(title=speaker._name)
   return render_template("speaker.html", page=page, speaker=speaker)
+
+
+@route('/speakers/<int:speaker_id>/photo')
+def photo(speaker_id):
+  size = int(request.args.get('s', 55))
+  if size > 500:
+    raise ValueError("Error, size = %d" % size)
+
+  speaker = Speaker.query.get(speaker_id)
+  if not speaker:
+    raise NotFound()
+
+  if speaker.photo:
+    data = speaker.photo
+  else:
+    raise NotFound()
+
+  # TODO: caching
+
+  if size:
+    data = crop_and_resize(data, size)
+
+  response = make_response(data)
+  response.headers['content-type'] = 'image/jpeg'
+  return response
+
+
+@route('/track/<int:track_id>')
+def track(track_id):
+  track = Track2.query.get_or_404(track_id)
+  page = {'title': track.name}
+  return render_template("track.html", page=page, track=track)
 
 
 @localized.errorhandler(404)

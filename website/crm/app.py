@@ -4,11 +4,25 @@ from abilian.web.frontend import Module, CRUDApp
 
 from .forms import SpeakerEditForm, RoomEditForm, TrackEditForm, TalkEditForm
 from .models import Speaker, Room, Track2, Talk
+from website.cfp.forms import TalkProposalEditForm
+from website.cfp.models import TalkProposal
 
 
-#
-# Partenaires
-#
+class TalkProposals(Module):
+  managed_class = TalkProposal
+
+  icon = 'volume-up'
+
+  list_view_columns = [
+    dict(name='speaker_name', width=15),
+    dict(name='title', width=50, linkable=True),
+    dict(name='theme', width=35),
+  ]
+
+  edit_form_class = TalkProposalEditForm
+
+
+
 class Speakers(Module):
   managed_class = Speaker
 
@@ -88,5 +102,5 @@ class Talks(Module):
 # Main App
 #
 class CRM(CRUDApp):
-  modules = [Speakers(), Rooms(), Tracks(), Talks()]
+  modules = [TalkProposals(), Speakers(), Rooms(), Tracks(), Talks()]
   url = "/crm"

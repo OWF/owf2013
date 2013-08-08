@@ -13,6 +13,7 @@ from .forms import THEMES
 
 class TalkProposalView(ModelView):
   column_list = ['speaker_name', 'speaker_organization', 'title', 'theme']
+  column_filters = ('theme', 'sub_theme')
 
   def is_accessible(self):
     if current_app.config.get('DEBUG'):

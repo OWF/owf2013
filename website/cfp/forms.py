@@ -1,6 +1,6 @@
 from flask.ext.wtf import Form, required, email
 from flask.ext.wtf.html5 import EmailField
-from wtforms import StringField, TextAreaField, RadioField
+from wtforms import StringField, TextAreaField, RadioField, SelectField
 
 
 THEMES = [
@@ -16,9 +16,11 @@ THEMES = [
   "THINK : CIO Summit",
   "THINK : Legal and licensing aspects of open source",
   "THINK : Other",
+  "THINK : Applications",
   # Code
   "CODE : Big Data",
   "CODE : Open Data and dataviz",
+  "CODE : Data management",
   "CODE : Mobile technologies",
   "CODE : Next-gen Web",
   "CODE : Web Accessibility",
@@ -28,6 +30,10 @@ THEMES = [
   "CODE : Cross-distro meetup",
   "CODE : Software Quality",
   "CODE : Other",
+  # Experiment
+  "EXPERIMENT : Experiment",
+  # Trash
+  "TRASH",
 ]
 THEMES = [(x, x) for x in THEMES]
 
@@ -59,3 +65,14 @@ class TalkProposalForm(Form):
 
   # sub_theme = RadioNode(title=u"Select one or several subthemes")
   # _radio_valid = Check(RequiredValidator(), 'sub_theme')
+
+
+class TalkProposalEditForm(TalkProposalForm):
+  theme = SelectField(label=u"Choose a theme",
+                      choices=THEMES, validators=[required()])
+
+  _groups = [
+    ["Speaker", ['speaker_name', 'speaker_title', 'speaker_organization',
+                 'speaker_email', 'speaker_bio']],
+    ["Talks", ['title', 'abstract', 'theme']],
+  ]
