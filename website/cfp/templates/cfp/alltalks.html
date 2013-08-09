@@ -36,8 +36,8 @@
   <h2>{{ theme }}</h2>
   {% for proposal in props %}
     <h3>{{ proposal.title }}</h3>
-    <p>By: {{ proposal.speaker_name }}
-      ({{ proposal.speaker_organization }}, {{ proposal.speaker_title }})</p>
+    <p>By: {{ proposal.speaker_name }} ({{ proposal.speaker_email }})
+      - {{ proposal.speaker_organization }}, {{ proposal.speaker_title }}</p>
     <p>{{ proposal.abstract }}</p>
     <hr>
   {% endfor %}
