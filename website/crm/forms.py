@@ -54,11 +54,11 @@ ModelForm = model_form_factory(Form)
 
 
 class SpeakerEditForm(ModelForm):
-  title = Select2Field(u'Title',
-                       choices=[('', ''), ('M', 'M'), ('Mme', 'Mme'),
-                                ('Dr', 'Dr'), ('Pr', 'Pr')],
-                       filters=(strip,),
-                       validators=[optional()])
+  salutation = Select2Field(u'Salutation',
+                            choices=[('', ''), ('M', 'M'), ('Mme', 'Mme'),
+                                     ('Dr', 'Dr'), ('Pr', 'Pr')],
+                            filters=(strip,),
+                            validators=[optional()])
 
   first_name = TextField(u'First name', filters=(strip,),
                          validators=[optional()])
@@ -71,7 +71,7 @@ class SpeakerEditForm(ModelForm):
   telephone = TextField(u'Telephone', filters=(strip,), validators=[optional()])
 
   organisation = TextField(u'Organisation', filters=(strip,),
-                           validators=[optional()])
+                           validators=[required()])
 
   bio = TextAreaField(u'Biography', validators=[optional()])
 

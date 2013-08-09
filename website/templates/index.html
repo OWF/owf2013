@@ -70,14 +70,31 @@
       <div class="container">
         <h1 class="section-title speaker-title">{{ _("Some speakers") }}</h1>
 
-        {#
         <h3 class="section-button"><a class="section-button-a"
             href="speakers/">{{ _("All the speakers") }}</a></h3>
-        #}
       </div>
 
       <div class="row">
         {% for speaker in speakers[0:6] %}
+          <div class="span2">
+            <a href="{{ url_for(speaker) }}">
+              <img class="speaker-img"
+                  src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
+                  alt=""/>
+
+              <h5 class="speaker-name">{{ speaker.first_name }}
+                <br>{{ speaker.last_name }}
+              </h5>
+
+              <h6 class="speaker-job">
+                {% if speaker.organisation %}{{ speaker.organisation }}
+                {% else %}&nbsp;
+                {% endif %}
+              </h6>
+            </a>
+          </div>
+        {% endfor %}
+        {% for speaker in speakers[6:12] %}
           <div class="span2">
             <a href="{{ url_for(speaker) }}">
               <img class="speaker-img"

@@ -55,7 +55,7 @@ class Speaker(Entity, ValidationMixin):
   __tablename__ = 'speaker'
 
   salutation = Column(UnicodeText, nullable=True,
-                      info={'label': u'Title'})
+                      info={'label': u'Salutation'})
   salutation_CHOICES = [('', ''), ('Mr', 'Mr'), ('Mrs', 'Mrs'), ('Dr', 'Dr'),
                         ('Pr', 'Pr')]
 

@@ -50,6 +50,14 @@ devops
 open source
 free software
 Eclipse
+Markdown
+big data
+open data
+CSS
+responsive
+real time
+HTML5
+Android
 """.split("\n")
 
 

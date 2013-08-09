@@ -244,6 +244,12 @@ body {
 #speaker img {
   width: 140px;
   height: 140px;
+  background-color: white;
+}
+
+#speaker h6 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .speaker-title {
