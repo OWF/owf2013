@@ -1,5 +1,12 @@
 title : Our Sponsors
 
+###Diamond Sponsor
+
+<a name="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
+
+**Inria** is is the only public research body fully dedicated to computational sciences. Combining computer sciences with 
+mathematics, Inria’s 3,400 researchers strive to invent the digital technologies of the future.
+
 ###Platinum Sponsors
 
 <a name="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
@@ -16,11 +23,6 @@ Managed by its founders, Philippe Montargès and Véronique Torner, Alter Way pr
 large enterprise, public sector and SMB.
 
 Alter Way has a distinctive skill on the Free market and can be a robust partner at your side for a long time.
-
-<a name="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
-
-**Inria** is is the only public research body fully dedicated to computational sciences. Combining computer sciences with 
-mathematics, Inria’s 3,400 researchers strive to invent the digital technologies of the future.
 
 <a name="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
 
