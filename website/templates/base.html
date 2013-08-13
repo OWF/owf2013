@@ -56,18 +56,15 @@
         {%- endfor %}
       </ul>
 
-      {%- if g.user and g.user.id %} 
+      {%- if g.user and g.user.id %}
         {# condition may not be met on some pages (like error500): would raise
            error in url_for() statements #}
         <ul class="nav pull-right">
           <li id="fat-menu" class="dropdown">
             <a href="#-" class="dropdown-toggle" data-toggle="dropdown">
-              <img class="avatar-small" style="margin-top: -3px;" alt=""
-                   src="{{ url_for("social.user_mugshot", user_id=g.user.id, s=25) }}" />
-                   {{ g.user.name }}<b class="caret"></b>
+               {{ g.user.email }}<b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="{{ url_for("social.user", user_id=g.user.id) }}">{{ _("My profile") }}</a></li>
               <li class="divider"></li>
               <li><a id="logout">{{ _("Log out") }}</a></li>
             </ul>
@@ -120,7 +117,7 @@
 {%- endassets %}
 
 {% block js %}{% endblock %}
-  
+
   <script type="text/javascript">
     Abilian.DEBUG = {{ config.DEBUG|tojson }};
 

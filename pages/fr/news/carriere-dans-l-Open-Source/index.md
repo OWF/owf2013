@@ -1,4 +1,4 @@
-title : L'Open Source : un vivier d'emplois en manque de visibilité
+title: "L'Open Source : un vivier d'emplois en manque de visibilité"
 
 300 PME et ETI spécialisées dans le Logiciel Libre, plus de 30 000 salariés, 30% de croissance annuelle, 
 tel est le panorama français de l’économie de l’Open Source en 2012. Pierre Queinnec, Président de l’édition 2013 de 

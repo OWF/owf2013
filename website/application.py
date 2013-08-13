@@ -4,33 +4,38 @@ import locale
 from os import mkdir
 from os.path import join, dirname, exists
 import re
-from abilian.services import audit_service, index_service, activity_service
+from abilian.services import audit_service, activity_service
 
-from flask import Flask, abort, request, g, session
+from flask import Flask, abort, request, g, session, redirect
 from flask.ext.admin import Admin
 from flask.ext.bootstrap import Bootstrap
 from flask.ext.frozen import Freezer
 from flask.ext.flatpages import FlatPages
 from flask.ext.markdown import Markdown
 from flask.ext.assets import Environment as AssetManager
+from flask.ext.login import current_user
 
 import abilian
-from abilian.application import PluginManager
+from abilian.application import PluginManager, ServiceManager
 from abilian.core.extensions import Babel, db, mail
 from abilian.web.filters import init_filters
 
 from .registration.models import Track
 from .tracks import TRACKS
 from .util import preferred_language
-from website import linuxipsum
+from .security import User2
 from .whoosh import Whoosh
+from . import linuxipsum
 
 
 __all__ = ['create_app', 'create_db']
 
 
-class Application(Flask, PluginManager):
-  pass
+class Application(Flask, PluginManager, ServiceManager):
+  def __init__(self, name=None, config=None, *args, **kwargs):
+    Flask.__init__(self, name, *args, **kwargs)
+    ServiceManager.__init__(self)
+    PluginManager.__init__(self)
 
 
 def create_app(config=None):
@@ -48,14 +53,16 @@ def create_app(config=None):
 def setup(app):
   db.init_app(app)
   mail.init_app(app)
+  #login_manager.init_app(app)
+
   admin = Admin(app)
   bootstrap = Bootstrap(app)
+
+  app.register_plugin("website.security")
   setup_filters_and_processors(app)
 
-  #app.load_plugins()
   app.register_plugin("website.views")
   app.register_plugin("website.cfp")
-  app.register_plugin("website.security")
   app.register_plugin("website.registration")
   app.register_plugin("website.crm")
 
@@ -115,6 +122,7 @@ def setup_template_loader(app):
   """
   from jinja2 import ChoiceLoader, FileSystemLoader
 
+
   abilian_template_dir = join(dirname(abilian.__file__), "templates")
   my_loader = ChoiceLoader([app.jinja_loader,
                             FileSystemLoader(abilian_template_dir)])
@@ -151,7 +159,6 @@ def load_tracks(app):
 
 
 def setup_filters_and_processors(app):
-
   # Register generic filters from Abilian Core
   init_filters(app)
 
@@ -187,8 +194,12 @@ def setup_filters_and_processors(app):
 
   @app.before_request
   def before_request():
+    if request.path.startswith("/crm"):
+      if not current_user.is_authenticated():
+        return redirect("/login")
+
     # FIXME
-    g.user = None
+    g.user = current_user._get_current_object()
     g.recent_items = []
 
 
