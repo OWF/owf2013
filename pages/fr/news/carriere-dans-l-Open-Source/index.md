@@ -4,7 +4,7 @@ title: "L'Open Source : un vivier d'emplois en manque de visibilité"
 tel est le panorama français de l’économie de l’Open Source en 2012. Pierre Queinnec, Président de l’édition 2013 de 
 l’Open Word Forum, décrypte ces chiffres et analyse les opportunités de carrière à venir.
 
-####Des chiffres optimistes pour une industrie en plein essor
+###Des chiffres optimistes pour une industrie en plein essor
 
 Le Logiciel Libre et l'Open Source est l'une des nouvelles industries incontournables des années à venir.
 
@@ -14,7 +14,7 @@ Open Source augmente chaque jour et est devenu un véritable vivier d’emplois.
 qui ne se dément pas depuis plusieurs années, le Logiciel Libre est devenu une industrie à part entière qu’il ne faut 
 plus considérer comme une fonction support mais plutôt comme un fer de lance pour l’innovation et la création d’emplois. 
 
-####Les services, principaux créateurs d’emplois
+###Les services, principaux créateurs d’emplois
 
 L’industrie du Logiciel Libre est l’un des rares secteurs à connaître le plein emploi. La demande est telle aujourd’hui 
 qu’elle a la capacité de faire travailler toutes les sociétés et toutes les personnes compétentes dans le métier. Une 
@@ -26,7 +26,7 @@ générale une grande partie des serveurs HTTP…), de la mobilité (Android, Ti
 (OpenStack, CloudStack, SlapOS…), sont tous trois en très forte croissance et seront de plus en plus pourvoyeurs 
 d’emplois à l’avenir.
 
-####Le recrutement dans l’Open Source : un manque de visibilité évident
+###Le recrutement dans l’Open Source : un manque de visibilité évident
 
 Pour faire face à cette demande croissante, les pouvoirs publics n’ont d’autre choix que de mettre en place une vraie 
 politique d’attractivité du secteur. La formation, et par extension le recrutement, sont définitivement le point faible 
