@@ -90,7 +90,7 @@ class SpeakerEditForm(ModelForm):
 
   _groups = [
     ["Speaker",
-     ['title', 'first_name', 'last_name', 'email', 'telephone', 'organisation',
+     ['salutation', 'first_name', 'last_name', 'email', 'telephone', 'organisation',
       'bio', 'photo']],
     ["Additionnal details",
      ['website', 'twitter_handle', 'github_handle', 'sourceforge_handle']],
