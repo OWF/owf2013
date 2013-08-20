@@ -50,9 +50,9 @@ Le personnel du Novotel Porte d'Orléans est disponible 24h/24 et l'établisseme
 réduite. Un parking privé est disponible moyennant des frais supplémentaires.
 
 15, Boulevard Romain Rolland,75014 Paris
-Tel (+33)1/41172600
-Fax (+33)1/41172626
-E-mail H1834@accor.com
+<br>Tel (+33)1/41172600
+<br>Fax (+33)1/41172626
+<br>E-mail H1834@accor.com
 
 *A partir de 106 €*
 
@@ -70,9 +70,9 @@ Vous trouverez plusieurs commerces et restaurants dans les environs. Les jardins
 RER Cité Universitaire se trouvent à 10 minutes de marche.
 
 33, Rue Barbès, 92120 Montrouge
-Tel. (+33)1/42316700
-Fax. (+33)1/42316701
-E-mail H0635@accor.com
+<br>Tel. (+33)1/42316700
+<br>Fax. (+33)1/42316701
+<br>E-mail H0635@accor.com
 
 *A partir de 62 €*
 
