@@ -22,4 +22,12 @@ FRANCE
 
 **Bus** : numbers 68, 128 and 126, the *Mairie de Montrouge* stop
 
-**Parking** Parking Cresp, *Emile Cresp Plaza*, Montrouge
+**Parking** 
+<br>Parking Cresp, *Emile Cresp Plaza*, Montrouge
+<br>Parking Gabriel Péri, *33 Rue Gabriel Péri*, Montrouge
+<br>Parking République, *63 Avenue de la République*, Montrouge
+
+##Where to sleep
+
+###Nearby
+
