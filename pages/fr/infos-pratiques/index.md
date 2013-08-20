@@ -32,8 +32,49 @@ title: Informations pratiques
 
 ###A proximité
 
+**Novotel Paris Porte d'Orléans (4 étoiles)**
 
+Installé dans le sud de Paris, le Novotel Paris Porte d'Orléans se trouve à seulement 2 minutes de marche de la 
+station de métro et de tramway Porte d’Orléans, assurant un accès direct au centre de Paris en seulement 5 minutes. 
+Situé à 12 km de l'aéroport d'Orly, il propose des chambres insonorisées et climatisées avec connexion Wi-Fi gratuite.
 
-###Centre Ville
+Ces dernières sont dotées d'une télévision par satellite et d'un plateau/bouilloire. Toutes comprennent une salle de 
+bains privative et la plupart disposent d'une baignoire. Deux enfants maximum (de 16 ans ou moins) peuvent séjourner 
+gratuitement en partageant une chambre avec leurs parents. Certaines chambres sont adaptées aux personnes à mobilité 
+réduite, tandis que d'autres offrent une vue sur Paris.
+
+Ouvert pour le déjeuner et le dîner, le Novotel Café sert des plats sains. Vous pourrez déguster vos repas au 
+restaurant, au bar ou dans votre chambre.
+
+Le personnel du Novotel Porte d'Orléans est disponible 24h/24 et l'établissement est adapté aux personnes à mobilité 
+réduite. Un parking privé est disponible moyennant des frais supplémentaires.
+
+15, Boulevard Romain Rolland,75014 Paris
+Tel (+33)1/41172600
+Fax (+33)1/41172626
+E-mail H1834@accor.com
+
+*A partir de 106 €*
+
+**ibis Paris Porte D'Orleans (3 étoiles)**
+
+L'hôtel ibis Paris Porte d'Orléans vous accueille au sud de Paris, à 10 minutes à pied de la station de métro Porte 
+d'Orléans. Il possède un bar pourvu d'une terrasse et un restaurant. Il met gracieusement à votre disposition une 
+connexion Wi-Fi ainsi qu'un parking privé sur place.
+
+Chaque chambre climatisée comprend une télévision à écran plat, un bureau et une salle de bains privative équipée 
+d'une douche et d'un sèche-cheveux. Un petit-déjeuner buffet est servi tous les jours et vous pourrez prendre les 
+autres repas au restaurant Courtepaille.
+
+Vous trouverez plusieurs commerces et restaurants dans les environs. Les jardins du parc Montsouris et la gare 
+RER Cité Universitaire se trouvent à 10 minutes de marche.
+
+33, Rue Barbès, 92120 Montrouge
+Tel. (+33)1/42316700
+Fax. (+33)1/42316701
+E-mail H0635@accor.com
+
+*A partir de 62 €*
+
 
 
