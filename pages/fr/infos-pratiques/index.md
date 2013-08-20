@@ -21,7 +21,7 @@ title: Informations pratiques
 &nbsp;<b>EN BUS</b><br>Lignes 68, 128, 126 (arrêt Mairie de Montrouge)</li>
 
 <li>
-&nbsp;<b>PARKINGS</b><br>Parking Cresp, place Emile Cresp. Montrouge
+&nbsp;<b>PARKINGS</b><br>Parking Emile Cresp, place Emile Cresp. Montrouge
 <br>Parking Gabriel Péri, 33 Rue Gabriel Péri. Montrouge
 <br>Parking République, 63 Avenue de la République. Montrouge</li>
 
