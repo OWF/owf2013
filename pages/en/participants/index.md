@@ -1,8 +1,8 @@
 title: Participants
 
-L’ espace d’exposition regroupera des acteurs majeurs du **Logiciel Libre** en France et à l’international. 
+The exhibition space will reunite all the main players of the **Open Source Software** in France and the World.
 
-Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Open World Forum** : 
+We are hounoured to welcome them as our partners for this **6th edition** of the **Open World Forum** :
 
 
 ###A
