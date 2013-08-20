@@ -7,7 +7,7 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 ###A
 
-<a href="http://af83.com/" target="_blank" <img src="/static/pictures/af83_logoSponsor2.png" alt="af83"> /a>
+<a href="http://af83.com/" target="_blank" ><img src="/static/pictures/af83_logoSponsor2.png" alt="af83"></a>
 
 Alter Way
 
