@@ -103,7 +103,7 @@ travelling from Orly airport as it is just a 20-minute drive away.
 **Holiday Inn Saint Germain des Pré**
 
 **Best Western Trianon Rive Gauche (4 stars)**
-*Near the Odeon Metro Station on line 4 which takes you directely to the Beffroi*
+<br>*Near the Odeon Metro Station on line 4 which takes you directely to the Beffroi*
 
 The hotel offers tastefully decorated rooms, right next to the Jardin du Luxembourg. It is located in the centre 
 of Paris, just 1.5 km from Notre-Dame Cathedral.
@@ -122,4 +122,5 @@ RER Station is 450 metres away, providing access to Charles de Gaulle Airport.
 <br>E-mail trianon.rg@wanadoo.fr 
 
 *Starting at 128 €*
+
 
