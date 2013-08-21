@@ -37,3 +37,44 @@ FRANCE
 
 ###Nearby
 
+**Novotel Paris Porte d'Orléans (4 stars)**
+
+Located in south Paris, this Novotel is just 2 minutes’ walk to Porte d’Orleans Metro Station and Tramway, giving 
+direct access to the centre of Paris in just 5 minutes. It offers soundproofed and air-conditioned rooms with free 
+Wi-Fi and is 12 km from Orly airport.
+
+The guest rooms at Novotel Paris Porte d'Orléans are equipped with satellite TV and tea and coffee making facilities. 
+All rooms have a private bathroom and most include a bathtub. Up to 2 children (16 years and under) stay free when 
+sharing the room with their parents. Some rooms are suitable for guests with reduced mobility, while others have a 
+view o Paris.
+
+Open for lunch and dinner, the Novotel Cafe serves healthy, French dishes. Meals can be eaten in the restaurant, bar 
+or in guests’ rooms.
+
+Staff are available 24 hours and Novotel Porte d'Orléans and the property is adapted for guests with reduced 
+mobility. Private parking is available with an extra cost.
+
+15, Boulevard Romain Rolland,75014 Paris
+<br>Tel (+33)1/41172600
+<br>Fax (+33)1/41172626
+<br>E-mail H1834@accor.com
+
+*Starting at 106 €*
+
+**ibis Paris Porte D'Orleans (3 stars)**
+
+The ibis Paris Porte D’Orleans is located in the south of Paris, a 10-minute walk from Porte d’Orleans Metro 
+Station. It offers a bar with a terrace, a restaurant, free Wi-Fi access and free private parking on site.
+
+Each air-conditioned room includes a flat-screen TV, a desk and a private bathroom with a shower and a hairdryer. A 
+buffet breakfast is served daily, and you can enjoy other meals at the Courtepaille restaurant.
+
+You will find a choice of shops and restaurants in the area. The Parc Montsouris gardens and Cité Universitaire 
+RER Train Station is a 10-minute walk away.
+
+33, Rue Barbès, 92120 Montrouge
+<br>Tel. (+33)1/42316700
+<br>Fax. (+33)1/42316701
+<br>E-mail H0635@accor.com
+
+*Starting at 62 €*
