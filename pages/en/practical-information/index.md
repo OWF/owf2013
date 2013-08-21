@@ -78,3 +78,29 @@ RER Train Station is a 10-minute walk away.
 <br>E-mail H0635@accor.com
 
 *Starting at 62 €*
+
+**Kyriad Paris Porte d'Orléans (3 stars)**
+
+All of the rooms at this hotel have flat-screen TV with cable channels, free Wi-Fi and en suite facilities. Located 
+south of Paris, it is just 10 minutes from the Porte de Versailles Exhibition Centre.
+
+A buffet breakfast is served every morning at the Hôtel Kyriad Paris Porte d'Orléans, and it can be taken in your 
+room upon request.
+
+The entire Kyriad is serviced by a lift and the front desk is open 24 hours a day. It is convenient for guests 
+travelling from Orly airport as it is just a 20-minute drive away.
+
+11, Rue Gabriel Péri, 92120 Montrouge
+<br>Tel. (+33)1/42530255. 
+<br>Fax. (+33)1/42536502
+<br>E-mailkyriad.paris.sud@free.fr
+
+*Starting at 55 €*
+
+###Town Center
+
+**Holiday Inn Saint Germain des Pré**
+
+**Best Western Trianon Rive Gauche**
+
+
