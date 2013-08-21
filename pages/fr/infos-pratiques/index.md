@@ -100,3 +100,26 @@ d'Orly en seulement 20 minutes de route.
 **Holiday Inn Saint Germain des Pré**
 
 **Best Western Trianon Rive Gauche**
+*Cet hôtel se trouve à côté de la station de métro Odéon sur la ligne 4 qui offre un accès direct au Beffroi*
+
+Cet hôtel vous propose des chambres décorées avec goût, juste à côté du jardin du Luxembourg. Il se trouve dans 
+le centre de Paris, à seulement 1,5 km de la cathédrale Notre-Dame.
+
+Toutes les chambres du Best Western Trianon Rive Gauche sont équipées de la télévision par satellite à écran plat et 
+d'une connexion Wi-Fi gratuite. Les salles de bains privatives disposent d'une douche ou d'une baignoire, ou bien des 
+deux.
+
+Un petit-déjeuner buffet est servi tous les jours de 7h00 à 11h00.
+
+L'hôtel est situé à 450 mètres de la station de métro Odéon, vous permettant d'accéder au marché aux puces de 
+Clignancourt. La station de RER Luxembourg se trouve également à 450 mètres et assure un service direct vers l'aéroport 
+Charles de Gaulle.
+
+1 Bis Rue De Vaugirard, 75006 Paris
+<br>Tel. (+33)1/43 29 88 10 
+<br>Fax. (+33)1/43 29 15 98 
+<br>E-mail trianon.rg@wanadoo.fr
+
+*A partir de 128 €*
+
+
