@@ -100,7 +100,7 @@ d'Orly en seulement 20 minutes de route.
 **Holiday Inn Saint Germain des Pré**
 
 **Best Western Trianon Rive Gauche**
-*Cet hôtel se trouve à côté de la station de métro Odéon sur la ligne 4 qui offre un accès direct au Beffroi*
+<br>*Cet hôtel se trouve à côté de la station de métro Odéon, sur la ligne 4, qui offre un accès direct au Beffroi*
 
 Cet hôtel vous propose des chambres décorées avec goût, juste à côté du jardin du Luxembourg. Il se trouve dans 
 le centre de Paris, à seulement 1,5 km de la cathédrale Notre-Dame.
