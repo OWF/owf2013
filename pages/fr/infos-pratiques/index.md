@@ -98,6 +98,27 @@ d'Orly en seulement 20 minutes de route.
 ###Centre Ville
 
 **Holiday Inn Saint Germain des Pré**
+<br>*Cet hôtel se trouve à côté de la station de métro Sainte Placide, sur la ligne 4, qui offre un accès direct au Beffroi*
+
+Le Holiday Inn Paris Saint Germain des Prés est un élégant hôtel situé entre les quartiers de Saint-Germain et de 
+Montparnasse, à seulement 2 minutes à pied de la station de métro Saint-Placide. Il propose des hébergements 
+insonorisés et climatisés.
+
+Toutes les chambres de l'Holiday Inn Paris Saint Germain des Prés sont équipées d'une télévision par satellite, 
+d'un minibar, d'un plateau/bouilloire et d'un coffre-fort. Certaines sont pourvues d'un peignoir et de chaussons. Une 
+connexion haut débit à Internet par fibre optique est à votre disposition.
+
+Un petit-déjeuner buffet avec des viennoiseries fraîches faites maison est servi chaque matin en chambre ou dans le 
+salon. Vous pourrez apprécier des cocktails au bar de l'hôtel.
+
+L'hôtel Paris Saint Germain des Prés se trouve à seulement 600 mètres du jardin du Luxembourg et à 1,8 km de la 
+cathédrale Notre-Dame. Les stations de métro à proximité vous permettront d'accéder rapidement à tous les sites
+d'intérêt de Paris.
+
+92, rue de Vaugirard, 75006 Paris
+<br>Tel. (+33)1/57 32 47 97
+
+*A partir de 162 €*
 
 **Best Western Trianon Rive Gauche**
 <br>*Cet hôtel se trouve à côté de la station de métro Odéon, sur la ligne 4, qui offre un accès direct au Beffroi*
