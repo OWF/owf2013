@@ -76,5 +76,27 @@ RER Cité Universitaire se trouvent à 10 minutes de marche.
 
 *A partir de 62 €*
 
+**Kyriad Paris Porte d'Orléans (3 étoiles)**
 
+Toutes les chambres de cet hôtel sont dotées d'une télévision par câble à écran plat, d'une connexion Wi-Fi gratuite 
+et d'une salle de bains privative. Situé au sud de Paris, il se trouve à seulement 10 minutes du Parc des Expositions 
+de la Porte de Versailles.
 
+Un petit-déjeuner buffet est proposé chaque matin à l'hôtel Kyriad Paris Porte d'Orléans. Sur demande, vous pourrez le 
+déguster dans votre chambre.
+
+L'hôtel Kyriad est équipé d'un ascenseur et la réception est ouverte 24h/24. Vous pourrez rejoindre l'aéroport 
+d'Orly en seulement 20 minutes de route.
+
+11, Rue Gabriel Péri, 92120 Montrouge
+<br>Tel. (+33)1/42530255. 
+<br>Fax. (+33)1/42536502
+<br>E-mailkyriad.paris.sud@free.fr
+
+*A partir de 55 €*
+
+###Centre Ville
+
+**Holiday Inn Saint Germain des Pré**
+
+**Best Western Trianon Rive Gauche**
