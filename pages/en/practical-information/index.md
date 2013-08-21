@@ -55,8 +55,8 @@ Staff are available 24 hours and Novotel Porte d'Orléans and the property is ad
 mobility. Private parking is available with an extra cost.
 
 15, Boulevard Romain Rolland,75014 Paris
-<br>Tel (+33)1/41172600
-<br>Fax (+33)1/41172626
+<br>Tel (+33)1/41 17 26 00
+<br>Fax (+33)1/41 17 26 26
 <br>E-mail H1834@accor.com
 
 *Starting at 106 €*
@@ -73,8 +73,8 @@ You will find a choice of shops and restaurants in the area. The Parc Montsouris
 RER Train Station is a 10-minute walk away.
 
 33, Rue Barbès, 92120 Montrouge
-<br>Tel. (+33)1/42316700
-<br>Fax. (+33)1/42316701
+<br>Tel. (+33)1/42 31 67 00
+<br>Fax. (+33)1/42 31 67 01
 <br>E-mail H0635@accor.com
 
 *Starting at 62 €*
@@ -82,7 +82,8 @@ RER Train Station is a 10-minute walk away.
 **Kyriad Paris Porte d'Orléans (3 stars)**
 
 All of the rooms at this hotel have flat-screen TV with cable channels, free Wi-Fi and en suite facilities. Located 
-south of Paris, it is just 10 minutes from the Porte de Versailles Exhibition Centre.
+south of Paris, it is just 10 minutes from the Porte de Versailles Exhibition Centre and less than 5 minutes 
+by foot from the Beffroi.
 
 A buffet breakfast is served every morning at the Hôtel Kyriad Paris Porte d'Orléans, and it can be taken in your 
 room upon request.
@@ -91,9 +92,9 @@ The entire Kyriad is serviced by a lift and the front desk is open 24 hours a da
 travelling from Orly airport as it is just a 20-minute drive away.
 
 11, Rue Gabriel Péri, 92120 Montrouge
-<br>Tel. (+33)1/42530255. 
-<br>Fax. (+33)1/42536502
-<br>E-mailkyriad.paris.sud@free.fr
+<br>Tel. (+33)1/42 53 02 55. 
+<br>Fax. (+33)1/42 53 65 02
+<br>E-mail kyriad.paris.sud@free.fr
 
 *Starting at 55 €*
 
@@ -101,6 +102,24 @@ travelling from Orly airport as it is just a 20-minute drive away.
 
 **Holiday Inn Saint Germain des Pré**
 
-**Best Western Trianon Rive Gauche**
+**Best Western Trianon Rive Gauche (4 stars)**
+*Near the Odeon Metro Station on line 4 which takes you directely to the Beffroi*
 
+The hotel offers tastefully decorated rooms, right next to the Jardin du Luxembourg. It is located in the centre 
+of Paris, just 1.5 km from Notre-Dame Cathedral.
+
+All of the rooms at the Best Western Trianon Rive Gauche have flat-screen TV with satellite channels and free Wi-Fi 
+internet access. Private bathrooms have shower or bath, or both shower and bath.
+
+A buffet breakfast is served daily from 07:00 until 11:00.
+
+The hotel is 450 metres from Odeon Metro Station, which provides access to the Clignancourt flea market. Luxembourg 
+RER Station is 450 metres away, providing access to Charles de Gaulle Airport.
+
+1 Bis Rue De Vaugirard, 75006 Paris
+<br>Tel. (+33)1/43 29 88 10 
+<br>Fax. (+33)1/43 29 15 98 
+<br>E-mail trianon.rg@wanadoo.fr 
+
+*Starting at 128 €*
 
