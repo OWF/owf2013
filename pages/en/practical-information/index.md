@@ -20,13 +20,14 @@ FRANCE
 
 <ul>
 <li>
-&nbsp;<b>EN MÉTRO</b><br>Montrouge (ligne 4) </li>
+&nbsp;**EN MÉTRO** <br>Montrouge (ligne 4) </li>
 
 <li>
-&nbsp;<b>EN BUS</b><br>Lignes 68, 128, 126 (arrêt Mairie de Montrouge)</li>
+&nbsp; **EN BUS** <br>Lignes 68, 128, 126 (arrêt Mairie de Montrouge)</li>
 
 <li>
-&nbsp;<b>PARKINGS</b><br>Parking Emile Cresp, place Emile Cresp. Montrouge
+&nbsp;**PARKINGS**
+<br>Parking Emile Cresp, place Emile Cresp. Montrouge
 <br>Parking Gabriel Péri, 33 Rue Gabriel Péri. Montrouge
 <br>Parking République, 63 Avenue de la République. Montrouge</li>
 
