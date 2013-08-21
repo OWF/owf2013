@@ -122,4 +122,19 @@ Charles de Gaulle.
 
 *A partir de 128 €*
 
+**Hôtel Eugénie**
+<br>*Cet hôtel se trouve à côté de la station de métro Saint-Michel, sur la ligne 4, qui offre un accès direct au Beffroi*
 
+L'Hôtel Eugénie est situé en plein centre du célèbre Quartier Latin de Paris, entre Saint Michel et 
+Saint-Germain-des-Prés. Les chambres sont climatisées et équipées d'une connexion WiFi gratuite.
+
+L'Eugénie propose des chambres insonorisées pourvues d'une salle de bains privative. Elles disposent toutes d'un 
+télévision à écran plat avec chaînes satellite et d'un minibar.
+
+Vous pourrez savourer un petit déjeuner continental chaque matin dans la salle à manger ou dans l'intimité de votre 
+chambre. L'hôtel possède un salon chaleureux avec télévision et le personnel se tient à votre disposition 24h/24.
+
+L'hôtel Eugénie se trouve à seulement 200 mètres de la Seine et de la station de métro Saint Michel. La cathédrale de 
+Notre Dame et le Musée du Louvre sont à moins de 10 minutes à pied.
+
+*A partir de 99 €*
