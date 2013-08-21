@@ -101,6 +101,26 @@ travelling from Orly airport as it is just a 20-minute drive away.
 ###Town Center
 
 **Holiday Inn Saint Germain des Pré**
+<br>*Near the Sainte Placide Metro Station on line 4 which takes you directely to the Beffroi*
+
+This stylish hotel is located between Saint Germain and Montparnasse districts, just a 2-minute walk from 
+Saint-Placide Metro Station. Holiday Inn Paris Saint Germain des Prés offers soundproofed accommodation with air 
+conditioning.
+
+All of the rooms at the Holiday Inn Paris Saint Germain des Prés are equipped with a satellite TV, minibar. 
+tea and coffee facilities, and a safe. Bathrobe and slippers are provided in some of them. High-speed, fiber-optic 
+internet connection is available.
+
+A buffets breakfast with fresh, homemade pastries is served every morning in the lounge or in the room. Guests can 
+have a cocktail at the hotel’s bar.
+
+The Paris Saint Germain des Prés hotel is just 600 metres from the Luxembourg Garden and 1.8 km from Notre-Dame 
+Cathedral. The nearby metro stations provide fast access to all attractions in Paris.
+
+92, rue de Vaugirard, 75006 Paris
+<br>Tel. (+33)1/57 32 47 97
+
+*Starting at 162 €*
 
 **Best Western Trianon Rive Gauche (4 stars)**
 <br>*Near the Odeon Metro Station on line 4 which takes you directely to the Beffroi*
