@@ -123,4 +123,23 @@ RER Station is 450 metres away, providing access to Charles de Gaulle Airport.
 
 *Starting at 128 €*
 
+**Hôtel Eugénie**
+<br>*Near the Saint Michel Metro Station on line 4 which takes you directely to the Beffroi*
 
+Hôtel Eugénie is located in the centre of Paris’s famous Latin Quarter, between Saint Michel and Saint-Germain-des-Près. The guest rooms are air-conditioned and equipped with free Wi-Fi access.
+
+The Eugénie offers soundproofed guest rooms with private bathrooms. Each has a flat-screen TV with satellite channels 
+and a mini-bar.
+
+Guests can enjoy a continental breakfast every morning, served in the dining room or in the privacy of the guest 
+rooms. The hotel provides a cosy lounge area with TV and the staff are available 24 hours a day to assist.
+
+The Eugénie hotel is just 200 m from Seine River and the Saint-Michel Metro Station. Notre Dame Cathedral and the 
+Louvre Museum are both less than a 10-minute walk away.
+
+31 Rue Saint-André-Des-Arts, 75006 Paris
+<br>Tel. (+33)1/43 26 29 03
+<br>Fax. (+33)1/43 29 75 60
+<br>E-mail eugenie.hotel@wanadoo.fr
+
+*Starting at 99 €*
