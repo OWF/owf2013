@@ -80,7 +80,7 @@ RER Cité Universitaire se trouvent à 10 minutes de marche.
 
 Toutes les chambres de cet hôtel sont dotées d'une télévision par câble à écran plat, d'une connexion Wi-Fi gratuite 
 et d'une salle de bains privative. Situé au sud de Paris, il se trouve à seulement 10 minutes du Parc des Expositions 
-de la Porte de Versailles.
+de la Porte de Versailles et à moins de 5 minutes de marche du Beffroi.
 
 Un petit-déjeuner buffet est proposé chaque matin à l'hôtel Kyriad Paris Porte d'Orléans. Sur demande, vous pourrez le 
 déguster dans votre chambre.
