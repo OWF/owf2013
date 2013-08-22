@@ -158,4 +158,9 @@ chambre. L'hôtel possède un salon chaleureux avec télévision et le personnel
 L'hôtel Eugénie se trouve à seulement 200 mètres de la Seine et de la station de métro Saint Michel. La cathédrale de 
 Notre Dame et le Musée du Louvre sont à moins de 10 minutes à pied.
 
+31 Rue Saint-André-Des-Arts, 75006 Paris
+<br>Tel. (+33)1/43 26 29 03
+<br>Fax. (+33)1/43 29 75 60
+<br>E-mail eugenie.hotel@wanadoo.fr
+
 *A partir de 99 €*
