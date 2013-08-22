@@ -4,7 +4,7 @@ You wish to book a booth at the Open World Forum 2013 to showcase your innovatio
 
 Download the exhibition area plan below and the <a href="/static/Documents/ParticipationContract_OWF2013.pdf" target="_blank">participation contract</a>.
 
-<a href="/static/Documents/OWF_PlanExpo.pdf" target="_blank"><img src="/static/pictures/plan OWF.png" width="600"></a>
+<a href="/static/Documents/OWF_PlanExpo.pdf" target="_blank"><img src="/static/pictures/plan OWF.PNG" width="600"></a>
 
 For further information, do not hesitate to [contact us][2].
 
