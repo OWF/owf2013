@@ -4,7 +4,7 @@ Vous souhaitez réserver un stand sur l’espace d’exposition de l’Open Worl
 
 Télécharger le plan de l’espace d’exposition et le [contrat exposant](/static/Documents/ParticipationContract_OWF2013.pdf).
 
-<a href="/static/Documents/OWF_PlanExpo.pdf" target="blank"><img src="/static/pictures/plan OWF" width="600"></a>
+<a href="/static/Documents/OWF_PlanExpo.pdf" target="blank"><img src="/static/pictures/plan OWF.png" width="600"></a>
 
 Pour plus d’information n’hésitez pas à nous [contacter][2].
 
