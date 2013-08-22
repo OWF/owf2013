@@ -91,7 +91,7 @@ d'Orly en seulement 20 minutes de route.
 11, Rue Gabriel Péri, 92120 Montrouge
 <br>Tel. (+33)1/42530255. 
 <br>Fax. (+33)1/42536502
-<br>E-mailkyriad.paris.sud@free.fr
+<br>E-mail kyriad.paris.sud@free.fr
 
 *A partir de 55 €*
 
