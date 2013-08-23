@@ -71,13 +71,12 @@ Our clients include global enterprises like Group SEB, SFR, LaSer, Intel, Canal+
 
 <a name="hp"><a href="http://www.hp.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/HP_sponsor page.png" width="400" alt="HP"></a></a>
 
-As the world's largest IT company, **HP** focuses on simplifying technology experiences for all its customers - from 
-individual consumers to large enterprises. HP helps businesses focus on innovation instead of IT operations by 
-offering robust solutions based on HP inventions, open source software, and industry-standard hardware in a converged 
-infrastructure. In fact, as the leading provider of scalable Linux platforms, HP ships one Linux server every minute. 
-HP not only uses open source within the company extensively but also contributes our expertise to hundreds of open 
-source projects worldwide. In fact, we built tools for open source governance in enterprises, then released them as an 
-open source project called FOSSology.
- 
-Also, HP actively drives industry-wide discussions on open source best practices as part of the Linux Foundation's 
-Open Compliance Program and SPDX workgroup
+**HP** creates new possibilities for technology to have a meaningful impact on people, businesses, governments and 
+society. As the world's largest technology company, HP focuses on simplifying experiences for all its customers, 
+bringing together a broad portfolio that spans printing, personal computing, software, services and IT infrastructure 
+to solve customer problems.  HP not only extensively uses open source within the company but also contributes our 
+expertise to hundreds of open source projects worldwide.  HP actively drives industry-wide discussions on open source 
+best practices as part of the Linux Foundation's Open Compliance Program and SPDX workgroup. As the leading provider of 
+scalable Linux platforms, HP ships one Linux server every minute.  Additionally, HP is also a key contributor to the 
+OpenStack project, which is focused on developing a cloud computing platform, and offers private and public cloud 
+offerings based on OpenStack technology.
