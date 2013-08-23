@@ -22,8 +22,7 @@ title: Informations pratiques
 
 <li>
 &nbsp;<b>PARKINGS</b><br>Parking Emile Cresp, place Emile Cresp. Montrouge
-<br>Parking Gabriel Péri, 33 Rue Gabriel Péri. Montrouge
-<br>Parking République, 63 Avenue de la République. Montrouge</li>
+<br>Parking Porte d'Orléans, 1, rue de la Légion Étrangère, Paris (à moins de dix minutes à pieds du Beffroi)</li>
 
 </ul>
 
