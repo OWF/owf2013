@@ -15,8 +15,10 @@ env.hostname = ''
 #env.hosts = ['openwf.nexen.net']
 #env.hostname = ''
 
-
+env.git_url = "https://github.com/OWF/owf2013.git"
 env.app_name = local('python setup.py --name', capture=True).strip()
+# figure out the release name and version
+env.dist = local('python setup.py --fullname', capture=True).strip()
 env.app_root = '/home/{}/websites/{}'.format(env.user, env.app_name)
 env.app_env = '/home/{}/websites/envs/{}'.format(env.user, env.app_name)
 
@@ -87,41 +89,36 @@ def refresh_uwsgi():
 
 
 @task
-def pack():
-  # create a new source distribution as tarball
-  local('python setup.py sdist --formats=gztar', capture=False)
-
-
-@task
 def backup():
   with cd(env.app_root):
     now = time.strftime("%Y%m%d-%H%M%S")
-    run("cp feedback.csv ~/backup/lemooc-feedback-{}.csv".format(now))
-    run("cp data/lemooc.db ~/backup/lemooc-db-{}.db".format(now))
+    run("cp data/abilian.db ~/backup/owf2013-{}.db".format(now))
+
+
+@task
+def stage():
+  # create a place where we can unzip the tarball, then enter
+  # that directory and unzip it
+  try:
+    with cd("/tmp/{}".format(env.dist)):
+      run("git pull")
+  except:
+    run("git clone {} /tmp/{}".format(env.git_url, env.dist))
+
+  with cd("/tmp/{}".format(env.dist)):
+    run("echo `which clone`")
+    run("tox")
 
 
 @task
 def deploy():
-  # figure out the release name and version
-  dist = local('python setup.py --fullname', capture=True).strip()
-
-  # upload the source tarball to the temporary folder on the server
-  put('dist/{}.tar.gz'.format(dist), '/tmp/{}.tar.gz'.format(dist))
-
-  # create a place where we can unzip the tarball, then enter
-  # that directory and unzip it
-  with cd("/tmp"):
-    run('rm -rf {}/*'.format(dist))
-    run('tar xzf /tmp/{}.tar.gz'.format(dist))
-    with cd(dist):
-      run("tox")
-
-  run("cp -r /tmp/{}/* {}".format(dist, env.app_root))
+  with cd(env.app_root):
+    run("git pull")
 
   install_deps()
-  with cd(env.app_root):
-    with virtualenv(env.app_env):
-      run("py.test")
+  #with cd(env.app_root):
+  #  with virtualenv(env.app_env):
+  #    run("py.test")
 
   with cd(env.app_root):
     with virtualenv(env.app_env):
@@ -129,11 +126,9 @@ def deploy():
 
   refresh_uwsgi()
 
-  run('rm -f /tmp/{}.tar.gz'.format(dist))
-
 
 @task(default=True)
 def default():
-  pack()
-  #backup()
+  backup()
+  stage()
   deploy()
