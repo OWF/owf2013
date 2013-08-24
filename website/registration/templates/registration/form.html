@@ -8,6 +8,27 @@
 
     <div class="row show-grid">
       <div class="span12">
+        {% if g.lang == 'fr' %}
+          <iframe
+              src="https://www.weezevent.com/widget_billeterie.php?id_evenement=42230&amp;lg_billetterie=1&amp;code=28696&amp;cas=1"
+              width="950" height="2500" scrolling="auto"
+              frameborder="0"></iframe>
+        {% else %}
+          <iframe
+              src="https://www.weezevent.com/widget_billeterie.php?id_evenement=42230&amp;lg_billetterie=2&amp;code=28696&amp;cas=1"
+              width="950" height="2500" scrolling="auto"
+              frameborder="0"></iframe>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+
+    {#
+  <div class="container" style="width: 940px;">
+
+    <div class="row show-grid">
+      <div class="span12">
 
         <div class="row show-grid clear-both">
           <div class="span12 main-column two-columns-right">
@@ -105,5 +126,6 @@
         }
     );
   </script>
+ #}
 
 {% endblock %}
