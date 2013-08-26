@@ -12,7 +12,7 @@ from werkzeug.exceptions import NotFound
 from abilian.services.image import crop_and_resize
 
 from flask import Blueprint, redirect, url_for, request, abort, make_response, \
-    render_template, current_app as app, session
+  render_template, current_app as app, session, jsonify
 
 from ..content import get_pages
 from website.crm.models import Talk, Speaker, Track2
@@ -153,3 +153,40 @@ def sitemap_xml():
                                            today=today, recently=recently))
   response.headers['Content-Type'] = 'text/xml'
   return response
+
+
+@main.route('api/talks')
+def talks():
+  all_talks = Talk.query.all()
+  def isoformat(d):
+    if d:
+      return d.isoformat()
+    else:
+      return None
+  all_talks = [
+    {'id': talk.id,
+     'title': talk.title,
+     'abstract': talk.abstract,
+     'theme': talk.track.theme,
+     'track': talk.track.name,
+     'room': talk.track.room.name,
+     'starts_at': isoformat(talk.starts_at),
+     'duration': talk.duration,
+    } for talk in all_talks
+  ]
+  return jsonify(talks=all_talks)
+
+
+@main.route('api/speakers')
+def speakers():
+  all_speakers = Speaker.query.all()
+  all_speakers = [
+    {'id': speaker.id,
+     'name': speaker.name,
+     'bio': speaker.bio,
+     'organisation': speaker.organisation,
+     'website': speaker.website,
+     'talks': [talk.id for talk in speaker.talks],
+    } for speaker in all_speakers
+  ]
+  return jsonify(speakers=all_speakers)

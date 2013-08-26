@@ -95,6 +95,8 @@ class Speaker(Entity, ValidationMixin):
   def _name(self):
     return '%s %s' % (self.first_name, self.last_name)
 
+  name = _name
+
 
 class Room(Entity, ValidationMixin):
   __tablename__ = 'room'
