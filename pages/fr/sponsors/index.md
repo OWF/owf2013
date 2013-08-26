@@ -87,3 +87,20 @@ monde. Nous offrons aux consommateurs une large gamme de produits et de services
 numérique au divertissement numérique et de l'informatique à l'impression maison. Cette game exhaustive nous aide à 
 faire correspondre les bons produits, services et solutions aux besoins spécifiques de nos consommateurs.
 
+<a name="jamendo"><a href="http://www.jamendo.com/fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/jamendo_logo.png" alt="jamendo"></a></a>
+
+**Jamendo** est un site web de musique libre, dont le catalogue musical est en écoute et en téléchargement gratuit et 
+légal. Lancé en 2005, il est l'un des premiers sites de musique à proposer son contenu sous les licences libres 
+Creative Commons. Le but de Jamendo est de faire le lien entre les artistes qui veulent simplement faire connaître 
+leur musique via les moyens actuels de communication et de promotion, et les internautes du monde entier, amateurs et 
+utilisateurs de musique à titre privé et professionnel.
+
+Le service Jamendo PRO rémunère les artistes en leur permettant de vendre des licences commerciales de leur musique 
+pour des usages professionnels, comme la musique de synchronisation, des créations audiovisuelles ou la diffusion en 
+lieu public.
+
+Basé au Luxembourg, Jamendo compte 1,4 million d'utilisateurs.
+
+Fin 2012, le catalogue comporte 370 000 titres, partagés par plus de 30 000 artistes de plus de 120 pays1. Il est
+ disponible en 6 langues : français, anglais, espagnol, allemand, italien et polonais. Le terme « Jamendo » est un 
+ mot-valise formé à partir de « jam » et « crescendo ».
