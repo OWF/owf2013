@@ -1,5 +1,13 @@
 title : Nos Sponsors
 
+###Sponsor Diamond
+
+<a name="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
+
+Etablissement public de recherche à caractère scientifique et technologique (EPST), **Inria**, créé en 1967, est le 
+seul institut public de recherche entièrement dédié aux sciences du numérique. A l’interface des sciences informatiques 
+et des mathématiques, les 3 400 chercheurs d'Inria inventent les technologies numériques de demain.
+
 ###Sponsors Platinum 
 
 <a name="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
@@ -18,11 +26,6 @@ particulières pour les grandes entreprises et le secteur public.
 
 Alter Way, c'est une compétence reconnue sur le marché du libre et votre partenaire de qualité pour longtemps !
 
-<a name="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
-
-Etablissement public de recherche à caractère scientifique et technologique (EPST), **Inria**, créé en 1967, est le 
-seul institut public de recherche entièrement dédié aux sciences du numérique. A l’interface des sciences informatiques 
-et des mathématiques, les 3 400 chercheurs d'Inria inventent les technologies numériques de demain.
 
 <a name="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
 
