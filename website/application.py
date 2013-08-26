@@ -123,7 +123,6 @@ def setup_template_loader(app):
   """
   from jinja2 import ChoiceLoader, FileSystemLoader
 
-
   abilian_template_dir = join(dirname(abilian.__file__), "templates")
   my_loader = ChoiceLoader([app.jinja_loader,
                             FileSystemLoader(abilian_template_dir)])
@@ -200,7 +199,8 @@ def setup_filters_and_processors(app):
         return redirect("/login")
 
     # FIXME
-    g.user = current_user._get_current_object()
+    g.user = None
+    #g.user = current_user._get_current_object()
     g.recent_items = []
 
 
