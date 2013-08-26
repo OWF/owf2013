@@ -20,7 +20,7 @@ class Registration(Entity):
 
   first_name = Column(UnicodeText(100), default=u"", nullable=False)
   last_name = Column(UnicodeText(100), default=u"", nullable=False)
-  organization = Column(UnicodeText(200), default="", nullable=False)
+  organization = Column(UnicodeText(200), default=u"", nullable=False)
   biography = Column(UnicodeText(2000), default=u"", nullable=False)
   url = Column(UnicodeText(200), default=u"", nullable=False)
 
