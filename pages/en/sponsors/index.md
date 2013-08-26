@@ -80,3 +80,24 @@ best practices as part of the Linux Foundation's Open Compliance Program and SPD
 scalable Linux platforms, HP ships one Linux server every minute.  Additionally, HP is also a key contributor to the 
 OpenStack project, which is focused on developing a cloud computing platform, and offers private and public cloud 
 offerings based on OpenStack technology.
+
+<a name="jamendo"><a href="http://www.jamendo.com/en/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/jamendo_logo.png" alt="jamendo"></a></a>
+
+**Jamendo** is a music website and an open community of music authors. It bills itself as "the world's largest digital 
+service for free music".
+
+Since the beginning in 2005, Jamendo's music has been licensed under Creative Commons licenses. Applied to all songs, 
+these licenses allow artists to publish their music and preserve their rights while providing users the freedom to 
+download it for free and redistribute at least noncommercially, with other permissions varying by license. The goal of 
+Jamendo is to be the link between artists who want to share their music and audiences around the world, both private 
+and professional.
+
+At the center of Jamendo is an economic model that grants free music downloads for web users, while at the same time 
+providing revenue opportunities for artists through commercial uses, via the licensing platform Jamendo PRO which 
+sells licenses for music synchronization and background music.
+
+Based in Luxembourg, the website has a community of 1.4 million members.
+
+At the end of 2012, the catalog comprised 362,000 tracks by 30,000 artists from 120 countries. The site is available 
+in 6 languages: English, French, Spanish, German, Italian and Polish. The name "Jamendo" is derived from a fusion of 
+two musical terms: "jam session" and "crescendo".
