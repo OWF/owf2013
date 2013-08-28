@@ -11,11 +11,13 @@
         {% if g.lang == 'fr' %}
           <iframe
               src="https://www.weezevent.com/widget_billeterie.php?id_evenement=42230&amp;lg_billetterie=1&amp;code=28696&amp;cas=1"
+              onload="window.parent.parent.scrollTo(0,0)"
               width="950" height="2500" scrolling="auto"
               frameborder="0"></iframe>
         {% else %}
           <iframe
               src="https://www.weezevent.com/widget_billeterie.php?id_evenement=42230&amp;lg_billetterie=2&amp;code=28696&amp;cas=1"
+              onload="window.parent.parent.scrollTo(0,0)"
               width="950" height="2500" scrolling="auto"
               frameborder="0"></iframe>
         {% endif %}

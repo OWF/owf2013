@@ -1,6 +1,6 @@
 {% extends "_base.html" %}
 
-{% from "_macros.html" import m_sidebar %}
+{% from "_macros.html" import m_sidebar, m_speaker with context %}
 
 {% block main %}
   <div class="container" style="width: 940px;">
@@ -24,7 +24,7 @@
               {% if track.track_leaders %}
                 <p>Track leaders:
                   {%- for track_leader in track.track_leaders %}
-                    <a href="{{ url_for(track_leader) }}">{{ track_leader }}</a>
+                    {{ m_speaker(track_leader) }}
                     {%- if not loop.last %} / {%- endif %}
                   {%- endfor %}
                 </p>
