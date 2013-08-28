@@ -97,6 +97,14 @@ class Speaker(Entity, ValidationMixin):
 
   name = _name
 
+  @property
+  def has_bio(self):
+    return not not self.bio
+
+  @property
+  def has_photo(self):
+    return not not self.photo
+
 
 class Room(Entity, ValidationMixin):
   __tablename__ = 'room'
@@ -170,3 +178,5 @@ class Talk(Entity, ValidationMixin):
 
   duration = Column(Integer, nullable=True,
                     info={'label': u'Duration'})
+
+

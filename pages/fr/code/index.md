@@ -10,8 +10,6 @@ Enfin CODE abordera la **Mobilité**, puisqu'il s'agit d'un sujet important et e
 
 Les sujets seront portés par une **équipe de track-leaders quasiment entièrement renouvelée.**
 
-## Appel à proposition
+## Découvrez le programme "CODE"
 
-Vous souhaitez soumettre une proposition d'intervention lors de l'Open World Forum ?
-
-<a class="btn" href="/fr/news/cfp/#envoi-proposition">Envoyez votre proposition</a>
+<a class="btn" href="/fr/tracks/?theme=code">Découvrez le programme</a>

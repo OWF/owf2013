@@ -1,4 +1,6 @@
 title : Registration is now open
+date: 2013/08/28
+
 
 ###Come prepared & Register
 
@@ -8,7 +10,7 @@ A first version of the program is also online, take a look at this year's tracks
 
 ###Inria Exclusive Diamond Sponsor!
 
-<a href="/{{ lang }}/sponsors/#inria"> <img alt="Inria" src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg"></a>
+<a href="/en/sponsors/#inria"> <img alt="Inria" src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg"></a>
 
 We are glad to announce Inria as our Diamond sponsor for this 6th edition !
 
@@ -26,7 +28,7 @@ resources.
 By supporting the Open World Forum 2013, Inria confirms its involvement in the Free and Open Source Community.
 Sponsors We are happy to announce their support for the Open World Forum 2013.
 
-<a href="/{{ lang }}/sponsors/#hp"><img alt='HP' src="/static/pictures/sponsors/Hewlett-Packard_logoSponsor.png"/></a>
+<a href="/en/sponsors/#hp"><img alt='HP' src="/static/pictures/sponsors/Hewlett-Packard_logoSponsor.png"/></a>
 <a href="http://legroupe.laposte.fr/"><img alt='La Poste' src="/static/pictures/sponsors/Groupe-Laposte_logoSponsor.png"/></a>
 
 HP is supporting us as a silver sponsor and Le Groupe La Poste will support the Open World Forum 2013 through a 

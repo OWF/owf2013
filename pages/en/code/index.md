@@ -11,4 +11,8 @@ Lastly, we will talk about **Mobility** as it is a vital and fast-evolving subje
 
 The CODE topics will be led by a **track-leader team that has been almost entirely renewed**.
 
-<a class="btn" href="/en/news/CFP/#submit-proposal">Submit a proposal</a>
+
+## Discover the "CODE" sessions
+
+<a class="btn" href="/en/tracks/?theme=code">Discover the sessions</a>
+

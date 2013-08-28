@@ -27,9 +27,7 @@ Enfin la **seconde journée** verra se décliner l'ensemble de ces thèmes au se
 
 Enfin un temps particulier sera consacré lors de l'Open World Forum 2013 à la **restitution des travaux des Etats Généraux de l'Open-Source (EGOS).**
 
-## Appel à proposition
+## Découvrez le programme "THINK"
 
-Vous souhaitez soumettre une proposition d'intervention lors de l'Open World Forum ?
-
-<a class="btn" href="/fr/news/cfp/#envoi-proposition">Envoyez votre proposition</a>
+<a class="btn" href="/fr/tracks/?theme=think">Découvrez le programme</a>
 

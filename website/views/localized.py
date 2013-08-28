@@ -237,6 +237,25 @@ def program():
   return render_template("program.html", page=page, days=days)
 
 
+@route('/tracks/')
+def tracks():
+  q = Track2.query.order_by(Track2.starts_at)
+  theme = request.args.get('theme')
+  if theme:
+    theme = theme.upper()
+    q = q.filter(Track2.theme == theme)
+  tracks = q.all()
+  tracks = [ t for t in tracks if t.starts_at]
+  days = groupby(tracks, lambda t: t.starts_at.date())
+  days = [(day, list(tracks)) for day, tracks in days]
+  if theme:
+    title = _(u"Program for theme %(theme)s", theme=theme)
+  else:
+    title = _(u"Program")
+  page = dict(title=title)
+  return render_template("program.html", page=page, days=days)
+
+
 @route('/speakers/')
 def speakers():
   speakers = Speaker.query.order_by(Speaker.last_name).all()

@@ -1,7 +1,7 @@
 from itsdangerous import URLSafeSerializer
 from datetime import datetime
 from markupsafe import Markup
-from flask import Blueprint, render_template, request, flash, redirect, \
+from flask import g, Blueprint, render_template, request, flash, redirect, \
     url_for, current_app as app, session
 from flask.ext.babel import lazy_gettext as _l, gettext as _
 from flask.ext.mail import Message
@@ -27,6 +27,7 @@ def display_form():
 
   page = dict(title=_l(u"Register as a participant"))
   tracks = Track.query.all()
+  print g.lang
   return render_template("registration/form.html",
                          page=page, tracks=tracks, form=form)
 

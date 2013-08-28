@@ -20,45 +20,45 @@
   <div class="container" style="width: 940px;">
     <div id="domains" class="row">
       <div class="span4 domain">
-        <a href="/{{ lang }}/think/">
-          <img src="/static/pictures/idea-img.png" alt=""/>
+        <img src="/static/pictures/idea-img.png" alt=""/>
 
-          <h2>THINK</h2>
+        <h2>THINK</h2>
 
-          {{ blocks['think'] }}
+        {{ blocks['think'] }}
 
-          <p>
+        <p>
+          <a href="/{{ lang }}/think/">
             <span class="btn">{{ _("Learn more") }}</span>
-          </p>
-        </a>
+          </a>
+        </p>
       </div>
 
       <div class="span4 domain">
-        <a href="/{{ lang }}/code/">
-          <img src="/static/pictures/keyboard-img.png" alt=""/>
+        <img src="/static/pictures/keyboard-img.png" alt=""/>
 
-          <h2>CODE</h2>
+        <h2>CODE</h2>
 
-          {{ blocks['code'] }}
+        {{ blocks['code'] }}
 
-          <p>
+        <p>
+          <a href="/{{ lang }}/code/">
             <span class="btn">{{ _("Learn more") }}</span>
-          </p>
-        </a>
+          </a>
+        </p>
       </div>
 
       <div class="span4 domain">
-        <a href="/{{ lang }}/experiment/">
-          <img src="/static/pictures/experience-img.png" alt=""/>
+        <img src="/static/pictures/experience-img.png" alt=""/>
 
-          <h2>EXPERIMENT</h2>
+        <h2>EXPERIMENT</h2>
 
-          {{ blocks['experiment'] }}
+        {{ blocks['experiment'] }}
 
-          <p>
+        <p>
+          <a href="/{{ lang }}/experiment/">
             <span class="btn">{{ _("Learn more") }}</span>
-          </p>
-        </a>
+          </a>
+        </p>
       </div>
     </div>
   </div>
@@ -66,57 +66,57 @@
   {# ######################################################################## #}
 
   {% if speakers %}
-  <div id="speaker">
-    <div class="container">
+    <div id="speaker">
       <div class="container">
-        <h1 class="section-title speaker-title">{{ _("Some speakers") }}</h1>
+        <div class="container">
+          <h1 class="section-title speaker-title">{{ _("Some speakers") }}</h1>
 
-        <h3 class="section-button"><a class="section-button-a"
-            href="speakers/">{{ _("All the speakers") }}</a></h3>
-      </div>
+          <h3 class="section-button"><a class="section-button-a"
+              href="speakers/">{{ _("All the speakers") }}</a></h3>
+        </div>
 
-      <div class="row">
-        {% for speaker in speakers[0:6] %}
-          <div class="span2">
-            <a href="{{ url_for(speaker) }}">
-              <img class="speaker-img"
-                  src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
-                  alt=""/>
+        <div class="row">
+          {% for speaker in speakers[0:6] %}
+            <div class="span2">
+              <a href="{{ url_for(speaker) }}">
+                <img class="speaker-img"
+                    src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
+                    alt=""/>
 
-              <h5 class="speaker-name">{{ speaker.first_name }}
-                <br>{{ speaker.last_name }}
-              </h5>
+                <h5 class="speaker-name">{{ speaker.first_name }}
+                  <br>{{ speaker.last_name }}
+                </h5>
 
-              <h6 class="speaker-job">
-                {% if speaker.organisation %}{{ speaker.organisation }}
-                {% else %}&nbsp;
-                {% endif %}
-              </h6>
-            </a>
-          </div>
-        {% endfor %}
-        {% for speaker in speakers[6:12] %}
-          <div class="span2">
-            <a href="{{ url_for(speaker) }}">
-              <img class="speaker-img"
-                  src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
-                  alt=""/>
+                <h6 class="speaker-job">
+                  {% if speaker.organisation %}{{ speaker.organisation }}
+                  {% else %}&nbsp;
+                  {% endif %}
+                </h6>
+              </a>
+            </div>
+          {% endfor %}
+          {% for speaker in speakers[6:12] %}
+            <div class="span2">
+              <a href="{{ url_for(speaker) }}">
+                <img class="speaker-img"
+                    src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
+                    alt=""/>
 
-              <h5 class="speaker-name">{{ speaker.first_name }}
-                <br>{{ speaker.last_name }}
-              </h5>
+                <h5 class="speaker-name">{{ speaker.first_name }}
+                  <br>{{ speaker.last_name }}
+                </h5>
 
-              <h6 class="speaker-job">
-                {% if speaker.organisation %}{{ speaker.organisation }}
-                {% else %}&nbsp;
-                {% endif %}
-              </h6>
-            </a>
-          </div>
-        {% endfor %}
-      </div>
+                <h6 class="speaker-job">
+                  {% if speaker.organisation %}{{ speaker.organisation }}
+                  {% else %}&nbsp;
+                  {% endif %}
+                </h6>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
 
-      {#
+        {#
       <div class="row">
         {% for speaker in speakers[0:6] %}
           <div class="span2">
@@ -135,8 +135,8 @@
       </div>
       #}
 
+      </div>
     </div>
-  </div>
   {% endif %}
 
   {# ############################# NEWS #################################### #}

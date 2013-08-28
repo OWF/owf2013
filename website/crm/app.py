@@ -29,10 +29,10 @@ class Speakers(Module):
   icon = 'user'
 
   list_view_columns = [
-    dict(name='salutation', width=5, linkable=True),
-    dict(name='first_name', width=20, linkable=True),
-    dict(name='last_name', width=25, linkable=True),
+    dict(name='name', width=40, linkable=True),
     dict(name='organisation', width=25, linkable=True),
+    dict(name='has_bio', width=5),
+    dict(name='has_photo', width=5),
     dict(name='email', width=25),
   ]
 

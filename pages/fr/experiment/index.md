@@ -6,8 +6,7 @@ La journée sera animée par des **conférences, ateliers** à destination d’u
 
 Les **enfants** sont également invités à tester, et participer à la journée avec un programme spécialement concocté pour eux : KIDEXPERIMENT. Des **ateliers pratiques de découverte** de logiciels libres ou open source et de matériels côtoieront des **mini-conférences** à destination des jeunes autour de la démocratie et de l’art libre.
 
-## Appel à proposition
+## Découvrez le programme "EXPERIMENT"
 
-Vous souhaitez soumettre une proposition d'intervention lors de l'Open World Forum ?
+<a class="btn" href="/fr/tracks/?theme=experiment">Découvrez le programme</a>
 
-<a class="btn" href="/fr/news/cfp/#envoi-proposition">Envoyez votre proposition</a>

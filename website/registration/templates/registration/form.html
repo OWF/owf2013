@@ -8,7 +8,7 @@
 
     <div class="row show-grid">
       <div class="span12">
-        {% if g.lang == 'fr' %}
+        {% if session.get('lang') == 'fr' %}
           <iframe
               src="https://www.weezevent.com/widget_billeterie.php?id_evenement=42230&amp;lg_billetterie=1&amp;code=28696&amp;cas=1"
               onload="window.parent.parent.scrollTo(0,0)"
