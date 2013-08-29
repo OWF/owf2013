@@ -10,7 +10,7 @@ A first version of the program is also online, take a look at this year's tracks
 
 ###Inria Exclusive Diamond Sponsor!
 
-<a href="/en/sponsors/#inria"> <img alt="Inria" src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg"></a>
+<a href="/en/sponsors/#inria" target="_blank"> <img alt="Inria" src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg"></a>
 
 We are glad to announce Inria as our Diamond sponsor for this 6th edition !
 
@@ -28,8 +28,8 @@ resources.
 By supporting the Open World Forum 2013, Inria confirms its involvement in the Free and Open Source Community.
 Sponsors We are happy to announce their support for the Open World Forum 2013.
 
-<a href="/en/sponsors/#hp"><img alt='HP' src="/static/pictures/sponsors/Hewlett-Packard_logoSponsor.png"/></a>
-<a href="http://legroupe.laposte.fr/"><img alt='La Poste' src="/static/pictures/sponsors/Groupe-Laposte_logoSponsor.png"/></a>
+<a href="/en/sponsors/#hp" target="_blank"><img alt='HP' src="/static/pictures/sponsors/Hewlett-Packard_logoSponsor.png"/></a>
+<a href="http://legroupe.laposte.fr/" target="_blank"><img alt='La Poste' src="/static/pictures/sponsors/Groupe-Laposte_logoSponsor.png"/></a>
 
 HP is supporting us as a silver sponsor and Le Groupe La Poste will support the Open World Forum 2013 through a 
 sponsoring of the Open CIO Summit.
@@ -47,12 +47,12 @@ For the 3rd time, the Open Source Developers Conference in France will be hosted
 edition, they invite you to gather the communities dedicated to programming based on free/libre languages such as Perl, 
 Python, Ruby, PHP, Smalltalk & much more.
 
-[Take a look at the Call for Participation.](http://act.osdc.fr/osdc2013fr/cfp.html)
+<a href="http://act.osdc.fr/osdc2013fr/cfp.html" target="_blank">Take a look at the Call for Participation.</a>
 
 ###Experiment
 
 The program for the EXPERIMENT part is taking shape. We are planning conferences about Open-Hardware and Internet & 
-Liberties, KidEXPERIMENT and a lot more workshops and animations such as the availability of a [Piratebox](http://pirateboxfr.com/)
+Liberties, KidEXPERIMENT and a lot more workshops and animations such as the availability of a <a href="http://pirateboxfr.com/" target="_blank">Piratebox</a>
 for the 2nd year at the Open World Forum. This autonomous mobile file sharing device designed to create local file 
 sharing networks will allow you to share and chat during the **#OWF13**.
 
