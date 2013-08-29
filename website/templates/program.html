@@ -16,7 +16,7 @@
               {% for day, tracks in days %}
                 {% if not loop.first %}
                   <hr>{% endif %}
-                <h2>{{ day|dateformat }}</h2>
+                <h2>{{ day.strftime("%A %d %B") }}</h2>
 
                 {% for track in tracks %}
                   <h3><a href="{{ url_for(track) }}">{{ track.name }}</a></h3>
