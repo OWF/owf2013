@@ -10,7 +10,7 @@
           <div class="span12 main-column two-columns-right">
             <article>
               {% if lang == 'fr' %}
-                <h1 class="page-title">{{ _("Résultat(s) de recherche") }}</h1>
+                <h1 class="page-title">{{ _("Résultat de la recherche") }}</h1>
               {% else %}
                 <h1 class="page-title">{{ _("Search results") }}</h1>
               {% endif %}
@@ -25,9 +25,7 @@
                 {% else %}
                   <p>{{ _("Your request didn't produce any results.") }}</p>
                 {% endif %}
-              
 
-              
               {% endfor %}
 
             </article>

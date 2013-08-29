@@ -22,7 +22,6 @@ class TalkProposals(Module):
   edit_form_class = TalkProposalEditForm
 
 
-
 class Speakers(Module):
   managed_class = Speaker
 
@@ -67,9 +66,10 @@ class Tracks(Module):
 
   list_view_columns = [
     dict(name='name', width=45, linkable=True),
-    dict(name='theme', width=15),
-    dict(name='starts_at', width=20),
-    dict(name='ends_at', width=20),
+    dict(name='theme', width=10),
+    dict(name='room', width=10),
+    dict(name='starts_at', width=18),
+    dict(name='ends_at', width=17),
   ]
 
   edit_form_class = TrackEditForm

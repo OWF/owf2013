@@ -21,7 +21,7 @@
   <!-- END RIGHT-SIDEBAR -->
 {% endmacro %}
 
-{% macro m_details(speaker) %}
+{% macro m_speaker_details(speaker) %}
   {% if speaker.website %}
     <p><b>Website</b>: <a href="{{ speaker.website }}">{{ speaker.website }}</a>
     </p>
@@ -40,3 +40,4 @@
     (<a href="{{ speaker.website }}">{{ speaker.organisation }}</a>)
   {% endif %}
 {% endmacro %}
+

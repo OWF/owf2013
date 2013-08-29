@@ -62,6 +62,8 @@ Android
 
 
 def generate():
+  return ""
+
   output = []
   words = TEXT.split(" ")
   for word in words:

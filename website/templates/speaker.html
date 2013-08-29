@@ -1,6 +1,6 @@
 {% extends "_base.html" %}
 
-{% from "_macros.html" import m_sidebar, m_details %}
+{% from "_macros.html" import m_sidebar, m_speaker_details %}
 
 {% block main %}
   <div class="container">
@@ -49,7 +49,7 @@
               <img src="{{ url_for(".photo", speaker_id=speaker.id, s=250) }}">
               {% endif %}
 
-              {{ m_details(speaker) }}
+              {{ m_speaker_details(speaker) }}
             </div>
 
           </article>

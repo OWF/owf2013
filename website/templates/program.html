@@ -23,13 +23,13 @@
 
                   <p>Theme: <a href="{{ url_for(track.theme) }}">{{ track.theme }}</a></p>
 
-                  <p>Room: {{ track.room }}</p>
+                  <p>Room: <a href="{{ url_for(track.room) }}">{{ track.room }}</a></p>
 
-                  <p>Start at: {{ track.starts_at }}</p>
+                  <p>From: {{ track.starts_at.strftime("%H:%M") }}
+                  to {{ track.ends_at.strftime("%H:%M") }}</p>
 
-                  <p>Ends at: {{ track.ends_at }}</p>
                   {% if track.track_leaders %}
-                    <p>Track leaders:
+                    <p>Track leader(s):
                       {% for track_leader in track.track_leaders %}
                         {{ m_speaker(track_leader) }}
                         {%- if not loop.last %} / {%- endif %}

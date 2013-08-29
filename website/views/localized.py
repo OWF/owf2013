@@ -19,7 +19,7 @@ from werkzeug.exceptions import NotFound
 
 from ..config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
 from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks
-from ..crm.models import Speaker, Track2, Talk
+from ..crm.models import Speaker, Track2, Talk, Room
 
 
 __all__ = ['setup']
@@ -72,20 +72,18 @@ def inject_menu():
 #
 def alt_url_for(obj, *args, **kw):
   if isinstance(obj, Page):
-    page = obj
-    if re.match("../news/", page.path):
-      return url_for(".news_item", slug=page.meta['slug'])
+    if re.match("../news/", obj.path):
+      return url_for(".news_item", slug=obj.meta['slug'])
     else:
-      return url_for(".page", path=page.meta['path'][3:])
+      return url_for(".page", path=obj.meta['path'][3:])
   elif isinstance(obj, Speaker):
-    speaker = obj
-    return url_for(".speaker", speaker_id=speaker.id)
+    return url_for(".speaker", speaker_id=obj.id)
   elif isinstance(obj, Track2):
-    track = obj
-    return url_for(".track", track_id=track.id)
+    return url_for(".track", track_id=obj.id)
+  elif isinstance(obj, Room):
+    return url_for(".room", room_id=obj.id)
   elif isinstance(obj, Talk):
-    talk = obj
-    return "%s#talk_%d" % (url_for(".track", track_id=talk.track.id), talk.id)
+    return "%s#talk_%d" % (url_for(".track", track_id=obj.track.id), obj.id)
   elif obj in ('THINK', 'CODE', 'EXPERIMENT'):
     return url_for(".page", path=obj.lower())
   else:
@@ -256,6 +254,28 @@ def tracks():
   return render_template("program.html", page=page, days=days)
 
 
+@route('/rooms/<int:room_id>')
+def room(room_id):
+  room = Room.query.get_or_404(room_id)
+  if not room:
+    raise NotFound()
+
+  tracks = Track2.query.order_by(Track2.starts_at).filter(Track2.room == room).all()
+  tracks = [ t for t in tracks if t.starts_at]
+  days = groupby(tracks, lambda t: t.starts_at.date())
+  days = [(day, list(tracks)) for day, tracks in days]
+
+  page = dict(title=_(u"Program for room %(room)s", room=room.name))
+  return render_template("program.html", page=page, days=days)
+
+
+@route('/tracks/<int:track_id>')
+def track(track_id):
+  track = Track2.query.get_or_404(track_id)
+  page = {'title': track.name}
+  return render_template("track.html", page=page, track=track)
+
+
 @route('/speakers/')
 def speakers():
   speakers = Speaker.query.order_by(Speaker.last_name).all()
@@ -296,13 +316,6 @@ def photo(speaker_id):
   response = make_response(data)
   response.headers['content-type'] = 'image/jpeg'
   return response
-
-
-@route('/track/<int:track_id>')
-def track(track_id):
-  track = Track2.query.get_or_404(track_id)
-  page = {'title': track.name}
-  return render_template("track.html", page=page, track=track)
 
 
 @localized.errorhandler(404)
