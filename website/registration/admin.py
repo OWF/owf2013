@@ -21,14 +21,14 @@ class RegistrationView(ModelView):
   def csv(self):
     output = StringIO.StringIO()
     writer = csv.writer(output)
-    tracks = [t.name for t in Track.query.all()]
+    tracks = [t.title for t in Track.query.all()]
     for r in Registration.query.all():
       row = [r.created_at.strftime("%Y/%m/%d"),
-             r.confirmed_at.strftime("%Y/%m/%d"),
+             r.confirmed_at,
              r.email.encode("utf8"),
-             r.comming_on_oct_3,
-             r.comming_on_oct_4,
-             r.comming_on_oct_5]
+             r.coming_on_oct_3,
+             r.coming_on_oct_4,
+             r.coming_on_oct_5]
       #for track in tracks:
       #  row.append()
 

@@ -173,6 +173,7 @@ def talks():
      'starts_at': isoformat(talk.starts_at),
      'ends_at': isoformat(talk.ends_at),
      'duration': talk.duration,
+     'speakers': [speaker.id for speaker in talk.speakers],
     } for talk in all_talks
   ]
   return jsonify(talks=all_talks)
