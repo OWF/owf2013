@@ -264,6 +264,15 @@ def tracks():
   return render_template("talks.html", page=page, days=days)
 
 
+@route('/rooms/')
+def rooms():
+  tracks = Track2.query.order_by(Track2.room_id).all()
+  rooms = groupby(tracks, lambda t: t.room)
+  rooms = [(room, sorted(list(tracks), key=lambda t: t.starts_at)) for room, tracks in rooms]
+  rooms.sort(key=lambda r: -r[0].capacity)
+  page = dict(title=_(u"Rooms"))
+  return render_template("rooms.html", page=page, rooms=rooms)
+
 @route('/rooms/<int:room_id>')
 def room(room_id):
   room = Room.query.get_or_404(room_id)

@@ -4,7 +4,7 @@ date: 2013/08/28
 
 ###Come prepared & Register
 
-It is now possible to register for the Open World Forum 2013 !
+It is now possible to [register](/registration/) for the Open World Forum 2013 !
 
 A first version of the program is also online, take a look at this year's tracks and speakers and get ready for your OWF2013.
 

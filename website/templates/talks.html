@@ -29,10 +29,9 @@
                       href="{{ url_for(talk.track) }}">{{ talk.track }}</a>.
                     {% if talk.speakers %}
                     Speakers:
-                    {% for speaker in talk.speakers %}
-                      {{ m_speaker(speaker) }}
-                      {%- if not loop.last %} / {%- endif %}
-                    {% endfor -%}.
+                    {%- for speaker in talk.speakers -%}
+                      {{ m_speaker(speaker) }}{%- if not loop.last -%} / {%- endif -%}
+                    {%- endfor -%}.
                     {% endif %}
                   </p>
                 {% endfor %}

@@ -1,0 +1,36 @@
+{% extends "_base.html" %}
+
+{% from "_macros.html" import m_sidebar, m_speaker with context %}
+
+{% block main %}
+  <div class="container" style="width: 940px;">
+
+    <div class="row show-grid">
+      <div class="span12">
+
+        <div class="row show-grid clear-both">
+          <div class="span12 main-column two-columns-right">
+            <article>
+              <h1 class="page-title">{{ page.title }}</h1>
+
+              {% for room, tracks in rooms %}
+                {% if not loop.first %}<hr>{% endif %}
+                <h2>Room: {{ room }}</h2>
+
+                {% for track in tracks %}
+
+                  <h5 style="margin-bottom: 0;"><a
+                      href="{{ url_for(track) }}">{{ track.name }}</a></h5>
+                  <p style="font-size: 90%;">{{ track.starts_at.strftime("%A %d %B") }},
+                    from: {{ track.starts_at.strftime("%H:%M") }}
+                    to: {{ track.ends_at.strftime("%H:%M") }}.</p>
+                {% endfor %}
+
+              {% endfor %}
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>{% endblock %}
