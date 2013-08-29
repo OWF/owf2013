@@ -30,6 +30,7 @@ Talks:
 – Abstract
 
 """
+from datetime import timedelta
 
 import logging
 from abilian.core.extensions import db
@@ -179,4 +180,9 @@ class Talk(Entity, ValidationMixin):
   duration = Column(Integer, nullable=True,
                     info={'label': u'Duration'})
 
-
+  @property
+  def ends_at(self):
+    if not self.duration:
+      return self.starts_at
+    else:
+      return self.starts_at + timedelta(minutes=self.duration)

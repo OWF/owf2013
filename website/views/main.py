@@ -171,6 +171,7 @@ def talks():
      'track': talk.track.name,
      'room': talk.track.room.name,
      'starts_at': isoformat(talk.starts_at),
+     'ends_at': isoformat(talk.ends_at),
      'duration': talk.duration,
     } for talk in all_talks
   ]

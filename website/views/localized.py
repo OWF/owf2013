@@ -273,6 +273,7 @@ def rooms():
   page = dict(title=_(u"Rooms"))
   return render_template("rooms.html", page=page, rooms=rooms)
 
+
 @route('/rooms/<int:room_id>')
 def room(room_id):
   room = Room.query.get_or_404(room_id)
