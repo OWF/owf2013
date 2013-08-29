@@ -254,6 +254,16 @@ def tracks():
   return render_template("program.html", page=page, days=days)
 
 
+@route('/talks/')
+def tracks():
+  talks = Talk.query.order_by(Talk.starts_at).all()
+  talks = [ t for t in talks if t.starts_at]
+  days = groupby(talks, lambda t: t.starts_at.date())
+  days = [(day, list(talks)) for day, talks in days]
+  page = dict(title=_(u"Talks"))
+  return render_template("talks.html", page=page, days=days)
+
+
 @route('/rooms/<int:room_id>')
 def room(room_id):
   room = Room.query.get_or_404(room_id)

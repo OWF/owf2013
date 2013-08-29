@@ -1,0 +1,40 @@
+{% extends "_base.html" %}
+
+{% from "_macros.html" import m_sidebar, m_speaker with context %}
+
+{% block main %}
+  <div class="container" style="width: 940px;">
+
+    <div class="row show-grid">
+      <div class="span12">
+
+        <div class="row show-grid clear-both">
+          <div class="span12 main-column two-columns-right">
+            <article>
+              <h1 class="page-title">{{ page.title }}</h1>
+
+              {% for day, talks in days %}
+                {% if not loop.first %}
+                  <hr>{% endif %}
+                <h2>{{ day.strftime("%A %d %B") }}</h2>
+
+                  {% for talk in talks %}
+
+                    <h5>{{ talk.starts_at.strftime("%H:%M") }}: <a href="{{ url_for(talk) }}">{{ talk.title }}</a></h5>
+
+                    <p>Speakers:
+                      {% for speaker in talk.speakers %}
+                        {{ m_speaker(speaker) }}
+                        {%- if not loop.last %} / {%- endif %}
+                      {% endfor %}
+                    </p>
+                  {% endfor %}
+
+              {% endfor %}
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>{% endblock %}
