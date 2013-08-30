@@ -36,8 +36,15 @@
 
 {% macro m_speaker(speaker) %}
   <a href="{{ url_for(speaker) }}">{{ speaker }}</a>
-  {% if speaker.website and speaker.organisation%}
-    (<a href="{{ speaker.website }}">{{ speaker.organisation }}</a>)
+  {% if speaker.organisation %}
+    ({{ speaker.organisation }})
   {% endif %}
 {% endmacro %}
 
+{% macro m_day_tabs(day) %}
+  <ul class="nav nav-tabs" style="margin-top: 5px; margin-bottom: 5px;">
+    <li {% if day==1 %}class="active"{% endif %}><a href="../1/">Day 1 - Thursday Oct. 3rd</a></li>
+    <li {% if day==2 %}class="active"{% endif %}><a href="../2/">Day 2 - Friday Oct. 4th</a></li>
+    <li {% if day==3 %}class="active"{% endif %}><a href="../3/">Day 3 - Saturday Oct. 5th</a></li>
+  </ul>
+{% endmacro %}

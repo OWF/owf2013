@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+
+{% from "_macros.html" import m_day_tabs, m_sidebar, m_speaker with context %}
+
+{% block main %}
+  <div class="container" style="width: 940px;">
+
+    <div class="row show-grid">
+      <div class="span12">
+
+        <div class="row show-grid clear-both">
+          <div class="span12 main-column two-columns-right">
+            <article class="plenary">
+              <h1 class="page-title">Schedule</h1>
+
+              {{ m_day_tabs(day) }}
+
+              TODO.
+
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+{% endblock %}

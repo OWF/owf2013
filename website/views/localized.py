@@ -337,6 +337,24 @@ def photo(speaker_id):
   response.headers['content-type'] = 'image/jpeg'
   return response
 
+@route("/schedule/")
+@route("/schedule/<int:day>/")
+def schedule(day=None):
+  if not day:
+    return redirect(url_for(".schedule", day=1))
+
+  if day == 1:
+    track1 = Track2.query.get(8)
+    track2 = Track2.query.get(9)
+    talks = track1.talks + track2.talks
+    talks.sort(key=lambda x: x.starts_at)
+    page = dict(title=_(u"Day 1 - Plenary session"))
+    return render_template("day1.html", day=day, page=page, talks=talks)
+
+  else:
+    page = dict(title=_(u"Day %(day)d - At a glance", day=day))
+    return render_template("day23.html", day=day, page=page, talks=[])
+
 
 @localized.errorhandler(404)
 def page_not_found(error):
