@@ -14,36 +14,36 @@
               <h1 class="page-title">{{ _("Speakers") }}</h1>
 
               {% for speaker in speakers %}
-                <div class="row" style="border-top: solid 1px #eeeeee;">
-                    <span class="span2">
-                      <img
-                          src="{{ url_for(".photo", speaker_id=speaker.id, s=150) }}">
-                    </span>
+                <div class="row" style="border-top: solid 1px #eee;">
+                  <span class="span2">
+                    <img style="border-radius: 50%;"
+                        src="{{ url_for(".photo", speaker_id=speaker.id, s=150) }}">
+                  </span>
 
-                    <span class="span7">
-                      <h2><a href="{{ url_for(speaker) }}">{{ speaker }}</a>
-                      </h2>
+                  <span class="span7">
+                    <h2><a href="{{ url_for(speaker) }}">{{ speaker }}</a>
+                    </h2>
 
-                      {% if speaker.bio %}
-                        <p>{{ speaker.bio|markdown }}</p>
-                      {% else %}
-                        <p>{{ linuxipsum() }}</p>
-                      {% endif %}
+                    {% if speaker.bio %}
+                      <p>{{ speaker.bio|markdown }}</p>
+                    {% else %}
+                      <p>{{ linuxipsum() }}</p>
+                    {% endif %}
 
-                      {% if speaker.talks %}
-                        <h3>Talks</h3>
+                    {% if speaker.talks %}
+                      <h3>Talks</h3>
 
-                        {% for talk in speaker.talks %}
-                          <p><a href="{{ url_for(talk) }}">{{ talk.title }}</a>
-                          </p>
-                        {% endfor %}
-                      {% endif %}
-                    </span>
+                      {% for talk in speaker.talks %}
+                        <p><a href="{{ url_for(talk) }}"><b>{{ talk.title }}</b></a>
+                        (Track: <a href="{{ url_for(talk.track) }}">{{ talk.track.name }}</a>)
+                        </p>
+                      {% endfor %}
+                    {% endif %}
+                  </span>
 
-                    <span class="span2 details">
-                      {{ m_speaker_details(speaker) }}
-                    </span>
-
+                  <span class="span3 details">
+                    {{ m_speaker_details(speaker) }}
+                  </span>
                 </div>
               {% endfor %}
             </article>
