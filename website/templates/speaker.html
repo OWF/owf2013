@@ -46,7 +46,7 @@
 
             <div class="span3">
               {% if speaker.photo %}
-              <img src="{{ url_for(".photo", speaker_id=speaker.id, s=250) }}">
+              <img class="speaker-img" src="{{ url_for(".photo", speaker_id=speaker.id, s=220) }}">
               {% endif %}
 
               {{ m_speaker_details(speaker) }}

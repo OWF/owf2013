@@ -241,8 +241,9 @@ body {
 }
 
 #speaker img {
-  width: 140px;
-  height: 140px;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
   background-color: white;
 }
 
