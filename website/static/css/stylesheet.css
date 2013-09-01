@@ -236,10 +236,6 @@ body {
   margin-bottom: 10px;
 }
 
-#speaker {
-  background-color: #4F5961;
-}
-
 #speaker img {
   border-radius: 50%;
   width: 220px;
@@ -247,7 +243,17 @@ body {
   background-color: white;
 }
 
-#speaker h6 {
+#home-speakers {
+  background-color: #4F5961;
+}
+
+#home-speakers img {
+  width: 140px;
+  height: 140px;
+  background-color: white;
+}
+
+#home-speakers h6 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
