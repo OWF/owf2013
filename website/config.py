@@ -35,7 +35,7 @@ ALLOWED_LANGS = ['fr', 'en']
 
 MAIN_MENU = {'fr': [('', u'Accueil'),
                     ('a-propos/', u'A propos'),
-                    ('speakers/', u"Intervenants"),
+                    ('speakers/', u"Orateurs"),
                     ('program/', u'Programme'),
                     ('lieu/', u'Lieu'),
                     ('news/', u'Actualités'),
