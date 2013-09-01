@@ -12,13 +12,13 @@
           <div class="span12 main-column two-columns-right">
             <article class="plenary">
 
-              <h1 class="page-title">Schedule</h1>
+              <h1 class="page-title">{{ _("Schedule") }}</h1>
 
               {{ m_day_tabs(day) }}
 
               <h2 class="page-title">{{ page.title }}</h2>
 
-              <p>The plenary session takes place in room "Grand Auditorium".</p>
+              <p>{{ _('The plenary session takes place in room "Grand Auditorium".') }}</p>
 
               {% for talk in talks %}
 
@@ -30,7 +30,7 @@
                   {{ talk.abstract|markdown }}
                 {% endif %}
 
-                <p>Speakers:
+                <p>{{ _("Speakers") }}:
                   {% for speaker in talk.speakers %}
                     {{ m_speaker(speaker) }}
                     {%- if not loop.last %} / {%- endif %}

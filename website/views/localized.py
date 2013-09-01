@@ -350,11 +350,22 @@ def schedule(day=None):
     return render_template("day1.html", day=day, page=page, talks=talks)
 
   else:
+    talks_by_room = []
+    rooms = Room.query.order_by(Room.capacity).all()
+    for room in rooms:
+      talks = talks_for_room_and_day(room, None)
+      talks_by_room.append([room, talks])
     page = dict(title=_(u"Day %(day)d - At a glance", day=day))
-    return render_template("day23.html", day=day, page=page, talks=[])
+    return render_template("day23.html", day=day, page=page, talks_by_room=talks_by_room)
 
 
 @localized.errorhandler(404)
 def page_not_found(error):
   page = {'title': _(u"Page not found")}
   return render_template('404.html', page=page), 404
+
+
+def talks_for_room_and_day(room, day):
+  tracks = room.tracks
+  talks = sum([track.talks for track in tracks], [])
+  return talks

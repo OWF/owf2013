@@ -11,11 +11,17 @@
         <div class="row show-grid clear-both">
           <div class="span12 main-column two-columns-right">
             <article class="plenary">
-              <h1 class="page-title">Schedule</h1>
+              <h1 class="page-title">{{ _("Schedule") }}</h1>
 
               {{ m_day_tabs(day) }}
 
-              TODO.
+              {% for room, talks in talks_by_room %}
+                <h2>{{ _("Room") }} {{ room }}</h2>
+
+                {% for talk in talks %}
+                  <p>{{ talk.title }}</p>
+                {% endfor %}
+                {% endfor %}
 
             </article>
           </div>

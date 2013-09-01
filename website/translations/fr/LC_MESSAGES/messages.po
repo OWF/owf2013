@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-08-03 09:13+0200\n"
+"POT-Creation-Date: 2013-09-01 18:34+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -65,11 +65,11 @@ msgstr "Biographie"
 msgid "Register as a participant"
 msgstr "Inscrivez-vous comme participant"
 
-#: website/registration/views.py:45
+#: website/registration/views.py:46
 msgid "This is not your email"
 msgstr "Ce n'est pas votre email"
 
-#: website/registration/views.py:70
+#: website/registration/views.py:71
 msgid ""
 "Thanks for registering to the OWF. An email has been sent to you with "
 "further instructions."
@@ -77,36 +77,15 @@ msgstr ""
 "Merci de vous être inscrit(e) à l'OWF. Un mail vous a été envoyé avec "
 "plus d'instructions."
 
-#: website/registration/views.py:89
+#: website/registration/views.py:90
 msgid "Your registration has been confirmed."
 msgstr "Votre inscription a été confirmée."
 
-#: website/registration/views.py:128
+#: website/registration/views.py:129
 msgid "Please confirm your participation at the Open World Forum 2013"
 msgstr "Veuillez confirmer votre participation à l'Open World Forum 2013"
 
-#: website/registration/templates/registration/form.html:28
-msgid ""
-"Please read the <a href='/en/schedule/'>schedule</a> if you have any "
-"question."
-msgstr ""
-"Veuillez consulter le <a href='/fr/programme/'>programme</a> si vous avez"
-" des questions."
-
-#: website/registration/templates/registration/form.html:36
-msgid "Days you are attending the OWF:"
-msgstr "Les jours où vous comptez participer à l'OWF :"
-
-#: website/registration/templates/registration/form.html:42
-#: website/registration/templates/registration/form.html:54
-msgid ""
-"Which tracks are you most interested in? (You can always change your "
-"choice later)"
-msgstr ""
-"Quelles sont les sessions qui vous intéressent le plus ? (Vous pourrez "
-"toujours changer votre choix ultérieurement.)"
-
-#: website/templates/_base.html:86 website/templates/base.html:79
+#: website/templates/_base.html:86 website/templates/base.html:76
 msgid "Search"
 msgstr "Rechercher"
 
@@ -119,52 +98,80 @@ msgid "Institutional partners"
 msgstr "Partenaires institutionnels"
 
 #: website/templates/_base.html:136
-msgid "Organizer"
-msgstr "Organisateur"
-
-#: website/templates/_base.html:142
-msgid "Co-organizers"
-msgstr "Co-organisateurs"
-
-#: website/templates/_base.html:160
-#, fuzzy
 msgid "Diamond Sponsor"
-msgstr "Sponsors Platine"
+msgstr "Sponsor Diamant"
 
-#: website/templates/_base.html:168
+#: website/templates/_base.html:144
 msgid "Platinum sponsors"
 msgstr "Sponsors Platine"
 
-#: website/templates/_base.html:177
+#: website/templates/_base.html:153
 msgid "Silver sponsors"
 msgstr "Sponsors Argent"
 
-#: website/templates/_base.html:193
+#: website/templates/_base.html:171
+msgid "Organizer"
+msgstr "Organisateur"
+
+#: website/templates/_base.html:177
+msgid "Co-organizers"
+msgstr "Co-organisateurs"
+
+#: website/templates/_base.html:195
 msgid "Press partners"
 msgstr "Partenaires presse"
 
-#: website/templates/base.html:70
-msgid "My profile"
-msgstr "Mon profil"
+#: website/templates/_macros.html:50
+msgid "Day 1 - Thursday Oct. 3rd"
+msgstr "Jour 1 - Jeudi 3 oct."
 
-#: website/templates/base.html:72
+#: website/templates/_macros.html:51
+msgid "Day 2 - Friday Oct. 4th"
+msgstr "Jour 2 - Vendredi 4 oct."
+
+#: website/templates/_macros.html:52
+msgid "Day 3 - Saturday Oct. 5th"
+msgstr "Jour 3 - Samedi 5 oct."
+
+#: website/templates/base.html:69
 msgid "Log out"
 msgstr "Déconnexion"
+
+#: website/templates/day1.html:15 website/templates/day23.html:14
+msgid "Schedule"
+msgstr "Planning"
+
+#: website/templates/day1.html:21
+msgid "The plenary session takes place in room \"Grand Auditorium\"."
+msgstr "La session plénière a lieu dans le Grand Auditorium."
+
+#: website/templates/day1.html:33 website/templates/speakers.html:14
+#: website/views/localized.py:302
+msgid "Speakers"
+msgstr "Orateurs"
+
+#: website/templates/day23.html:19
+msgid "Room"
+msgstr "Salle"
 
 #: website/templates/index.html:31 website/templates/index.html:45
 #: website/templates/index.html:59
 msgid "Learn more"
 msgstr "En savoir plus"
 
-#: website/templates/index.html:71
+#: website/templates/index.html:72
 msgid "Some speakers"
 msgstr "Quelques orateurs"
 
-#: website/templates/index.html:124
+#: website/templates/index.html:75
+msgid "All the speakers"
+msgstr "Tous les orateurs"
+
+#: website/templates/index.html:147
 msgid "Latest news"
 msgstr "Dernières nouvelles"
 
-#: website/templates/index.html:128
+#: website/templates/index.html:151
 msgid "All the latest news"
 msgstr "Toutes les nouvelles"
 
@@ -180,11 +187,16 @@ msgstr ""
 msgid "Recent items"
 msgstr ""
 
+#: website/templates/program.html:50 website/templates/speaker.html:35
+#: website/templates/track.html:43 website/views/localized.py:263
+msgid "Talks"
+msgstr "Présentations"
+
 #: website/templates/search.html:13
-msgid "Résultat(s) de recherche"
+msgid "Résultat de la recherche"
 msgstr ""
 
-#: website/templates/search.html:15 website/views/localized.py:204
+#: website/templates/search.html:15 website/views/localized.py:220
 msgid "Search results"
 msgstr ""
 
@@ -195,6 +207,14 @@ msgstr ""
 #: website/templates/search.html:26
 msgid "Your request didn't produce any results."
 msgstr ""
+
+#: website/templates/speaker.html:25
+msgid "Track leader on"
+msgstr "Track leader sur"
+
+#: website/templates/track.html:14
+msgid "Track: {}"
+msgstr "Session: {}"
 
 #: website/templates/crm/home.html:7
 msgid "Recent activities in the CRM application"
@@ -342,15 +362,42 @@ msgstr ""
 msgid "Delete attachment?"
 msgstr ""
 
-#: website/views/localized.py:123
+#: website/views/localized.py:139
 msgid "News"
 msgstr "Actualités"
 
-#: website/views/localized.py:195
+#: website/views/localized.py:211
 msgid "Site map"
 msgstr "Plan du site"
 
-#: website/views/localized.py:214
+#: website/views/localized.py:234 website/views/localized.py:252
+msgid "Program"
+msgstr ""
+
+#: website/views/localized.py:250
+#, python-format
+msgid "Program for theme %(theme)s"
+msgstr "Programme du thème %(theme)s"
+
+#: website/views/localized.py:273
+msgid "Rooms"
+msgstr "Salles"
+
+#: website/views/localized.py:288
+#, python-format
+msgid "Program for room %(room)s"
+msgstr "Programme de la salle %(room)s"
+
+#: website/views/localized.py:349
+msgid "Day 1 - Plenary session"
+msgstr "Jour 1 - Session plénière"
+
+#: website/views/localized.py:358
+#, python-format
+msgid "Day %(day)d - At a glance"
+msgstr "Jour %(day)s - Vue d'ensemble"
+
+#: website/views/localized.py:364
 msgid "Page not found"
 msgstr "Page introuvable"
 
