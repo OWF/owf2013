@@ -678,6 +678,7 @@ ul#theme li label {
 }
 
 #schedule .popover {
+  width: 350px;
   max-width: 350px;
 }
 
