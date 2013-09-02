@@ -34,7 +34,7 @@ Sponsors We are happy to announce their support for the Open World Forum 2013.
 HP is supporting us as a silver sponsor and Le Groupe La Poste will support the Open World Forum 2013 through a 
 sponsoring of the Open CIO Summit.
 
-###Think - Plenary Session
+###THINK - Plenary Session
 
 For this 6th edition, the 3rd October will be dedicated to a unique plenary session, on the following themes:
 FLOSS Global Heads of Policy; Open Source Testimonial: CTO; The Future of Open Source Foundations; Cloud Orchestration 
@@ -49,7 +49,7 @@ Python, Ruby, PHP, Smalltalk & much more.
 
 <a href="http://act.osdc.fr/osdc2013fr/cfp.html" target="_blank">Take a look at the Call for Participation.</a>
 
-###Experiment
+###EXPERIMENT
 
 The program for the EXPERIMENT part is taking shape. We are planning conferences about Open-Hardware and Internet & 
 Liberties, KidEXPERIMENT and a lot more workshops and animations such as the availability of a <a href="http://pirateboxfr.com/" target="_blank">Piratebox</a>
