@@ -20,8 +20,8 @@
               <table id="schedule">
                 <tr>
                   {% for room in rooms %}
-                    <td><a
-                        href="{{ url_for(room) }}">{{ _("Room") }} {{ room }}</a>
+                    <td class="text-center"><b><a class="text-center"
+                        href="{{ url_for(room) }}">{{ _("Room") }} {{ room }}</a></b>
                     </td>
                   {% endfor %}
                 </tr>
@@ -32,22 +32,27 @@
                       <td>
                         {% for talk in cell %}
                           <a class="talk-detail" data-toggle="popover"
-                              data-trigger="hover"
-                              data-placement="right"
+                              data-trigger="hover" data-placement="right"
                               data-content="{{ talk.abstract }}"
                               title="{{ talk.title }}"
                               data-original-title="{{ talk.title }}"
                               style="text-decoration: none; color: black;">
-                          <div
-                              class="start-time">{{ talk.starts_at.strftime("%H:%M") }}</div>
+                            <div
+                                class="start-time">{{ talk.starts_at.strftime("%H:%M") }}</div>
 
                             <div><b>{{ talk.title }}</b></div>
                             <div>{% for speaker in talk.speakers %}
                               {{ speaker }} {% endfor %}</div>
                           </a>
-                          <a href="{{ url_for(talk) }}"
-                              class="btn btn-small">{{ _("More info") }}</a>
-                          <hr>
+                          <div class="text-center" style="margin-top: 10px;">
+                            <a href="{{ url_for(talk) }}"
+                                class="btn btn-small">{{ _("More info") }}</a>
+                          </div>
+
+                          {% if not loop.last %}
+                            <div class="hr"
+                                style="margin-top: 10px; margin-bottom: 10px;"></div>
+                          {% endif %}
                         {% endfor %}
                       </td>
                     {% endfor %}

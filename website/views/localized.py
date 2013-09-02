@@ -372,9 +372,7 @@ def schedule(day=None):
         t += dt
       time_table.append(column)
 
-    pprint(time_table)
     time_table = zip(*time_table)
-    pprint(time_table)
 
     page = dict(title=_(u"Day %(day)d - At a glance", day=day))
     return render_template("day23.html", day=day, page=page, rooms=rooms, time_table=time_table)
