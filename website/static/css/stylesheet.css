@@ -392,7 +392,6 @@ body {
   margin: 18px 0;
 }
 
-
 /* Footer */
 
 #footer-links {
@@ -473,12 +472,12 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2em;
   color: #FFFFFF;
-  margin-bottom: 0  ;
+  margin-bottom: 0;
 }
 
 #application-content {
   /*font-family: 'Open Sans Condensed', sans-serif;*/
-  font-family: 'Arial',serif;
+  font-family: 'Arial', serif;
   font-size: 1.2em;
   color: #ffffff;
   margin-bottom: 20px;
@@ -536,6 +535,7 @@ body {
 .domain .btn {
   font-size: 16px;
 }
+
 /*   news.html | news-items.html   */
 .news {
   margin-top: 40px;
@@ -635,4 +635,20 @@ ul#theme li label {
 
 #speakers .details p {
   text-align: left;
+}
+
+/* Schedule */
+
+#schedule {
+  border-collapse:collapse;
+  width: 1200px;
+}
+
+#schedule, #schedule tr, #schedule td {
+  border: 1px solid black;
+}
+
+#schedule td {
+  width: 150px;
+  vertical-align: top;
 }

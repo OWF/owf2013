@@ -15,13 +15,45 @@
 
               {{ m_day_tabs(day) }}
 
-              {% for room, talks in talks_by_room %}
-                <h2>{{ _("Room") }} {{ room }}</h2>
+              <h2>{{ page.title }}</h2>
 
-                {% for talk in talks %}
-                  <p>{{ talk.title }}</p>
+              <table id="schedule">
+                <tr>
+                  {% for room in rooms %}
+                    <td><a
+                        href="{{ url_for(room) }}">{{ _("Room") }} {{ room }}</a>
+                    </td>
+                  {% endfor %}
+                </tr>
+
+                {% for row in time_table %}
+                  <tr>
+                    {% for cell in row %}
+                      <td>
+                        {% for talk in cell %}
+                          <a class="talk-detail" data-toggle="popover"
+                              data-trigger="hover"
+                              data-placement="right"
+                              data-content="{{ talk.abstract }}"
+                              title="{{ talk.title }}"
+                              data-original-title="{{ talk.title }}"
+                              style="text-decoration: none; color: black;">
+                          <div
+                              class="start-time">{{ talk.starts_at.strftime("%H:%M") }}</div>
+
+                            <div><b>{{ talk.title }}</b></div>
+                            <div>{% for speaker in talk.speakers %}
+                              {{ speaker }} {% endfor %}</div>
+                          </a>
+                          <a href="{{ url_for(talk) }}"
+                              class="btn btn-small">{{ _("More info") }}</a>
+                          <hr>
+                        {% endfor %}
+                      </td>
+                    {% endfor %}
+                  </tr>
                 {% endfor %}
-                {% endfor %}
+              </table>
 
             </article>
           </div>
@@ -30,5 +62,11 @@
     </div>
     <hr>
   </div>
+
+  <script>
+    $(function() {
+      $('.talk-detail').popover();
+    });
+  </script>
 
 {% endblock %}

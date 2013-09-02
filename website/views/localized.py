@@ -6,6 +6,7 @@ from cStringIO import StringIO
 from itertools import groupby
 import mimetypes
 from os.path import join, exists
+from pprint import pprint
 import random
 import re
 import datetime
@@ -347,16 +348,36 @@ def schedule(day=None):
     track = Track2.query.get(8)
     talks = sorted(track.talks, key=lambda x: x.starts_at)
     page = dict(title=_(u"Day 1 - Plenary session"))
-    return render_template("day1.html", day=day, page=page, talks=talks)
+    summit = Track2.query.get(6)
+    openstack = Track2.query.get(30)
+    return render_template("day1.html", day=day, page=page, talks=talks,
+                           summit=summit, openstack=openstack)
 
   else:
     talks_by_room = []
-    rooms = Room.query.order_by(Room.capacity).all()
+    rooms = Room.query.order_by(Room.capacity.desc()).all()
     for room in rooms:
       talks = talks_for_room_and_day(room, None)
       talks_by_room.append([room, talks])
+
+    time_table = []
+    for room in rooms:
+      column = []
+      talks = talks_for_room_and_day(room, None)
+      t = datetime.datetime(2013, 10, 2+day, 9, 0)
+      dt = datetime.timedelta(minutes=60)
+      while t < datetime.datetime(2013, 10, 2+day, 20, 0):
+        talks_for_slot = [ talk for talk in talks if t <= talk.starts_at < t+dt]
+        column.append(talks_for_slot)
+        t += dt
+      time_table.append(column)
+
+    pprint(time_table)
+    time_table = zip(*time_table)
+    pprint(time_table)
+
     page = dict(title=_(u"Day %(day)d - At a glance", day=day))
-    return render_template("day23.html", day=day, page=page, talks_by_room=talks_by_room)
+    return render_template("day23.html", day=day, page=page, rooms=rooms, time_table=time_table)
 
 
 @localized.errorhandler(404)
@@ -368,4 +389,5 @@ def page_not_found(error):
 def talks_for_room_and_day(room, day):
   tracks = room.tracks
   talks = sum([track.talks for track in tracks], [])
+  talks = [ talk for talk in talks if talk.starts_at ]
   return talks
