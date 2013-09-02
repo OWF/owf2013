@@ -33,6 +33,7 @@ Talks:
 from datetime import timedelta
 
 import logging
+from markdown import markdown
 from abilian.core.extensions import db
 from sqlalchemy.orm import relationship, deferred
 from sqlalchemy.schema import Column, ForeignKey, Table, UniqueConstraint
@@ -186,3 +187,7 @@ class Talk(Entity, ValidationMixin):
       return self.starts_at
     else:
       return self.starts_at + timedelta(minutes=self.duration)
+
+  @property
+  def abstract_rendered(self):
+    return markdown(self.abstract)

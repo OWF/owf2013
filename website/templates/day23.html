@@ -30,29 +30,39 @@
                   <tr>
                     {% for cell in row %}
                       <td>
-                        {% for talk in cell %}
-                          <a class="talk-detail" data-toggle="popover"
-                              data-trigger="hover" data-placement="right"
-                              data-content="{{ talk.abstract }}"
-                              title="{{ talk.title }}"
-                              data-original-title="{{ talk.title }}"
-                              style="text-decoration: none; color: black;">
-                            <div
-                                class="start-time">{{ talk.starts_at.strftime("%H:%M") }}</div>
+                        {% if cell.track %}
+                          <div
+                              class="track track{{ cell.track.id }}">{{ _("Track") }}: {{ cell.track }}</div>
+                        {% endif %}
 
-                            <div><b>{{ talk.title }}</b></div>
-                            <div>{% for speaker in talk.speakers %}
-                              {{ speaker }} {% endfor %}</div>
-                          </a>
-                          <div class="text-center" style="margin-top: 10px;">
-                            <a href="{{ url_for(talk) }}"
-                                class="btn btn-small">{{ _("More info") }}</a>
+                        {% for talk in cell.talks %}
+                          <div class="talk track{{ talk.track.id }}">
+                            <a class="talk-detail" data-toggle="popover"
+                                data-trigger="hover"
+                                data-placement="right"
+                                data-content="{{ talk.abstract_rendered }}"
+                                title="{{ talk.title }}"
+                                data-html="true"
+                                data-original-title="{{ talk.title }}"
+                                style="text-decoration: none; color: black;">
+                              <div
+                                  class="start-time">{{ talk.starts_at.strftime("%H:%M") }}</div>
+
+                              <div><b>{{ talk.title }}</b></div>
+                              <div>{% for speaker in talk.speakers %}
+                                {{ speaker }} {% endfor %}</div>
+                            </a>
+
+                            <div class="text-center" style="margin-top: 10px;">
+                              <a href="{{ url_for(talk) }}"
+                                  class="btn btn-mini">{{ _("More info") }}</a>
+                            </div>
+
+                            {% if not loop.last %}
+                              <div class="hr"
+                                  style="margin-top: 10px; margin-bottom: 10px;"></div>
+                            {% endif %}
                           </div>
-
-                          {% if not loop.last %}
-                            <div class="hr"
-                                style="margin-top: 10px; margin-bottom: 10px;"></div>
-                          {% endif %}
                         {% endfor %}
                       </td>
                     {% endfor %}

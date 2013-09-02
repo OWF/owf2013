@@ -368,7 +368,12 @@ def schedule(day=None):
       dt = datetime.timedelta(minutes=60)
       while t < datetime.datetime(2013, 10, 2+day, 20, 0):
         talks_for_slot = [ talk for talk in talks if t <= talk.starts_at < t+dt]
-        column.append(talks_for_slot)
+        track = None
+        if talks_for_slot:
+          if t <= talks_for_slot[0].track.starts_at < t+dt:
+            track = talks_for_slot[0].track
+        cell = {'track': track, 'talks': talks_for_slot}
+        column.append(cell)
         t += dt
       time_table.append(column)
 

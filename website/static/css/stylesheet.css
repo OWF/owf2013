@@ -640,7 +640,7 @@ ul#theme li label {
 /* Schedule */
 
 #schedule {
-  border-collapse:collapse;
+  border-collapse: collapse;
   width: 1200px;
 }
 
@@ -651,4 +651,232 @@ ul#theme li label {
 #schedule td {
   width: 150px;
   vertical-align: top;
+  padding: 0;
 }
+
+#schedule .track {
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: 1px solid black;
+  background-color: lightgrey;
+  padding: 3px;
+}
+
+#schedule .talk {
+  padding: 3px;
+}
+
+#schedule .popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+
+#schedule .popover {
+  max-width: 350px;
+}
+
+#schedule .track0 { background-color: #a1ffec; }
+
+#schedule .track1 { background-color: #52d3dd; }
+
+#schedule .track2 { background-color: #e2f777; }
+
+#schedule .track3 { background-color: #c9c3f1; }
+
+#schedule .track4 { background-color: #d494e7; }
+
+#schedule .track5 { background-color: #83a9dd; }
+
+#schedule .track6 { background-color: #d593d1; }
+
+#schedule .track7 { background-color: #b2a8f5; }
+
+#schedule .track8 { background-color: #bfe6c2; }
+
+#schedule .track9 { background-color: #fd17fc; }
+
+#schedule .track10 { background-color: #b89fb2; }
+
+#schedule .track11 { background-color: #f665f3; }
+
+#schedule .track12 { background-color: #e3ccb4; }
+
+#schedule .track13 { background-color: #e2bed3; }
+
+#schedule .track14 { background-color: #e98397; }
+
+#schedule .track15 { background-color: #c0ff53; }
+
+#schedule .track16 { background-color: #d1ce99; }
+
+#schedule .track17 { background-color: #fea1a6; }
+
+#schedule .track18 { background-color: #aafa62; }
+
+#schedule .track19 { background-color: #faffc8; }
+
+#schedule .track20 { background-color: #f32bf9; }
+
+#schedule .track21 { background-color: #e6babc; }
+
+#schedule .track22 { background-color: #e278be; }
+
+#schedule .track23 { background-color: #e5f78b; }
+
+#schedule .track24 { background-color: #cdea84; }
+
+#schedule .track25 { background-color: #f8e71f; }
+
+#schedule .track26 { background-color: #ca55f4; }
+
+#schedule .track27 { background-color: #ecdeeb; }
+
+#schedule .track28 { background-color: #d281e7; }
+
+#schedule .track29 { background-color: #eeebf8; }
+
+#schedule .track30 { background-color: #a0e3f4; }
+
+#schedule .track31 { background-color: #43c7ef; }
+
+#schedule .track32 { background-color: #f0e6f5; }
+
+#schedule .track33 { background-color: #aaccb4; }
+
+#schedule .track34 { background-color: #a29fcd; }
+
+#schedule .track35 { background-color: #ccf483; }
+
+#schedule .track36 { background-color: #fbba81; }
+
+#schedule .track37 { background-color: #c7e75e; }
+
+#schedule .track38 { background-color: #e99aa6; }
+
+#schedule .track39 { background-color: #78f5c6; }
+
+#schedule .track40 { background-color: #cc83b3; }
+
+#schedule .track41 { background-color: #d585aa; }
+
+#schedule .track42 { background-color: #f2a9b6; }
+
+#schedule .track43 { background-color: #d0d081; }
+
+#schedule .track44 { background-color: #9e73ff; }
+
+#schedule .track45 { background-color: #dbd3a4; }
+
+#schedule .track46 { background-color: #f2a5b6; }
+
+#schedule .track47 { background-color: #7df684; }
+
+#schedule .track48 { background-color: #cee9cb; }
+
+#schedule .track49 { background-color: #d2ceb4; }
+
+#schedule .track50 { background-color: #8dcba5; }
+
+#schedule .track51 { background-color: #80b6fd; }
+
+#schedule .track52 { background-color: #f06be6; }
+
+#schedule .track53 { background-color: #c488d5; }
+
+#schedule .track54 { background-color: #59fef3; }
+
+#schedule .track55 { background-color: #deb37c; }
+
+#schedule .track56 { background-color: #ccbfe8; }
+
+#schedule .track57 { background-color: #fa96a3; }
+
+#schedule .track58 { background-color: #c7cf99; }
+
+#schedule .track59 { background-color: #c5ec9a; }
+
+#schedule .track60 { background-color: #f5ec8e; }
+
+#schedule .track61 { background-color: #dab59d; }
+
+#schedule .track62 { background-color: #e4f29d; }
+
+#schedule .track63 { background-color: #c8a4dc; }
+
+#schedule .track64 { background-color: #6feed1; }
+
+#schedule .track65 { background-color: #85eed1; }
+
+#schedule .track66 { background-color: #b9be95; }
+
+#schedule .track67 { background-color: #c2f9ea; }
+
+#schedule .track68 { background-color: #9df195; }
+
+#schedule .track69 { background-color: #c4c8ba; }
+
+#schedule .track70 { background-color: #dcdade; }
+
+#schedule .track71 { background-color: #ead1ed; }
+
+#schedule .track72 { background-color: #e3f94c; }
+
+#schedule .track73 { background-color: #9578f8; }
+
+#schedule .track74 { background-color: #c370c6; }
+
+#schedule .track75 { background-color: #d79af7; }
+
+#schedule .track76 { background-color: #ff49fe; }
+
+#schedule .track77 { background-color: #80ffad; }
+
+#schedule .track78 { background-color: #cbb3d2; }
+
+#schedule .track79 { background-color: #79cac1; }
+
+#schedule .track80 { background-color: #67f6a9; }
+
+#schedule .track81 { background-color: #34edf2; }
+
+#schedule .track82 { background-color: #86bce8; }
+
+#schedule .track83 { background-color: #97bbb2; }
+
+#schedule .track84 { background-color: #abb4de; }
+
+#schedule .track85 { background-color: #fdf318; }
+
+#schedule .track86 { background-color: #cae4ba; }
+
+#schedule .track87 { background-color: #dbe294; }
+
+#schedule .track88 { background-color: #84d89d; }
+
+#schedule .track89 { background-color: #ec80fe; }
+
+#schedule .track90 { background-color: #f05eec; }
+
+#schedule .track91 { background-color: #c78cc1; }
+
+#schedule .track92 { background-color: #27eae5; }
+
+#schedule .track93 { background-color: #8eea94; }
+
+#schedule .track94 { background-color: #f5fa87; }
+
+#schedule .track95 { background-color: #9e96ea; }
+
+#schedule .track96 { background-color: #c5c9c8; }
+
+#schedule .track97 { background-color: #9fd8f9; }
+
+#schedule .track98 { background-color: #d988c3; }
+
+#schedule .track99 { background-color: #c4aaf1; }
