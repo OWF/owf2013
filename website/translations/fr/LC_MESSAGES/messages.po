@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-01 18:34+0200\n"
+"POT-Creation-Date: 2013-09-02 16:17+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -141,18 +141,26 @@ msgstr "Déconnexion"
 msgid "Schedule"
 msgstr "Planning"
 
+#: website/templates/day1.html:19
+msgid "Plenary session"
+msgstr "Session plénière"
+
 #: website/templates/day1.html:21
 msgid "The plenary session takes place in room \"Grand Auditorium\"."
 msgstr "La session plénière a lieu dans le Grand Auditorium."
 
 #: website/templates/day1.html:33 website/templates/speakers.html:14
-#: website/views/localized.py:302
+#: website/views/localized.py:303
 msgid "Speakers"
 msgstr "Orateurs"
 
-#: website/templates/day23.html:19
+#: website/templates/day23.html:24
 msgid "Room"
 msgstr "Salle"
+
+#: website/templates/day23.html:49
+msgid "More info"
+msgstr ""
 
 #: website/templates/index.html:31 website/templates/index.html:45
 #: website/templates/index.html:59
@@ -188,7 +196,7 @@ msgid "Recent items"
 msgstr ""
 
 #: website/templates/program.html:50 website/templates/speaker.html:35
-#: website/templates/track.html:43 website/views/localized.py:263
+#: website/templates/track.html:43 website/views/localized.py:264
 msgid "Talks"
 msgstr "Présentations"
 
@@ -196,7 +204,7 @@ msgstr "Présentations"
 msgid "Résultat de la recherche"
 msgstr ""
 
-#: website/templates/search.html:15 website/views/localized.py:220
+#: website/templates/search.html:15 website/views/localized.py:221
 msgid "Search results"
 msgstr ""
 
@@ -235,9 +243,8 @@ msgid "Cancel"
 msgstr ""
 
 #: website/templates/crm/list_view.html:5
-#, fuzzy
 msgid "Create New"
-msgstr "Dernières nouvelles"
+msgstr ""
 
 #: website/templates/crm/list_view.html:19
 msgid "Export to Excel"
@@ -342,9 +349,8 @@ msgid "Edit"
 msgstr ""
 
 #: website/templates/crm/projet_partenaire_view_widget.html:66
-#, fuzzy
 msgid "Remove partner?"
-msgstr "Nos partenaires"
+msgstr ""
 
 #: website/templates/crm/view_with_attachments.html:4
 msgid "Attachments"
@@ -362,42 +368,42 @@ msgstr ""
 msgid "Delete attachment?"
 msgstr ""
 
-#: website/views/localized.py:139
+#: website/views/localized.py:140
 msgid "News"
 msgstr "Actualités"
 
-#: website/views/localized.py:211
+#: website/views/localized.py:212
 msgid "Site map"
 msgstr "Plan du site"
 
-#: website/views/localized.py:234 website/views/localized.py:252
+#: website/views/localized.py:235 website/views/localized.py:253
 msgid "Program"
 msgstr ""
 
-#: website/views/localized.py:250
+#: website/views/localized.py:251
 #, python-format
 msgid "Program for theme %(theme)s"
 msgstr "Programme du thème %(theme)s"
 
-#: website/views/localized.py:273
+#: website/views/localized.py:274
 msgid "Rooms"
 msgstr "Salles"
 
-#: website/views/localized.py:288
+#: website/views/localized.py:289
 #, python-format
 msgid "Program for room %(room)s"
 msgstr "Programme de la salle %(room)s"
 
-#: website/views/localized.py:349
+#: website/views/localized.py:350
 msgid "Day 1 - Plenary session"
 msgstr "Jour 1 - Session plénière"
 
-#: website/views/localized.py:358
+#: website/views/localized.py:377
 #, python-format
 msgid "Day %(day)d - At a glance"
-msgstr "Jour %(day)s - Vue d'ensemble"
+msgstr "Jour %(day)d - Vue d'ensemble"
 
-#: website/views/localized.py:364
+#: website/views/localized.py:383
 msgid "Page not found"
 msgstr "Page introuvable"
 
