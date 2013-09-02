@@ -1,15 +1,20 @@
 {% extends "_base.html" %}
 
 {% block extra_head -%}
-    <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="noindex, nofollow">
 {%- endblock extra_head %}
 
 {% block main %}
-{% filter markdown %}
+
+  <div class="container" style="width: 940px;">
+
+    {% filter markdown %}
 ## This is embarrasing
 
 The webpage you requested could not be found.
 
-Please try a little harder, or <a href="/fr/a-propos/contact/">tell us</a>.
-{% endfilter %}
+Please try a little harder, or <a href="/fr/contact/">tell us</a>.
+    {% endfilter %}
+
+  </div>
 {% endblock main %}
