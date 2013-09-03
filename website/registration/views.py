@@ -2,7 +2,7 @@ from itsdangerous import URLSafeSerializer
 from datetime import datetime
 from markupsafe import Markup
 from flask import g, Blueprint, render_template, request, flash, redirect, \
-    url_for, current_app as app, session
+  url_for, current_app as app, session
 from flask.ext.babel import lazy_gettext as _l, gettext as _
 from flask.ext.mail import Message
 
@@ -29,7 +29,7 @@ def display_form():
   tracks = Track.query.all()
   print g.lang
   return render_template("registration/form.html",
-                         page=page, tracks=tracks, form=form)
+                         page=page, tracks=tracks, form=form, lang="en")
 
 
 @route('/', methods=['POST'])
@@ -40,12 +40,15 @@ def submit_form():
   form = make_registration_form_class()(request.form)
   if form.validate():
     email = form.email.data.strip()
-    registration = Registration.query.filter(Registration.email == email).first()
+    registration = Registration.query.filter(
+        Registration.email == email).first()
     if registration:
       if not email in session.get('email', {}):
         flash(_("This is not your email"), 'error')
         page = dict(title="Submit your proposal")
-        return render_template("registration/form.html", page=page, form=form, tracks=tracks)
+        return render_template("registration/form.html",
+                               lang="en", page=page, form=form,
+                               tracks=tracks)
     else:
       registration = Registration()
       if 'email' in session:
@@ -68,8 +71,7 @@ def submit_form():
     db.session.add(registration)
     db.session.commit()
     msg = Markup(
-      _(
-        u"Thanks for registering to the OWF. An email has been sent to you "
+      _(u"Thanks for registering to the OWF. An email has been sent to you "
         u"with further instructions."))
     flash(msg, "success")
     send_confirmation_email(registration)
@@ -77,7 +79,8 @@ def submit_form():
 
   else:
     page = dict(title="Submit your proposal")
-    return render_template("registration/form.html", page=page, form=form)
+    return render_template("registration/form.html",
+                           page=page, form=form, lang="en")
 
 
 @route('/confirm/<token>')
@@ -91,13 +94,12 @@ def confirmation(token):
   return redirect("/")
 
 
-
-
 # @route('/confirmation/<token>')
 # def confirmation_form(token):
 #   form = make_confirmation_form_class()()
 #   page = dict(title=_l(u"Confirm your participation"))
-#   return render_template("registration/confirmation.html", page=page, form=form)
+#   return render_template("registration/confirmation.html", page=page,
+# form=form)
 #
 #
 # @route('/confirmation/', methods=['POST'])
@@ -126,9 +128,10 @@ def send_confirmation_email(registration):
   token = serializer.dumps(registration.email)
   body = render_template("registration/email/confirmation_fr.txt",
                          registration=registration, token=token)
-  msg = Message(_("Please confirm your participation at the Open World Forum 2013"),
-                body=body,
-                sender="sf@abilian.com",
-                recipients=recipients)
+  msg = Message(
+    _("Please confirm your participation at the Open World Forum 2013"),
+    body=body,
+    sender="sf@abilian.com",
+    recipients=recipients)
   print msg
   mail.send(msg)

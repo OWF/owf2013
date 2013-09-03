@@ -136,7 +136,7 @@ def image(path):
     data = output.getvalue()
 
   response = make_response(data)
-  response.headers['content-type'] = mimetypes.guess_type(path)
+  response.headers['content-type'] = mimetypes.guess_type(path)[0]
   return response
 
 

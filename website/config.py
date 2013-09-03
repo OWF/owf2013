@@ -41,7 +41,7 @@ MAIN_MENU = {'fr': [('', u'Accueil'),
                     ('espace-expo/', u'Exposition'),
                     ('partners/', u'Partenaires'),
                     #('news/', u'Actualités'),
-                    ('../registration/', u'Inscription', 'menu-registration')],
+                    ('/registration/', u'Inscription', 'menu-registration')],
              'en': [('', u'Home'),
                     #('about/', u'About'),
                     ('speakers/', u"Speakers"),
@@ -50,7 +50,7 @@ MAIN_MENU = {'fr': [('', u'Accueil'),
                     ('exhibiton-area/', u'Exhibition'),
                     ('partners/', u'Partners'),
                     #('news/', u'News'),
-                    ('../registration/', u'Registration', 'menu-registration')]}
+                    ('/registration/', u'Registration', 'menu-registration')]}
 
 IMAGE_SIZES = {
     'small': (300, 180),

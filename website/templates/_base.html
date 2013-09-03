@@ -92,7 +92,12 @@
   <div id="menu-nav-div" class="navbar" role="navigation">
     <ul id="menu-nav" class="nav">
       {% for entry in menu %}
-        <li><a href="{{ url_for("localized.home") }}{{ entry.path }}"
+        {% if entry.path.startswith("/") %}
+          {% set url=entry.path %}
+        {% else %}
+          {% set url=url_for("localized.home") + entry.path %}
+        {% endif %}
+        <li><a href="{{ url }}"
             class="{{ entry.class }}">{{ entry.label }}</a></li>
       {% endfor %}
     </ul>
