@@ -34,18 +34,20 @@ SECTION_MAX_LINKS = 12
 ALLOWED_LANGS = ['fr', 'en']
 
 MAIN_MENU = {'fr': [('', u'Accueil'),
-                    ('a-propos/', u'A propos'),
+                    #('a-propos/', u'A propos'),
                     ('speakers/', u"Orateurs"),
                     ('program/', u'Programme'),
                     ('lieu/', u'Lieu'),
-                    ('news/', u'Actualités'),
+                    ('espace-expo/', u'Exposition'),
+                    #('news/', u'Actualités'),
                     ('../registration/', u'Inscription', 'menu-registration')],
              'en': [('', u'Home'),
-                    ('about/', u'About'),
+                    #('about/', u'About'),
                     ('speakers/', u"Speakers"),
                     ('program/', u'Schedule'),
                     ('venue/', u'Venue'),
-                    ('news/', u'News'),
+                    ('exhibiton-area/', u'Exhibition'),
+                    #('news/', u'News'),
                     ('../registration/', u'Registration', 'menu-registration')]}
 
 IMAGE_SIZES = {

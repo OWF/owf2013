@@ -99,13 +99,13 @@ class Speaker(Entity, ValidationMixin):
 
   name = _name
 
-  @property
-  def has_bio(self):
-    return not not self.bio
-
-  @property
-  def has_photo(self):
-    return not not self.photo
+  # @property
+  # def has_bio(self):
+  #   return not not self.bio
+  #
+  # @property
+  # def has_photo(self):
+  #   return not not self.photo
 
 
 class Room(Entity, ValidationMixin):
