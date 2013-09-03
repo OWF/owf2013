@@ -74,7 +74,7 @@ class SpeakerEditForm(ModelForm):
                            validators=[required()])
 
   title = TextField(u'Title', filters=(strip,),
-                    validators=[required()])
+                    validators=[optional()])
 
   bio = TextAreaField(u'Biography', validators=[optional()])
 
