@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-02 16:17+0200\n"
+"POT-Creation-Date: 2013-09-03 11:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,11 +152,23 @@ msgstr ""
 msgid "Speakers"
 msgstr ""
 
-#: website/templates/day23.html:24
+#: website/templates/day23.html:20
+msgid "All tracks for today"
+msgstr ""
+
+#: website/templates/day23.html:32 website/templates/day23.html:44
 msgid "Room"
 msgstr ""
 
-#: website/templates/day23.html:49
+#: website/templates/day23.html:38
+msgid "Time table"
+msgstr ""
+
+#: website/templates/day23.html:56
+msgid "Track"
+msgstr ""
+
+#: website/templates/day23.html:79
 msgid "More info"
 msgstr ""
 
@@ -396,12 +408,12 @@ msgstr ""
 msgid "Day 1 - Plenary session"
 msgstr ""
 
-#: website/views/localized.py:377
+#: website/views/localized.py:384
 #, python-format
 msgid "Day %(day)d - At a glance"
 msgstr ""
 
-#: website/views/localized.py:383
+#: website/views/localized.py:391
 msgid "Page not found"
 msgstr ""
 

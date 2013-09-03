@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-02 16:17+0200\n"
+"POT-Creation-Date: 2013-09-03 11:55+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -154,13 +154,25 @@ msgstr "La session plénière a lieu dans le Grand Auditorium."
 msgid "Speakers"
 msgstr "Orateurs"
 
-#: website/templates/day23.html:24
+#: website/templates/day23.html:20
+msgid "All tracks for today"
+msgstr "Toutes les sessions du jour"
+
+#: website/templates/day23.html:32 website/templates/day23.html:44
 msgid "Room"
 msgstr "Salle"
 
-#: website/templates/day23.html:49
+#: website/templates/day23.html:38
+msgid "Time table"
+msgstr "Horaires"
+
+#: website/templates/day23.html:56
+msgid "Track"
+msgstr "Session"
+
+#: website/templates/day23.html:79
 msgid "More info"
-msgstr ""
+msgstr "Plus d'info"
 
 #: website/templates/index.html:31 website/templates/index.html:45
 #: website/templates/index.html:59
@@ -378,7 +390,7 @@ msgstr "Plan du site"
 
 #: website/views/localized.py:235 website/views/localized.py:253
 msgid "Program"
-msgstr ""
+msgstr "Programme"
 
 #: website/views/localized.py:251
 #, python-format
@@ -398,12 +410,12 @@ msgstr "Programme de la salle %(room)s"
 msgid "Day 1 - Plenary session"
 msgstr "Jour 1 - Session plénière"
 
-#: website/views/localized.py:377
+#: website/views/localized.py:384
 #, python-format
 msgid "Day %(day)d - At a glance"
 msgstr "Jour %(day)d - Vue d'ensemble"
 
-#: website/views/localized.py:383
+#: website/views/localized.py:391
 msgid "Page not found"
 msgstr "Page introuvable"
 
