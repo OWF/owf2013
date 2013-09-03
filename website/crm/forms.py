@@ -73,6 +73,9 @@ class SpeakerEditForm(ModelForm):
   organisation = TextField(u'Organisation', filters=(strip,),
                            validators=[required()])
 
+  title = TextField(u'Title', filters=(strip,),
+                    validators=[required()])
+
   bio = TextAreaField(u'Biography', validators=[optional()])
 
   photo = ImageField('Photo', validators=[optional()])
@@ -90,8 +93,8 @@ class SpeakerEditForm(ModelForm):
 
   _groups = [
     ["Speaker",
-     ['salutation', 'first_name', 'last_name', 'email', 'telephone', 'organisation',
-      'bio', 'photo']],
+     ['salutation', 'first_name', 'last_name', 'email', 'telephone',
+      'organisation', 'title', 'bio', 'photo']],
     ["Additional details",
      ['website', 'twitter_handle', 'github_handle', 'sourceforge_handle']],
   ]

@@ -70,6 +70,9 @@ class Speaker(Entity, ValidationMixin):
   organisation = Column(UnicodeText, nullable=True,
                         info={'searchable': True, 'label': u'Organisation'})
 
+  title = Column(UnicodeText, nullable=True,
+                        info={'searchable': True, 'label': u'Title'})
+
   email = Column(EmailAddress,
                  info={'label': 'E-mail'})
 
