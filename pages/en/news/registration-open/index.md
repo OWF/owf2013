@@ -2,7 +2,7 @@ title : Registration is now open
 date: 2013/08/28
 
 
-###Come prepared & Register
+###Come prepared &amp; Register
 
 It is now possible to [register](/registration/) for the Open World Forum 2013 !
 
@@ -10,7 +10,7 @@ A first version of the program is also online, take a look at this year's tracks
 
 ###Inria Exclusive Diamond Sponsor!
 
-<a href="/en/sponsors/#inria" target="_blank"> <img alt="Inria" src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg"></a>
+<a href="/en/partners/#inria" target="_blank"> <img alt="Inria" src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg"></a>
 
 We are glad to announce Inria as our Diamond sponsor for this 6th edition !
 
@@ -28,8 +28,8 @@ resources.
 By supporting the Open World Forum 2013, Inria confirms its involvement in the Free and Open Source Community.
 Sponsors We are happy to announce their support for the Open World Forum 2013.
 
-<a href="/en/sponsors/#hp" target="_blank"><img alt='HP' src="/static/pictures/sponsors/Hewlett-Packard_logoSponsor.png"/></a>
-<a href="http://legroupe.laposte.fr/" target="_blank"><img alt='La Poste' src="/static/pictures/sponsors/Groupe-Laposte_logoSponsor.png"/></a>
+<a href="/en/partners/#hp" target="_blank"><img alt='HP' src="/static/pictures/partners/Hewlett-Packard_logoSponsor.png"/></a>
+<a href="http://legroupe.laposte.fr/" target="_blank"><img alt='La Poste' src="/static/pictures/partners/Groupe-Laposte_logoSponsor.png"/></a>
 
 HP is supporting us as a silver sponsor and Le Groupe La Poste will support the Open World Forum 2013 through a 
 sponsoring of the Open CIO Summit.
