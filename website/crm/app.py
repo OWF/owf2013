@@ -1,4 +1,5 @@
 # coding=utf-8
+from abilian.web.search import TextSearchCriterion
 
 from abilian.web.frontend import Module, CRUDApp
 
@@ -21,6 +22,12 @@ class TalkProposals(Module):
 
   edit_form_class = TalkProposalEditForm
 
+  search_criterions = (
+    TextSearchCriterion("name",
+                        attributes=('title', 'speaker_name'),
+                        search_fmt=[u'{q}%', u'{q}%']),
+  )
+
 
 class Speakers(Module):
   managed_class = Speaker
@@ -40,6 +47,12 @@ class Speakers(Module):
   related_views = [
     (u'Talks', 'talks', ('title', 'track', 'starts_at', 'duration')),
   ]
+
+  search_criterions = (
+    TextSearchCriterion("name",
+                        attributes=('first_name', 'last_name'),
+                        search_fmt=[u'{q}%', u'{q}%']),
+  )
 
 
 class Rooms(Module):
@@ -78,6 +91,12 @@ class Tracks(Module):
     (u'Talks', 'talks', ('title', 'starts_at', 'duration')),
   ]
 
+  search_criterions = (
+    TextSearchCriterion("name",
+                        attributes=('name',),
+                        search_fmt=[u'{q}%']),
+  )
+
 
 class Talks(Module):
   managed_class = Talk
@@ -96,6 +115,12 @@ class Talks(Module):
   related_views = [
     (u'Speakers', 'speakers', ('first_name', 'last_name')),
   ]
+
+  search_criterions = (
+    TextSearchCriterion("name",
+                        attributes=('title',),
+                        search_fmt=[u'{q}%']),
+  )
 
 
 #
