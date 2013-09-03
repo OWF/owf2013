@@ -361,6 +361,7 @@ def schedule(day=None):
       talks_by_room.append([room, talks])
 
     time_table = []
+    tracks = []
     for room in rooms:
       column = []
       talks = talks_for_room_and_day(room, None)
@@ -372,6 +373,7 @@ def schedule(day=None):
         if talks_for_slot:
           if t <= talks_for_slot[0].track.starts_at < t+dt:
             track = talks_for_slot[0].track
+            tracks.append(track)
         cell = {'track': track, 'talks': talks_for_slot}
         column.append(cell)
         t += dt
@@ -380,7 +382,8 @@ def schedule(day=None):
     time_table = zip(*time_table)
 
     page = dict(title=_(u"Day %(day)d - At a glance", day=day))
-    return render_template("day23.html", day=day, page=page, rooms=rooms, time_table=time_table)
+    return render_template("day23.html", day=day, page=page,
+                           rooms=rooms, time_table=time_table, tracks=tracks)
 
 
 @localized.errorhandler(404)
