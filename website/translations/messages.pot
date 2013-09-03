@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-03 11:55+0200\n"
+"POT-Creation-Date: 2013-09-03 22:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: website/crm/forms.py:109 website/crm/forms.py:114
+#: website/crm/forms.py:112 website/crm/forms.py:117
 msgid "Only PNG or JPG image files are accepted"
 msgstr ""
 
-#: website/crm/forms.py:122
+#: website/crm/forms.py:125
 msgid "Could not decode image file"
 msgstr ""
 
@@ -49,7 +49,7 @@ msgstr ""
 msgid "Last name"
 msgstr ""
 
-#: website/registration/forms.py:51
+#: website/registration/forms.py:51 website/templates/_macros.html:30
 msgid "Organization"
 msgstr ""
 
@@ -65,21 +65,21 @@ msgstr ""
 msgid "Register as a participant"
 msgstr ""
 
-#: website/registration/views.py:46
+#: website/registration/views.py:47
 msgid "This is not your email"
 msgstr ""
 
-#: website/registration/views.py:71
+#: website/registration/views.py:74
 msgid ""
 "Thanks for registering to the OWF. An email has been sent to you with "
 "further instructions."
 msgstr ""
 
-#: website/registration/views.py:90
+#: website/registration/views.py:93
 msgid "Your registration has been confirmed."
 msgstr ""
 
-#: website/registration/views.py:129
+#: website/registration/views.py:132
 msgid "Please confirm your participation at the Open World Forum 2013"
 msgstr ""
 
@@ -87,47 +87,55 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: website/templates/_base.html:111
+#: website/templates/_base.html:116
 msgid "Our partners"
 msgstr ""
 
-#: website/templates/_base.html:118
+#: website/templates/_base.html:123
 msgid "Institutional partners"
 msgstr ""
 
-#: website/templates/_base.html:136
+#: website/templates/_base.html:141
 msgid "Diamond Sponsor"
 msgstr ""
 
-#: website/templates/_base.html:144
+#: website/templates/_base.html:149
 msgid "Platinum sponsors"
 msgstr ""
 
-#: website/templates/_base.html:153
+#: website/templates/_base.html:158
 msgid "Silver sponsors"
 msgstr ""
 
-#: website/templates/_base.html:171
+#: website/templates/_base.html:176
 msgid "Organizer"
 msgstr ""
 
-#: website/templates/_base.html:177
+#: website/templates/_base.html:182
 msgid "Co-organizers"
 msgstr ""
 
-#: website/templates/_base.html:195
+#: website/templates/_base.html:200
 msgid "Press partners"
 msgstr ""
 
-#: website/templates/_macros.html:50
+#: website/templates/_macros.html:26
+msgid "Title"
+msgstr ""
+
+#: website/templates/_macros.html:34
+msgid "Website"
+msgstr ""
+
+#: website/templates/_macros.html:58
 msgid "Day 1 - Thursday Oct. 3rd"
 msgstr ""
 
-#: website/templates/_macros.html:51
+#: website/templates/_macros.html:59
 msgid "Day 2 - Friday Oct. 4th"
 msgstr ""
 
-#: website/templates/_macros.html:52
+#: website/templates/_macros.html:60
 msgid "Day 3 - Saturday Oct. 5th"
 msgstr ""
 

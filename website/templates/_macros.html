@@ -22,12 +22,16 @@
 {% endmacro %}
 
 {% macro m_speaker_details(speaker) %}
+  {% if speaker.title %}
+    <p><b>{{ _("Title") }}:</b> {{ speaker.title }}</p>
+  {% endif %}
+
   {% if speaker.organisation %}
-    <p><b>Organization:</b> {{ speaker.organisation }}</p>
+    <p><b>{{ _("Organization") }}:</b> {{ speaker.organisation }}</p>
   {% endif %}
 
   {% if speaker.website %}
-    <p><b>Website</b>: <a href="{{ speaker.website }}">{{ speaker.website }}</a>
+    <p><b>{{ _("Website") }}</b>: <a href="{{ speaker.website }}">{{ speaker.website }}</a>
     </p>
   {% endif %}
 
@@ -41,7 +45,11 @@
 {% macro m_speaker(speaker) %}
   <a href="{{ url_for(speaker) }}">{{ speaker }}</a>
   {% if speaker.organisation %}
-    ({{ speaker.organisation }})
+    {% if speaker.title %}
+      ({{ speaker.title, speaker.organisation }})
+    {% else %}
+      ({{ speaker.organisation }})
+    {% endif %}
   {% endif %}
 {% endmacro %}
 
