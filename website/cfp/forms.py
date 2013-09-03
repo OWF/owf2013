@@ -33,7 +33,7 @@ THEMES = [
   # Experiment
   "EXPERIMENT : Experiment",
   # Trash
-  "TRASH",
+  "OTHER",
 ]
 THEMES = [(x, x) for x in THEMES]
 
