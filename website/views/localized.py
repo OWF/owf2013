@@ -396,4 +396,5 @@ def talks_for_room_and_day(room, day):
   tracks = room.tracks
   talks = sum([track.talks for track in tracks], [])
   talks = [ talk for talk in talks if talk.starts_at ]
+  talks.sort(key=lambda x: x.starts_at)
   return talks

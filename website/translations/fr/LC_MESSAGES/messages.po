@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-03 22:54+0200\n"
+"POT-Creation-Date: 2013-09-04 20:49+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -163,22 +163,30 @@ msgid "Speakers"
 msgstr "Orateurs"
 
 #: website/templates/day23.html:20
+msgid ""
+"We're currently putting up the schedule - watch this space! Many thanks "
+"for your patience."
+msgstr ""
+"Nous finalisons le programme en ce moment - revenez souvent sur cette "
+"page ! Merci pour votre patience."
+
+#: website/templates/day23.html:22
 msgid "All tracks for today"
 msgstr "Toutes les sessions du jour"
 
-#: website/templates/day23.html:32 website/templates/day23.html:44
+#: website/templates/day23.html:34 website/templates/day23.html:46
 msgid "Room"
 msgstr "Salle"
 
-#: website/templates/day23.html:38
+#: website/templates/day23.html:40
 msgid "Time table"
 msgstr "Horaires"
 
-#: website/templates/day23.html:56
+#: website/templates/day23.html:58
 msgid "Track"
 msgstr "Session"
 
-#: website/templates/day23.html:79
+#: website/templates/day23.html:81
 msgid "More info"
 msgstr "Plus d'info"
 
