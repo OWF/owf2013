@@ -1,6 +1,6 @@
 title: Our partners
 
-Meet the a name="top">Sponsors</a> and <a href="/partners/#orga">Organizers</a> of the Open World Forum
+Meet the <a name="top">Sponsors</a> and <a href="/partners/#orga">Organizers</a> of the Open World Forum
 
 
 
