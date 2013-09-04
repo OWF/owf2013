@@ -46,7 +46,7 @@
   <a href="{{ url_for(speaker) }}">{{ speaker }}</a>
   {% if speaker.organisation %}
     {% if speaker.title %}
-      ({{ speaker.title, speaker.organisation }})
+      ({{ speaker.title }}, {{ speaker.organisation }})
     {% else %}
       ({{ speaker.organisation }})
     {% endif %}
