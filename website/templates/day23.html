@@ -41,6 +41,7 @@
 
               <table id="schedule">
                 <tr>
+                  <td></td>
                   {% for room in rooms %}
                     <td class="text-center"><b><a class="text-center"
                         href="{{ url_for(room) }}">{{ _("Room") }} {{ room }}</a></b>
@@ -50,6 +51,7 @@
 
                 {% for row in time_table %}
                   <tr>
+                    <td>{{ loop.index0+9 }}h-{{ loop.index0+10 }}h</td>
                     {% for cell in row %}
                       <td>
                         {% if cell.track %}
