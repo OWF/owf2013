@@ -94,7 +94,7 @@ class Tracks(Module):
   search_criterions = (
     TextSearchCriterion("name",
                         attributes=('name',),
-                        search_fmt=[u'{q}%']),
+                        search_fmt=[u'%{q}%']),
   )
 
 
@@ -119,7 +119,7 @@ class Talks(Module):
   search_criterions = (
     TextSearchCriterion("name",
                         attributes=('title',),
-                        search_fmt=[u'{q}%']),
+                        search_fmt=[u'%{q}%']),
   )
 
 

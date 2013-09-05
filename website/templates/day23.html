@@ -45,6 +45,8 @@
                   {% for room in rooms %}
                     <td class="text-center"><b><a class="text-center"
                         href="{{ url_for(room) }}">{{ _("Room") }} {{ room }}</a></b>
+                      <br>
+                      <span class="text-center">({{ room.capacity }} {{ _("seats") }})</span>
                     </td>
                   {% endfor %}
                 </tr>
