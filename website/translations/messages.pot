@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-04 20:49+0200\n"
+"POT-Creation-Date: 2013-09-05 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,7 +156,7 @@ msgid "The plenary session takes place in room \"Grand Auditorium\"."
 msgstr ""
 
 #: website/templates/day1.html:33 website/templates/speakers.html:14
-#: website/views/localized.py:303
+#: website/templates/track.html:57 website/views/localized.py:305
 msgid "Speakers"
 msgstr ""
 
@@ -170,7 +170,8 @@ msgstr ""
 msgid "All tracks for today"
 msgstr ""
 
-#: website/templates/day23.html:34 website/templates/day23.html:46
+#: website/templates/day23.html:34 website/templates/day23.html:47
+#: website/templates/track.html:18
 msgid "Room"
 msgstr ""
 
@@ -178,11 +179,11 @@ msgstr ""
 msgid "Time table"
 msgstr ""
 
-#: website/templates/day23.html:58
+#: website/templates/day23.html:60
 msgid "Track"
 msgstr ""
 
-#: website/templates/day23.html:81
+#: website/templates/day23.html:83
 msgid "More info"
 msgstr ""
 
@@ -220,7 +221,7 @@ msgid "Recent items"
 msgstr ""
 
 #: website/templates/program.html:50 website/templates/speaker.html:35
-#: website/templates/track.html:43 website/views/localized.py:264
+#: website/templates/track.html:41 website/views/localized.py:266
 msgid "Talks"
 msgstr ""
 
@@ -228,7 +229,7 @@ msgstr ""
 msgid "Résultat de la recherche"
 msgstr ""
 
-#: website/templates/search.html:15 website/views/localized.py:221
+#: website/templates/search.html:15 website/views/localized.py:223
 msgid "Search results"
 msgstr ""
 
@@ -246,6 +247,34 @@ msgstr ""
 
 #: website/templates/track.html:14
 msgid "Track: {}"
+msgstr ""
+
+#: website/templates/track.html:16
+msgid "Theme"
+msgstr ""
+
+#: website/templates/track.html:20
+msgid "On"
+msgstr ""
+
+#: website/templates/track.html:20
+msgid "from"
+msgstr ""
+
+#: website/templates/track.html:20
+msgid "to"
+msgstr ""
+
+#: website/templates/track.html:51
+msgid "At"
+msgstr ""
+
+#: website/templates/track.html:54
+msgid "Duration"
+msgstr ""
+
+#: website/templates/track.html:54
+msgid "minutes"
 msgstr ""
 
 #: website/templates/crm/home.html:7
@@ -396,38 +425,38 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: website/views/localized.py:212
+#: website/views/localized.py:214
 msgid "Site map"
 msgstr ""
 
-#: website/views/localized.py:235 website/views/localized.py:253
+#: website/views/localized.py:237 website/views/localized.py:255
 msgid "Program"
 msgstr ""
 
-#: website/views/localized.py:251
+#: website/views/localized.py:253
 #, python-format
 msgid "Program for theme %(theme)s"
 msgstr ""
 
-#: website/views/localized.py:274
+#: website/views/localized.py:276
 msgid "Rooms"
 msgstr ""
 
-#: website/views/localized.py:289
+#: website/views/localized.py:291
 #, python-format
 msgid "Program for room %(room)s"
 msgstr ""
 
-#: website/views/localized.py:350
+#: website/views/localized.py:352
 msgid "Day 1 - Plenary session"
 msgstr ""
 
-#: website/views/localized.py:384
+#: website/views/localized.py:386
 #, python-format
 msgid "Day %(day)d - At a glance"
 msgstr ""
 
-#: website/views/localized.py:391
+#: website/views/localized.py:393
 msgid "Page not found"
 msgstr ""
 
