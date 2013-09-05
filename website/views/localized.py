@@ -158,6 +158,8 @@ def image_for_news(slug):
   file_path = join(app.root_path, "..", "pages", g.lang, "news", slug, "image.png")
   if not exists(file_path):
     file_path = join(app.root_path, "..", "pages", g.lang, "news", slug, "image.jpg")
+  if not exists(file_path):
+    file_path = join(app.root_path, "..", "pages", g.lang, "news", slug, "image.gif")
 
   if not exists(file_path):
     file_path = join(app.root_path, "static", "pictures", "actu.png")
