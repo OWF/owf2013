@@ -25,7 +25,7 @@ class TalkProposals(Module):
   search_criterions = (
     TextSearchCriterion("name",
                         attributes=('title', 'speaker_name'),
-                        search_fmt=[u'{q}%', u'{q}%']),
+                        search_fmt=[u'%{q}%', u'{q}%']),
   )
 
 
