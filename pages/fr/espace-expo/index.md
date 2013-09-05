@@ -20,7 +20,7 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 <a href="http://af83.com/" target="_blank" ><img src="/static/pictures/partners/af83_logoSponsor2.png" alt="af83"></a>
 
-<a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/partners/ogo_aw_rvb_copie.png" alt="Alter Way"> </a>
+<a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/partners/logo_aw_rvb_copie.png" alt="Alter Way"> </a>
 
 ###H
 
@@ -36,5 +36,5 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 ###X
 
-<a href="http://www.xwiki.org/xwiki/bin/view/Main/WebHome" target="_blank"><img src="/static/pictures/partners/logo-xwiki.png" alt="xWiki"> </a>
+<a href="http://www.xwiki.org/xwiki/bin/view/Main/WebHome" target="_blank"><img src="/static/pictures/partners/logo-xwiki.png" alt="xWiki" width="160"> </a>
 
