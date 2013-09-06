@@ -1,4 +1,5 @@
 title : 30th GNU anniversary
+date: 2013/09/06
 
 ###John Sullivan at #OWF13 for GNU's 30th anniversary! 
 
