@@ -1,4 +1,5 @@
 title : « Le saviez-vous ? Votre ordinateur est plein de Logiciels Libres ! »
+date: 2013/09/05
 
 
 Le logiciel libre, quézako ? Ce nom, a priori barbare, fait pourtant partie du quotidien de tous et est en réalité, un 
