@@ -8,6 +8,13 @@
 
     <div class="row show-grid">
       <div class="span12">
+
+        <h1>{{ _("Registration") }}</h1>
+
+        <p>
+          {{ _("Participation to the Open Wolrd Forum is free but you must register beforehand to be able to participate.") }}
+        </p>
+
         {% if session.get('lang') == 'fr' %}
           <iframe
               src="https://www.weezevent.com/widget_billeterie.php?id_evenement=42230&amp;lg_billetterie=1&amp;code=28696&amp;cas=1"

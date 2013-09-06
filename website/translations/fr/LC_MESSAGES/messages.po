@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-05 14:12+0200\n"
+"POT-Creation-Date: 2013-09-06 12:18+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -84,6 +84,18 @@ msgstr "Votre inscription a été confirmée."
 #: website/registration/views.py:132
 msgid "Please confirm your participation at the Open World Forum 2013"
 msgstr "Veuillez confirmer votre participation à l'Open World Forum 2013"
+
+#: website/registration/templates/registration/form.html:12
+msgid "Registration"
+msgstr "Inscription"
+
+#: website/registration/templates/registration/form.html:15
+msgid ""
+"Participation to the Open Wolrd Forum is free but you must register "
+"beforehand to be able to participate."
+msgstr ""
+"La participation à l'Open World Forum est gratuite, mais vous devez "
+"obigatoirement vous inscrire à l'avance afin de pouvoir participer."
 
 #: website/templates/_base.html:86 website/templates/base.html:76
 msgid "Search"
@@ -183,11 +195,15 @@ msgstr "Salle"
 msgid "Time table"
 msgstr "Horaires"
 
-#: website/templates/day23.html:60
+#: website/templates/day23.html:49
+msgid "seats"
+msgstr ""
+
+#: website/templates/day23.html:62
 msgid "Track"
 msgstr "Session"
 
-#: website/templates/day23.html:83
+#: website/templates/day23.html:85
 msgid "More info"
 msgstr "Plus d'info"
 
@@ -204,11 +220,11 @@ msgstr "Quelques orateurs"
 msgid "All the speakers"
 msgstr "Tous les orateurs"
 
-#: website/templates/index.html:147
+#: website/templates/index.html:128
 msgid "Latest news"
 msgstr "Dernières nouvelles"
 
-#: website/templates/index.html:151
+#: website/templates/index.html:132
 msgid "All the latest news"
 msgstr "Toutes les nouvelles"
 
