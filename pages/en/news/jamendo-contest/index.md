@@ -1,4 +1,5 @@
 title : Win with Jamendo
+date: 2013/09/04
 
 What if artists gave users complete freedom to download their music for free? Well Jamendo lets them do exactly that, 
 with over 370,000 tracks available. This music website is an open community for musicians and artists. Furthermore, 
