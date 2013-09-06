@@ -19,7 +19,7 @@ GNU Emacs user after first trying it out in 1996, and contributes code to severa
 
 Prior to the FSF, John worked as a college debate team instructor for both Harvard and Michigan State University.
 
-####Want to listen to him, <a href="http://www.openworldforum.org/registration/" target="_blank">Register as soon as possible!
+####Want to listen to him, <a href="http://www.openworldforum.org/registration/" target="_blank">Register as soon as possible!</a>
 
 ###Booths at #OWF13
 
