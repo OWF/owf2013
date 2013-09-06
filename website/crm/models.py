@@ -35,7 +35,7 @@ from datetime import timedelta
 import logging
 from markdown import markdown
 from abilian.core.extensions import db
-from sqlalchemy.orm import relationship, deferred
+from sqlalchemy.orm import relationship, deferred, backref
 from sqlalchemy.schema import Column, ForeignKey, Table, UniqueConstraint
 from sqlalchemy.types import UnicodeText, DateTime, Integer, LargeBinary
 from savalidation import ValidationMixin
@@ -169,7 +169,8 @@ class Talk(Entity, ValidationMixin):
   __tablename__ = 'talk'
 
   track_id = Column(ForeignKey(Track2.id), nullable=False)
-  track = relationship(Track2, backref="talks")
+  track = relationship(Track2,
+                       backref=backref("talks", order_by=lambda: Talk.starts_at))
 
   speakers = relationship(Speaker, secondary=speaker_to_talk,
                           backref='talks')

@@ -13,9 +13,11 @@
             <article>
               <h1 class="page-title">{{ _("Track: {}").format(track.name) }}</h1>
 
-              <p>{{ _("Theme") }}: <a href="{{ url_for(track.theme) }}">{{ track.theme }}</a></p>
+              <p>{{ _("Theme") }}: <a
+                  href="{{ url_for(track.theme) }}">{{ track.theme }}</a></p>
 
-              <p>{{ _("Room") }}: <a href="{{ url_for(track.room) }}">{{ track.room }}</a></p>
+              <p>{{ _("Room") }}: <a
+                  href="{{ url_for(track.room) }}">{{ track.room }}</a></p>
 
               <p>{{ _("On") }}: {{ track.starts_at|dateformat }}, {{ _("from") }} {{ track.starts_at.strftime("%H:%M") }} {{ _("to") }} {{ track.ends_at.strftime("%H:%M") }}</p>
 
@@ -45,11 +47,12 @@
               {% for talk in track.talks %}
 
                 <a id="talk_{{ talk.id }}"></a>
-                <h3>{{ talk.title }}</h3>
+                <h3>
+                  {% if talk.starts_at %}
+                    {{ talk.starts_at.strftime("%H:%M") }} -
+                  {% endif %}
+                  {{ talk.title }}</h3>
 
-                {% if talk.starts_at %}
-                  <p>{{ _("At") }} {{ talk.starts_at.strftime("%H:%M") }}
-                {% endif %}
                 {% if talk.duration %}
                   <p>{{ _("Duration") }}: {{ talk.duration }} {{ _("minutes") }}</p>
                 {% endif %}
