@@ -122,19 +122,6 @@
 
          $('.js-widget').each(Abilian.init_js_widget);
 
-         $('.collapsable').collapse(
-             { show: function() {
-                   this.animate({ opacity: 'toggle',
-                                 height:  'toggle'
-                                }, 150);
-               },
-               hide: function() {
-                   this.animate({ opacity: 'toggle',
-                                  height:  'toggle'
-                                }, 150);
-               }
-             });
-
          $(".datepicker").datepicker({weekStart: 1});
 
          $(".timepicker").timepicker({defaultTime: "10:00", minuteStep: 15})

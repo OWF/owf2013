@@ -45,7 +45,8 @@ class Speakers(Module):
   edit_form_class = SpeakerEditForm
 
   related_views = [
-    (u'Talks', 'talks', ('title', 'track', 'starts_at', 'duration')),
+    (u'Talks', 'talks', (
+      dict(name='title', linkable=True), 'track', 'starts_at', 'duration')),
   ]
 
   search_criterions = (
@@ -68,7 +69,8 @@ class Rooms(Module):
   edit_form_class = RoomEditForm
 
   related_views = [
-    (u'Tracks', 'tracks', ('name', 'starts_at', 'ends_at')),
+    (u'Tracks', 'tracks',
+     (dict(name='name', linkable=True), 'starts_at', 'ends_at')),
   ]
 
 
@@ -88,7 +90,8 @@ class Tracks(Module):
   edit_form_class = TrackEditForm
 
   related_views = [
-    (u'Talks', 'talks', ('title', 'starts_at', 'duration')),
+    (u'Talks', 'talks',
+     (dict(name='title', linkable=True), 'starts_at', 'duration')),
   ]
 
   search_criterions = (
