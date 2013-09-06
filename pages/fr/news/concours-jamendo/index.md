@@ -1,4 +1,5 @@
 title : Gagnez avec Jamendo
+date: 2013/09/04
 
 En tant que maillon essentiel de la culture libre, Jamendo est un partenaire régulier de l'événement : ils se joignent 
 à nouveau à l'OWF 2013 pour vous permettre d'être le compositeur du **jingle officiel de l'événement** !
