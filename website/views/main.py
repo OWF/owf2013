@@ -8,6 +8,7 @@ import mimetypes
 from os.path import join
 from PIL import Image
 import datetime
+from icalendar import Calendar, Event
 from werkzeug.exceptions import NotFound
 from abilian.services.image import crop_and_resize
 
@@ -155,6 +156,9 @@ def sitemap_xml():
   return response
 
 
+#
+# API
+#
 @main.route('api/talks')
 def talks():
   all_talks = Talk.query.all()
@@ -192,3 +196,49 @@ def speakers():
     } for speaker in all_speakers
   ]
   return jsonify(speakers=all_speakers)
+
+
+@main.route('ical/talks.ics')
+def talks_ics():
+  cal = Calendar()
+  cal.add('prodid', '-//Open World Forum//openworldforum.org//')
+  cal.add('version', '2.0')
+  for talk in Talk.query.all():
+    if talk.starts_at:
+      event = Event()
+      event.add('summary', talk.title)
+      event.add('dtstart', talk.starts_at)
+      event.add('dtend', talk.ends_at)
+      event.add('dtstamp', talk.starts_at)
+      event['uid'] = 'talk-%d@openworkforum.org' % talk.id
+      event.add('priority', 5)
+      cal.add_component(event)
+
+  result = StringIO()
+  result.write(cal.to_ical())
+  response = make_response(result.getvalue())
+  response.headers['content-type'] = 'text/calendar'
+  return response
+
+
+@main.route('ical/tracks.ics')
+def tracks_ics():
+  cal = Calendar()
+  cal.add('prodid', '-//Open World Forum//openworldforum.org//')
+  cal.add('version', '2.0')
+  for track in Track2.query.all():
+    if track.starts_at:
+      event = Event()
+      event.add('summary', track.name)
+      event.add('dtstart', track.starts_at)
+      event.add('dtend', track.ends_at)
+      event.add('dtstamp', track.starts_at)
+      event['uid'] = 'track-%d@openworkforum.org' % track.id
+      event.add('priority', 5)
+      cal.add_component(event)
+
+  result = StringIO()
+  result.write(cal.to_ical())
+  response = make_response(result.getvalue())
+  response.headers['content-type'] = 'text/calendar'
+  return response
