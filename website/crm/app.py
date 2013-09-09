@@ -1,12 +1,23 @@
 # coding=utf-8
-from abilian.web.search import TextSearchCriterion
+from flask import g
+from flask.ext.login import current_user
 
-from abilian.web.frontend import Module, CRUDApp
+from abilian.web.search import TextSearchCriterion
+from abilian.web.frontend import Module as BaseModule, CRUDApp
+
+from website.cfp.forms import TalkProposalEditForm
+from website.cfp.models import TalkProposal
 
 from .forms import SpeakerEditForm, RoomEditForm, TrackEditForm, TalkEditForm
 from .models import Speaker, Room, Track2, Talk
-from website.cfp.forms import TalkProposalEditForm
-from website.cfp.models import TalkProposal
+
+
+def allow_delete():
+  return current_user.is_authenticated()
+
+
+class Module(BaseModule):
+  view_options = {'allow_delete': allow_delete}
 
 
 class TalkProposals(Module):
