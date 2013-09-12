@@ -12,9 +12,11 @@ Meet the <a name="top">Sponsors</a> and <a href="/partners/#orga">Organizers</a>
 
 **Inria**, a public research institute in computational sciences, aims to guarantee a maximum impact from its R&D 
 results. It contributes to innovation within France by transferring its technologies and skills to industry. 
+
 Inria has a range of schemes to promote technology transfer, including a programme specifically aimed at SMEs, 
 strategic partnerships with R&D departments of major industrial groups, and support for business start-ups. A team of 
 professionals is on hand to support researchers and entrepreneurs in the development of their value-added projects. 
+
 Through its nationwide computational sciences technology transfer initiatives, Inria supports French competitiveness 
 and the development of innovative businesses.
 
