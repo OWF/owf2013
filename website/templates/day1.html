@@ -43,8 +43,8 @@
               {% for track_id in [4, 6, 30, 34] %}
                 {% set track = get_track(track_id) %}
 
-                <h3>{{ track.starts_at.strftime("%H:%M") }}
-                  - {{ track.name }}</h3>
+                <h3><a href="{{ url_for(track) }}">{{ track.starts_at.strftime("%H:%M") }}
+                  - {{ track.name }}</a></h3>
 
                 <p>{{ track.description|markdown }}</p>
               {% endfor %}
