@@ -35,7 +35,9 @@ Pierre Queinnec, 2013 President
 
 ###Under the Patronage of 
 
+<img alt="Ministère du redressement productif" src="/static/pictures/ministèere du redressepment.png">
 
+<img alt="DGCIS" src="/static/pictures/dgcis.png">
 
 ###Sponsors
 
@@ -43,14 +45,17 @@ We are glad to announce their support to the 6th edition of the OWF.
 
 ####Platinium Sponsor 
 
-
+<img alt="suze-microsoft" src="/static/pictures/suze-microsoft.jpg">
 
 ####Gold Sponsor 
 
-
+<img alt="red hat" src="/static/pictures/redhat.jpg">
 
 ####Silver Sponsors 
 
+<img alt="stackoverflow" src="/static/pictures/partners/stackoverflow careers20-logo.png">
+
+<img alt="elasticsearch" src="/static/pictures/elastic_logo_green.png">
 
 ###Booths at #OWF13
 
