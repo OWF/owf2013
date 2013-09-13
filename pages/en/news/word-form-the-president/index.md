@@ -38,3 +38,37 @@ Pierre Queinnec, 2013 President
 
 
 ###Sponsors
+
+We are glad to announce their support to the 6th edition of the OWF.
+
+####Platinium Sponsor 
+
+
+
+####Gold Sponsor 
+
+
+
+####Silver Sponsors 
+
+
+###Booths at #OWF13
+
+It is still possible to book a space at the Open World Forum, please [contact us](mailto:participation@openworldforum.org).
+
+###THINK
+####Education Job & FLOSS 
+
+The second edition of the  Education, Job & FLOSS think tank will start with a roundtable during the <a href="http://openworldforum.org/fr/schedule/1/" target="_blank">plenary</a>.
+
+**14h40 Digital Training against the shortage of IT specialist and massive unemployment: mission impossible ?** 
+Self-training, Mooc, professional learning, newest training forms... Where we are today and are we ready for the future ?
+
+Speakers: <a href="http://www.openworldforum.org/fr/speakers/7/" target="_blank">Philippe Montarges</a> (Alter Way) / 
+<a href="http://www.openworldforum.org/{{lang}}/speakers/26/" target="_blank">Roberto Di Cosmo (IRILL) / 
+Kwame Yamgnane (Vice President, Ecole 42) / 
+Jean-Marie Gilliot (Professor and Researcher at Télécom Bretagne and Head of the MOOC working group at the 
+Mines-Télécom Institute) / Fatiha Gas (Chairman, ESIEA Paris).
+
+
+
