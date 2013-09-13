@@ -1,5 +1,5 @@
 title : THINK - Education Job & FLOSS
-date: 2013/09/13
+date: 2013/09/12
 
 The second edition of the  Education, Job & FLOSS think tank will start with a roundtable during the <a href="http://openworldforum.org/fr/schedule/1/" target="_blank">plenary</a>.
 
