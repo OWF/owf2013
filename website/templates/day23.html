@@ -24,15 +24,15 @@
               <ul>
                 {% for track in tracks %}
                   <li style="list-style: none;">
-                    <span
-                      class="track{{ track.id }}"
-                      style="border: 1px solid black; width: 100px; height: 10px;">
+                    <span class="track{{ track.id }}"
+                        style="border: 1px solid black; width: 100px; height: 10px;">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </span>
                     &nbsp;
                     <a href="#track-{{ track.id }}">{{ track.name }}</a>
                     ({{ _("Room") }} {{ track.room }},
                     {{ track.starts_at.strftime("%H:%M") }}-{{ track.ends_at.strftime("%H:%M") }})
+                    - <a href="#details-{{ track.id }}">{{ _("details") }}</a>
                   </li>
                 {% endfor %}
               </ul>
@@ -46,14 +46,17 @@
                     <td class="text-center"><b><a class="text-center"
                         href="{{ url_for(room) }}">{{ _("Room") }} {{ room }}</a></b>
                       <br>
-                      <span class="text-center">({{ room.capacity }} {{ _("seats") }})</span>
+                      <span
+                          class="text-center">({{ room.capacity }} {{ _("seats") }})</span>
                     </td>
                   {% endfor %}
                 </tr>
 
                 {% for row in time_table %}
                   <tr>
-                    <td><span style="width: 55px; text-wrap: none; text-align: right;">{{ loop.index0+9 }}h-{{ loop.index0+10 }}h</span></td>
+                    <td><span
+                        style="width: 55px; text-wrap: none; text-align: right;">{{ loop.index0+9 }}h-{{ loop.index0+10 }}h</span>
+                    </td>
                     {% for cell in row %}
                       <td>
                         {% if cell.track %}
@@ -65,11 +68,9 @@
                         {% for talk in cell.talks %}
                           <div class="talk track{{ talk.track.id }}">
                             <a class="talk-detail" data-toggle="popover"
-                                data-trigger="hover"
-                                data-placement="bottom"
+                                data-trigger="hover" data-placement="bottom"
                                 data-content="{{ talk.abstract_rendered }}"
-                                title="{{ talk.title }}"
-                                data-html="true"
+                                title="{{ talk.title }}" data-html="true"
                                 data-original-title="{{ talk.title }}"
                                 style="text-decoration: none; color: black;">
                               <div
@@ -97,6 +98,31 @@
                 {% endfor %}
               </table>
 
+
+              <h3>{{ _("Tracks details") }}</h3>
+
+              {% for track in tracks %}
+                <hr>
+                <a id="details-{{ track.id }}"></a>
+                <h4><a href="{{ url_for(track) }}">{{ track.name }}</a></h4>
+
+                <p>Theme: <a
+                    href="{{ url_for(track.theme) }}">{{ track.theme }}</a>
+                </p>
+
+                <p>Room: <a
+                    href="{{ url_for(track.room) }}">{{ track.room }}</a>
+                </p>
+
+                <p>From: {{ track.starts_at.strftime("%H:%M") }}
+                  to {{ track.ends_at.strftime("%H:%M") }}</p>
+
+                <p>
+                  {{ track.description|markdown }}
+                </p>
+
+                <p><a class="btn" href="{{ url_for(track) }}">{{ _("More info") }}</a></p>
+              {% endfor %}
             </article>
           </div>
         </div>
