@@ -1,4 +1,5 @@
 title: Open World Forum 2013 The Best Edition. Ever.
+date: 2013/09/13
 
 ###A word from the OWF2013 President
 
