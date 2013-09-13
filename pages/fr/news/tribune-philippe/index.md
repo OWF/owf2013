@@ -1,4 +1,5 @@
 title : L’Open Source, levier de croissance du numérique français?
+date: 2013/09/12
 
 Aujourd’hui les économies budgétaires liées à l’utilisation de solutions Open Source par les DSI des entreprises et 
 du secteur public sont un des facteurs qui poussent à l’adoption de ce modèle. Dans les faits, mesurer précisément les 
