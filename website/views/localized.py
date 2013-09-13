@@ -350,10 +350,13 @@ def schedule(day=None):
     track = Track2.query.get(8)
     talks = sorted(track.talks, key=lambda x: x.starts_at)
     page = dict(title=_(u"Day 1 - Plenary session"))
-    summit = Track2.query.get(6)
-    openstack = Track2.query.get(30)
+
+    def get_track(id):
+      print id, type(id)
+      return Track2.query.get(int(id))
+
     return render_template("day1.html", day=day, page=page, talks=talks,
-                           summit=summit, openstack=openstack)
+                           get_track=get_track)
 
   else:
     talks_by_room = []

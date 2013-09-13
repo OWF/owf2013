@@ -38,17 +38,16 @@
                 </p>
               {% endfor %}
 
-              <h2>Open CIO Summit</h2>
+              <h2>{{ _("Parallel sessions") }}</h2>
 
-              <h3 style="margin-bottom: 10px;">{{ summit.starts_at.strftime("%H:%M") }}</h3>
+              {% for track_id in [4, 6, 30, 34] %}
+                {% set track = get_track(track_id) %}
 
-              <p>{{ summit.description|markdown }}</p>
+                <h3>{{ track.starts_at.strftime("%H:%M") }}
+                  - {{ track.name }}</h3>
 
-              <h2>OpenStack Meetup</h2>
-
-              <h3 style="margin-bottom: 10px;">{{ openstack.starts_at.strftime("%H:%M") }}</h3>
-
-              <p>{{ openstack.description|markdown }}</p>
+                <p>{{ track.description|markdown }}</p>
+              {% endfor %}
 
             </article>
           </div>
