@@ -1,4 +1,4 @@
--e git+https://github.com/abilian/abilian-core.git@0f296b54875dbc91f237f64fe7070090d1f2f5cf#egg=Abilian-Core
+-e git+https://github.com/abilian/abilian-core.git@d0b491c3416e7a8acb1129a1c5898b063b8adf1f#egg=Abilian-Core
 
 Babel==0.9.6
 Fabric==1.6.0
