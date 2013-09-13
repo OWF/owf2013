@@ -65,10 +65,31 @@ The second edition of the  Education, Job & FLOSS think tank will start with a r
 Self-training, Mooc, professional learning, newest training forms... Where we are today and are we ready for the future ?
 
 Speakers: <a href="http://www.openworldforum.org/fr/speakers/7/" target="_blank">Philippe Montarges</a> (Alter Way) / 
-<a href="http://www.openworldforum.org/{{lang}}/speakers/26/" target="_blank">Roberto Di Cosmo (IRILL) / 
-Kwame Yamgnane (Vice President, Ecole 42) / 
-Jean-Marie Gilliot (Professor and Researcher at Télécom Bretagne and Head of the MOOC working group at the 
-Mines-Télécom Institute) / Fatiha Gas (Chairman, ESIEA Paris).
+<a href="http://www.openworldforum.org/fr/speakers/26/" target="_blank">Roberto Di Cosmo</a> (IRILL) / 
+<a href="http://www.openworldforum.org/fr/speakers/93/" target="_blank">Kwame Yamgnane</a> (Vice President, Ecole 42) / 
+<a href="http://www.openworldforum.org/fr/speakers/95/" target="_blank">Jean-Marie Gilliot</a> (Professor and Researcher at Télécom Bretagne and Head of the MOOC working group at the 
+Mines-Télécom Institute) / 
+<a href="http://www.openworldforum.org/fr/speakers/139/" target="_blank">Fatiha Gas</a> (Chairman, ESIEA Paris).
+
+###CODE
+####Cloud
+
+The <a href="http://openworldforum.org/fr/tracks/21" target="_blank">cloud</a> tracks at this year's Open World Forum 
+encompasses many fundamental subjects, from bare metal to virtualisation, from IaaS to SaaS, from orchestration 
+to <a href="http://openworldforum.org/fr/tracks/25" target="_blank">devops</a>, from 
+<a href="http://openworldforum.org/fr/tracks/7" target="_blank">interoperability</a> to how to preserve our own 
+liberties in the "After PC" area. Our speaker line-up includes leaders from trending projects such as 
+<a href="http://openworldforum.org/fr/tracks/30" target="_blank">OpenStack</a>, Xen, 
+Salt Stack, as well as the Free Software Foundation.
+
+###EXPERIMENT
+####Open Hardware
+
+**«3D printing, towards a revolution of production methods ? »**, will focus on open-hardware and will showcase 
+numerous welding animations and an install party (Linux) offered to visitors. Mathilde Berchon, internationally 
+known expert on 3D printing, will take part in the debate.
+
+
 
 
 
