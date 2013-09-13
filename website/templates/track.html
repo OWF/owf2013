@@ -46,36 +46,47 @@
               #}
               {% for talk in track.talks %}
 
-                <a id="talk_{{ talk.id }}"></a>
-                <h3>
-                  {% if talk.starts_at %}
-                    {{ talk.starts_at.strftime("%H:%M") }} -
-                  {% endif %}
-                  {{ talk.title }}</h3>
+                <hr>
 
-                {% if talk.duration %}
-                  <p>{{ _("Duration") }}: {{ talk.duration }} {{ _("minutes") }}</p>
-                {% endif %}
+                <div class="row">
 
-                <p>{{ _("Speakers") }}:
-                  {% for speaker in talk.speakers %}
-                    <a href="{{ url_for(speaker) }}">{{ speaker._name }}</a>
-                    {%- if not loop.last %} / {%- endif %}
-                  {% endfor %}
-                </p>
+                  <span class="span8">
+                  <a id="talk_{{ talk.id }}"></a>
+                  <h3 style="margin: 10px 0;">
+                    {% if talk.starts_at %}
+                      {{ talk.starts_at.strftime("%H:%M") }} -
+                    {% endif %}
+                    {{ talk.title }}
+                  </h3>
 
-                {% if talk.speakers|length == 1 %}
-                  {% set speaker = talk.speakers[0] %}
-                  <img style="float: right; margin: 10px; width: 120px;"
-                      src="{{ url_for(".photo", speaker_id=speaker.id, s=120) }}"/>
-                {% endif %}
-                {% if talk.abstract %}
-                  {{ talk.abstract|markdown }}
-                {% else %}
-                  <p>
-                    {{ linuxipsum() }}
-                  </p>
-                {% endif %}
+                    {% if talk.duration %}
+                      <p>{{ _("Duration") }}: {{ talk.duration }} {{ _("minutes") }}</p>
+                    {% endif %}
+
+                    <p>{{ _("Speakers") }}:
+                      {% for speaker in talk.speakers %}
+                        <a href="{{ url_for(speaker) }}">{{ speaker._name }}</a>
+                        {%- if not loop.last %} / {%- endif %}
+                      {% endfor %}
+                    </p>
+
+                    {% if talk.abstract %}
+                      {{ talk.abstract|markdown }}
+                    {% else %}
+                      <p>
+                        {{ linuxipsum() }}
+                      </p>
+                    {% endif %}
+                  </span>
+                  <span class="span3">
+                    {% for speaker in talk.speakers %}
+                      <img
+                          style="float: right; margin: 10px 10px 0 0; width: 160px; border-radius: 50%;"
+                          src="{{ url_for(".photo", speaker_id=speaker.id, s=120) }}"/>
+                      <br>
+                    {% endfor %}
+                  </span>
+                </div>
 
               {% endfor %}
             </article>

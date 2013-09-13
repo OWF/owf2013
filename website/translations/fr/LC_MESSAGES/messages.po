@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-06 12:18+0200\n"
+"POT-Creation-Date: 2013-09-13 14:42+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgstr ""
 "La participation à l'Open World Forum est gratuite, mais vous devez "
 "obigatoirement vous inscrire à l'avance afin de pouvoir participer."
 
-#: website/templates/_base.html:86 website/templates/base.html:76
+#: website/templates/_base.html:86 website/templates/base.html:75
 msgid "Search"
 msgstr "Rechercher"
 
@@ -118,18 +118,22 @@ msgid "Platinum sponsors"
 msgstr "Sponsors Platine"
 
 #: website/templates/_base.html:158
+msgid "Gold sponsors"
+msgstr "Sponsors Or"
+
+#: website/templates/_base.html:168
 msgid "Silver sponsors"
 msgstr "Sponsors Argent"
 
-#: website/templates/_base.html:176
+#: website/templates/_base.html:190
 msgid "Organizer"
 msgstr "Organisateur"
 
-#: website/templates/_base.html:182
+#: website/templates/_base.html:196
 msgid "Co-organizers"
 msgstr "Co-organisateurs"
 
-#: website/templates/_base.html:200
+#: website/templates/_base.html:214
 msgid "Press partners"
 msgstr "Partenaires presse"
 
@@ -153,7 +157,7 @@ msgstr "Jour 2 - Vendredi 4 oct."
 msgid "Day 3 - Saturday Oct. 5th"
 msgstr "Jour 3 - Samedi 5 oct."
 
-#: website/templates/base.html:69
+#: website/templates/base.html:68
 msgid "Log out"
 msgstr "Déconnexion"
 
@@ -170,9 +174,13 @@ msgid "The plenary session takes place in room \"Grand Auditorium\"."
 msgstr "La session plénière a lieu dans le Grand Auditorium."
 
 #: website/templates/day1.html:33 website/templates/speakers.html:14
-#: website/templates/track.html:57 website/views/localized.py:305
+#: website/templates/track.html:66 website/views/localized.py:305
 msgid "Speakers"
 msgstr "Orateurs"
+
+#: website/templates/day1.html:41
+msgid "Parallel sessions"
+msgstr "Sessions parallèles"
 
 #: website/templates/day23.html:20
 msgid ""
@@ -187,7 +195,7 @@ msgid "All tracks for today"
 msgstr "Toutes les sessions du jour"
 
 #: website/templates/day23.html:34 website/templates/day23.html:47
-#: website/templates/track.html:18
+#: website/templates/track.html:19
 msgid "Room"
 msgstr "Salle"
 
@@ -241,7 +249,7 @@ msgid "Recent items"
 msgstr ""
 
 #: website/templates/program.html:50 website/templates/speaker.html:35
-#: website/templates/track.html:41 website/views/localized.py:266
+#: website/templates/track.html:43 website/views/localized.py:266
 msgid "Talks"
 msgstr "Présentations"
 
@@ -273,27 +281,23 @@ msgstr "Session: {}"
 msgid "Theme"
 msgstr "Thème"
 
-#: website/templates/track.html:20
+#: website/templates/track.html:22
 msgid "On"
 msgstr "Le"
 
-#: website/templates/track.html:20
+#: website/templates/track.html:22
 msgid "from"
 msgstr "de"
 
-#: website/templates/track.html:20
+#: website/templates/track.html:22
 msgid "to"
 msgstr "à"
 
-#: website/templates/track.html:51
-msgid "At"
-msgstr "À"
-
-#: website/templates/track.html:54
+#: website/templates/track.html:63
 msgid "Duration"
 msgstr "Durée"
 
-#: website/templates/track.html:54
+#: website/templates/track.html:63
 msgid "minutes"
 msgstr "minutes"
 
@@ -471,12 +475,12 @@ msgstr "Programme de la salle %(room)s"
 msgid "Day 1 - Plenary session"
 msgstr "Jour 1 - Session plénière"
 
-#: website/views/localized.py:386
+#: website/views/localized.py:389
 #, python-format
 msgid "Day %(day)d - At a glance"
 msgstr "Jour %(day)d - Vue d'ensemble"
 
-#: website/views/localized.py:393
+#: website/views/localized.py:396
 msgid "Page not found"
 msgstr "Page introuvable"
 
