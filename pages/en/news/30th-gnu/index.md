@@ -8,7 +8,7 @@ To celebrate this anniversary at the Open World Forum, we are happy to welcome J
 Software Foundation, for a Keynote intervention. He will also introduce the cloud track. John Sullivan was invited by the 
 <a href="http://www.april.org/" target="_blank">April association</a>.
 
-<p style="text-align:center"><img alt="John Sullivan" src="/static/pictures/john sullivan.jpg">
+<img alt="John Sullivan" src="/static/pictures/john sullivan.jpg">
 
 John started working with GNU Press and the Free Software Foundation in 2003 and then became the FSF's first Campaigns 
 Manager, working on outreach efforts like Defective by Design, BadVista, and PlayOgg. In 2011, John became the Executive 
