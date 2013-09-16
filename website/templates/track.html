@@ -79,12 +79,18 @@
                     {% endif %}
                   </span>
                   <span class="span3">
-                    {% for speaker in talk.speakers %}
+                    {% if talk.speakers|length == 1 %}
+                      {% set speaker = talk.speakers[0] %}
                       <img
-                          style="float: right; margin: 10px 10px 0 0; width: 160px; border-radius: 50%;"
-                          src="{{ url_for(".photo", speaker_id=speaker.id, s=120) }}"/>
-                      <br>
-                    {% endfor %}
+                          style="float: right; margin: 10px 10px 0 0; width: 200px; border-radius: 50%;"
+                          src="{{ url_for(".photo", speaker_id=speaker.id, s=200) }}"/>
+                    {% else %}
+                      {% for speaker in talk.speakers %}
+                        <img
+                            style="float: right; margin: 10px 10px 0 0; width: 100px; border-radius: 50%;"
+                            src="{{ url_for(".photo", speaker_id=speaker.id, s=100) }}"/>
+                      {% endfor %}
+                    {% endif %}
                   </span>
                 </div>
 
