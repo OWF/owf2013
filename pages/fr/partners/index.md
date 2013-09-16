@@ -6,7 +6,7 @@ Voir les <a name="top">Sponsors</a> et les <a href="/partners/#orga">Organisateu
 
 ## Sponsors
 
-### Sponsor Diamand
+### Sponsor Diamant
 
 <a name="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
 
