@@ -40,13 +40,25 @@ Alter Way has a distinctive skill on the Free market and can be a robust partner
 
 <a name="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
 
-In business since 1991, **Smile** is the first European integrator of open source solutions. Multi-specialist with a large
-range of 18 offers, Smile deploys the best open source solutions in the market in a variety of domains such as: content
-management, portals, ERP, business intelligence, CRM, ECM, e-Commerce, as well as systems and infrastructure.
+**Smile** is the number one open source integrator in France and Europe. With experts in a wide range of Open source 
+products, components and frameworks, Smile has over twenty years of experience in implementing high-performance 
+platforms, completing turnkey projects and providing tailored expert advice. 
 
-Smile has a turnover of over 37.1 M€ in 2011, and a staff of 600 in Europe, working at 16 agencies, in Paris, Lyon,
-Nantes, Lille, Bordeaux, Montpellier, Marseille, Grenoble (France), Amsterdam, Utrecht and Brussels (Netherlands),
-Barcelona (Spain), Kiev and Kharkov (Ukraine), Geneva (Switzerland) and Casablanca (Morocco).
+Websites, business portals, e-commerce, social networks, mobility, document management, ERP or infrastructure, Smile 
+is at the forefront of open source. Smile surveys competitors, invests in R&D and shares its knowledge through the 
+creating of over 25 white papers, which are a reference for each specialist area they cover. 
+
+Smile supports its customers in implementing open source solutions by offering a wide range of services: consulting, 
+ergonomics, graphic design, editorial advice, SEO, development and project management, training, third party 
+application maintenance and open source support and hosting. 
+
+In 2012 Smile experienced a 24% increase in turnover, achieving 45.8M Euros. The company employs over 700 employees, in 
+17 agencies, in 8 countries: Paris, Lyon, Nantes, Bordeaux, Montpellier, Marseille, Lille, Grenoble (France), 
+Barcelona, Madrid (Spain), and Kiev (Ukraine), Geneva (Switzerland), Casablanca (Morocco), Amsterdam and Utrecht 
+(Netherlands), Brussels (Belgium) and Abidjan (Ivory Coast).
+
+For more information: www.smile.fr – www.smile-oss.com
+
 
 ###Silver Sponsors
 
