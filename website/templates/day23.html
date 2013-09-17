@@ -32,7 +32,7 @@
                     <a href="#track-{{ track.id }}">{{ track.name }}</a>
                     ({{ _("Room") }} {{ track.room }},
                     {{ track.starts_at.strftime("%H:%M") }}-{{ track.ends_at.strftime("%H:%M") }})
-                    - <a href="#details-{{ track.id }}">{{ _("details") }}</a>
+                    - <a href="{{ url_for(track) }}">{{ _("details") }}</a>
                   </li>
                 {% endfor %}
               </ul>

@@ -1,9 +1,15 @@
 # coding=utf-8
-from flask import g
+import StringIO
+from datetime import date
+from time import strftime, gmtime
+from abilian.core.entities import Entity
+from abilian.web.forms import ModelFieldList
+from flask import g, request, make_response
 from flask.ext.login import current_user
+from xlwt import Workbook, XFStyle
 
 from abilian.web.search import TextSearchCriterion
-from abilian.web.frontend import Module as BaseModule, CRUDApp
+from abilian.web.frontend import Module as BaseModule, CRUDApp, expose
 
 from website.cfp.forms import TalkProposalEditForm
 from website.cfp.models import TalkProposal
@@ -18,6 +24,66 @@ def allow_delete():
 
 class Module(BaseModule):
   view_options = {'allow_delete': allow_delete}
+
+  @expose("/export_xls")
+  def export_to_xls(self):
+    # TODO: take care of all the special cases
+    wb = Workbook()
+    ws = wb.add_sheet("Sheet 1")
+
+    objects = self.ordered_query(request)
+    form = self.edit_form_class()
+
+    DATE_STYLE = XFStyle()
+    DATE_STYLE.num_format_str = "DD/MM/YYYY"
+
+    col_names = ['id']
+    for field in form:
+      if isinstance(field, ModelFieldList):
+        continue
+      if field.name == 'photo':
+        continue
+      if hasattr(self.managed_class, field.name):
+        col_names.append(field.name)
+
+    for c, col_name in enumerate(col_names):
+      ws.write(0, c, col_name)
+
+    for r, obj in enumerate(objects):
+      for c, col_name in enumerate(col_names):
+        style = None
+        value = obj.display_value(col_name)
+
+        if isinstance(value, Entity):
+          value = value._name
+        elif isinstance(value, list):
+          if all(isinstance(x, basestring) for x in value):
+            value = "; ".join(value)
+          elif all(isinstance(x, Entity) for x in value):
+            value = "; ".join([x._name for x in value])
+          else:
+            raise Exception("I don't know how to export column {}".format(col_name))
+        elif isinstance(value, date):
+          style = DATE_STYLE
+        if style:
+          ws.write(r+1, c, value, style)
+        else:
+          ws.write(r+1, c, value)
+
+    fd = StringIO.StringIO()
+    wb.save(fd)
+
+    debug = request.args.get('debug_sql')
+    if debug:
+      # useful only in DEBUG mode, to get the debug toolbar in browser
+      return '<html><body>Exported</body></html>'
+
+    response = make_response(fd.getvalue())
+    response.headers['content-type'] = 'application/ms-excel'
+    filename = "%s-%s.xls" % (self.managed_class.__name__,
+                              strftime("%d:%m:%Y-%H:%M:%S", gmtime()))
+    response.headers['content-disposition'] = 'attachment;filename="%s"' % filename
+    return response
 
 
 class TalkProposals(Module):
