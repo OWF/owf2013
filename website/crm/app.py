@@ -41,8 +41,12 @@ class Module(BaseModule):
     for field in form:
       if isinstance(field, ModelFieldList):
         continue
+
+      ## These two ad-hoc line have been added
       if field.name == 'photo':
         continue
+      ##
+
       if hasattr(self.managed_class, field.name):
         col_names.append(field.name)
 
