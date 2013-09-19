@@ -22,6 +22,12 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 <a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/partners/logo_aw_rvb_copie.png" alt="Alter Way"> </a>
 
+###E
+
+<a href="http://www.enovance.com/" target="_blank"><img src="/static/pictures/partners/logo-eNovance-2013-Signature.png" alt="eNovance"> </a>
+
+<a href="http://www.elasticsearch.org/" target="_blank"><img src="/static/pictures/partners/elastic_logo_green.png" alt="elasticsearch"> </a>
+
 ###H
 
 <a href="http://www.hp.com/" target="_blank"><img src="/static/pictures/partners/Hewlett-Packard_logoSponsor.png" alt="HP"> </a>
@@ -29,6 +35,10 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 ###I
 
 <a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="168px" alt="Inria"> </a>
+
+###R
+
+<a href="http://www.redhat.com/" target="_blank"><img src="/static/pictures/partners/redhat-logo - partners.jpg" alt="Red Hat"> </a>
 
 ###S
 
