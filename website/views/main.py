@@ -13,11 +13,12 @@ from werkzeug.exceptions import NotFound
 from abilian.services.image import crop_and_resize
 
 from flask import Blueprint, redirect, url_for, request, abort, make_response, \
-  render_template, current_app as app, session, jsonify
+  render_template, current_app as app, session, jsonify, json, g
 
 from ..content import get_pages
 from website.crm.models import Talk, Speaker, Track2
 from website.util import preferred_language
+from website.views.localized import alt_url_for
 
 
 __all__ = ['setup']
@@ -242,3 +243,31 @@ def tracks_ics():
   response = make_response(result.getvalue())
   response.headers['content-type'] = 'text/calendar'
   return response
+
+
+@main.route("lanyrd.json")
+def lanyrd():
+  g.lang = 'en'
+  talks_list = []
+  for talk in Talk.query.all():
+    talk_d = {}
+    talk_d["crowdsource_ref"] = "org.openworldforum/talks/{}".format(talk.id)
+    talk_d["title"] = talk.title
+    talk_d['abstract'] = talk.abstract
+    talk_d['space_name'] = talk.track.room.name
+    talk_d['venue'] = "vcxfq"
+    talk_d['start_time'] = talk.starts_at.strftime("%Y-%m-%d %H:%M:%S")
+    talk_d['end_time'] = talk.ends_at.strftime("%Y-%m-%d %H:%M:%S")
+    talk_d['speakers'] = [
+      {'crowdsource_ref': "org.openworldforum/speakers/{}".format(speaker.id),
+       'name': speaker.name,
+       'role': u"{}, {}".format(speaker.title or "Unknown", speaker.organisation),
+       'bio': speaker.bio}
+      for speaker in talk.speakers
+    ]
+    talks_list.append(talk_d)
+  data = json.dumps(talks_list, indent=2)
+  response = make_response(data)
+  response.headers['Content-Type'] = 'application/json'
+  return response
+

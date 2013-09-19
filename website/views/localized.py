@@ -74,19 +74,19 @@ def inject_menu():
 def alt_url_for(obj, *args, **kw):
   if isinstance(obj, Page):
     if re.match("../news/", obj.path):
-      return url_for(".news_item", slug=obj.meta['slug'])
+      return url_for("localized.news_item", slug=obj.meta['slug'])
     else:
-      return url_for(".page", path=obj.meta['path'][3:])
+      return url_for("localized.page", path=obj.meta['path'][3:])
   elif isinstance(obj, Speaker):
-    return url_for(".speaker", speaker_id=obj.id)
+    return url_for("localized.speaker", speaker_id=obj.id)
   elif isinstance(obj, Track2):
-    return url_for(".track", track_id=obj.id)
+    return url_for("localized.track", track_id=obj.id)
   elif isinstance(obj, Room):
-    return url_for(".room", room_id=obj.id)
+    return url_for("localized.room", room_id=obj.id)
   elif isinstance(obj, Talk):
-    return "%s#talk_%d" % (url_for(".track", track_id=obj.track.id), obj.id)
+    return "%s#talk_%d" % (url_for("localized.track", track_id=obj.track.id), obj.id)
   elif obj in ('THINK', 'CODE', 'EXPERIMENT'):
-    return url_for(".page", path=obj.lower())
+    return url_for("localized.page", path=obj.lower())
   else:
     return url_for(obj, *args, lang=g.lang, **kw)
 
