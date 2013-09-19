@@ -36,6 +36,10 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 <a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="168px" alt="Inria"> </a>
 
+###M
+
+<a href="http://www.microsoft.com/" target="_blank"><img src="/static/pictures/Microsoft.jpg" alt="Microsoft"> </a>
+
 ###R
 
 <a href="http://www.redhat.com/" target="_blank"><img src="/static/pictures/partners/redhat-logo - partners.jpg" alt="Red Hat"> </a>
@@ -43,6 +47,10 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 ###S
 
 <a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/partners/Smile_logoSponsor2.png" alt="Smile"> </a>
+
+<a href="http://careers.stackoverflow.com/" target="_blank"><img src="/static/pictures/partners/stackoverflow careers20-logo.png" alt="StackOverflow"> </a>
+
+<a href="https://www.suse.com/" target="_blank"><img src="/static/pictures/suse.jpeg" alt="Suse"> </a>
 
 ###X
 
