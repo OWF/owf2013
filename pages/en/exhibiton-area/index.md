@@ -20,6 +20,8 @@ We are hounoured to welcome them as our partners for this **6th edition** of the
 
 <a href="http://af83.com/" target="_blank" ><img src="/static/pictures/partners/af83_logoSponsor2.png" alt="af83"></a>
 
+<a href="http://www.afup.org/" target="_blank" ><img src="/static/pictures/partners/afup-logo-small.png" alt="afup"></a>
+
 <a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/partners/logo_aw_rvb_copie.png" alt="Alter Way"> </a>
 
 <a href="http://www.pole-aquinetic.fr/" target="_blank"><img src="/static/pictures/partners/LOGO AQUINETIC 2012 BAT.jpg" alt="Aquinetic"> </a>
