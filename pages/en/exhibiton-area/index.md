@@ -70,4 +70,4 @@ We are hounoured to welcome them as our partners for this **6th edition** of the
 
 ###X
 
-<a href="http://www.xwiki.org/xwiki/bin/view/Main/WebHome" target="_blank"><img src="/static/pictures/partners/logo-xwiki.png" alt="xWiki" width="160"> </a>
+<a href="http://www.xwiki.org/xwiki/bin/view/Main/WebHome" target="_blank"><img src="/static/pictures/partners/logo-xwiki.png" alt="xWiki" width="130"> </a>
