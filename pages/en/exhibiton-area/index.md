@@ -22,6 +22,8 @@ We are hounoured to welcome them as our partners for this **6th edition** of the
 
 <a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/partners/logo_aw_rvb_copie.png" alt="Alter Way"> </a>
 
+<a href="http://www.pole-aquinetic.fr/" target="_blank"><img src="/static/pictures/partners/LOGO AQUINETIC 2012 BAT.jpg" alt="Aquinetic"> </a>
+
 ###B
 
 <a href="http://www.blue-mind.net/" target="_blank"><img src="/static/pictures/partners/logo_BlueMind_02_RVB.jpg" alt="Blue Mind"> </a>
