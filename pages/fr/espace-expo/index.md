@@ -15,10 +15,11 @@ L’ espace d’exposition regroupera des acteurs majeurs du **Logiciel Libre** 
 
 Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Open World Forum** : 
 
-
 ###A
 
 <a href="http://af83.com/" target="_blank" ><img src="/static/pictures/partners/af83_logoSponsor2.png" alt="af83"></a>
+
+<a href="http://www.afup.org/" target="_blank" ><img src="/static/pictures/partners/afup-logo-small.png" alt="afup"></a>
 
 <a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/partners/logo_aw_rvb_copie.png" alt="Alter Way"> </a>
 
@@ -30,9 +31,11 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 ###E
 
-<a href="http://www.enovance.com/" target="_blank"><img src="/static/pictures/partners/logo-eNovance-2013-Signature.png" alt="eNovance"> </a>
+<a href="http://www.eclipse.org/" target="_blank"><img src="/static/pictures/partners/eclipse_pos_logo_fc_med.jpg" alt="Eclipse Foundation"> </a>
 
 <a href="http://www.elasticsearch.org/" target="_blank"><img src="/static/pictures/partners/elastic_logo_green.png" alt="elasticsearch"> </a>
+
+<a href="http://www.enovance.com/" target="_blank"><img src="/static/pictures/partners/logo-eNovance-2013-Signature.png" alt="eNovance"> </a>
 
 ###H
 
@@ -48,9 +51,9 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 ###O
 
-<a href="http://ow2.org/" target="_blank"><img src="/static/pictures/partners/OW2_logo.png" alt="OW2"> </a>
-
 <a href="http://www.openstack.org/" target="_blank"><img src="/static/pictures/partners/openstack-cloud-software-vertical-web.png" alt="OpenStack"> </a>
+
+<a href="http://ow2.org/" target="_blank"><img src="/static/pictures/partners/OW2_logo.png" alt="OW2"> </a>
 
 ###R
 
@@ -66,5 +69,4 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 ###X
 
-<a href="http://www.xwiki.org/xwiki/bin/view/Main/WebHome" target="_blank"><img src="/static/pictures/partners/logo-xwiki.png" alt="xWiki" width="160"> </a>
-
+<a href="http://www.xwiki.org/xwiki/bin/view/Main/WebHome" target="_blank"><img src="/static/pictures/partners/logo-xwiki.png" alt="xWiki" width="130"> </a>
