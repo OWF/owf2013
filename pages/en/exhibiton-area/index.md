@@ -30,9 +30,11 @@ We are hounoured to welcome them as our partners for this **6th edition** of the
 
 ###E
 
-<a href="http://www.enovance.com/" target="_blank"><img src="/static/pictures/partners/logo-eNovance-2013-Signature.png" alt="eNovance"> </a>
+<a href="http://www.eclipse.org/" target="_blank"><img src="/static/pictures/partners/eclipse_pos_logo_fc_med.jpg" alt="Eclipse Foundation"> </a>
 
 <a href="http://www.elasticsearch.org/" target="_blank"><img src="/static/pictures/partners/elastic_logo_green.png" alt="elasticsearch"> </a>
+
+<a href="http://www.enovance.com/" target="_blank"><img src="/static/pictures/partners/logo-eNovance-2013-Signature.png" alt="eNovance"> </a>
 
 ###H
 
@@ -48,9 +50,9 @@ We are hounoured to welcome them as our partners for this **6th edition** of the
 
 ###O
 
-<a href="http://ow2.org/" target="_blank"><img src="/static/pictures/partners/OW2_logo.png" alt="OW2"> </a>
-
 <a href="http://www.openstack.org/" target="_blank"><img src="/static/pictures/partners/openstack-cloud-software-vertical-web.png" alt="OpenStack"> </a>
+
+<a href="http://ow2.org/" target="_blank"><img src="/static/pictures/partners/OW2_logo.png" alt="OW2"> </a>
 
 ###R
 
