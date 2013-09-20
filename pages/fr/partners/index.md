@@ -18,20 +18,18 @@ et des mathématiques, les 3 400 chercheurs d'Inria inventent les technologies n
 
 <a name="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
 
-**Alter Way**, opérateur de services Open Source, fourni 5 types de services : consulting, formation, intégration et
-services professionnels (solutions), hébergement à valeur ajoutée et web design et consulting e-marketing.
+**Alter Way** est un opérateur de services dédié au Digital et au Système d’Information qui se démarque par son ADN 
+100 % Open Source et sa démarche résolument DevOps et industrielle.
 
-Alter Way couvre les besoins principaux en terme de technologies de l'information : CMS, ECM, e-commerce, CRM,
-business intelligence, emploi, mailing, gestion de systèmes et de réseau.
+Les engagements d’Alter Way :
+* soutenir la stratégie de ses clients à travers une offre verticale ;
+* conseil, gouvernance, conception graphique et ergonomique, intégration, développement, TMA, support, hébergement, infogérance, formation ;
+* faire foisonner l’innovation au coeur de l’entreprise ;
+* industrialiser pratiques et méthodes pour garantir la pérennité des systèmes et applications déployés .
 
-De l'alliance sous la marque Alter Way, de ses équipes spécialisées emblématiques résulte une tendance
-caractérisée par une dimension industrielle ainsi que l'excellence.
-
-Dirigé par ses fondateurs, Philippe Montargès et Véronique Torner, Alter Way procure des solutions globales et
-particulières pour les grandes entreprises et le secteur public.
-
-Alter Way, c'est une compétence reconnue sur le marché du libre et votre partenaire de qualité pour longtemps !
-
+Précurseur dans l'innovation, Alter Way se distingue par un investissement permanent, à la pointe des plus récentes 
+avancées technologiques : le cloud, DevOps, Open Data, l'industrialisation des plates-formes PHP, l'accessibilité 
+numérique  et le web cross-plateforme.
 
 <a name="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
 
