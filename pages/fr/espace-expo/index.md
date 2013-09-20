@@ -22,6 +22,10 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 <a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/partners/logo_aw_rvb_copie.png" alt="Alter Way"> </a>
 
+###B
+
+<a href="http://www.blue-mind.net/" target="_blank"><img src="/static/pictures/partners/logo_BlueMind_02_RVB.jpg" alt="Blue Mind"> </a>
+
 ###E
 
 <a href="http://www.enovance.com/" target="_blank"><img src="/static/pictures/partners/logo-eNovance-2013-Signature.png" alt="eNovance"> </a>
@@ -39,6 +43,12 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 ###M
 
 <a href="http://www.microsoft.com/" target="_blank"><img src="/static/pictures/partners/Microsoft.jpg" alt="Microsoft"> </a>
+
+###O
+
+<a href="http://ow2.org/" target="_blank"><img src="/static/pictures/partners/OW2_logo.png" alt="OW2"> </a>
+
+<a href="http://www.openstack.org/" target="_blank"><img src="/static/pictures/partners/openstack-cloud-software-vertical-web.png" alt="OpenStack"> </a>
 
 ###R
 
