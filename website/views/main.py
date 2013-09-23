@@ -3,22 +3,18 @@ Main view (mostly technical views like sitemap or images).
 """
 
 from cStringIO import StringIO
-from itertools import groupby
 import mimetypes
 from os.path import join
 from PIL import Image
 import datetime
 from icalendar import Calendar, Event
-from werkzeug.exceptions import NotFound
-from abilian.services.image import crop_and_resize
 
 from flask import Blueprint, redirect, url_for, request, abort, make_response, \
-  render_template, current_app as app, session, jsonify, json, g
+    render_template, current_app as app, session, jsonify, json, g
 
 from ..content import get_pages
 from website.crm.models import Talk, Speaker, Track2
 from website.util import preferred_language
-from website.views.localized import alt_url_for
 
 
 __all__ = ['setup']

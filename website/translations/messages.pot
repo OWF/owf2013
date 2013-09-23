@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-13 14:42+0200\n"
+"POT-Creation-Date: 2013-09-23 14:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,23 +113,27 @@ msgstr ""
 msgid "Platinum sponsors"
 msgstr ""
 
-#: website/templates/_base.html:158
+#: website/templates/_base.html:160
 msgid "Gold sponsors"
 msgstr ""
 
-#: website/templates/_base.html:168
+#: website/templates/_base.html:172
 msgid "Silver sponsors"
 msgstr ""
 
-#: website/templates/_base.html:190
+#: website/templates/_base.html:196
 msgid "Organizer"
 msgstr ""
 
-#: website/templates/_base.html:196
+#: website/templates/_base.html:202
 msgid "Co-organizers"
 msgstr ""
 
-#: website/templates/_base.html:214
+#: website/templates/_base.html:219
+msgid "Community Partners"
+msgstr ""
+
+#: website/templates/_base.html:231
 msgid "Press partners"
 msgstr ""
 
@@ -188,25 +192,33 @@ msgstr ""
 msgid "All tracks for today"
 msgstr ""
 
-#: website/templates/day23.html:34 website/templates/day23.html:47
+#: website/templates/day23.html:33 website/templates/day23.html:47
 #: website/templates/track.html:19
 msgid "Room"
+msgstr ""
+
+#: website/templates/day23.html:35
+msgid "details"
 msgstr ""
 
 #: website/templates/day23.html:40
 msgid "Time table"
 msgstr ""
 
-#: website/templates/day23.html:49
+#: website/templates/day23.html:50
 msgid "seats"
 msgstr ""
 
-#: website/templates/day23.html:62
+#: website/templates/day23.html:65
 msgid "Track"
 msgstr ""
 
-#: website/templates/day23.html:85
+#: website/templates/day23.html:86 website/templates/day23.html:124
 msgid "More info"
+msgstr ""
+
+#: website/templates/day23.html:102
+msgid "Tracks details"
 msgstr ""
 
 #: website/templates/index.html:31 website/templates/index.html:45
