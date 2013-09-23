@@ -51,7 +51,7 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 ###P
 
-<a href="http://www.palamida.com/" target="_blank"><img src="palamida_logo_Tagline.jpg" alt="palamida"> </a>
+<a href="http://www.palamida.com/" target="_blank"><img src="/static/pictures/partners/palamida_logo_Tagline.jpg" alt="palamida"> </a>
 
 ###O
 
