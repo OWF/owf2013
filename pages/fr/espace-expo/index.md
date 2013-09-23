@@ -49,6 +49,10 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 <a href="http://www.microsoft.com/" target="_blank"><img src="/static/pictures/partners/Microsoft.jpg" alt="Microsoft"> </a>
 
+###P
+
+<a href="http://www.palamida.com/" target="_blank"><img src="palamida_logo_Tagline.jpg" alt="palamida"> </a>
+
 ###O
 
 <a href="http://www.openstack.org/" target="_blank"><img src="/static/pictures/partners/openstack-cloud-software-vertical-web.png" alt="OpenStack"> </a>
