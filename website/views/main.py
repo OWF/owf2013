@@ -158,7 +158,7 @@ def sitemap_xml():
 #
 @main.route('api/talks')
 def talks():
-  all_talks = Talk.query.all()
+  all_talks = Talk.query.filter(Talk.starts_at != None).order_by(Talk.starts_at).all()
   def isoformat(d):
     if d:
       return d.isoformat()
