@@ -56,6 +56,10 @@ We are hounoured to welcome them as our partners for this **6th edition** of the
 
 <a href="http://ow2.org/" target="_blank"><img src="/static/pictures/partners/OW2_logo.png" alt="OW2"> </a>
 
+###P
+
+<a href="http://www.palamida.com/" target="_blank"><img src="palamida_logo_Tagline.jpg" alt="palamida"> </a>
+
 ###R
 
 <a href="http://www.redhat.com/" target="_blank"><img src="/static/pictures/partners/redhat-logo - partners.jpg" alt="Red Hat"> </a>
