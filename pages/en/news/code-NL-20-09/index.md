@@ -1,11 +1,8 @@
-title : CODE - Cloud
-date: 2013/09/12
+title : CODE - Android Beyond Mobility
+date: 2013/09/20
 
-The <a href="http://openworldforum.org/fr/tracks/21" target="_blank">cloud</a> tracks at this year's Open World Forum 
-encompasses many fundamental subjects, from bare metal to virtualisation, from IaaS to SaaS, from orchestration 
-to <a href="http://openworldforum.org/fr/tracks/25" target="_blank">devops</a>, from 
-<a href="http://openworldforum.org/fr/tracks/7" target="_blank">interoperability</a> to how to preserve our own 
-liberties in the "After PC" area. Our speaker line-up includes leaders from trending projects such as 
-<a href="http://openworldforum.org/fr/tracks/30" target="_blank">OpenStack</a>, Xen, 
-Salt Stack, as well as the Free Software Foundation.
+The Linux-based Android OS was designed specifically for phones and tablets but companies have increasingly been using, or
+considering using it, in other embedded products in recent years. Because of its custom design, it makes the most 
+sense as an embedded operating system in connected devices that have a user interface, and most often, a touch screen.
+
 
