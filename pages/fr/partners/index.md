@@ -31,6 +31,10 @@ Précurseur dans l'innovation, Alter Way se distingue par un investissement perm
 avancées technologiques : le cloud, DevOps, Open Data, l'industrialisation des plates-formes PHP, l'accessibilité 
 numérique  et le web cross-plateforme.
 
+<a name="microsoft"><a href="http://www.microsoft.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Microsoft.png" width="400" alt="Microsoft"></a></a>
+
+
+
 <a name="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
 
 Créé en 1991, **Smile** est le premier intégrateur français et européen de solutions open source. Multi-spécialiste et
@@ -41,6 +45,14 @@ outils systèmes en développant une pratique opérationnelle d’une large pale
 Smile, c'est également 37,1 millions d’euros de CA en 2011 et, à ce jour, 600 collaborateurs répartis sur
 16 agences : Paris, Lyon, Nantes, Bordeaux, Montpellier, Marseille, Lille, Grenoble, Barcelone (Espagne), Kiev et
 Kharkov (Ukraine), Genève (Suisse), Casablanca (Maroc), Amsterdam, Utrecht et Bruxelles (Benelux).
+
+<a name="suse"><a href="https://www.suse.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Suse-Logo.png" width="400" alt="Suse"></a></a>
+
+###Gold Sponsors
+
+<a name="enovance"><a href="http://www.enovance.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/logo-eNovance-2013.png" width="400" alt="eNovance"></a></a>
+
+<a name="redhat"><a href="http://www.redhat.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/RHcmykjpg.jpg" width="400" alt="RedHat"></a></a>
 
 ###Sponsors Argent
 
@@ -79,6 +91,9 @@ l'high tech. Nos clients sont de grandes entreprises cross-sectorielles telles q
 SFR, Intel, France Télévisions, Rue du Commerce et MonAlbumPhoto mais aussi des start-ups innovantes comme 
 KissKissBankBank ou TEA.
 
+<a name="blackduck"><a href="http://www.blackducksoftware.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Black_Duck_Logo_500.png" width="400" alt="blackduck"></a></a>
+
+<a name="elasticsearch"><a href="http://www.elasticsearch.org/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Elasticsearch.png" alt="elasticsearch"></a></a>
 
 <a name="hp"><a href="http://www.hp.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/HP_sponsor page.png" width="400" alt="HP"></a></a>
 
@@ -111,6 +126,11 @@ Fin 2012, le catalogue comporte 370 000 titres, partagés par plus de 30 000 art
  disponible en 6 langues : français, anglais, espagnol, allemand, italien et polonais. Le terme « Jamendo » est un
  mot-valise formé à partir de « jam » et « crescendo ».
 
+<a name="laposte"><a href="http://legroupe.laposte.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/poste.png" alt="laposte"></a></a>
+
+<a name="palamida"><a href="http://www.palamida.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/palamida_logo.jpg" alt="palamida"></a></a>
+
+<a name="stackoverlfow"><a href="http://careers.stackoverflow.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/stackoverflow careers20-logo.png" alt="stackoverflow"></a></a>
 
 
 ## <a name="orga">Les organisateurs</a>
