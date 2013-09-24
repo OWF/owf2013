@@ -1,8 +1,10 @@
 title : CODE - Android Beyond Mobility
 date: 2013/09/20
 
-The Linux-based **Android OS** was designed specifically for phones and tablets but companies have increasingly been using, or
-considering using it, in other embedded products in recent years. Because of its custom design, it makes the most 
-sense as an embedded operating system in connected devices that have a user interface, and most often, a touch screen.
+Le système d'opération **Android**, basé sur Linux, a été créé spécifiquement pour des téléphones ou tablettes, 
+mais plusieurs entreprises commencent de plus en plus à l'utiliser dans d'autres produits intégrés. Grace à sa conception
+"sur mesure", il a plus de sens comme partie intégrante dans des objet concetés qui ont une interface pour l'utilisateur 
+et surtout un écran tactile.
 
+N'oubliez pas de vous [inscrire](http://www.openworldforum.org/registration/).
 
