@@ -4,7 +4,7 @@ date : date: 2013/07/24
 Cette année plusieurs communautés clés du monde de l'Open Source ont été impliquées dans l'organisation de l'Open Source. 
 L'OWF13 les remercie et accueillera ces communautés lors des 3 jours de la 6e édition au sein de différents tracks.
 
-N’hésités pas à venir rencontrer les piliers du monde Open Source en France en vous inscrivant à 
+N’hésitez pas à venir rencontrer les piliers du monde Open Source en France en vous inscrivant à 
 <a href="http://www.openworldforum.org/registration/" target="_blank">l’évènement</a>.
 
 
