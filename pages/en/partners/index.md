@@ -62,7 +62,13 @@ Barcelona, Madrid (Spain), and Kiev (Ukraine), Geneva (Switzerland), Casablanca 
 
 For more information: www.smile.fr – www.smile-oss.com
 
-<a name="suse"><a href="https://www.suse.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Suse-Logo.png" width="400" alt="Microsoft"></a></a>
+<a name="suse"><a href="https://www.suse.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Suse-Logo.png" width="400" alt="Suse"></a></a>
+
+###Gold Sponsors
+
+<a name="enovance"><a href="http://www.enovance.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/logo-eNovance-2013.png" width="400" alt="eNovance"></a></a>
+
+<a name="redhat"><a href="http://www.redhat.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/RHcmykjpg.jpg" width="400" alt="RedHat"></a></a>
 
 
 ###Silver Sponsors
