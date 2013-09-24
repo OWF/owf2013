@@ -38,6 +38,9 @@ large enterprise, public sector and SMB.
 
 Alter Way has a distinctive skill on the Free market and can be a robust partner at your side for a long time.
 
+<a name="microsoft"><a href="http://www.microsoft.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Microsoft.png" width="400" alt="Microsoft"></a></a>
+
+
 <a name="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
 
 **Smile** is the number one open source integrator in France and Europe. With experts in a wide range of Open source 
@@ -58,6 +61,8 @@ Barcelona, Madrid (Spain), and Kiev (Ukraine), Geneva (Switzerland), Casablanca 
 (Netherlands), Brussels (Belgium) and Abidjan (Ivory Coast).
 
 For more information: www.smile.fr – www.smile-oss.com
+
+<a name="suse"><a href="https://www.suse.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Suse-Logo.png" width="400" alt="Microsoft"></a></a>
 
 
 ###Silver Sponsors
