@@ -1,4 +1,4 @@
-title : Communities and the #OWF13
+title : Communities and the OWF13
 date: 2013/09/24
 
 This year, many open source communities have joined forces with the Open World Forum and have helped in its organization. 
