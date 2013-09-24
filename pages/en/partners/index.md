@@ -106,6 +106,10 @@ as well as building state-of-the-art Open Source technology solutions such as [U
 We specialize in a range of markets such as consumer goods, media, telecommunications, consumer services, and high tech.
 Our clients include global enterprises like Group SEB, SFR, LaSer, Intel, Canal+, and other world leaders.
 
+<a name="blackduck"><a href="http://www.blackducksoftware.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Black_Duck_Logo_500.png" width="400" alt="blackduck"></a></a>
+
+<a name="elasticsearch"><a href="http://www.elasticsearch.org/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Elasticsearch.png" alt="elasticsearch"></a></a>
+
 <a name="hp"><a href="http://www.hp.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/HP_sponsor page.png" width="400" alt="HP"></a></a>
 
 **HP** creates new possibilities for technology to have a meaningful impact on people, businesses, governments and
@@ -139,6 +143,11 @@ At the end of 2012, the catalog comprised 362,000 tracks by 30,000 artists from 
 in 6 languages: English, French, Spanish, German, Italian and Polish. The name "Jamendo" is derived from a fusion of
 two musical terms: "jam session" and "crescendo".
 
+<a name="laposte"><a href="http://legroupe.laposte.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/poste.png" alt="laposte"></a></a>
+
+<a name="palamida"><a href="http://www.palamida.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/palamida_logo.jpg" alt="palamida"></a></a>
+
+<a name="stackoverlfow"><a href="http://careers.stackoverflow.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/stackoverflow careers20-logo.png" alt="stackoverflow"></a></a>
 
 
 ## <a name="orga">The Organizers</a>
