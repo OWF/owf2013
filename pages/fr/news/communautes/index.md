@@ -1,5 +1,5 @@
-title : Les communautés et l'#OWF13
-date : date: 2013/07/24
+title: Les communautés et l'#OWF13
+date: 2013/07/24
 
 Cette année plusieurs communautés clés du monde de l'Open Source ont été impliquées dans l'organisation de l'Open Source. 
 L'OWF13 les remercie et accueillera ces communautés lors des 3 jours de la 6e édition au sein de différents tracks.
