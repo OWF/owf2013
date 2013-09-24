@@ -157,11 +157,11 @@ At the end of 2012, the catalog comprised 362,000 tracks by 30,000 artists from 
 in 6 languages: English, French, Spanish, German, Italian and Polish. The name "Jamendo" is derived from a fusion of
 two musical terms: "jam session" and "crescendo".
 
-<a name="laposte"><a href="http://legroupe.laposte.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/poste.png" alt="laposte"></a></a>
+<a name="laposte"><a href="http://legroupe.laposte.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/poste.png" width="400" alt="laposte"></a></a>
 
-<a name="palamida"><a href="http://www.palamida.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/palamida_logo.jpg" alt="palamida"></a></a>
+<a name="palamida"><a href="http://www.palamida.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/palamida_logo.jpg" width="400" alt="palamida"></a></a>
 
-<a name="stackoverlfow"><a href="http://careers.stackoverflow.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/stackoverflow careers20-logo.png" alt="stackoverflow"></a></a>
+<a name="stackoverlfow"><a href="http://careers.stackoverflow.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/stackoverflow careers20-logo.png" width="400" alt="stackoverflow"></a></a>
 
 
 ## <a name="orga">The Organizers</a>
