@@ -25,6 +25,8 @@ The afternoon will focus on the innovation catalyst role that Open-Source plays 
 
 These topics will be explored deeper **during the second day**, through **workshops and think tanks** led by industry and community leaders. This will enable attendees to contribute to the **evolution of our field**, and of course provide the meeting point where the **world experts** will get together and talk about the present and the future.
 
+<iframe width="550" height="413" src="//www.youtube.com/embed/tSM60KljPOs" frameborder="0" allowfullscreen></iframe>
+
 ## Discover the "THINK" sessions
 
 <a class="btn" href="/en/tracks/?theme=think">Discover the sessions</a>
