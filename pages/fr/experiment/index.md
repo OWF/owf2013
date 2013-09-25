@@ -6,6 +6,8 @@ La journée sera animée par des **conférences, ateliers** à destination d’u
 
 Les **enfants** sont également invités à tester, et participer à la journée avec un programme spécialement concocté pour eux : KIDEXPERIMENT. Des **ateliers pratiques de découverte** de logiciels libres ou open source et de matériels côtoieront des **mini-conférences** à destination des jeunes autour de la démocratie et de l’art libre.
 
+<iframe width="550" height="413" src="//www.youtube.com/embed/lQpoKPgabFs" frameborder="0" allowfullscreen></iframe>
+
 ## Découvrez le programme "EXPERIMENT"
 
 <a class="btn" href="/fr/tracks/?theme=experiment">Découvrez le programme</a>
