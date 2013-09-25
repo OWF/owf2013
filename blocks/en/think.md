@@ -1,1 +1,3 @@
 "THINK" will focus on the main strategies such as [public policy](/en/tracks/17), [collaborative innovation](/en/tracks/1), [training and jobs](/en/tracks/3), [communities](/en/tracks/2) and also the importance of [women in tech](/en/tracks/4). [Key players in these fields](/en/speakers/?theme=think) will share their vision with the participants to further the evolution of our knowlegde society.
+
+<iframe width="550" height="413" src="//www.youtube.com/embed/tSM60KljPOs" frameborder="0" allowfullscreen></iframe>
