@@ -8,7 +8,7 @@ The Beffroi is a congress center of 10 000 square meters, with a plenary hall of
 
 A terrace of 700 square meters on the roof of the building allows us to hold the networking cocktail in a unique setting.
 
-Centre culturel Le Beffroi
+Le Beffroi
 2 Place Emile Cresp,
 92120 Montrouge
 FRANCE
