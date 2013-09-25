@@ -31,6 +31,14 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 <a href="http://www.blue-mind.net/" target="_blank"><img src="/static/pictures/partners/logo_BlueMind_02_RVB.jpg" alt="Blue Mind"> </a>
 
+###C
+
+<a href="http://www.cesames.net/" target="_blank"><img src="/static/pictures/partners/logo-cesames.jpg" alt="cesames"> </a>
+
+###D
+
+<a href="http://www.debian.org/" target="_blank"><img src="/static/pictures/partners/debian.jpg" alt="debian"> </a>
+
 ###E
 
 <a href="http://www.eclipse.org/" target="_blank"><img src="/static/pictures/partners/eclipse_pos_logo_fc_med.jpg" alt="Eclipse Foundation"> </a>
@@ -47,19 +55,25 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 <a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="168px" alt="Inria"> </a>
 
+<a href="http://www.ikoula.com/" target="_blank"><img src="/static/pictures/partners/transparent-png-bleu.png" alt="ikoula"> </a>
+
+###L
+
+<a href="http://www.logilab.fr/" target="_blank"><img src="/static/pictures/partners/logilab.PNG" alt="logilab"> </a>
+
 ###M
 
 <a href="http://www.microsoft.com/" target="_blank"><img src="/static/pictures/partners/Microsoft.jpg" alt="Microsoft"> </a>
-
-###P
-
-<a href="http://www.palamida.com/" target="_blank"><img src="/static/pictures/partners/palamida_logo_Tagline.jpg" alt="palamida"> </a>
 
 ###O
 
 <a href="http://www.openstack.org/" target="_blank"><img src="/static/pictures/partners/openstack-cloud-software-vertical-web.png" alt="OpenStack"> </a>
 
 <a href="http://ow2.org/" target="_blank"><img src="/static/pictures/partners/OW2_logo.png" alt="OW2"> </a>
+
+###P
+
+<a href="http://www.palamida.com/" target="_blank"><img src="/static/pictures/partners/palamida_logo_Tagline.jpg" alt="palamida"> </a>
 
 ###R
 
@@ -72,6 +86,10 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 <a href="http://careers.stackoverflow.com/" target="_blank"><img src="/static/pictures/partners/stackoverflow careers20-logo.png" alt="StackOverflow"> </a>
 
 <a href="https://www.suse.com/" target="_blank"><img src="/static/pictures/partners/suse.jpeg" alt="Suse"> </a>
+
+###T
+
+<a href="http://www.teratec.eu/" target="_blank"><img src="/static/pictures/partners/Teratec-309x123.jpg" alt="Teratec"> </a>
 
 ###X
 
