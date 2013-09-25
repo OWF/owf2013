@@ -6,6 +6,8 @@ During the EXPERIMENT day, there will be several **conferences and workshops** a
 
 **Children** are most welcome to test and participate, with a special schedule dedicated to them: KIDEXPERIMENT. There will be a number of **discovery workshops** for various free or open source software and hardware as well as **mini-conferences** for young people on the topics of democracy and free art.
 
+<iframe width="550" height="413" src="//www.youtube.com/embed/lQpoKPgabFs" frameborder="0" allowfullscreen></iframe>
+
 ## Discover the "EXPERIMENT" sessions
 
 <a class="btn" href="/en/tracks/?theme=experiment">Discover the sessions</a>
