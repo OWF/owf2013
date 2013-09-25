@@ -1,2 +1,4 @@
 "CODE" will help you better understand and leverage your own projects by exposing  the key subjects that are transforming the open source ecosystem: [Web](/en/tracks/23), [mobile phones and tablets](/en/tracks/20), [Big Data](/en/tracks/15), [cloud infrastructure](/en/tracks/21), [DevOps](/en/tracks/25),
 [software quality](/en/tracks/12), [emerging languages and platforms](/en/tracks/28)... CODE will also be your opportunity to meet [key specialists](/en/speakers/?theme=code) in these fields.
+
+<object width="550" height="413"><param name="movie" value="//www.youtube.com/v/AYqhWokc0jE?hl=en_US&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/AYqhWokc0jE?hl=en_US&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="550" height="413" allowscriptaccess="always" allowfullscreen="true"></embed></object>
