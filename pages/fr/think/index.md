@@ -27,6 +27,8 @@ Enfin la **seconde journée** verra se décliner l'ensemble de ces thèmes au se
 
 Enfin un temps particulier sera consacré lors de l'Open World Forum 2013 à la **restitution des travaux des Etats Généraux de l'Open-Source (EGOS).**
 
+<iframe width="550" height="413" src="//www.youtube.com/embed/tSM60KljPOs" frameborder="0" allowfullscreen></iframe>
+
 ## Découvrez le programme "THINK"
 
 <a class="btn" href="/fr/tracks/?theme=think">Découvrez le programme</a>
