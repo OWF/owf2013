@@ -126,11 +126,11 @@ Fin 2012, le catalogue comporte 370 000 titres, partagés par plus de 30 000 art
  disponible en 6 langues : français, anglais, espagnol, allemand, italien et polonais. Le terme « Jamendo » est un
  mot-valise formé à partir de « jam » et « crescendo ».
 
-<a name="laposte"><a href="http://legroupe.laposte.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/poste.png" alt="laposte"></a></a>
+<a name="laposte"><a href="http://legroupe.laposte.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/poste.png" width="400px" alt="laposte"></a></a>
 
-<a name="palamida"><a href="http://www.palamida.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/palamida_logo.jpg" alt="palamida"></a></a>
+<a name="palamida"><a href="http://www.palamida.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/palamida_logo.jpg"  width="400px" alt="palamida"></a></a>
 
-<a name="stackoverlfow"><a href="http://careers.stackoverflow.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/stackoverflow careers20-logo.png" alt="stackoverflow"></a></a>
+<a name="stackoverlfow"><a href="http://careers.stackoverflow.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/stackoverflow careers20-logo.png"  width="400px" alt="stackoverflow"></a></a>
 
 
 ## <a name="orga">Les organisateurs</a>
