@@ -46,11 +46,11 @@ We are glad to announce their support to the 6th edition of the OWF.
 
 ####Platinium Sponsor 
 
-<img alt="suze-microsoft" src="/static/pictures/suze-microsoft.jpg" width="150">
+<img alt="suse-microsoft" src="/static/pictures/partners/MicroSuse.png">
 
 ####Gold Sponsor 
 
-<img alt="red hat" src="/static/pictures/redhat.jpg" width="150">
+<img alt="red hat" src="/static/pictures/partners/redhat-logo - partners.jpg" width="150">
 
 ####Silver Sponsors 
 
