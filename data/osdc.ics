@@ -1,0 +1,702 @@
+BEGIN:VCALENDAR
+CALSCALE:GREGORIAN
+PRODID:-//Act//Data::ICal 0.16//EN
+VERSION:2.0
+X-WR-CALNAME:OSDC.fr 2013
+X-WR-TIMEZONE:Europe/Paris
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+X-LIC-LOCATION:Europe/Paris
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:The GENIVI Alliance has launched a number of open source projec
+ ts this yeear. The purpose of this talk is to provide a quick overview of 
+ these projects and then to dig into a couple of these open source projects
+ . The talk will be delivered by the maintainer of the GENIVI open source p
+ rojects dedicated to navigation and location-based services (Philippe Coll
+ iot from PSA Peugeot-Citroen) and will give an opportunity for developers 
+ to learn about automotive navigation software.
+DTEND;TZID=Europe/Paris:20131005T124500
+DTSTART;TZID=Europe/Paris:20131005T120500
+LOCATION:Gopher (2.06)
+ORGANIZER:Philippe Robin
+SUMMARY:GENIVI - The home of Open Source IVI Software
+UID:http://osdc.fr/2013/talk/4915
+URL:http://osdc.fr/2013/talk/4915
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Pierre Schweitzer
+ATTENDEE:Etienne Crombez
+ATTENDEE:Elise Larsonneur
+ATTENDEE:Mouloud Bargach
+COMMENT:4 attendees
+DESCRIPTION:Hadoop MapReduce est une opportunité mais encore faut-il ne pas
+  confondre BigData et Big Technical Debt. Ensemble\, nous verrons le fonct
+ ionnement de MapReduce et l'écosystème qui s'est créé autour\, afin de dég
+ ager les axes de réflexions nécessaires à la minimisation des couts de mai
+ ntenance et\, plus généralement\, d'évolution.
+DTEND;TZID=Europe/Paris:20131005T161000
+DTSTART;TZID=Europe/Paris:20131005T153000
+LOCATION:Gopher (2.06)
+ORGANIZER:Bertrand Dechoux
+SUMMARY:Big Data\, Big Mess?
+UID:http://osdc.fr/2013/talk/4929
+URL:http://osdc.fr/2013/talk/4929
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Mathieu Gollain-Dupont
+ATTENDEE:Laurent Payot
+ATTENDEE:Julien Bourdin
+ATTENDEE:Etienne Crombez
+ATTENDEE:Mouloud Bargach
+COMMENT:5 attendees
+DESCRIPTION:• le NoSQL\, qu'est-ce donc ?\n\nPartie 1 - pourquoi MongoDB\nP
+ rincipe de MongoDB\nPerformance\nAdaptabilité\nSouplesse des modèles\nLe c
+ as du CMS\n\nPartie 2 - Comment ?\nLe driver PHP\nExemple de requête (CRUD
+ )\nManipulation des _id\nLes opérateurs et les filtres\nLes modes d'intera
+ ctions (Fire & Forget\, Upsert)\nGridFS\n\nPartie 3 - A quoi faut-il faire
+  attention ?\nFaire des relations ?\nDes arbres de contenus ?\nExemple dan
+ s la gestion des pages\nDes meta-données ?\nExemple date et auteur\nSouple
+ sse vs Cohérence ?\nExemples dans le CMS Rubedo \n\nPartie 4 - Cas d'usage
+ \nVersionning de contenus\nGestion des traductions\nStatistiques\nIntégrat
+ ion avec ElasticSearch
+DTEND;TZID=Europe/Paris:20131005T174000
+DTSTART;TZID=Europe/Paris:20131005T170000
+LOCATION:Beastie (-1.02)
+ORGANIZER:Julien Bourdin
+SUMMARY:Retour d'expérience avec MongoDB et PHP
+UID:http://osdc.fr/2013/talk/4976
+URL:http://osdc.fr/2013/talk/4976
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Mathieu Gollain-Dupont
+ATTENDEE:Mouloud Bargach
+COMMENT:2 attendees
+DESCRIPTION:Cette conférence utilise les enseignements liés au développemen
+ t du projet FineDB (http://finedb.org).\n\nNous allons voir qu'il est poss
+ ible de développer très rapidement une base de données noSQL (paires clé-v
+ aleur) haute-performance.\n\nPour cela\, nous utiliserons des bibliothèque
+ s sous licence libre :\n- LightningDB comme moteur de stockage\n- Nanomsg 
+ pour la communication entre les threads\n\nLe code présenté est écrit en C
+ .
+DTEND;TZID=Europe/Paris:20131005T152500
+DTSTART;TZID=Europe/Paris:20131005T142500
+LOCATION:Beastie (-1.02)
+ORGANIZER:Amaury Bouchard
+SUMMARY:Créer une base NoSQL en 1 heure
+UID:http://osdc.fr/2013/talk/4978
+URL:http://osdc.fr/2013/talk/4978
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Jérôme Fenal
+ATTENDEE:Haïkel Guémar
+ATTENDEE:Pierre Schweitzer
+ATTENDEE:Johan Cwiklinski
+COMMENT:4 attendees
+DESCRIPTION:Les Softwares Collections sont une nouvelle méthode de fournir 
+ des paquets RPM de différentes versions sans altérer le système de base\, 
+ pouvant s'installer en parallèle. Cette nouvelle offre devrait favoriser l
+ 'adoption des versions récentes des langages.\n\n- présentation des SCL\n-
+  contenu d'une collection\n- exemple avec LAMP (Apache 2.4\, php 5.5\, MyS
+ QL 5.5 sur RHEL-6)\n- RHSCL : support officiel par Red Hat pour sa distrib
+ ution entreprise.\n\nRemi Collet: Fedora contributor\, PHP developer\, Red
+  Hat Senior Software engineer (BaseOS / Webstack team)
+DTEND;TZID=Europe/Paris:20131004T102500
+DTSTART;TZID=Europe/Paris:20131004T094500
+LOCATION:Beastie (-1.02)
+ORGANIZER:Remi Collet
+SUMMARY:Introduction aux Software Collections
+UID:http://osdc.fr/2013/talk/4984
+URL:http://osdc.fr/2013/talk/4984
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Mathieu Gollain-Dupont
+ATTENDEE:Haïkel Guémar
+ATTENDEE:Etienne Crombez
+ATTENDEE:Elise Larsonneur
+ATTENDEE:Mouloud Bargach
+COMMENT:5 attendees
+DESCRIPTION:The big data ecosystem has evolved with a myriad of projects\, 
+ mostly rotating around Hadoop. The Spark project first designed has an ext
+ ension to the latter\, has turned into a full blown ecosystem for lightnin
+ g fast computations for iterative algorithms on large datasets\, an integr
+ ated graph processing framework\, an in-memory filesystem\, a stream proce
+ ssing engine and a new machine learning library that holds the promise of 
+ revolutionizing the way we do complex analysis of large data sets. \nIn th
+ is talk we will go through the different component of the Spark analytic s
+ tack and see why a lot of people have taken a strong interest to it.
+DTEND;TZID=Europe/Paris:20131005T165500
+DTSTART;TZID=Europe/Paris:20131005T161500
+LOCATION:Gopher (2.06)
+ORGANIZER:Sam Bessalah
+SUMMARY:In Memory Big Data Analytics with the Apache Spark Ecosystem
+UID:http://osdc.fr/2013/talk/5038
+URL:http://osdc.fr/2013/talk/5038
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Haïkel Guémar
+ATTENDEE:Etienne Crombez
+ATTENDEE:Donovan Softly
+ATTENDEE:Mouloud Bargach
+COMMENT:4 attendees
+DESCRIPTION:Crée par le développeur à l'origine de Cobbler et Func\, Ansibl
+ e est un outil d'orchestration et de gestion de configuration qui combine 
+ des outils comme Mcollective à une approche de la configuration semblable 
+ à celle de Puppet ou Cfengine. Contrairement à la plupart des outils du ma
+ rché\, ce dernier se distingue par l'absence d'agent spécifique sur place\
+ , se basant entièrement sur ssh pour ses opérations. La présentation montr
+ eras les possibilités offert par l'outil\, et monteras que même si au fina
+ l\, ça ressemble à un ssh dans une boucle for\, l'approche va bien plus lo
+ in et permet de gérer sans souci des infrastructures conséquentes.
+DTEND;TZID=Europe/Paris:20131005T102500
+DTSTART;TZID=Europe/Paris:20131005T094500
+LOCATION:Gopher (2.06)
+ORGANIZER:Michael Scherer
+SUMMARY:Ansible\, orchestration et gestion de configuration simple
+UID:http://osdc.fr/2013/talk/5043
+URL:http://osdc.fr/2013/talk/5043
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Haïkel Guémar
+COMMENT:1 attendees
+DESCRIPTION:SPICE is a remote display protocol (and more!) for your virtual
+  machines.\nThis talk will present the new features SPICE got in the last 
+ year(s).
+DTEND;TZID=Europe/Paris:20131004T180500
+DTSTART;TZID=Europe/Paris:20131004T174500
+LOCATION:Beastie (-1.02)
+ORGANIZER:Christophe Fergeau
+SUMMARY:SPICE Status Update
+UID:http://osdc.fr/2013/talk/5044
+URL:http://osdc.fr/2013/talk/5044
+END:VEVENT
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:Aerogear est un ensemble de librairies pour le Mobile developé 
+ par JBoss portant sur 3 domaines essentiels : Persistance\, sécurité et Co
+ nnectivité. Ces 3 aspects cruciaux peuvent vite devenir problématique dans
+  un environnement mobile varié et évoluant sans cesse. Lors de cette prése
+ ntation\, nous vous monterons comment la libraire Aerogear tente de résoud
+ re ces problèmes et comment elle permet aux développeurs d'accéder aux com
+ posants côté serveur\, tels que les endpoint  REST\, en utilisant une API 
+ commune à  de multiples plates-formes mobiles telles que Javascript/ HTML5
+ \, Android et iOS.\nNous presenterons egallement le composant Open Source 
+ "Unified Push Server" qui permets de facilement mettre en place une soluti
+ on de push pour ces applications mobiles.
+DTEND;TZID=Europe/Paris:20131005T094000
+DTSTART;TZID=Europe/Paris:20131005T090000
+LOCATION:Beastie (-1.02)
+ORGANIZER:Sébastien Blanc
+SUMMARY:Aerogear\, les librairies mobiles open source pour l'entreprise !
+UID:http://osdc.fr/2013/talk/5045
+URL:http://osdc.fr/2013/talk/5045
+END:VEVENT
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:You want to develop a mobile web app. You app needs to connect 
+ to a secured JaveEE backend. You don't know where to start? This session i
+ s tailored for you: live coding will show you where to start from scaffold
+ ing a web application with modern HTML5 Front End to making sure your conn
+ ection to JavaEE backend is secured.\n\nWe will do live demo coding with a
+  broad variety of Open Source projects: AngularJS\, bootstap\, AeroGear li
+ braries\, Forge for the tooling part.\n\nThis is an interactive session  w
+ here the audience can participate with their laptops\, get their hands dir
+ ty and learn a bunch of silver bullets such as turning the Web Application
+  into a Native (hybrid) one or easily adding a two-factor authenfication m
+ echanism.
+DTEND;TZID=Europe/Paris:20131005T174000
+DTSTART;TZID=Europe/Paris:20131005T170000
+LOCATION:Gopher (2.06)
+ORGANIZER:Sébastien Blanc
+SUMMARY:Enterprise Mobile app in minutes\, not days
+UID:http://osdc.fr/2013/talk/5047
+URL:http://osdc.fr/2013/talk/5047
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Mathieu Gollain-Dupont
+ATTENDEE:Johan Cwiklinski
+ATTENDEE:Donovan Softly
+COMMENT:3 attendees
+DESCRIPTION:PHP 5.5 est sorti il y a peu.\nNous allons passer en revue les 
+ nouveautés du langages qui vont faire la différence dans vos développement
+ s futurs.\nNouvelle gestion des mots de passes\, générateurs pour les itér
+ ateurs et changements syntaxiques sont autant de points que nous aborderon
+ s.\nNous terminerons par un guide de migration pour faciliter votre futur 
+ passage à PHP5.5
+DTEND;TZID=Europe/Paris:20131004T094000
+DTSTART;TZID=Europe/Paris:20131004T090000
+LOCATION:Beastie (-1.02)
+ORGANIZER:julien pauli
+SUMMARY:Les nouveautés de PHP5.5
+UID:http://osdc.fr/2013/talk/5049
+URL:http://osdc.fr/2013/talk/5049
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Mathieu Gollain-Dupont
+ATTENDEE:Pierre Schweitzer
+ATTENDEE:Johan Cwiklinski
+ATTENDEE:Etienne Crombez
+ATTENDEE:Donovan Softly
+COMMENT:5 attendees
+DESCRIPTION:PHP est un langage de scripts qui gère automatiquement la mémoi
+ re. Mais il ne faut pas faire n'importe quoi!\nCette présentation va vous 
+ montrer comment PHP alloue de la mémoire\, pour vos variables notamment\, 
+ comment il les traque et libère la mémoire de celles-ci.\nNous vous montre
+ rons ainsi ce qu'il faut faire et ne pas faire en PHP pour être économe en
+  mémoire dans vos développements quotidiens.
+DTEND;TZID=Europe/Paris:20131004T144000
+DTSTART;TZID=Europe/Paris:20131004T140000
+LOCATION:Beastie (-1.02)
+ORGANIZER:julien pauli
+SUMMARY:Comprendre la gestion de la mémoire en PHP
+UID:http://osdc.fr/2013/talk/5050
+URL:http://osdc.fr/2013/talk/5050
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Christophe Desclaux
+COMMENT:1 attendees
+DESCRIPTION:Depuis quasiment deux ans je beigne dans le domaine du web séma
+ ntique\, j'en ai fais pas mal durant mes études puis j'ai trouvé une place
+  d'ingé "junior" au sein d'une équipe Inria (wimmics) spécialisée et recon
+ nu dans ce domaine.\n\nJe développe dans le cadre de ce job (et de mon tem
+ ps libre) l'outil OpenSource www.zone-project.org. Cet outil permet d'orga
+ niser la veille d'usagers à l'aide de mots clés qui sont ensuite analysés\
+ , sémantisés\, nettoyés et utilisés pour faire du filtrage (sémantique! de
+  news). Je  vous présenterai rapidement l'outil car il représente une exce
+ llente application du web sémantique dans la vrai vie!\n\nJ'ai la chance d
+ 'avoir pu m'entourer de très bons chercheurs dans ce domaine la pour pouvo
+ ir aller dans tous les retranchements de ce domaine de recherche. Cependan
+ t on nous vendait le web sémantique comme le web 3.0 mais aujourd'hui où e
+ n est-on? \n\nBref je conclurais la présentation en vous présentant ma vis
+ ion très geek OpenSource sur le sujet je vous raconterai quelques anecdote
+ s vue de l'intérieur\, tel que les bugs d'apis à répétition\, les hacks dé
+ gueux qu'on est obligé de faire voir les mêmes les non-dits!
+DTEND;TZID=Europe/Paris:20131005T113500
+DTSTART;TZID=Europe/Paris:20131005T111500
+LOCATION:Gopher (2.06)
+ORGANIZER:Christophe Desclaux
+SUMMARY:Web sémantique: d'un outil de chercheurs à un outil en prod?
+UID:http://osdc.fr/2013/talk/5052
+URL:http://osdc.fr/2013/talk/5052
+END:VEVENT
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:Présentation de l'écosystème Tizen\, du SDK et développement HT
+ ML5 sur Tizen.
+DTEND;TZID=Europe/Paris:20131005T102500
+DTSTART;TZID=Europe/Paris:20131005T094500
+LOCATION:Beastie (-1.02)
+ORGANIZER:Romuald Rozan
+SUMMARY:Tizen Overview
+UID:http://osdc.fr/2013/talk/5053
+URL:http://osdc.fr/2013/talk/5053
+END:VEVENT
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:Written by the original developer of ZeroMQ\, nanomsg tries to 
+ overcome many design flaws of the previous.\nWe'll see how nanomsg allows 
+ us to build connected applications that scale gracefully.
+DTEND;TZID=Europe/Paris:20131004T174000
+DTSTART;TZID=Europe/Paris:20131004T170000
+LOCATION:Beastie (-1.02)
+ORGANIZER:Haïkel Guémar
+SUMMARY:nanomsg: ZeroMQ done right
+UID:http://osdc.fr/2013/talk/5056
+URL:http://osdc.fr/2013/talk/5056
+END:VEVENT
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:MQTT qui en est quand même à sa version 3.1 existe depuis 10 an
+ s\, sans que personne ne le connaisse\, et il prétend être le protocole qu
+ i permettra enfin l'émergence de l'Internet des objets? Comme protocole\, 
+ HTTP n'est-il pas suffisant pour tout résoudre? Pourquoi le mail existe-t-
+ il encore? Pourquoi XMPP n'est-il pas maitre du monde? Pourquoi le pubsub 
+ est-il si compliqué à mettre en place? MQTT tente de répondre à toutes ces
+  questions.
+DTEND;TZID=Europe/Paris:20131005T165500
+DTSTART;TZID=Europe/Paris:20131005T161500
+LOCATION:Beastie (-1.02)
+ORGANIZER:Mathieu Lecarme
+SUMMARY:MQTT\, le pubsub des objets?
+UID:http://osdc.fr/2013/talk/5057
+URL:http://osdc.fr/2013/talk/5057
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Mathieu Gollain-Dupont
+ATTENDEE:Haïkel Guémar
+ATTENDEE:Laurent Payot
+ATTENDEE:Johan Cwiklinski
+ATTENDEE:Etienne Crombez
+ATTENDEE:Donovan Softly
+ATTENDEE:Mouloud Bargach
+COMMENT:7 attendees
+DESCRIPTION:A travers l'exemple de plusieurs codes intentionnellement plein
+  de trous\, nous allons voir plusieurs types courants de problémes de sécu
+ rité qu'une application web peut rencontrer\, leurs impacts et comment les
+  éviter.\n\nPuis une seconde partie se focalisera sur les bonnes pratiques
+  au sein du logiciel libre ( assignation de CVE\, communication avec les d
+ istributions ) pour la gestion des problèmes\, aussi bien du coté du rappo
+ rteur que du coté du projet.
+DTEND;TZID=Europe/Paris:20131004T115500
+DTSTART;TZID=Europe/Paris:20131004T111500
+LOCATION:Beastie (-1.02)
+ORGANIZER:Michael Scherer
+SUMMARY:Atelier pratique de recherche de faille de sécurité
+UID:http://osdc.fr/2013/talk/5058
+URL:http://osdc.fr/2013/talk/5058
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Mathieu Gollain-Dupont
+ATTENDEE:Haïkel Guémar
+ATTENDEE:Jonathan MERCIER
+ATTENDEE:Elise Larsonneur
+COMMENT:4 attendees
+DESCRIPTION:Présentation du langage D.\nCe langage se voulant moderne\, ada
+ pté au problématique contemporaine va vous faciliter la vie. Ne faites plu
+ s le choix entre performance ou rapidité de développement.\n\nretour d'un 
+ utilisateur
+DTEND;TZID=Europe/Paris:20131004T111000
+DTSTART;TZID=Europe/Paris:20131004T103000
+LOCATION:Beastie (-1.02)
+ORGANIZER:Jonathan MERCIER
+SUMMARY:D programming
+UID:http://osdc.fr/2013/talk/5061
+URL:http://osdc.fr/2013/talk/5061
+END:VEVENT
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:This will be illustrated through the client we developed to all
+ ow bidirectional synchronization between a desktop app and a remote Nuxeo 
+ content repository.\nThe talk will cover the general concepts of a Python/
+ Qt cross-platform application\, the way we used unittest and nose to run f
+ unctional tests and the whole build process handled by Jenkins. Starting f
+ rom the application packaging for Windows and Mac OS X with cx_Feeze and p
+ y2app\, ending with the execution of the tests under the 3 main platforms.
+ 
+DTEND;TZID=Europe/Paris:20131005T094000
+DTSTART;TZID=Europe/Paris:20131005T090000
+LOCATION:Gopher (2.06)
+ORGANIZER:Laurent Doguin
+SUMMARY:Building and testing underCI a desktop application written in Pytho
+ n using Qt\, nose and Jenkins.
+UID:http://osdc.fr/2013/talk/5062
+URL:http://osdc.fr/2013/talk/5062
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Haïkel Guémar
+COMMENT:1 attendees
+DESCRIPTION:WebTest est une librairie framework agnostique permettant de te
+ ster n'importe quelle application WSGI et bien plus encore. Après un bref 
+ rappel de ce qu'est la norme WSGI\, cette présentation vous permettra d'ap
+ précier l'étendue des possibilités de la librairie.
+DTEND;TZID=Europe/Paris:20131005T122500
+DTSTART;TZID=Europe/Paris:20131005T120500
+LOCATION:Beastie (-1.02)
+ORGANIZER:Gael Pasgrimaud
+SUMMARY:Tu peux webtest
+UID:http://osdc.fr/2013/talk/5063
+URL:http://osdc.fr/2013/talk/5063
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Mathieu Gollain-Dupont
+ATTENDEE:Laurent Payot
+ATTENDEE:Rodolphe Quiédeville
+ATTENDEE:Etienne Crombez
+ATTENDEE:Donovan Softly
+ATTENDEE:Mouloud Bargach
+COMMENT:6 attendees
+DESCRIPTION:La réalisation de tests de performance d'une appli web avec Tsu
+ ng. Présentation générale de l'outil et de ses fonctions avancées pour gén
+ érer des données aléatoires et inter-agir avec l'application web.
+DTEND;TZID=Europe/Paris:20131005T120000
+DTSTART;TZID=Europe/Paris:20131005T114000
+LOCATION:Beastie (-1.02)
+ORGANIZER:Rodolphe Quiédeville
+SUMMARY:Performance web avec Tsung
+UID:http://osdc.fr/2013/talk/5064
+URL:http://osdc.fr/2013/talk/5064
+END:VEVENT
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:OCaml est un langage statiquement typé\, développé à l'INRIA\, 
+ et utilisé massivement pour la programmation des logiciels les plus comple
+ xes (compilateurs et analyseurs de code embarqué\, prouveurs de théorèmes\
+ , trading automatique\, etc.) pour garantir fiabilité et performance. En O
+ Caml\, le paradigme de programmation est "la programmation guidée par les 
+ types"\, le programmeur définit les types que son application manipule\, p
+ armi un large éventail de possibilités\, puis il peut coder tranquillement
+ \, en se laissant guider par le compilateur\, pour obtenir un programme co
+ rrect et performant sans effort.\n\nCet exposé est une introduction à OCam
+ l et à la programmation guidée par les types.
+DTEND;TZID=Europe/Paris:20131005T144000
+DTSTART;TZID=Europe/Paris:20131005T140000
+LOCATION:Gopher (2.06)
+ORGANIZER:Fabrice Le Fessant
+SUMMARY:La programmation guidée par les types\, avec OCaml
+UID:http://osdc.fr/2013/talk/5065
+URL:http://osdc.fr/2013/talk/5065
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Haïkel Guémar
+ATTENDEE:Laurent Payot
+ATTENDEE:Etienne Crombez
+COMMENT:3 attendees
+DESCRIPTION:Docker (http://www.docker.io) est un moteur de déploiement d'ap
+ plication sous la forme de containeur autonome\, virtualisé et portable. C
+ es containeurs peuvent ensuite s'installer sur une machine physique\, des 
+ VMs ou sur OpenStack par exemple. Cette session vous propose de vous faire
+  découvrir cet nouvel outil\, encore jeune mais offrant déjà des fonctionn
+ alités intéressantes\, que ce soit pour le développement que la mise en pr
+ oduction.
+DTEND;TZID=Europe/Paris:20131005T111000
+DTSTART;TZID=Europe/Paris:20131005T103000
+LOCATION:Gopher (2.06)
+ORGANIZER:Sébastien Douche
+SUMMARY:Démarrer avec Docker
+UID:http://osdc.fr/2013/talk/5066
+URL:http://osdc.fr/2013/talk/5066
+END:VEVENT
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:Les moteurs de stockage d'informations ont beaucoup évolué ces 
+ dernières années notamment avec l’avènement du paradigme NoSQL. Le stockag
+ e d'information sous forme de Graphe est une solution particulièrement ada
+ ptée à la gestion de réseaux sociaux et aux techniques de recommandation. 
+ Après une brève introduction des moteurs de stockage et de la notion de Gr
+ aphe\, la présentation introduit le moteur de stockage graphe open-source 
+ neo4j : présentation\, type de données (noeuds\, arcs)\, installation\, bi
+ ndings\, interface et engin le langage qui est l'équivalent du sql dans le
+  monde des graphes.
+DTEND;TZID=Europe/Paris:20131004T165500
+DTSTART;TZID=Europe/Paris:20131004T161500
+LOCATION:Beastie (-1.02)
+ORGANIZER:François-Xavier Bois
+SUMMARY:Neo4j et le stockage de données sous forme de Graphes
+UID:http://osdc.fr/2013/talk/5068
+URL:http://osdc.fr/2013/talk/5068
+END:VEVENT
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:Git est devenu le gestionnaire de code source le plus utilisé d
+ ans le monde Open Source\, et il se répend aussi de plus en plus dans les 
+ entreprises.\nL'historique du code source géré par Git est supposé être im
+ mutable\, car Git utilise une base de donnée adressable par le contenu.\nC
+ ependant lorsque des erreurs ont été commises ou pour que certaines foncti
+ onnalités basées sur l'historique soient plus utiles ou plus fiables\, il 
+ peut être intéressant de transformer l'historique. Pour cela il est possib
+ le et avantageux d'utiliser git replace.
+DTEND;TZID=Europe/Paris:20131005T152500
+DTSTART;TZID=Europe/Paris:20131005T144500
+LOCATION:Gopher (2.06)
+ORGANIZER:Christian Couder
+SUMMARY:Transformer l'historique de votre code source avec git replace
+UID:http://osdc.fr/2013/talk/5074
+URL:http://osdc.fr/2013/talk/5074
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Laurent Payot
+ATTENDEE:Etienne Crombez
+COMMENT:2 attendees
+DESCRIPTION:Le projet "The sharebox" est un fork de la "piratebox"\, dont s
+ on but est le partage de données en tout anonymat\, sur un réseau parallèl
+ e à internet.\n\nChristophe Villeneuve abordera et répondra de l’engouemen
+ t des hackers et des professionnels vers ce réseau décentralisé\, de ces p
+ ratiques et comment le déployer en entreprise. De plus\, il montrera quels
+  sont les usages et les projets de ces nouveaux hébergeurs hors ligne tout
+  en gardant une interface classique disponible\, compréhensible de tous\, 
+ en toute transparence et anonyme.\n\n\nPar ailleurs\, lors de cette sessio
+ n\, le mode nomade sera un autre point abordé\, dont celui-ci modifie les 
+ concepts de bases de d'hébergement et du développement.
+DTEND;TZID=Europe/Paris:20131004T152500
+DTSTART;TZID=Europe/Paris:20131004T144500
+LOCATION:Beastie (-1.02)
+ORGANIZER:christophe villeneuve
+SUMMARY:Garder le contrôle de vos données
+UID:http://osdc.fr/2013/talk/5075
+URL:http://osdc.fr/2013/talk/5075
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Pierre Schweitzer
+COMMENT:1 attendees
+DESCRIPTION:Comment porter sous Windows sans frais\, et en utilisant unique
+ ment des logiciels libres\, un logiciel libre ?\n\nLa solution simple se t
+ rouve dans ReactOS. Ce système d'exploitation libre compatible Windows (20
+ 03) permet\nde compiler et de développer des applications pour Windows. Pa
+ r ailleurs\, il vient avec un environnement\nde compilation complet\, qui 
+ permet de se passer d'un système d'exploitation Windows tout en autorisant
+ \nla création de binaires pour Windows.\n\nReactOS : http://www.reactos.or
+ g
+DTEND;TZID=Europe/Paris:20131005T180500
+DTSTART;TZID=Europe/Paris:20131005T174500
+LOCATION:Beastie (-1.02)
+ORGANIZER:Pierre Schweitzer
+SUMMARY:ReactOS : Ou comment développer pour Windows... Sans utiliser un se
+ ul logiciel propriétaire !
+UID:http://osdc.fr/2013/talk/5076
+URL:http://osdc.fr/2013/talk/5076
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Laurent Payot
+ATTENDEE:Etienne Crombez
+COMMENT:2 attendees
+DESCRIPTION:Le secteur mobile est en constante évolution et l'année 2013 n'
+ a pas échappée à la règle avec l'apparition de Firefox OS. Ce nouveau syst
+ ème réalisé et maintenu par la fondation Mozilla\, montre une alternative 
+ à la mobilité\,  par rapport à ce que l'on peut connaître jusqu'à présent.
+ \n\nChristophe Villeneuve présentera ce nouveau système\, la vision de l'O
+ S et les possibilités qu'offrent celui-ci tant au niveau de l'animation\, 
+ de la démoscène et des applications.
+DTEND;TZID=Europe/Paris:20131005T111000
+DTSTART;TZID=Europe/Paris:20131005T103000
+LOCATION:Beastie (-1.02)
+ORGANIZER:christophe villeneuve
+SUMMARY:Firefox OS - l'autre système pour smartphone
+UID:http://osdc.fr/2013/talk/5077
+URL:http://osdc.fr/2013/talk/5077
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Etienne Crombez
+COMMENT:1 attendees
+DESCRIPTION:RenderJS permet de combiner plusieurs gadgets (composants) dans
+  une application web. Les gadgets sont eux-mêmes des pages HTML5\, mutuell
+ ement isolées autant que possible. Ainsi\, on peut réutiliser des gadgets\
+ , adapter du contenu existant\, et imbriquer un gadget dans un autre.\n\nC
+ haque gadget peut apporter son lot de JavaScript/CSS et communiquer avec d
+ 'autres gadgets via une API. Un gadget peut être aussi petit qu'un champ d
+ e formulaire et aussi grand qu'une application entière.\n\nDans des exempl
+ es\, on peut voir la combinaison avec jQuery Mobile. La présentation concl
+ ut en montrant des applications où renderJS est utilisé aujourd'hui.
+DTEND;TZID=Europe/Paris:20131005T180500
+DTSTART;TZID=Europe/Paris:20131005T174500
+LOCATION:Gopher (2.06)
+ORGANIZER:Viktor Horvath
+SUMMARY:RenderJS - composez votre application HTML5
+UID:http://osdc.fr/2013/talk/5080
+URL:http://osdc.fr/2013/talk/5080
+END:VEVENT
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:L’analyse des réseaux sociaux est avant tout une boîte à outils
+  permettant de visualiser et\nmodéliser les relations sociales comme des n
+ œuds (les individus\, les organisations...) et des\nliens (relations entre
+  ces nœuds). \n\nDe ce fait\, l’analyse des réseaux sociaux repose sur des
+  visualisations graphiques issues d’algorithmes permettant de calculer des
+  degrés de force ou de densité entre les différents acteurs d’un réseau. \
+ n\nCette présentation a pour objet d'abordé l'analyse des réseaux sociaux 
+ en s'appyuant sur le module python-networkx \,en présentera quelques exemp
+ les.
+DTEND;TZID=Europe/Paris:20131005T120000
+DTSTART;TZID=Europe/Paris:20131005T114000
+LOCATION:Gopher (2.06)
+ORGANIZER:Kamel Ibn Aziz Derouiche
+SUMMARY:Analyse de réseaux sociaux avec Python-networkx
+UID:http://osdc.fr/2013/talk/5081
+URL:http://osdc.fr/2013/talk/5081
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Haïkel Guémar
+COMMENT:1 attendees
+DESCRIPTION:Cette présentation vise à montrer que go est un langage très ad
+ apté pour les webservices\, aussi bien pour les construire que pour les co
+ nsommer. Je montrerai\, par exemple\, comment faire pour parser simplement
+  du xml ou du json.
+DTEND;TZID=Europe/Paris:20131005T113500
+DTSTART;TZID=Europe/Paris:20131005T111500
+LOCATION:Beastie (-1.02)
+ORGANIZER:Bruno Michel
+SUMMARY:Retour d'expérience sur webservices et go
+UID:http://osdc.fr/2013/talk/5082
+URL:http://osdc.fr/2013/talk/5082
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Laurent Payot
+ATTENDEE:Etienne Crombez
+COMMENT:2 attendees
+DESCRIPTION:Remplacer l'utilisation des cookies par du Nosql distribué
+DTEND;TZID=Europe/Paris:20131005T161000
+DTSTART;TZID=Europe/Paris:20131005T153000
+LOCATION:Beastie (-1.02)
+ORGANIZER:Damien Krotkine
+SUMMARY:Redis et Riak en remplacement des cookies
+UID:http://osdc.fr/2013/talk/5083
+URL:http://osdc.fr/2013/talk/5083
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Pierre Schweitzer
+COMMENT:1 attendees
+DESCRIPTION:[[exposé en anglais ou français\, selon audience\; talk in engl
+ ish or french\, according to room's wish]]\n\nI will present MELT\, a doma
+ in specific language to customize the GCC compiler\, thru several examples
+ .\n\nMELT is a high level domain specific language to customize and extend
+  the GCC compiler\, enabling coding rules validation\, specific optimizati
+ ons\, etc by easily working on GCC internal representation. MELT is a lisp
+ -like language with powerful features (pattern matching\, functional\, ref
+ lective & object style programming ...) to ease GCC customization
+DTEND;TZID=Europe/Paris:20131004T122000
+DTSTART;TZID=Europe/Paris:20131004T120000
+LOCATION:Beastie (-1.02)
+ORGANIZER:Basile Starynkevitch
+SUMMARY:customizing GCC with MELT
+UID:http://osdc.fr/2013/talk/5092
+URL:http://osdc.fr/2013/talk/5092
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Mathieu Gollain-Dupont
+ATTENDEE:Mouloud Bargach
+COMMENT:2 attendees
+DESCRIPTION:Bareos is a reliable network open source software to backup\, a
+ rchive and restore files from all major operating systems. The fork was fo
+ unded\n2010 out of the Bacula project. The fork has been actively develope
+ d and many new features have been added.\n\nToday Bareos comes with LTO ha
+ rdware encryption support\, bandwidth limitation and handy new console com
+ mands. The enhanced storage daemon\nallows transparent backup replication 
+ 'Backup to disk to cloud' and eases the backup of DMZ clients with new 'pa
+ ssive client' concept. The\nsource is available on Github and is licensed 
+ with AGPLv3. There are ready to install repositories for all major Linux d
+ istributions and\nwindows installer packages as well as preconfigured virt
+ ual machine\nimages from our nightly builds.\n\nThis talk gives a technica
+ l overview of Bareos architecture and features\, explains the build and au
+ tomated QA process and gives hints\nhow to participate.
+DTEND;TZID=Europe/Paris:20131004T161000
+DTSTART;TZID=Europe/Paris:20131004T153000
+LOCATION:Beastie (-1.02)
+ORGANIZER:Maik Aussendorf
+SUMMARY:Open Source Backup with Bareos: Architecture\, Features and Bacula 
+ comparison
+UID:http://osdc.fr/2013/talk/5105
+URL:http://osdc.fr/2013/talk/5105
+END:VEVENT
+BEGIN:VEVENT
+COMMENT:0 attendees
+DESCRIPTION:On décrivait d'un point de vue technique l'architecture d'un cl
+ oud\npersonnel. On présenterait notre concept de pPaaS et de DataSystème q
+ ui\nsont les 2 briques clés permettant de faire un cloud personnel.\n\n   
+ - Le pPaaS est un personal PaaS qui déploie d'un clic des web apps que\n  
+  l'utilisateur choisit sur un market place\n   - Le dataSystem est un serv
+ ice de persistance partagé entres les web app\n   de l'utilisateur ce qui 
+ permet que différentes app utilisent les meme\n   données (contacts\, mail
+ s\, historique de géolocalisation\, factures ...)
+DTEND;TZID=Europe/Paris:20131005T142000
+DTSTART;TZID=Europe/Paris:20131005T140000
+LOCATION:Beastie (-1.02)
+ORGANIZER:Frank Rousseau
+SUMMARY:CozyCloud : A personal PaaS for a personal Cloud
+UID:http://osdc.fr/2013/talk/5127
+URL:http://osdc.fr/2013/talk/5127
+END:VEVENT
+END:VCALENDAR

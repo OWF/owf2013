@@ -11,8 +11,10 @@ import bleach
 
 from flask import current_app as app
 from flask.ext.script import Manager
+from icalendar import Calendar
 
 from website.application import create_app, db
+from website.crm.models import Speaker, Talk, Track2
 
 
 DEBUG = True
@@ -122,6 +124,45 @@ def build():
   system("cp ./static/*.txt ./build/")
   system("cp ./static/*.xml ./build/")
   print("Done.")
+
+
+@manager.command
+def load_osdc():
+  cal = Calendar.from_ical(open('data/osdc.ics','rb').read())
+  speakers = {}
+  osdc1 = Track2.query.get(28)
+  osdc2 = Track2.query.get(48)
+  osdc3 = Track2.query.get(49)
+
+  for component in cal.walk():
+    if component.name != 'VEVENT':
+      continue
+    title = component['summary']
+    room_name = component['location']
+    abstract = component['description']
+    speaker_name = component['organizer']
+    starts_at = component['dtstart'].dt
+    ends_at = component['dtend'].dt
+    duration = int((ends_at - starts_at).total_seconds() / 60)
+
+    speaker = speakers.get(speaker_name, None)
+    if not speaker:
+      speaker = Speaker(first_name="", last_name=speaker_name)
+      speakers[speaker_name] = speaker
+
+    talk = Talk(title=title, abstract=abstract,
+                starts_at=starts_at)
+    talk.speakers.append(speaker)
+
+    if 'Gopher' in room_name:
+      talk.track = osdc3
+    else:
+      if starts_at.day == 4:
+        talk.track = osdc1
+      else:
+        talk.track = osdc2
+
+    db.session.commit()
 
 
 @manager.command
