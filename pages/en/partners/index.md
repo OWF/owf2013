@@ -40,21 +40,6 @@ Alter Way has a distinctive skill on the Free market and can be a robust partner
 
 <a name="microsoft"><a href="http://www.microsoft.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Microsoft.png" width="400" alt="Microsoft"></a></a>
 
-Microsoft est établi en France depuis trente ans, son siège d'Issy-Les-Moulineaux regroupe les 1700 salariés de 
-Microsoft France et des équipes de Microsoft EMEA et des opérations internationales. Y est également implanté un pôle 
-de développement mondial, le Microsoft Engineering Center. 150 ingénieurs y travaillent, depuis la France pour 22 pays, 
-développement des services en ligne Xbox Music et Vidéo.
- 
-L'interopérabilité est depuis plus de 10 ans au cœur des technologies Microsoft, appuyée sur l’écoute de nos clients, 
-partenaires et concurrents, ainsi que la collaboration avec les organismes de normalisation. L’opposition historique 
-entre les logiciels Open Source et commerciaux a évolué vers une approche plus nuancée de sources mixtes pour laquelle 
-l’interopérabilité est clé. Pour en maximiser les bénéfices, nous avons structuré notre approche autour de 3 piliers : 
-
-* Clients : écoute des clients et de leurs écosystèmes 
-* Collaboration : participation aux organismes de normalisation et standards, aux communautés Open Source, 
-* Open in the Cloud : la concrétisation de l’ouverture avec le Cloud, enjeux majeur pour les organisations comme pour les développeurs ou professionnels de l'informatique auxquels nous continuons à apporter des solutions respectant leurs compétences et investissements existants
-
-
 <a name="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
 
 **Smile** is the number one open source integrator in France and Europe. With experts in a wide range of Open source 
