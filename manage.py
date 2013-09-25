@@ -151,7 +151,7 @@ def load_osdc():
       speakers[speaker_name] = speaker
 
     talk = Talk(title=title, abstract=abstract,
-                starts_at=starts_at)
+                starts_at=starts_at, duration=duration)
     talk.speakers.append(speaker)
 
     if 'Gopher' in room_name:
