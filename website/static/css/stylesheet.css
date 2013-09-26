@@ -478,7 +478,7 @@ img.center {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2em;
   color: #FFFFFF;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 #application-content {
