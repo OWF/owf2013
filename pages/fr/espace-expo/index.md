@@ -27,7 +27,7 @@ Nous sommes heureux de les compter parmi nous pour cette **6e Edition de l’Ope
 
 ###B
 
-<a href="http://www.blackducksoftware.com/" target="_blank"><img alt='blackduck'src="/static/pictures/partners/blackduck.png"/></a>
+<a href="http://www.blackducksoftware.fr/" target="_blank"><img alt='blackduck'src="/static/pictures/partners/blackduck.png"/></a>
 
 <a href="http://www.blue-mind.net/" target="_blank"><img src="/static/pictures/partners/logo_BlueMind_02_RVB.jpg" alt="Blue Mind"> </a>
 
