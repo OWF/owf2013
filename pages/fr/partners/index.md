@@ -104,7 +104,7 @@ l'high tech. Nos clients sont de grandes entreprises cross-sectorielles telles q
 SFR, Intel, France Télévisions, Rue du Commerce et MonAlbumPhoto mais aussi des start-ups innovantes comme 
 KissKissBankBank ou TEA.
 
-<a name="blackduck"><a href="http://www.blackducksoftware.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Black_Duck_Logo_500.png" width="400" alt="blackduck"></a></a>
+<a name="blackduck"><a href="http://www.blackducksoftware.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Black_Duck_Logo_500.png" width="400" alt="blackduck"></a></a>
 
 <a name="elasticsearch"><a href="http://www.elasticsearch.org/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Elasticsearch.png" alt="elasticsearch"></a></a>
 
