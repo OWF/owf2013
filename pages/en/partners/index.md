@@ -105,7 +105,7 @@ as well as building state-of-the-art Open Source technology solutions such as [U
 We specialize in a range of markets such as consumer goods, media, telecommunications, consumer services, and high tech.
 Our clients include global enterprises like Group SEB, SFR, LaSer, Intel, Canal+, and other world leaders.
 
-<a name="blackduck"><a href="http://www.blackducksoftware.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Black_Duck_Logo_500.png" width="400" alt="blackduck"></a></a>
+<a name="blackduck"><a href="http://www.blackducksoftware.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Black_Duck_Logo_500.png" width="400" alt="blackduck"></a></a>
 
 <a name="elasticsearch"><a href="http://www.elasticsearch.org/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Elasticsearch.png" alt="elasticsearch"></a></a>
 
