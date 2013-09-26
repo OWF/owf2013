@@ -148,6 +148,20 @@ two musical terms: "jam session" and "crescendo".
 
 <a name="stackoverlfow"><a href="http://careers.stackoverflow.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/stackoverflow careers20-logo.png" width="400" alt="stackoverflow"></a></a>
 
+In 2008, Joel Spolsky and Jeff Atwood created a site called **Stack Overﬂow** and brought together millions of computer
+programmers from around the world to help each other with detailed technical questions. That site was a phenomenal
+success, so, after securing a $6 million investment from Union Square Ventures, they created the Stack Exchange
+Network and launched new sites in August of 2010. In March of 2011, Stack Overﬂow ofﬁcially became Stack Exchange,
+cementing the forward growth with an additional $12 million investment by USV as well as Spark Capital and Index
+Ventures. There are now more than 100 sites and more than 33 million unique visitors—and we’re still growing!  
+
+Just as Web 2.0 was the concept to reinvent the Internet, Careers 2.0 is our own way of reinventing the hiring process
+by connecting programmers with employers through our job board and candidate search. In 2011, Evans Data reported
+that the global population of developers is expected to grow from 16 million to 20 million by 2015. Despite this growth,
+there are still more open jobs than available programmers. Dice calculated that there were about two or three open jobs
+for every 2011 computer science grad and the Bureau of Labor Statistics estimated that the number of developer jobs
+will increase 30% by 2020. Careers 2.0 fosters the intersection of this community by bringing employers inside of the
+largest online talent pool of programmers.
 
 ## <a name="orga">The Organizers</a>
 
