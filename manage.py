@@ -19,6 +19,38 @@ from website.crm.models import Speaker, Talk, Track2
 
 DEBUG = True
 
+OSDC_DATA = u"""Maik,Aussendorf,maik.aussendorf@dass-it.de
+Sam,Bessalah,samkiller@gmail.com
+Sébastien,Blanc,scm.blanc@gmail.com
+François-Xavier,Bois,fxbois@gmail.com
+Amaury,Bouchard,amaury@amaury.net
+Julien,Bourdin,julien.bourdin@webtales.fr
+Remi,Collet,rcollet@redhat.com
+Christian,Couder,chriscool@tuxfamily.org
+Bertrand,Dechoux,dechouxb@gmail.com
+Kamel Ibn Aziz,Derouiche,kamel.derouiche@gmail.com
+Christophe,Desclaux,christophe@zone-project.org
+Laurent,Doguin,ldoguin@nuxeo.com
+Sébastien,Douche,sdouche@gmail.com
+Christophe,Fergeau,cfergeau@redhat.com
+Haïkel,Guémar,karlthered@gmail.com
+Viktor,Horvath,viktor.h@laposte.net
+Damien,Krotkine,dams@zarb.org
+Fabrice,Le Fessant,fabrice.le_fessant@ocamlpro.com
+Mathieu,Lecarme,mlecarme@bearstech.com
+Jonathan,MERCIER,bioinfornatics@gmail.com
+Bruno,Michel,bruno.michel@af83.com
+Gael,Pasgrimaud,gael@gawel.org
+Julien,Pauli,julienpauli@gmail.com
+Rodolphe,Quiédeville,rodolphe@quiedeville.org
+Philippe,Robin,philippe.robin@technoveo.com
+Frank,Rousseau,frank.rousseau@cozycloud.cc
+Romuald,Rozan,romualdx.z.rozan@intel.com
+Michael,Scherer,misc@zarb.org
+Pierre,Schweitzer,pierre@reactos.org
+Basile,Starynkevitch,basile.starynkevitch@cea.fr
+Christophe,Villeneuve,hellsct1@gmail.com"""
+
 
 manager = Manager(create_app)
 
@@ -164,6 +196,18 @@ def load_osdc():
 
     db.session.commit()
 
+@manager.command
+def update_osdc():
+  for line in OSDC_DATA.split("\n"):
+    first_name, last_name, email = line.split(",")
+    name = first_name + " " + last_name
+    speaker = Speaker.query.filter(Speaker.last_name == name).first()
+    if speaker:
+      print "Updating speaker", name
+      speaker.first_name = first_name
+      speaker.last_name = last_name
+      speaker.email = email
+  db.session.commit()
 
 @manager.command
 def serve(server='0.0.0.0', port=5002, debug=DEBUG):
