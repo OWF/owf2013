@@ -29,6 +29,8 @@
 
 1. Install Vagrant (<http://www.vagrantup.com/>)
 
+2. Install Salty Vagrant `vagrant plugin install vagrant-salt`
+
 2. Run `vagrant up`
 
 3. Run `vagrant ssh -c 'cd /vagrant ; make run'`
