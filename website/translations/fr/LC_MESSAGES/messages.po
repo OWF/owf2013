@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-23 14:43+0200\n"
+"POT-Creation-Date: 2013-09-30 11:01+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -125,19 +125,23 @@ msgstr "Sponsors Or"
 msgid "Silver sponsors"
 msgstr "Sponsors Argent"
 
-#: website/templates/_base.html:196
+#: website/templates/_base.html:198
 msgid "Organizer"
 msgstr "Organisateur"
 
-#: website/templates/_base.html:202
+#: website/templates/_base.html:204
 msgid "Co-organizers"
 msgstr "Co-organisateurs"
 
-#: website/templates/_base.html:219
+#: website/templates/_base.html:221
 msgid "Community Partners"
 msgstr "Partenaires communautaires"
 
-#: website/templates/_base.html:231
+#: website/templates/_base.html:243
+msgid "WebTV Partner"
+msgstr "Partenaire WebTV"
+
+#: website/templates/_base.html:253
 msgid "Press partners"
 msgstr "Partenaires presse"
 
@@ -186,44 +190,50 @@ msgstr "Orateurs"
 msgid "Parallel sessions"
 msgstr "Sessions parallèles"
 
-#: website/templates/day23.html:20
-msgid ""
-"We're currently putting up the schedule - watch this space! Many thanks "
-"for your patience."
-msgstr ""
-"Nous finalisons le programme en ce moment - revenez souvent sur cette "
-"page ! Merci pour votre patience."
-
 #: website/templates/day23.html:22
+msgid ""
+"\n"
+"                You can find the sessions in the grid below, but there's "
+"a lot more!\n"
+"                Please see <a href=\"http://openworldforum.org/fr/news"
+"/programme-experiment/\">the EXPERIMENT exhibition program</a>.\n"
+"                "
+msgstr ""
+"                L'ensemble des sessions se trouve ci-dessous. Mais il y a"
+" plus!                Consultez <a "
+"href=\"http://openworldforum.org/fr/news/programme-experiment/\">le "
+"programme de l'exposition EXPERIMENT</a>.\n"
+
+#: website/templates/day23.html:28
 msgid "All tracks for today"
 msgstr "Toutes les sessions du jour"
 
-#: website/templates/day23.html:33 website/templates/day23.html:47
+#: website/templates/day23.html:39 website/templates/day23.html:53
 #: website/templates/track.html:19
 msgid "Room"
 msgstr "Salle"
 
-#: website/templates/day23.html:35
+#: website/templates/day23.html:41
 msgid "details"
 msgstr "détails"
 
-#: website/templates/day23.html:40
+#: website/templates/day23.html:46
 msgid "Time table"
 msgstr "Horaires"
 
-#: website/templates/day23.html:50
+#: website/templates/day23.html:56
 msgid "seats"
 msgstr "places"
 
-#: website/templates/day23.html:65
+#: website/templates/day23.html:71
 msgid "Track"
 msgstr "Session"
 
-#: website/templates/day23.html:86 website/templates/day23.html:124
+#: website/templates/day23.html:92 website/templates/day23.html:130
 msgid "More info"
 msgstr "Plus d'info"
 
-#: website/templates/day23.html:102
+#: website/templates/day23.html:108
 msgid "Tracks details"
 msgstr "Détails de la session"
 

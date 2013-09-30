@@ -17,7 +17,13 @@
 
               <h2>{{ page.title }}</h2>
 
-              <p>{{ _("We're currently putting up the schedule - watch this space! Many thanks for your patience.") }}</p>
+
+              {% if day == 3 %}
+                {% trans %}
+                You can find the sessions in the grid below, but there's a lot more!
+                Please see <a href="http://openworldforum.org/fr/news/programme-experiment/">the EXPERIMENT exhibition program</a>.
+                {% endtrans %}
+              {% endif %}
 
               <h3>{{ _("All tracks for today") }}</h3>
 
