@@ -1,12 +1,23 @@
-title: Programme de la thématique EXPERIMENT
+title: Programme de la thématique EXPERIMENT (samedi 5 octobre)
 date: 2013/09/28
 
 ## Introduction par Elisabeth Racine
 
 <iframe width="480" height="360" src="//www.youtube.com/embed/lQpoKPgabFs" frameborder="0" allowfullscreen></iframe>
 
+## Les conférences du samedi
 
-## KIDEXPERIMENT: découvrir l'open source en famille
+- [Internet et libertés](http://openworldforum.org/fr/tracks/32)
+- [Open Hardware : la révolution de l'impression 3D?](http://openworldforum.org/fr/tracks/33)
+- [Hack the Elections](http://openworldforum.org/fr/tracks/41)
+- [Atelier Open Street Maps](http://openworldforum.org/fr/tracks/42)
+- [DIY Smart Objects](http://openworldforum.org/fr/tracks/43)
+- [Open Source Parenting](http://openworldforum.org/fr/tracks/44)
+- [How to contribute to Free Software?](http://openworldforum.org/fr/tracks/45)
+- [Les licences dans le libre : Creative Commons, GNU...](http://openworldforum.org/fr/tracks/47)
+
+
+## Les ateliers KIDEXPERIMENT: découvrir l'open source en famille
 
 L’Open World Forum propose aux enfants et aux jeunes des conférences
 et ateliers pratiques pour découvrir l’open source sous toutes ses formes!
@@ -49,7 +60,7 @@ Benoit Parsy.
 
 ![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_m77025fb9.jpg)
 
-### L’espace jeu vidéo
+### L’espace jeu vidéo open source
 
 Les jeunes (et les moins jeunes) pourront découvrir la galerie de jeux
 open source que leur a réservé en bonus l’équipe de l’Open World Forum.
