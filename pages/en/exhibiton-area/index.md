@@ -66,6 +66,10 @@ We are hounoured to welcome them as our partners for this **6th edition** of the
 
 <a href="http://www.microsoft.com/" target="_blank"><img src="/static/pictures/partners/Microsoft.jpg" alt="Microsoft"> </a>
 
+###N
+
+<a href="https://www.normation.com/" target="_blank"><img src="/static/pictures/partners/normation.png" alt="normation"> </a>
+
 ###O
 
 <a href="http://www.openstack.org/" target="_blank"><img src="/static/pictures/partners/openstack-cloud-software-vertical-web.png" alt="OpenStack"> </a>
