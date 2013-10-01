@@ -146,6 +146,15 @@ two musical terms: "jam session" and "crescendo".
 
 <a name="palamida"><a href="http://www.palamida.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/palamida_logo.jpg" width="400" alt="palamida"></a></a>
 
+Palamida delivers software and services for open source compliance that provide unique visibility into what makes up a 
+software development project, enabling you to effectively manage and secure your use of Open Source and other 
+third-party code.
+
+We enable organizations to use and reuse code from many sources - and do so while reducing the risk of license 
+violations, software vulnerabilities and export control violations. Our patented code search technology scans source 
+and binary materials and produces an inventory of software components used – a software bill of materials – and flags 
+issues that are exceptions to your policy.
+
 <a name="stackoverlfow"><a href="http://careers.stackoverflow.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/stackoverflow careers20-logo.png" width="400" alt="stackoverflow"></a></a>
 
 In 2008, Joel Spolsky and Jeff Atwood created a site called **Stack Overﬂow** and brought together millions of computer
