@@ -130,8 +130,6 @@ fasse l’éloge de l’open source. Les enfants sont les bienvenus pour
 produire cette œuvre qui trompera la vue des visiteurs pour le plaisir
 de tous.
 
-![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_d03cccf.png)
-
 ![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_m54d10871.png)
 
 
@@ -292,8 +290,6 @@ l’exposition et laissez-vous surprendre !
 
 ![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_m183c4d0b.jpg)
 
-
-### DIY Smart Objects
 
 #### La Fonderie/Educaduino
 
