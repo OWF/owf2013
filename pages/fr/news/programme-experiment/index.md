@@ -5,16 +5,42 @@ date: 2013/09/28
 
 <iframe width="480" height="360" src="//www.youtube.com/embed/lQpoKPgabFs" frameborder="0" allowfullscreen></iframe>
 
+
+## La conférence du vendredi
+
+Hack The Elections par Voxe.org
+<a href="http://voxe.org/" target="_blank">Voke.org</a> comparateur international de programmes politiques lance 
+les apéros Hack The Elections.
+
+Un speaker inspirant, Flore Vasseur,entrepreneur, romancière qui vient de préfacer un ouvrage sur Julian Assange 
+et qui publie "En Bande Organisée" sélectionnée pour l'Interallié et le prix de Flore 2013 fera une keynote 
+à 19:00 en Salle Moebius sur l'écosystème Open Gov. Pour voter éclairé, parce que vous avez la parole, venez parler 
+Open Gov et Open data avec Voxe.org.
+
+Cet apéro sera suivi d'un concert organisé par **Jamendo** avec 
+<a href="http://www.jamen.do/a/2096" target="_blank">**Johannes Hopfner**</a> (folk, France)
+
+- [Hack the Elections](http://openworldforum.org/fr/tracks/41)
+
 ## Les conférences du samedi
 
-- [Internet et libertés](http://openworldforum.org/fr/tracks/32)
-- [Open Hardware : la révolution de l'impression 3D?](http://openworldforum.org/fr/tracks/33)
-- [Hack the Elections](http://openworldforum.org/fr/tracks/41)
-- [Atelier Open Street Maps](http://openworldforum.org/fr/tracks/42)
-- [DIY Smart Objects](http://openworldforum.org/fr/tracks/43)
-- [Open Source Parenting](http://openworldforum.org/fr/tracks/44)
-- [How to contribute to Free Software?](http://openworldforum.org/fr/tracks/45)
+- [Et toi, tu vas voter aux élections européennes ?](http://openworldforum.org/fr/tracks/52#talk_258)
+10:30 / 12:30 Salle Puffy (2.04)
 - [Les licences dans le libre : Creative Commons, GNU...](http://openworldforum.org/fr/tracks/47)
+11:30 / 12:30 Salle GNU (2.01)
+- [Internet et libertés](http://openworldforum.org/fr/tracks/32)
+14:30 / 16:30 Salle Blin - Petit Auditorium
+- [Open Hardware : la révolution de l'impression 3D?](http://openworldforum.org/fr/tracks/33)
+16:30 / 18:30 Salle Blin - Petit Auditorium
+- [Atelier Open Street Maps](http://openworldforum.org/fr/tracks/42)
+14:00 / 15:30 Salle GNU (2.01)
+- [DIY Smart Objects](http://openworldforum.org/fr/tracks/43)
+14:00 / 16:30 Salle Puffy (2.04)
+- [Open Source Parenting](http://openworldforum.org/fr/tracks/44)
+15:30 / 16:30 Salle GNU (2.01)
+- [How to contribute to Free Software?](http://openworldforum.org/fr/tracks/45)
+16:30 / 17:30 Salle GNU (2.01)
+
 
 
 ## Les ateliers KIDEXPERIMENT: découvrir l'open source en famille
