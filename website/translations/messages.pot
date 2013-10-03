@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-30 11:01+0200\n"
+"POT-Creation-Date: 2013-10-03 06:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,24 +229,28 @@ msgstr ""
 msgid "Tracks details"
 msgstr ""
 
-#: website/templates/index.html:31 website/templates/index.html:45
-#: website/templates/index.html:59
+#: website/templates/index.html:21
+msgid "Watch the event live!"
+msgstr ""
+
+#: website/templates/index.html:38 website/templates/index.html:52
+#: website/templates/index.html:66
 msgid "Learn more"
 msgstr ""
 
-#: website/templates/index.html:72
+#: website/templates/index.html:79
 msgid "Some speakers"
 msgstr ""
 
-#: website/templates/index.html:75
+#: website/templates/index.html:82
 msgid "All the speakers"
 msgstr ""
 
-#: website/templates/index.html:128
+#: website/templates/index.html:135
 msgid "Latest news"
 msgstr ""
 
-#: website/templates/index.html:132
+#: website/templates/index.html:139
 msgid "All the latest news"
 msgstr ""
 
