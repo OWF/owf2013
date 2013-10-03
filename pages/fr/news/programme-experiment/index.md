@@ -122,7 +122,7 @@ d’utilisation, la sécurité ou encore le respect absolu de la vie privée.
 
 ![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_74d4c74.png)
 
-### Atelier artistique de création d’une anamorphose
+### Atelier artistique de création d’une anamorphose - 11:00 / 13:00 
 
 Studio Subito propose à l’ensemble des visiteurs de l’Open World Forum
 de venir contribuer à la réalisation d’une œuvre d’art temporaire qui
@@ -155,18 +155,14 @@ et près de 800 cours.
 
 ![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_31a98032.png)
 
-#### Emmabüntus
+#### Emmabuntüs
 
-Le projet Emmabüntus est basé sur l'utilisation d'une distribution Linux
-développée pour permettre le reconditionnementde machines usagées de
-façon simple. Durant EXPERIMENT Emmabüntus propose une formation et
-initiation à la remise en état de machines, allant du matériel au
-logiciel pour un public d'adultes selon les thèmes « comment protéger
-ses enfants sur internet,
+Le projet Emmabuntüs est basé sur l'utilisation d'une distribution Linux développée pour permettre le reconditionnement 
+de machines usagées de façon simple. Durant EXPERIMENT Emmabuntüs propose une formation et initiation à la remise en 
+état de machines, allant du matériel au logiciel pour un public d'adultes selon les thèmes « comment protéger ses 
+enfants sur internet, grâce aux solutions intégrées dans Emmabuntüs ? » pour les parents ; et, pour les enfant 
+« comment apprendre, lire et se distraire avec les logiciels inclus dans Emmabuntüs ? »
 
-grâce aux solutions intégrées dans Emmabuntüs ? » pour les parents ; et,
-pour les enfant « comment apprendre, lire et se distraireavec les
-logiciels inclus dans Emmabuntüs ? »
 
 ![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_m7ec0b562.png)
 
@@ -194,8 +190,14 @@ partager leur engouement pour le logiciel libre !
 
 #### We-io.net
 
-L’agence de médias numériques Nodesign présentera we-io.net qui permet
-de programmer des objets connectés.
+WeIO est une plateforme (électronique et logiciel) qui permet a tout un chacun de créer et produire des nouveaux 
+objets connectés en toute simplicité en utilisant le langage Web.
+
+Le but de WeIO est de faciliter la programmation et la création d’objets connectés en se basant sur les technologies
+Web facilement maitrisable pour le monde de l’éducation, de l’innovation sociale et des industriels.
+WeIO propose de contrôler et de programmer les Neoobjets en utilisant uniquement un navigateur Web. Plus 
+d'informations : www.we-io.net
+
 
 #### L’APRIL
 
