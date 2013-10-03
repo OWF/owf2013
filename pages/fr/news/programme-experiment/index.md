@@ -44,6 +44,7 @@ Cet apéro sera suivi d'un concert organisé par **Jamendo** avec
 
 
 ## Les ateliers KIDEXPERIMENT: découvrir l'open source en famille
+### dans la Salle Nicole Ginoux (RDC) et en foyer Moebius de 10:00 à 19:00 
 
 L’Open World Forum propose aux enfants et aux jeunes des conférences
 et ateliers pratiques pour découvrir l’open source sous toutes ses formes!
@@ -57,9 +58,14 @@ visite en famille!
 
 ### Atelier boîte noire
 
-Animé par les Petits Débrouillards, cet atelier initiera par le jeu les
-enfants au code et à la programmation arduino. Ils pourront à cette
-occasion bidouiller plusieurs objets connectés.
+L'atelier boîte noire consistera à : 
+- Faire découvrir ce qui se cache derrière les objets électroniques; 
+- Accompagner, de manière ludique, les enfants dans l'exploration d'un object inconnu ; 
+- Amener les enfants à programmer leur premier arduino et si possible, le connecter à leur smartphone. 
+ 
+En parallèle à la "boîte noire", les Petits Débrouillards, nous proposerons un atelier pour un public moins captif : 
+Electrokid : Les plus jeunes enfants découvriront les propriétés de l'électricité et de son effet sur des 
+composants : "lampe, DEL, moteurs, buzzers etc." 
 
 ![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_b16914b.jpg)
 
@@ -72,10 +78,6 @@ pourvus de LED.
 
 ![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_5c6103df.png)
 
-### Atelier Scratch
-
-Cet atelier est développé par le MIT….
-
 ### Coder des LEGO MINDSTORMS
 
 Les enfants ont l’habitude de jouer avec des objets inanimés ou dans le
@@ -86,20 +88,12 @@ Benoit Parsy.
 
 ![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_m77025fb9.jpg)
 
-### L’espace jeu vidéo open source
-
-Les jeunes (et les moins jeunes) pourront découvrir la galerie de jeux
-open source que leur a réservé en bonus l’équipe de l’Open World Forum.
-Au menu, une version open source d’un jeu mythique de civilisation et
-des distractions basées sur la KINECT.
-
 ### Le comptoir des Makers de l’Etablisienne
 
-Dans cet atelier, les enfants apprennent que l’ancien peut faire bon
-ménage avec le neuf. L’Etablisienne propose en effet une activité
-artisanale de travail du bois grâce à des scies japonaises sur un grand
-établi, et présente en parallèle les possibilités offertes par
-l’impression 3D dans le travail de la matière et de la création.
+Dans le but de **démocratiser les techniques de fabrications industrielles** l’Établisienne a lancé à Paris en avril 
+2013 avec l’appui de l’atelier Jisseo un atelier expérimental dédié à la fabrication numérique : formation rapide pour 
+dessiner sescréations sur logiciel 3D, découverte des applications de la fabrication numérique, protocoles et normes 
+à respecter pour optimiser ses créations.
 
 ![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_81ff14.jpg)
 
