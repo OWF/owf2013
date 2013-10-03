@@ -120,17 +120,6 @@ futur. En replaçant l’enfant et les parents au centre des préoccupations
 du projet, DoudouLinux met l’accent sur la facilité et l’agrément
 d’utilisation, la sécurité ou encore le respect absolu de la vie privée.
 
-DoudouLinux cherche à montrer aux enfants et leurs parents le meilleur
-des nouvelles technologies et d’Internet, en toute confiance.
-
-Avec une soixantaine d’applications qui couvrent le domaine éducatif,
-les activités créatives, le divertissement et la culture, DoudouLinux
-permet aux enfants de découvrir de très nombreuses facettes de
-l’ordinateur dans le but de stimuler leur curiosité, leur potentiel
-d’apprentissage et leur créativité. Son interface, repensée de zéro,
-vise la simplicité d’une console de jeu sans sacrifier les fonctions
-vitales. Venez découvrir ce projet innovant !
-
 ![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_74d4c74.png)
 
 ### Atelier artistique de création d’une anamorphose
