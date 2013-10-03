@@ -22,6 +22,8 @@ Cet apéro sera suivi d'un concert organisé par **Jamendo** avec
 
 - [Hack the Elections](http://openworldforum.org/fr/tracks/41)
 
+![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_m24170f29.png)
+
 ## Les conférences du samedi
 
 - [Et toi, tu vas voter aux élections européennes ?](http://openworldforum.org/fr/tracks/52#talk_258)
@@ -310,8 +312,6 @@ donnée. Pratiquez la démocratie comme jamais auparavant !
 
 Ne ratez pas non plus l’apéro Hack the Election, le vendredi 2 octobre à
 19h au grand auditorium du Beffroi.
-
-![](/static/images/experiment/News%20EXPERIMENT_KIDEXPERIMENT_html_m24170f29.png)
 
 #### VroumVroum
 
