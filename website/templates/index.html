@@ -145,9 +145,11 @@
             <div class="row">
               {% for item in news[0:3] %}
                 <div class="span4 latest-news-card">
+                  <a href="{{ url_for(".news_item", slug=item.slug) }}">
                   <img
                       src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
                       width="300" height="225" alt=""/>
+                  </a>
 
                   <div class="latest-news-content">
                     <h2><a
