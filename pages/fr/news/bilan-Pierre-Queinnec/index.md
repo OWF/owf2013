@@ -1,5 +1,5 @@
 title: L’Open World Forum 2013 a accueilli plus de 2 100 visiteurs
-date: 2013/10/11
+date: 2013/10/14
 
 Rendez-vous européen piloté par le pôle de compétitivité Systematic Paris-Region, la 6e édition de l’Open World Forum 
 a accueilli décideurs et contributeurs de l’écosystème Libre et Open Source les 3, 4 et 5 octobre 2013 au Centre culturel 
