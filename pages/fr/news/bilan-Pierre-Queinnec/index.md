@@ -7,7 +7,7 @@ Le Beffroi, de Montrouge (Hauts-de-Seine).
 
 Pierre Queinnec, président du Forum, dresse le bilan de cet événement centré sur le transfert de technologie.
 
-** *Silicon.fr* : Quelle a été la répartition des visiteurs de l’Open World Forum 2013 sur trois journées ?**
+***Silicon.fr* : Quelle a été la répartition des visiteurs de l’Open World Forum 2013 sur trois journées ?**
 
 **Pierre Queinnec** : Nous avons eu la chance d’avoir une audience très légèrement supérieure à l’année dernière, soit 
 un peu plus de 2 100 visiteurs sur les trois jours. La répartition reste très proche de celle des années précédentes, 
